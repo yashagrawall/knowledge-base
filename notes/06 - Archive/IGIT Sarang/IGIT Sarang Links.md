@@ -15,6 +15,11 @@ Tags : [[College]]
 ---
 ## ERP Portal
 
-- [IGIT Sarang ERP Portal](https://igit.icrp.in/academic/)
+[IGIT Sarang ERP Portal](https://igit.icrp.in/academic/)
+
+---
+## CDC Website 
+
+[IGIT Sarang CDC Website](https://www.igitcdc.ac.in/home)
 
 ---

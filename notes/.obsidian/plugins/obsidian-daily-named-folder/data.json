@@ -1,7 +1,0 @@
-{
-  "format": "YYYY/M-MMMM",
-  "description": true,
-  "root": "Private/Journal/A - Daily",
-  "useTemplate": true,
-  "template": "Private/Templates/Daily Template.md"
-}

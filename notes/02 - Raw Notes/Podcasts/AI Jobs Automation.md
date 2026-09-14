@@ -1,5 +1,5 @@
 
-Type : #RawNote       
+Type : #RawNote   #podcast      
 Date : 27-05-2026        
 Tags : [[AI]] ;  [[job]]     
 Source : [Raj Shamani : Vaibhav Sinsity](https://youtu.be/kKNoBH0iE1k?si=HxT_VeGDbJd7AqF0)        

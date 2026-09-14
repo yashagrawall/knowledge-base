@@ -19,6 +19,10 @@ Source : [How to read a paper : S. Keshav](https://web.stanford.edu/class/ee384m
 	- [[#2nd Pass]] : grasp paper’s content 
 	- [[#3rd Pass]] : paper in depth
 
+![[Pasted image 20260901205028.png|700]]
+
+![[Pasted image 20260901213301.png]]
+
 ---
 ## 1st Pass
 

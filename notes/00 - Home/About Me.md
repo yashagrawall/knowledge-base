@@ -33,28 +33,24 @@ I don't learn passively. I learn by writing, connecting, and building — which 
 
 ## What I'm Building
 
-### 🔬 Research — Multi-Camera Surveillance & AI Security
-My primary technical research focus. I am engineering an end-to-end **multi-camera threat detection, tracking, and re-identification system** using:
+### 🔬 Research — Cognitively-Grounded Multi-Agent Systems & AI Governance
+My primary technical research focus. I am investigating the intersection of **Cognitive Science (Bounded Rationality & Heuristics)**, **Multi-Agent Systems (Game-Theoretic Economic Simulations)**, and **Human-Centered AI (EU AI Act Auditing & Interactive Governance)**:
 
-- **YOLOv8** for real-time object and face detection
-- **DeepSORT & ByteTrack** for multi-object tracking across video streams
-- **OSNet (torchreid)** for person re-identification across non-overlapping camera feeds
-- **OpenCV + Python** as the high-performance backend
+- **Algorithmic Collusion & Market Fairness**: Mathematical and empirical metrics to detect and mitigate tacit price collusion and algorithmic discrimination in LLM multi-agent economies under the EU AI Act.
+- **Cognitive Bounded Rationality**: Injecting human cognitive heuristics and Prospect Theory into agent decision loops to model realistic market dynamics.
+- **Human-in-the-Loop Governance Dashboards**: Real-time causal decision trees and oversight interfaces for regulatory auditing.
 
-The goal is a publishable research paper and a production-grade AI security architecture. See [[MOC - Computer Vision and Surveillance]] for details.
+The goal is publishable research and open-source auditing benchmarks. See [[Research Topics]] for details.
 
 ### 🧠 Public Knowledge Base
-This vault — containing 660+ notes and hundreds of bidirectional links — is my public intellectual asset repository. Built using Obsidian and Quartz, it documents my continuous learning across Computer Science, AI, mathematics, security, and philosophy. I keep it public because ideas compound best when shared.
+This vault — containing 660+ notes and hundreds of bidirectional links — is my public intellectual asset repository. Powered by a custom zero-runtime-dependency static architecture (`build-vault.js` + React 18 + HTML5 Canvas 2D force-directed knowledge graph), it documents my continuous learning across Computer Science, AI, mathematics, and philosophy. I keep it public because ideas compound best when shared.
 
 ---
 
 ## Technical Arsenal & Learning
 
-### AI, ML & Computer Vision
-Deep learning architectures, computer vision pipelines, object detection (YOLOv8), person re-identification (OSNet), and OpenCV → [[MOC - AI and Machine Learning]]
-
-### Cybersecurity & AI Security
-Ethical hacking, network security, threat modeling, Linux/Kali, and preparing for professional security certifications (eJPT) → [[MOC - Cybersecurity]]
+### AI, Multi-Agent Systems & Machine Learning
+Deep learning architectures, multi-agent reinforcement learning, discrete-event simulations (SimPy, Ray), cognitive architectures (ACT-R), and AI governance auditing → [[MOC - AI and Machine Learning]]
 
 ### Core CS Foundations
 - **Data Structures & Algorithms** — arrays, trees, graphs, sorting, and dynamic programming → [[MOC - Data Structures and Algorithms]]
@@ -63,9 +59,9 @@ Ethical hacking, network security, threat modeling, Linux/Kali, and preparing fo
 - **Discrete Mathematics** — graph theory, combinatorics, and proof structures (my favorite mathematical foundation for CS) → [[MOC - Engineering Mathematics]]
 
 ### Programming Languages & Tooling
-- **Python** — primary language for AI/ML, automation, and core development (CS50P)
+- **Python** — primary language for AI/ML, simulation, automation, and core development (CS50P)
 - **C / C++** — deep understanding of memory management, pointers, and hardware-level performance
-- **Developer Ecosystem**: Linux, Git, GitHub, VS Code, Quartz → [[MOC - Languages]]
+- **Developer Ecosystem**: Linux, Git, GitHub, VS Code → [[MOC - Languages]]
 
 ---
 
@@ -93,8 +89,8 @@ Beyond software engineering, I am a published author and poet. Creative writing 
 | Domain            | Status / Focus                                                                         |
 | :---------------- | :------------------------------------------------------------------------------------- |
 | **Industry**      | Mercer Marsh Benefits (Marsh McLennan) — Enterprise AI & SaaS automation; PPO secured. |
-| **Research**      | Multi-camera threat detection & re-identification system — Computer Vision pipeline.   |
-| **Academics**     | B.Tech CSE (3rd Year) — Core CS (DBMS, OS, DSA) alongside AI & Cybersecurity tracks.   |
+| **Research**      | Multi-agent market simulations & EU AI Act auditing — [[Research Topics]].            |
+| **Academics**     | B.Tech CSE (3rd Year) — Core CS (DAA, CN, DBMS, OS) alongside AI & Systems tracks.     |
 | **Public Assets** | Maintaining and expanding the public knowledge base.                                   |
 
 ---

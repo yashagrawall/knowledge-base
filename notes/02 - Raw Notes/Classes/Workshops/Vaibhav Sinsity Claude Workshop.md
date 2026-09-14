@@ -1,5 +1,5 @@
 
-Type : #RawNote       
+Type : #RawNote  #Workshops        
 **Date :** 2026-05-07     
 **Tags :** [[AI]]        
 Source :    

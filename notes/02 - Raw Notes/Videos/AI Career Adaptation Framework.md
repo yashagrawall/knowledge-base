@@ -1,5 +1,5 @@
 
-Type : #RawNote       
+Type : #RawNote  #video     
 Date : 2026-05-21        
 Tags :  [[AI]] ; [[job]]     
 Source : [Vaibhav Sinsity](https://www.youtube.com/watch?v=KjNsnE_vsyc)   
