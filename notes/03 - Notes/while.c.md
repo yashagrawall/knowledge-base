@@ -70,7 +70,7 @@ while (1)
 
 - `1` is non-zero → always true
 - Common in: 
-	- [[Operating System]] kernels
+	- [[OS]] kernels
 	- Embedded Systems
 	- Event [[loop]]s
 	- Flight software

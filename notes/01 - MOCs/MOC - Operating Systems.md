@@ -34,7 +34,7 @@ SORT file.mtime DESC
 ---
 # Related Tags 
 
-[[Operating System]]
+[[OS]]
 
 ---
 # Related Research 

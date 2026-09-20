@@ -46,7 +46,9 @@ Electronic Systems are generally of two types:
 - Extra hardware is required to convert this analog signal to digital signal by using Analog to Digital Converter (ADC)
 - Our body can interpret Analog values so we need to convert back signals to analog form using Digital to Analog Converter (DAC)
 
+---
 # Boolean Algebra
+
 - Introduced by George Boole
 	- The Mathematical Analysis of [[Logical Operators|logic]] (1847)
 	- An investigation of the Laws of Thought (1854)
@@ -59,29 +61,26 @@ Electronic Systems are generally of two types:
 	- Negation (¬ or ~)
 - [[Primary Logical Operators Across Different Domains]]
 
+---
 # Turing Machine
 - Church-Turing thesis states that any algorithmic procedure that can be carried out by human beings/Computer can be carried out by a Turing Machine (1936).
 - Universally accepted by Computer Scientists that Turing Machine provides an ideal Theoretical Model of a Computer
 
+---
+# [[Von Neumann Architecture]]
+
+- Introduced by Jon Von Neumann in 1945
+
+---
 # Digital System
+
 - Claude Shannon observed that the rules of Boole's Algebra also apply to Switching Circuits
 - Introduced Switching Algebra as a way to analyze and design circuits by algebraic mean in terms of Logic Gates (1938)
 - Claude Shannon - Father of Information Theory - Organised and Systematized Boole's Work. 
 
-# von Neumann Architecture
-- Its a computer architecture based on a 1945 description by John von Neumann.
-- It describes a design architecture for an electronic digital computer with these components:
-	- A processing unit
-		- Arithmetic Logic Unit
-		- Processor Registers
-	- Control Unit
-		- Instruction register and Program Counter
-	- Memory 
-		- Stores Data and Instructions
-	- External Mass Storage
-	- Input and Output Mechanisms
-	![[Pasted image 20251228173226.png]]
+---
 # Digital System Logics
+
 - It has two logic levels
 	- lower voltage level - logic low or logic 0 (0-1 V), Which represent digit 0.
 	- Higher voltage level - logic high or logic 1 (3.5 - 5 V), Which represent 1.

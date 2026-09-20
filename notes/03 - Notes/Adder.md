@@ -13,8 +13,8 @@ Status : #incomplete
 - Used to calculate address, table indices, increment and decrement operators, and similar operations 
 - Most Common Adders operate on Binary numbers
 - Other type of Adders : decimal, excess-3, etc 
-- Where -ve numbers represented by 2's Complement or 1's Complement → adder-subtractor 
-	- 1's Complement and 2's Complement is used to perform subtraction from addition 
+- Where -ve numbers represented by [[2’s Complement]] or [[1’s Complement]] → adder-subtractor 
+	- [[1’s Complement]] and [[2’s Complement]] is used to perform subtraction from addition 
 
 #### Fundamental Logic Behind Addition 
 ![[Pasted image 20260407211842.png]]

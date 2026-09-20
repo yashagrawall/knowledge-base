@@ -35,12 +35,12 @@ int main()
 - `main()` is a special function defined by the C standard that must be written by the programmer.
 - You cannot use another name instead of `main()`. 
 	- Execution starts from `main`. 
-	- The [[Operating System]] looks specifically for `main`
+	- The [[OS]] looks specifically for `main`
 - `main()`  is not a keyword. But you cannot freely design it like other user-defined functions.
 - Statements execute sequentially unless [[Control Structures.c|control statements]] alter the flow.
 - `void main()` and `float main()` and `double main()` are not valid standard C. 
 - `void main()` works in Turbo C / some compilers, but is non-standard.
-- `return 0;` - returns 0 if there are no [[Errors#1. Compile-Time Errors|Compile]] or [[Errors#2. Runtime Errors|Runtime]] [[Errors]], signalling a successful execution to the [[Operating System]].
+- `return 0;` - returns 0 if there are no [[Errors#1. Compile-Time Errors|Compile]] or [[Errors#2. Runtime Errors|Runtime]] [[Errors]], signalling a successful execution to the [[OS]].
 - We can also write `int main(void)` → for clarity that `main` takes no arguments.
 
 ## Code Block 

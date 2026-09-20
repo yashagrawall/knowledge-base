@@ -1,7 +1,7 @@
 
 Type : #Note    
 Date :  2026-01-27  
-Tags :   [[Operating System]]  
+Tags :   [[OS]]  
 Status : #incomplete     
 ~ ***Yash Agrawall*** ~  
 
