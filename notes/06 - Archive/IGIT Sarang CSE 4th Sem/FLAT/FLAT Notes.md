@@ -1,7 +1,6 @@
 Type : #RawNote       
 Date :  2026-05-08  
 Tags :  [[College]]        
-Source :    
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -268,5 +267,11 @@ w = $q_{0}abba$
 1. $S = S^*$
 
 ---
-# References
-----
+# References 
+
+1. [[FLAT 4th Sem.pdf]]
+2. [[CYK.pdf]]
+3.  [[flat material.pdf]]
+4. [[Formal Language and Automata Theory (FLAT) Notes CSE 14th.pdf]]
+5. [[P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science.pdf]]
+6. [[Turing Machine from net.pdf]]

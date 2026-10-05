@@ -1,3 +1,10 @@
+
+Type : #RawNote       
+Date : 2026-09-27        
+Tags : [[College]] ; [[08 - Tags/cloud computing]]      
+~ ***Yash Agrawall*** ~     
+
+---
 # Cloud Computing (OECS6331)
 **B.Tech Computer Science & Engineering — 5th Semester**  
 **Course Credits**: 3 (3-0-0)  
@@ -67,11 +74,23 @@ This course gives students an insight into the basics of cloud computing along w
   - Privacy and Data Protection in Cloud Environments
   - Audit and Compliance: Regulatory Requirements, Risk Management, Security Audits
 
+## Prescribed & Available Resources
+
+### Available Textbooks in Vault (`07 - Annexure/Books/`)
+1. **Primary Modern Academic Text:** [[Cloud_Computing-Sandeep_Bhowmik-1st_ed.pdf|Sandeep Bhowmik — Cloud Computing (1st Ed, Cambridge University Press)]]
+   * *Best For:* Clean, updated coverage of IaaS/PaaS/SaaS architectures, virtualization hypervisors, and cloud security compliance.
+2. **Distributed Systems Benchmark (Research & Systems):** [[Designing_Data:_Intentive_Applications-Martin_Kleppmann-2nd_ed.pdf|Martin Kleppmann — Designing Data-Intensive Applications (2nd Ed)]]
+   * *Best For:* Data replication, partitioning, consensus, and transactions relevant to scaling multi-agent simulations.
+
+### Visual Lectures & Interactive Tools
+* **Primary Architectural Video:** [ByteByteGo (Alex Xu)](https://www.youtube.com/@ByteByteGo) (YouTube — Cloud & distributed architecture)
+* **Exam Concepts & Models:** [Gate Smashers — Cloud Computing Playlist](https://www.youtube.com/playlist?list=PLxCzCOWd7aiGzY1kS_5uvbp7p_q8A5f_u) (NIST model, SPI model, hypervisors)
+* **Interactive Tool:** [The Secret Lives of Data (Raft Consensus)](https://thesecretlivesofdata.com/raft/) (Visual consensus simulation)
+
+
 ---
 
-## Text Books
+## Official University References
 1. **Kai Hwang, Geoffrey C. Fox, and Jack J. Dongarra**, *Distributed and Cloud Computing: From Parallel Processing to the Internet of Things*, Morgan Kaufmann / Elsevier, 2012.
-
-## Reference Books
-1. **Barrie Sosinsky**, *Cloud Computing Bible*, John Wiley & Sons, 2010.
-2. **Tim Mather, Subra Kumaraswamy, and Shahed Latif**, *Cloud Security and Privacy: An Enterprise Perspective on Risks and Compliance*, O'Reilly Media, 2009.
+2. **Barrie Sosinsky**, *Cloud Computing Bible*, John Wiley & Sons, 2010.
+3. **Tim Mather, Subra Kumaraswamy, and Shahed Latif**, *Cloud Security and Privacy: An Enterprise Perspective on Risks and Compliance*, O'Reilly Media, 2009.

@@ -1,4 +1,11 @@
 
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[08 - Tags/cloud computing]]  
+Source :    
+~ ***Yash Agrawall*** ~     
+
+---
 # Cloud Computing — 1st Internal Examination 2026
 
 > **Course**: Cloud Computing (OE-II / OECS6331)  

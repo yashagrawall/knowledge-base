@@ -1,3 +1,10 @@
+
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[DSA]]    
+~ ***Yash Agrawall*** ~     
+
+---
 # Design and Analysis of Algorithm (PCCS4306)
 **B.Tech Computer Science & Engineering — 5th Semester**  
 **Course Credits**: 3 (3-0-0)  
@@ -88,13 +95,26 @@ Students should be able to:
 
 ---
 
-## Text Book
-1. **Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein**, *Introduction to Algorithms*, 3rd Edition, PHI Learning Private Limited, 2012.
+## Prescribed & Available Resources
 
-## Reference Books
-1. **Anany Levitin**, *Introduction to the Design and Analysis of Algorithms*, 3rd Edition, Addison-Wesley Longman, 2011.
-2. **S. Sridhar**, *Design and Analysis of Algorithms*, Oxford University Press, 2015.
-3. **E. Horowitz, S. Sahni, and Dinesh Mehta**, *Fundamentals of Data Structures in C++*, 2nd Edition, Universities Press.
-4. **Mark Allen Weiss**, *Data Structures and Algorithm Analysis in C/C++*, Pearson Education India.
-5. **Adam Drozdek**, *Data Structures and Algorithms in C++*, Thomson Learning.
-6. **Alfred V. Aho, John E. Hopcroft, and Jeffrey D. Ullman**, *Data Structures and Algorithms*, Pearson Education, Reprint 2006.
+### Available Textbooks in Vault (`07 - Annexure/Books/`)
+1. **Primary Intuition & Paradigm Taxonomy:** [[Introduction_to_the_Design_and_Analysis_of_Algorithms-Anany_Lieviitin-2nd_ed.pdf|Anany Levitin — Introduction to the Design and Analysis of Algorithms (2nd Ed)]]
+   * *Best For:* Divide-and-Conquer, Dynamic Programming, Greedy, Backtracking, Branch-and-Bound.
+2. **Formal Rigor & NP-Completeness:** [[Introduction_to_Algorithm-CLRS-4th_ed.pdf|Thomas H. Cormen et al. (CLRS) — Introduction to Algorithms (4th Ed)]]
+   * *Best For:* Recurrence solving, Master Theorem (Ch 4), and formal NP-Completeness reductions (Ch 34).
+
+### Visual Lectures & Interactive Tools
+* **Primary Visual Video:** [Abdul Bari — Algorithms Playlist](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O) (YouTube)
+* **Interactive Step-Through Visualizers:** [VisuAlgo.net](https://visualgo.net/) · [USFCA Visualizer](https://www.cs.usfca.edu/~galles/visualization/)
+* **Study Protocol & Scope:** [[Core_Subjects_Study_Method_and_Visual_Sources]]
+
+---
+
+## Official University References
+1. **Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein**, *Introduction to Algorithms*, 3rd Edition, PHI Learning Private Limited, 2012.
+2. **Anany Levitin**, *Introduction to the Design and Analysis of Algorithms*, 3rd Edition, Addison-Wesley Longman, 2011.
+3. **S. Sridhar**, *Design and Analysis of Algorithms*, Oxford University Press, 2015.
+4. **E. Horowitz, S. Sahni, and Dinesh Mehta**, *Fundamentals of Data Structures in C++*, 2nd Edition, Universities Press.
+5. **Mark Allen Weiss**, *Data Structures and Algorithm Analysis in C/C++*, Pearson Education India.
+6. **Adam Drozdek**, *Data Structures and Algorithms in C++*, Thomson Learning.
+7. **Alfred V. Aho, John E. Hopcroft, and Jeffrey D. Ullman**, *Data Structures and Algorithms*, Pearson Education, Reprint 2006.

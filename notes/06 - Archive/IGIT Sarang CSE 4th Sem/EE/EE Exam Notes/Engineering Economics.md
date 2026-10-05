@@ -1,7 +1,7 @@
+
 Type : #RawNote       
 Date : 2026-03-16  
 Tags : [[College]] ; [[Finance]]  
-Source :    
 ~ _**Yash Agrawall**_ ~
 
 ---
@@ -495,11 +495,8 @@ About **70% of exam marks come from just these areas:**
 - Present worth method
 
 ---
-# References
+# References 
 
 1. [[EE.pdf]]
-2. [[EENOTESBYSIR.pdf]]
-
----
-# Questions
-----
+2. [[EE college notes.pdf]]
+3. [[EENOTESBYSIR.pdf]]

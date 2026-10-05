@@ -1,4 +1,10 @@
 
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[DBMS]]   
+~ ***Yash Agrawall*** ~     
+
+---
 # INDIRA GANDHI INSTITUTE OF TECHNOLOGY, SARANG
 
 **4th Semester Regular Examination — Predicted Paper** **Subject Name: Database Management System | Subject Code: PCCS4205** **Branch: Computer Science & Engineering | Time: 03 Hours | Maximum Marks: 60**
@@ -165,3 +171,9 @@ Apply the **basic timestamp ordering protocol** to each operation. For each oper
 **(c)** Write-Ahead Logging (WAL) Protocol — state both WAL rules formally, explain why each rule is necessary for recovery correctness, and describe how the UNDO and REDO operations use the log to restore the database after a crash.
 
 **(d)** Thomas's Write Rule — state the rule formally, explain how it modifies the basic timestamp ordering protocol, give an example where Thomas's rule allows a write that basic timestamp ordering would abort, and explain the trade-off in terms of serializability class.
+
+---
+# Reference
+
+1. [[DBMS 4th Sem.pdf]]
+2. [[Database Management System (DBMS) - CSE 14th.pdf]]

@@ -26,7 +26,7 @@ Mastering operating systems is required for GATE, provides the conceptual model 
 
 ```dataview 
 LIST
-FROM [[Operating System]] 
+FROM [[Operating System]] OR [[OS]] 
 WHERE contains(file.folder, "03 - Notes")
 SORT file.mtime DESC
 ```

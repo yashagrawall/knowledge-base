@@ -1,3 +1,10 @@
+
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]]    
+~ ***Yash Agrawall*** ~     
+
+---
 # IGIT Sarang CSEA Faculty Contact List
 
 **Indira Gandhi Institute of Technology, Sarang — 759146**  

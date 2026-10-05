@@ -1,7 +1,6 @@
 Type : #RawNote       
 Date :  2026-05-08  
 Tags :  [[College]]    
-Source :    
 ~ ***Yash Agrawall*** ~  
 
 ---

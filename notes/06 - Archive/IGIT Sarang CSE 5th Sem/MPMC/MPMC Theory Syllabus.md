@@ -103,17 +103,30 @@ The course is designed to provide a complete knowledge on Microprocessor and Mic
   - Interfacing with External ROM
   - 8051 Data Memory Space, Accessing External Data Memory
 
+## Prescribed & Available Resources (Minimum Effective Dose)
+
+### Available Faculty Notes & Slides in Vault (`Study Materials by SKJ/`)
+* **Primary Exam Material:** [[06 - Archive/IGIT Sarang CSE 5th Sem/MPMC/Study Materials by SKJ/|Prof. Suvendu Kumar Jena (SKJ) Lecture Notes & Slides Archive]]
+  * `1. Fundamentals of Microprocessors and Microcontrollers.pdf`
+  * `2. 8085 and 8086 Microprocessors - Lecture Notes (SKJ).pdf`
+  * `2.1. 8085 and 8086 Microprocessor Architecture and Programming Slides.pdf`
+  * `3. Peripheral Interfacing - 8255, 8259, 8253, 8279 and ADC-DAC.pdf`
+  * `5. 8051 Microcontroller - Architecture, Memory and Peripherals.pdf`
+
+### Visual Lectures & Interactive Tools
+* **Primary Visual Video:** [Bharat Acharya Education — 8085 / 8086](https://www.youtube.com/results?search_query=bharat+acharya+8085) (YouTube — Pin diagrams & architecture)
+* **Interactive Simulator:** [Sim8085.com](https://sim8085.com/) (Browser-based assembly execution)
+* **Strategy & Operating Rules:** [[Core_Subjects_Study_Method_and_Visual_Sources]] *(Treated strictly as bounded academic tax; 1.5h/wk cap)*
+
 ---
 
-## Text Books
+## Official University References
 1. **Ghosh & Sridhar**, *0000 to 8085 – Introduction to Microprocessor for Scientists & Engineers*, PHI (For Module I)
 2. **A.K. Roy & K.M. Bhurchandi**, *Advanced Microprocessor and Peripherals (Architecture, Programming & Interfacing)*, TMH Publication (For Module II)
 3. **Mazidi & Mazidi**, *The 8051 Microcontroller & Embedded Systems*, Pearson / PHI Publication (For Module III and Module IV)
-
-## Reference Books
-1. **M. Rafiquzzaman**, *Microprocessor – Theory & Applications (Intel & Motorola)*, PHI
-2. **Kenneth J. Ayala**, *The 8086 Microprocessor: Programming & Interfacing the PC*
-3. **Douglas V. Hall**, *Microprocessors and Interfacing: Programming and Hardware*, TMH
-4. **R.S. Gaonkar**, *Microprocessor Architecture, Programming & Applications with 8085*, Penram International Publishing
-5. **W.A. Triebel & Avtar Singh**, *The 8088 and 8086 Microprocessors*, Pearson Education
-6. **Barry B. Brey**, *The Intel Microprocessors – (Architecture, Programming & Interfacing)*, Pearson
+4. **M. Rafiquzzaman**, *Microprocessor – Theory & Applications (Intel & Motorola)*, PHI
+5. **Kenneth J. Ayala**, *The 8086 Microprocessor: Programming & Interfacing the PC*
+6. **Douglas V. Hall**, *Microprocessors and Interfacing: Programming and Hardware*, TMH
+7. **R.S. Gaonkar**, *Microprocessor Architecture, Programming & Applications with 8085*, Penram International Publishing
+8. **W.A. Triebel & Avtar Singh**, *The 8088 and 8086 Microprocessors*, Pearson Education
+9. **Barry B. Brey**, *The Intel Microprocessors – (Architecture, Programming & Interfacing)*, Pearson

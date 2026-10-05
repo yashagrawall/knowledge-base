@@ -2,7 +2,7 @@
 Type : #Note    
 Date :  2026-04-03  
 Tags :  [[Java]] ; [[College]]  
-Status : #incomplete     
+Status : #complete     
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -231,9 +231,11 @@ EXTRACTION TRACE TABLE
 23. [[Module 5 - JDBC.ppt.pdf]]
 
 ---
-# References 
+# Reference
 
-1. [[JAVA 4th Sem IGIT.pdf]]
-2. [[Java Notes CSE 14.pdf]]
+1. [[JAVA Assignment 1st page.pdf]]
+2. [[JAVA 4th Sem IGIT.pdf]]
+3. [[PYQ Analysis_JAVA]]
+4. [[Java Notes CSE 14.pdf]]
 
 ---

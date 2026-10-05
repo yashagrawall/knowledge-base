@@ -1,89 +1,47 @@
 
-Type : #Note
-Date : {{date}}
+Type : #DSAPattern        
+Date : {{date}}       
 Tags : [[DSA]]    
-Status : #complete
+Status : #complete        
 ~ ***Yash Agrawall*** ~
 
 ---
 # {{title}}
 
 ---
+## Recognition Trigger 
 
-## Core Idea
-
-> What is this pattern?
-
----
-
-## Recognition Clues
-
-- When should I think of this?
-- Keywords
-- Constraints
-- Common situations
+> [!tip] When to Use? 
+> 
+> - **Triggers :** 
+> - **Keywords :**
 
 ---
-
-## Why It Works
-
-Explain the intuition.
-
----
-
-## Generic Algorithm
-
-1.
-2.
-3.
-4.
+## Core 
+  
+  > [!abstract] Why it Works
 
 ---
+## Code Structure
 
-## Complexity
+```python
 
-Typical Time :
-
-Typical Space :
-
----
-
-## Common Mistakes
-
--
-
--
-
--
+```
 
 ---
+## Complexity 
 
-## Variations
-
--
-
--
-
--
+- **Typical Time:** $O(\_)$ 
+- **Typical Space:** $O(\_)$ 
 
 ---
-
-## Related Concepts
-
-- [[ ]]
-
----
-
-## Representative Problems
-
-- [[ ]]
-
-- [[ ]]
-
-- [[ ]]
-
----
-
-## References
+## Failure Modes & Edge Cases
 
 - 
+
+---
+## Related Questions 
+
+- [[ ]]
+- [[ ]]
+- [[ ]]

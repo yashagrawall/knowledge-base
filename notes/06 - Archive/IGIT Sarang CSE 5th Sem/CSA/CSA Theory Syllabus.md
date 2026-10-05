@@ -1,3 +1,10 @@
+
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[CSA]]   
+~ ***Yash Agrawall*** ~     
+
+---
 # Computer System Architecture (PECS5301)
 **B.Tech Computer Science & Engineering — 5th Semester**  
 **Course Credits**: 3 (3-0-0)  
@@ -78,13 +85,41 @@ To understand the functions and design of various units of digital computers to 
   - Interconnection Structures (Time-Shared Common Bus, Multiport Memory, Crossbar Switch, Multistage Switching Network, Hypercube)
   - Interprocessor Arbitration, Interprocessor Communication & Synchronization
 
+## Prescribed & Available Resources
+
+### Available Textbooks in Vault (`07 - Annexure/Books/`)
+1. **Primary Syllabus & Coursework Text:** [[Computer_System_Architecture-M.Morris_Mano-3rd_ed.pdf|M. Morris Mano — Computer System Architecture (3rd Ed)]]
+   * *Best For:* Basic Computer Org (Ch 5), Microprogrammed Control (Ch 7), CPU Organization (Ch 8), Pipelining (Ch 9), Cache & Virtual Memory (Ch 12).
+2. **Hardware Systems Depth (International Standard):** [[Computer_Systems:_A_Programmer's_Perspective-Bryant_&_O'Hallaron-3rd_ed.pdf|Randal E. Bryant & David R. O'Hallaron (CS:APP) — Computer Systems: A Programmer's Perspective (3rd Ed)]]
+   * *Best For:* Cache hierarchy, spatial/temporal locality (Ch 6), and Virtual Memory translation (Ch 9).
+3. **Reference Backup:** [[Computer_Organization_And_Embedded_System-Carl_Hamacher-6th_ed.pdf|Carl Hamacher et al. — Computer Organization and Embedded Systems (6th Ed)]]
+
+### Visual Lectures & Interactive Tools
+* **Primary Visual Video:** [Gate Smashers — Computer Organization & Architecture (COA)](https://www.youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX) (YouTube)
+* **Physical Hardware Intuition:** [Ben Eater — Building an 8-bit Computer from Scratch](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) (YouTube)
+* **Interactive Tool:** [Ripes Visual RISC-V Simulator](https://github.com/mortbopet/Ripes) (Watch pipeline stages & data hazards live)
+* **Study Protocol & Scope:** [[Core_Subjects_Study_Method_and_Visual_Sources]]
+
 ---
 
-## Text Books
+## Official University References
 1. **M. Morris Mano**, *Computer System Architecture*, 3rd Edition, PHI Publication.
 2. **William Stallings**, *Computer Organization & Architecture: Designing for Performance*, PHI Publication.
+3. **John P. Hayes**, *Computer Architecture and Organization*, McGraw Hill Publication.
+4. **Carl Hamacher, Zvonko Vranesic, and Safwat Zaky**, *Computer Organization*, Tata McGraw Hill Publication.
+5. **V. Rajaraman & T. Radhakrishnan**, *Computer Organization and Architecture*, PHI Publication.
 
-## Reference Books
-1. **John P. Hayes**, *Computer Architecture and Organization*, McGraw Hill Publication.
-2. **Carl Hamacher, Zvonko Vranesic, and Safwat Zaky**, *Computer Organization*, Tata McGraw Hill Publication.
-3. **V. Rajaraman & T. Radhakrishnan**, *Computer Organization and Architecture*, PHI Publication.
+---
+# Reference
+
+1. [[1. Number Systems.pdf]]
+2. [[1.1 HARDWARE & SOFTWARE.pdf]]
+3. [[2. Arithmetic Calculations.pdf]]
+4. [[2.1 Arithmetic Calculation 2.pdf]]
+5. [[3. Truth Table and logic Gates.pdf]]
+6. [[3.1. Logic gates Book.pdf]]
+7. [[4. Combinational Circuits.pdf]]
+8. [[4.1. Combinational Circuits Book.pdf]]
+9. [[5. Basic Input Output Operations.pdf]]
+10. [[6. Basic Processing Unit.pdf]]
+11. [[Computer_System_Architecture-M.Morris_Mano-3rd_ed.pdf]]

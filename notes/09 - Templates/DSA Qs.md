@@ -1,116 +1,76 @@
 
-Type : #DSAProblem
-Date : {{date}}
-Platform :
-Difficulty :
-Pattern :
-Topics :
-Source :
-Status : #unsolved / #solved / #revisit
-~ ***Yash Agrawall*** ~
+Type : #DSAProblem     
+Date : {{date}}  
+Platform :   
+Difficulty : #easy / #medium / #hard  
+Pattern :   
+Topics :   
+Status : #unsolved / #solved / #revisit  
+Link :   
+~ ***Yash Agrawall*** ~   
 
 ---
-
 # {{title}}
 
-Problem :
-Link :
+---
+## Problem Statement
+
+> [!question] 
 
 ---
+## Constraint Analysis 
 
-## Understanding
-
-> Explain the problem in your own words.
-
----
-
-## Constraints
-
--
-
--
-
--
+ >[!attention] 
+ >- **Constraints** : 
+ >1. 
+ >2. 
+ >
+ >- **Time Limit** : 1 sec
 
 ---
+## Core Intuition & Invariant
 
-## Initial Approach
-
-- First intuition
-- Brute force idea
-- Why it doesn't work (if applicable)
+> [!tip] The "Aha!" Moment
+> 
 
 ---
-
-## Solution
-
-### Pattern
-
-[[ ]]
-
-### Algorithm
-
-1.
-2.
-3.
-4.
-
-### Complexity
-
-Time :
-
-Space :
+## Differential
 
 ---
-
-## Code
+### Approach 1 : 
 
 ```python
 
 ```
+- **Time Complexity :** $O()$ 
+- **Space Complexity :** $O()$ 
 
 ---
+### Approach 2 : 
 
-## Mistakes
+```python
 
--
-
--
-
--
-
----
-
-## Key Insight
-
-> The one idea that solved the problem.
+```
+- **Time Complexity :** $O()$ 
+- **Space Complexity :** $O()$ 
 
 ---
+## Most Optimal Approach 
 
-## Related Notes
-
-### Concepts
-
-- [[ ]]
-
-### Patterns
-
-- [[ ]]
-
-### Problems
-
-- [[ ]]
+>[!note] [[#Approach 1]]
+>
 
 ---
+## Traps & Edge Cases
 
-## Questions
-
--
-
--
+- 
 
 ---
+## Related Questions 
 
-## References
+-  
 
--
+---
+# Reference 
+
+1. 

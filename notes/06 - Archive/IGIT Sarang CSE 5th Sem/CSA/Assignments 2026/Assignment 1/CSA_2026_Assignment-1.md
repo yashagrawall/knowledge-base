@@ -6,12 +6,12 @@ Tags :  [[College]], [[CSA]]
 ---
 # CSA_2026_Assignment-1
 
-> **Course**: Computer System Architecture (`PECS5301`)  
-> **Programme**: B.Tech (Computer Science & Engineering) — 5th Semester  
-> **Department**: Computer Science Engineering & Applications, IGIT Sarang  
-> **Instructor**: Mr. / Dr. SKS  
-> **Source Document**: [[CSA_2026_Assignment-1.pdf|Original Assignment PDF]]  
-> **Comprehensive Solution**: [[CSA_2026_Assignment-1_Solution|Full Solution & Teacher Material Reference Guide]]
+> **Course**: Computer System Architecture (`PECS5301`)   
+> **Programme**: B.Tech (Computer Science & Engineering) — 5th Semester   
+> **Department**: Computer Science Engineering & Applications, IGIT Sarang   
+> **Instructor**: Mr. / Dr. SKS   
+> **Source Document**: [[CSA_2026_Assignment-1.pdf|Original Assignment PDF]]   
+> **Comprehensive Solution**: [[CSA_2026_Assignment-1_Soultions.pdf]]   
 
 ---
 

@@ -1,4 +1,10 @@
 
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[computer networking]]   
+~ ***Yash Agrawall*** ~     
+
+---
 # Computer Networks — 1st Internal Examination 2026
 
 > **Course**: Computer Networks  

@@ -1,4 +1,10 @@
 
+Type : #RawNote       
+Date : 2026-09-27        
+Tags : [[College]] ; [[CSA]]      
+~ ***Yash Agrawall*** ~     
+
+---
 # Computer System Architecture — 1st Internal Examination 2026
 
 > **Department**: Computer Science Engineering & Applications, IGIT, Sarang  

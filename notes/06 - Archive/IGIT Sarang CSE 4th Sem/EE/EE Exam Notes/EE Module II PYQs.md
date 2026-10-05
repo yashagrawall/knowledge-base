@@ -1,7 +1,6 @@
 Type : #RawNote       
 Date :  2026-03-28  
 Tags :  [[College]] ; [[Finance]]   
-Source :    
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -482,6 +481,4 @@ Revenue
 
 1. [[EE.pdf]]
 2. [[EE college notes.pdf]]
----
-# Questions
-----
+3. [[EENOTESBYSIR.pdf]]

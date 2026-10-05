@@ -1,7 +1,6 @@
 Type : #RawNote       
 Date :  2026-03-28  
 Tags :  [[College]] ; [[Finance]]   
-Source :    
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -78,6 +77,5 @@ $$Price \propto \frac{1}{Demand} \propto Supply$$
 # References 
 
 1. [[EE.pdf]]
----
-# Questions
-----
+2. [[EE college notes.pdf]]
+3. [[EENOTESBYSIR.pdf]]

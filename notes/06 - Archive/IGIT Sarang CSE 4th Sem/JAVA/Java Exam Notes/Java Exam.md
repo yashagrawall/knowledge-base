@@ -1,7 +1,6 @@
 Type : #RawNote       
 Date :  2026-05-07  
 Tags :  [[College]]     
-Source :    
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -127,5 +126,8 @@ Source :
 	- Exceptions are caused by user errors or unforeseen programmatic issues that can be handled 
 	- Errors represent conditions beyond the control of the programmer
 ---
-# Questions
-----
+# Reference
+
+1. [[JAVA Assignment 1st page.pdf]]
+2. [[JAVA 4th Sem IGIT.pdf]]
+3. [[PYQ Analysis_JAVA]]

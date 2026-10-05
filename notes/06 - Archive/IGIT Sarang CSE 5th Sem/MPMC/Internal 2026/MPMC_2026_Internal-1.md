@@ -1,4 +1,10 @@
 
+Type : #RawNote       
+Date : 2026-09-27        
+Tags :  [[College]] ; [[MPMC]]    
+~ ***Yash Agrawall*** ~     
+
+---
 # Microprocessor & Microcontroller (MPMC) — 1st Terminal Examination 2026
 
 > **Course**: Microprocessor and Microcontroller (PCCS4308)  
@@ -6,7 +12,6 @@
 > **Semester**: 5th Semester Regular 1st Terminal 2026  
 > **Time**: 01 Hour | **Maximum Marks**: 15  
 > **Assignment Link**: This question paper is also assigned as [[MPMC assignment-2]]  
-> **Solutions**: Detailed solutions available at [[MPMC Assignment 2 Solution|👉 MPMC Assignment 2 Solution]]
 
 ---
 
