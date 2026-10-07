@@ -43,8 +43,8 @@ int x = 5;
 p = &x;
 printf("%d", *p);
 ```
-- [[Errors|Error]] : pointer doesn't know how many bytes it needs to consider here.
-- to fix this [[Errors|error]] we need to use [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)|type casting]] 
+- [[Error|Error]] : pointer doesn't know how many bytes it needs to consider here.
+- to fix this [[Error|error]] we need to use [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)|type casting]] 
 ```c
 // type casting doesnt work like this : 
 

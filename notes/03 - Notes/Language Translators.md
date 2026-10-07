@@ -24,7 +24,7 @@ A **language translator** converts a program written in one language into anothe
 - Translates the entire program at once into [[Languages#I. Machine Language|Machine code]]
 - Source Code → Compiler → [[Languages#I. Machine Language|Machine code]] → Executable File`
 - Translates whole program before execution 
-- [[Errors]] shown after compilation
+- [[Error]] shown after compilation
 - Faster Execution (Once Compiled)
 
 Examples : 

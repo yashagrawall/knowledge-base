@@ -87,7 +87,7 @@ c = tolower(c);   // 'a'
 - Never manually compare [[Primary DataTypes.c#ASCII Codes|ASCII]] ranges when `<ctype.h>` exists. 
 - Exams expect library usage awareness. 
 - for any `char` value, make sure it is [[Primary DataTypes.c#`unsigned`|unsigned char]] → negative values give undefined behavior. 
-- [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)|Type Cast]] to unsigned to avoid [[Errors#2. Runtime Errors|runtime bugs]].
+- [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)|Type Cast]] to unsigned to avoid [[Error#2. Runtime Errors|runtime bugs]].
 
 ---
 # Usability for [[Strings.c|Strings]]

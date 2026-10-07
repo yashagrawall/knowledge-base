@@ -2,7 +2,6 @@
 Type : #DSAPattern        
 Date : {{date}}       
 Tags : [[DSA]]    
-Status : #complete        
 ~ ***Yash Agrawall*** ~
 
 ---

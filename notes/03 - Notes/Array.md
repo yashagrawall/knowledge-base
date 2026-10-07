@@ -61,14 +61,14 @@ printf("%d , %d", x[0] , x[5]);
 ```c
 int x[3] = {1, 2, 5, 8};
 ```
-- [[Errors|Error]] : Too many initializers
+- [[Error|Error]] : Too many initializers
 
 ```c
 int x[4] = {1, 2, 5, 8};
 printf("%d", x[4]);
 ```
 - In [[C]] it will give Unpredictable value. Its outside of the bound of the Array. 
-- In Java it will give [[Errors|Error]] : Array index out of bound exception
+- In Java it will give [[Error|Error]] : Array index out of bound exception
 
 #### How to Initialize every element of array by 5 if array size is 100?
 - using [[loop]]

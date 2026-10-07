@@ -8,7 +8,7 @@ Status : #incomplete
 ---
 # Hashing 
 
-- Prestoring values into some datastructure like List, Dictionary, Sets and then fetching it 
+ >Prestoring values into some datastructure like List, Dictionary, Sets and then fetching it 
 
 ---
 > [!question] 
@@ -33,7 +33,7 @@ for num in m:
 			count += 1
 	return count 
 ```
-Time Complexity : $O(nm)$
+Time Complexity : $O(nm)$   
 Space Complexity : $O(1)$
 
 ---
@@ -41,16 +41,20 @@ Space Complexity : $O(1)$
 
 ```python 
 hash_list = [0] * 11
+
 for i in n: 
 	hash_list[i] += 1
+
 for i in m: 
 	if i > 10 or i < 1: 
 		return 0
 	else: 
 		return (hast_list[i])
 ```
-Time Complexity : $O(n+m)$
+Time Complexity : $O(n+m)$   
 Space Complexity : $O(1)$
+
+![[Pasted image 20261005201335.png]]
 
 ---
 ### Using [[Frequency Map using Dictionary|Dictionary(Frequency Map)]] 
@@ -65,27 +69,62 @@ for i in m:
 	else: 
 		return (hash_dict[i])
 ```
+Time Complexity : $O(n+m)$   
+Space Complexity : $O(1)$
 
 ---
 ## Edge Cases 
 
 - if the 1st Constraint was no there, then the [[#Using Hashing|hash_list]] method will not work as we don't know the number of elements, but [[#Using Frequency Map using Dictionary Dictionary(Frequency Map)|hash_dict]] method would work 
-- 
-
-
-
-
-
-
-
 
 ---
-# Questions 
+> [!question] Character Hashing 
+> s = azyxyyzaaaa         
+> q = [“d”, “a“, “y”, “x”]
+> 
+> **Constraints** : 
+> 1.  ‘a’ ≤ s[i] ≤ ‘z’   
+>    [[Primary DataTypes.c#ASCII Codes|ASCII Code]] : 97 to 122
+> 
 
+### Using Hash List 
 
+```python 
+hash_list = [0] * 27
 
+for i in s: 
+	ascii_val = ord(i)
+	index = ascii_val - 97 
+	hash_list[index] += 1 
+	
+for i in q: 
+	if ord(i) > 122 or ord(i) < 97: 
+		return 0 
+	else:
+		ascii_value = ord(i)
+		index = ascii_value - 97 
+		return hash_list[index]
+```
+Time Complexity : $O(s + q)$   
+Space Complexity : $O(1)$
 
+### Using Frequency Mapping 
 
+```python 
+hash_dict = {}
+
+for i in s: 
+	hash_dict[i] = hash_dict.get(i, 0) + 1
+for i in q: 
+	if ord(i) > 122 or ord(i) < 97: 
+		return 0
+	else: 
+		return hast_dict[i]
+```
+Time Complexity : $O(s + q)$   
+Space Complexity : $O(1)$
 
 ---
 # References 
+
+1. [YouTube DSA Series](https://youtu.be/0IE5T63qEHg?list=PLhR2IpV1b2FwWwviBHRrR118YAaSlyhTU)

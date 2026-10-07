@@ -40,7 +40,7 @@ int main()
 - Statements execute sequentially unless [[Control Structures.c|control statements]] alter the flow.
 - `void main()` and `float main()` and `double main()` are not valid standard C. 
 - `void main()` works in Turbo C / some compilers, but is non-standard.
-- `return 0;` - returns 0 if there are no [[Errors#1. Compile-Time Errors|Compile]] or [[Errors#2. Runtime Errors|Runtime]] [[Errors]], signalling a successful execution to the [[OS]].
+- `return 0;` - returns 0 if there are no [[Error#1. Compile-Time Errors|Compile]] or [[Error#2. Runtime Errors|Runtime]] [[Error]], signalling a successful execution to the [[OS]].
 - We can also write `int main(void)` → for clarity that `main` takes no arguments.
 
 ## Code Block 

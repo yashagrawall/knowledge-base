@@ -77,7 +77,6 @@ Status : #incomplete
 > **1st Layer** at both sites should a piece of mail
 
 ---
-
 ## Logical Connections 
 
 - Layer-to-layer communication → logical communication between each layer 
@@ -85,22 +84,6 @@ Status : #incomplete
 >[!example]
 >![[Pasted image 20260929231622.png]]
 >There is a imaginary connection at each layer through which they can send the objects created from that layer.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 # Questions 

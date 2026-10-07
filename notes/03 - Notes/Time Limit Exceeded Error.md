@@ -40,5 +40,5 @@ If your code exceeds $10^8$ operations → TLE Error
 ---
 # References 
 
-1. [[Errors]]
+1. [[Error]]
 2. [YouTube Python DSA Series](https://youtu.be/YvvAnuOzOSY?list=PLhR2IpV1b2FwWwviBHRrR118YAaSlyhTU)

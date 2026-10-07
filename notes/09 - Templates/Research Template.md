@@ -1,7 +1,6 @@
 
 Type : #Research
 Date : {{date}}  
-Status : #incomplete
 Difficulty :
 Tags : [[Research]]  
 Source :  

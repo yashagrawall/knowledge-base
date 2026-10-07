@@ -1,7 +1,6 @@
 
 Type : #MOC    
 Date : {{date}}          
-Status : #incomplete           
 ~ ***Yash Agrawall*** ~  
 
 ---

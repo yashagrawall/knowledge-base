@@ -17,7 +17,7 @@ Status : #complete
 - ## Language Basics
 	- [[Languages]]
 	- [[Language Translators]]
-	- [[Errors]]
+	- [[Error]]
 	- [[Operators]]
 
 ---

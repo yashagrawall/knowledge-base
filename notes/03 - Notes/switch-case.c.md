@@ -147,7 +147,7 @@ switch (day);
     default: printf("Invalid");
 }
 ```
-- [[Errors#1. Compile-Time Errors|Compile-Time Error]] → `misplaced case Error`
+- [[Error#1. Compile-Time Errors|Compile-Time Error]] → `misplaced case Error`
 - The scope of switch ended, hence the compiler couldn't identify to which `switch` does the given cases belong to.
 
 ```c
@@ -167,7 +167,7 @@ switch (x){
 	break;
 }
 ```
-- [[Errors|Error]] → `case` can only have [[Primary DataTypes.c#`int`|int]] or [[Primary DataTypes.c#`char`|char]] [[Tokens.c#3. Constants / Literals|constants]].
+- [[Error|Error]] → `case` can only have [[Primary DataTypes.c#`int`|int]] or [[Primary DataTypes.c#`char`|char]] [[Tokens.c#3. Constants / Literals|constants]].
 
 ```c
 int x = 2;
@@ -181,7 +181,7 @@ switch (x)
 	printf("def");
 }
 ```
-- [[Errors|Error]] → `case` can only have [[Primary DataTypes.c#`int`|int]] or [[Primary DataTypes.c#`char`|char]] [[Tokens.c#3. Constants / Literals|constants]].
+- [[Error|Error]] → `case` can only have [[Primary DataTypes.c#`int`|int]] or [[Primary DataTypes.c#`char`|char]] [[Tokens.c#3. Constants / Literals|constants]].
 
 ```c
 float x = 2.0;
@@ -195,7 +195,7 @@ switch (x)
 	printf("def");
 }
 ```
-- [[Errors|Error]] → `switch` expression must evaluate to an integral type (`int`, `char`, `enum`).
+- [[Error|Error]] → `switch` expression must evaluate to an integral type (`int`, `char`, `enum`).
 
 ```c
 int x = 2.0;
@@ -223,7 +223,7 @@ switch (x)
 	printf("def");
 }
 ```
-- [[Errors|Error]] → Undeclared [[Tokens.c#2.1 Variables|variable]]
+- [[Error|Error]] → Undeclared [[Tokens.c#2.1 Variables|variable]]
 
 ```c
 char x = 'a';
@@ -278,7 +278,7 @@ switch(x)
 	break;
 }
 ```
-- [[Errors#1. Compile-Time Errors|Compile Time Error]] → `Dublicate Case Error`
+- [[Error#1. Compile-Time Errors|Compile Time Error]] → `Dublicate Case Error`
 - Each `case` should have unique value.
 
 ```c

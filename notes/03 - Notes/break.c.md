@@ -16,7 +16,7 @@ Status : #complete
 ---
 # Rules
 - `break` is valid only inside a [[loop]] and [[switch-case.c|switch-case]]
-- using`break` outside these constructs → [[Errors#1. Compile-Time Errors|Compile Time Error]]
+- using`break` outside these constructs → [[Error#1. Compile-Time Errors|Compile Time Error]]
 - `break` exits exactly one enclosing control structure 
 - Control jumps to the first statement after the [[loop]] or [[switch-case.c|switch-case]]
 

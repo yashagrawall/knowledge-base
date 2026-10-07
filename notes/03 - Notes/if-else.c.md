@@ -84,7 +84,7 @@ if (x == 0);
 else
     printf("ELSE");
 ```
-- [[Errors#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
+- [[Error#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
 - `if (x == 0);` ended with `;` → `else` has no `if` to pair with.
 
 ```c
@@ -118,7 +118,7 @@ if (x > 0)
 else
     printf("Negative");
 ```
-- [[Errors#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
+- [[Error#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
 - no curly brackets `{}` for `if`
 - `else` must immediately follow `if`
 - only one statement belongs to `if`
@@ -187,7 +187,7 @@ printf("def");
 
 // def
 ```
-- [[Errors#1. Compile-Time Errors|Compile-Time Error]] → Octal numbers are from `(0-7)`
+- [[Error#1. Compile-Time Errors|Compile-Time Error]] → Octal numbers are from `(0-7)`
 - whenever there is a `0` in front of a number, the compiler treats it as an Octal number
 
 ```c
@@ -224,7 +224,7 @@ if (x > 0)
 else 
 printf("abc");
 ```
-- [[Errors#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
+- [[Error#1.1 Syntax Errors|Compilation Error]] → `misplaced else`
 - here the `else` block is inside `if` as there is no `;` to mark the end of the statement
 - `else` cannot pair with `if` if it comes under it. 
 

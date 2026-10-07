@@ -1,15 +1,7 @@
 
 Type : #Note    
 Date : 2026-09-14    
-Tags :  
-
-
-
-
-
-
-
-[[computer networking]]   
+Tags :  [[computer networking]]   
 Status : #incomplete     
 ~ ***Yash Agrawall*** ~     
 

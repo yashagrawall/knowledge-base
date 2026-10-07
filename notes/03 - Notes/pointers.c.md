@@ -48,7 +48,7 @@ double *p2; // p2 is pointer to a double
 ---
 ### What will happen if we try to store a [[datatypes|datatype]] of a different type instead of the one we declared? 
 
-- [[Errors|Error]] :  incompatible-pointer-type
+- [[Error|Error]] :  incompatible-pointer-type
 ```c
 #include <stdio.h>
 
@@ -59,7 +59,7 @@ p = &x;
 printf("%d", *p);
 }
 ```
-- [[Errors|error]] : [[Operators.c#2. Assignment Operator|assignment]] to `int *` from incompatible pointer type
+- [[Error|error]] : [[Operators.c#2. Assignment Operator|assignment]] to `int *` from incompatible pointer type
 
 ---
 ### What will happen if we try to print using the memory address and not the name of the pointer?
@@ -70,7 +70,7 @@ int *p = &x;
 printf("%d", *2000);  // suppose 2000 is the address of x
 ```
 
-- [[Errors|Error]] : Compiler will get confused as `2000` doesn't say anything about the no. of bytes it needs to club and consider for the output. 
+- [[Error|Error]] : Compiler will get confused as `2000` doesn't say anything about the no. of bytes it needs to club and consider for the output. 
 
 ---
 ### Uses 
@@ -138,7 +138,7 @@ p++;
 - Difference : 
 	- `ptr` can be [[Operators.c#5. Increment Operator|incremented]] (`ptr++` or `++ptr`)
 	- array name `arr` cannot be [[Operators.c#5. Increment Operator|incremented]]
-		- [[Errors#1. Compile-Time Errors|Compilation Error]]
+		- [[Error#1. Compile-Time Errors|Compilation Error]]
 ###### Example : 
 ```c
 int arr[3] = {10, 20, 30};
