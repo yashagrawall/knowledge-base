@@ -32,21 +32,6 @@
 /* ── Custom Fonts (Notes Only) ──────────────────────────────────── */
 @font-face {
   font-family: 'Yash-headings';
-<<<<<<< HEAD
-  src: url('font/Yash-headings.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  size-adjust: 128%;
-}
-@font-face {
-  font-family: 'Yash-text';
-  src: url('font/Yash-text.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  size-adjust: 128%;
-=======
   src: url('font/Yash-headings.ttf?v=34') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -60,7 +45,6 @@
   font-style: normal;
   font-display: swap;
   size-adjust: 155%;
->>>>>>> 0374dce (Font Update)
 }
 
 /* ── Reset ──────────────────────────────────────────────────────── */
@@ -165,11 +149,7 @@ button { font-family: inherit; }
 /* Headings H1–H6 — Prominent visual hierarchy & exact casing */
 .note-content h1, .note-content h2, .note-content h3,
 .note-content h4, .note-content h5, .note-content h6 {
-<<<<<<< HEAD
-  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
-=======
   font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif !important;
->>>>>>> 0374dce (Font Update)
   font-synthesis: weight style;
   text-transform: none !important;
 }
@@ -224,18 +204,6 @@ button { font-family: inherit; }
 .note-content li { margin-bottom: 0.28em; }
 .note-content li > ul, .note-content li > ol { margin-top: 0.28em; margin-bottom: 0.28em; }
 
-<<<<<<< HEAD
-/* Bold — warm white / near-heading color */
-.note-content strong, .note-content b {
-  font-family: 'Yash-headings', 'Yash-text', sans-serif;
-  font-weight: 700;
-  font-synthesis: weight style;
-  color: var(--text-heading);
-}
-/* Italic — slightly tinted, nudged toward accent */
-.note-content em, .note-content i {
-  font-family: 'Yash-text', 'Lora', Georgia, serif;
-=======
 /* Bold — inherits Yash-headings inside headings and Yash-text inside body */
 .note-content strong, .note-content b {
   font-family: inherit;
@@ -255,7 +223,6 @@ button { font-family: inherit; }
 /* Italic — inherits Yash-headings inside headings and Yash-text inside body */
 .note-content em, .note-content i {
   font-family: inherit;
->>>>>>> 0374dce (Font Update)
   font-style: italic;
   font-synthesis: weight style;
   color: oklch(72% 0.07 220);   /* light periwinkle */
@@ -267,19 +234,12 @@ button { font-family: inherit; }
 .note-content em strong,
 .note-content b i,
 .note-content i b {
-<<<<<<< HEAD
-  font-family: 'Yash-headings', 'Yash-text', sans-serif;
-  color: oklch(75% 0.1 55);    /* warm gold */
-  font-style: italic; font-weight: 700;
-  font-synthesis: weight style;
-=======
   font-family: inherit;
   color: oklch(75% 0.1 55);    /* warm gold */
   font-style: italic; font-weight: 800;
   font-synthesis: weight style;
   -webkit-text-stroke: 0.5px currentColor;
   text-shadow: 0.3px 0 0 currentColor;
->>>>>>> 0374dce (Font Update)
 }
 [data-theme="light"] .note-content strong em,
 [data-theme="light"] .note-content em strong { color: oklch(45% 0.1 55); }
@@ -403,14 +363,9 @@ button { font-family: inherit; }
 }
 .vault-callout-title {
   font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
-<<<<<<< HEAD
-  font-size: 0.85em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--callout-color, var(--accent)); margin-bottom: 0.45em;
-=======
   font-size: 0.96em; font-weight: 650; line-height: 1.45;
   color: var(--callout-color, var(--accent));
   display: flex; align-items: flex-start; gap: 8px;
->>>>>>> 0374dce (Font Update)
 }
 .vault-callout-icon {
   display: inline-flex; align-items: center; justify-content: center;
@@ -639,42 +594,16 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <div id="root"></div>
 
 <!-- 1. Data (plain JS) -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<script src="vault-data.js?v=26"></script>
+<script src="vault-data.js?v=35"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=26"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=26"></script>
-<script type="text/babel" src="vault-graph.jsx?v=26"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=26"></script>
-<script type="text/babel" src="vault-editor.jsx?v=26"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=26"></script>
-<script type="text/babel" src="vault-app.jsx?v=26"></script>
-=======
-<script src="vault-data.js?v=28"></script>
-
-<!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=28"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=28"></script>
-<script type="text/babel" src="vault-graph.jsx?v=28"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=28"></script>
-<script type="text/babel" src="vault-editor.jsx?v=28"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=28"></script>
-<script type="text/babel" src="vault-app.jsx?v=28"></script>
->>>>>>> 3a9d0d2 (update notes and vault (16-11-2026 21:41:50.71))
-=======
-<script src="vault-data.js?v=34"></script>
-
-<!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=34"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=34"></script>
-<script type="text/babel" src="vault-graph.jsx?v=34"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=34"></script>
-<script type="text/babel" src="vault-editor.jsx?v=34"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=34"></script>
-<script type="text/babel" src="vault-app.jsx?v=34"></script>
->>>>>>> 0374dce (Font Update)
+<script type="text/babel" src="vault-icons.jsx?v=35"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=35"></script>
+<script type="text/babel" src="vault-graph.jsx?v=35"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=35"></script>
+<script type="text/babel" src="vault-editor.jsx?v=35"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=35"></script>
+<script type="text/babel" src="vault-app.jsx?v=35"></script>
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">

@@ -967,11 +967,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       ref={containerRef}
       className="note-content"
       data-print-content="true"
-<<<<<<< HEAD
-      style={{ fontSize: (fontSize || 17) + 3, '--reading-max': maxW + 'px' }}
-=======
       style={{ fontSize: (fontSize || 17) + 6, '--reading-max': maxW + 'px' }}
->>>>>>> 0374dce (Font Update)
       dangerouslySetInnerHTML={{ __html: rendered }}
     />
   );
