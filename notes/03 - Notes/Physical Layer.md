@@ -29,7 +29,7 @@ Tags : [[computer networking]]
 ---
 # References 
 
-1. [[Data_Communication_&_Networking-Forouzan-5th_Ed.pdf]] Chapter 2 Section 2.2.3 Page 78
+1. [[Data_Communication_&_Networking-Forouzan-5th_Ed.pdf]] Chapter 2 Section 2.2.3
 2. [[TCP-IP Protocol]]
 3. [[Protocol Layering]]
 4. [[Transmission Media]]

@@ -1,0 +1,14 @@
+Enter the data to be sent (in binary): 1001
+Enter the pre-determined divisor (in binary): 1011
+
+-- Sender Side --
+Data: 1001
+Pre-determined divisor: 1011
+Codeword (Data + CRC): 1001110
+
+-- Receiver Side --
+Data is correct (No errors detected)
+
+Simulating an error...
+Erroneous Received Data: 0001110
+Data is incorrect (Error detected)

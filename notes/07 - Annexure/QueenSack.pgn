@@ -1,0 +1,15 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.11.13"]
+[Round "-"]
+[White "YashAgrawall333"]
+[Black "lalyetta"]
+[Result "1-0"]
+[WhiteElo "594"]
+[BlackElo "594"]
+[TimeControl "600"]
+[EndTime "17:21:00 GMT+0000"]
+[Termination "YashAgrawall333 won by checkmate"]
+
+1. d4 d5 2. Nc3 c5 3. dxc5 Nd7 4. e4 Nxc5 5. exd5 Nf6 6. Bb5+ Bd7 7. Bxd7+ Qxd7
+8. Nf3 g6 9. Ne5 Qe6 10. dxe6 fxe6 11. Nb5 Rc8 12. Qd8+ Rxd8 13. Nc7# 1-0

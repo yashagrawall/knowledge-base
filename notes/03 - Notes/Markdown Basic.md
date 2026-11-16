@@ -192,7 +192,7 @@ This is `code`
 This is `code`  
 
 ---
-# <mark>High</mark>==light==
+# <mark>High</mark>  ==light==
 
 ```markdown
 Text is ==highlight==

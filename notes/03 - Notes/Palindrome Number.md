@@ -89,6 +89,7 @@ class Solution(object):
 
 -  [[Reverse Integer]]
 - [[Count Digits]]
+- [[Palindrome String]]
 
 ---
 # Reference 

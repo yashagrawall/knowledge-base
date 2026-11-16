@@ -1,0 +1,3 @@
+Enter binary data (e.g., 1011001): 10011101
+NRZ-L Encoding: | - | + | + | - | - | - | + | - |
+NRZ-I Encoding: | - | - | - | + | - | + | + | - |

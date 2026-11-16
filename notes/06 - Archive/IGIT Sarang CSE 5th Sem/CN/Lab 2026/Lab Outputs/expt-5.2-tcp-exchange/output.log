@@ -1,0 +1,40 @@
+Menu:
+1. Establish Connection
+2. Send Data
+3. Terminate Connection
+4. Exit
+Enter choice: 1
+
+=== TCP CONNECTION ESTABLISHMENT (3-WAY HANDSHAKE) ===
+Client -> [SEQ: 100, ACK: 0, FLAGS: SYN]
+Server -> [SEQ: 500, ACK: 101, FLAGS: SYN-ACK]
+Client -> [SEQ: 101, ACK: 501, FLAGS: ACK]
+Connection Established Successfully!
+
+Menu:
+1. Establish Connection
+2. Send Data
+3. Terminate Connection
+4. Exit
+Enter choice: 2
+Enter number of packets to send: 2
+Enter data for packet 1: PacketA
+Client -> [SEQ: 101, ACK: 0, FLAGS: DATA, DATA: PacketA]
+Server -> [SEQ: 501, ACK: 111, FLAGS: ACK]
+Enter data for packet 2: PacketB
+Client -> [SEQ: 111, ACK: 0, FLAGS: DATA, DATA: PacketB]
+Server -> [SEQ: 501, ACK: 121, FLAGS: ACK]
+
+Menu:
+1. Establish Connection
+2. Send Data
+3. Terminate Connection
+4. Exit
+Enter choice: 3
+
+=== TCP CONNECTION TERMINATION (4-WAY HANDSHAKE) ===
+Client -> [FLAGS: FIN]
+Server -> [FLAGS: ACK]
+Server -> [FLAGS: FIN]
+Client -> [FLAGS: ACK]
+Connection Terminated Successfully!

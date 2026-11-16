@@ -2,7 +2,6 @@
 Type : #RawNote       
 Date : 2026-09-27        
 Tags :  [[College]] ; [[08 - Tags/cloud computing]]  
-Source :    
 ~ ***Yash Agrawall*** ~     
 
 ---

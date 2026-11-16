@@ -1,0 +1,1300 @@
+<!-- Chosen Palette: Warm Neutrals & Modern Slate (Background: Slate-50 #f8fafc, Cards: Pure White #ffffff, Borders: Slate-200 #e2e8f0, Accent Primary: Indigo-600 #4f46e5, Accent Secondary: Teal-600 #0d9488, Warning/Highlight: Amber-600 #d97706, Dark Text: Slate-900 #0f172a) -->
+<!-- Application Structure Plan:
+  The application is structured as an interactive 5-Module Executive Dashboard and Technical Architecture Workbench.
+  1. Header & Navigation: Sticky top bar with quick tab switcher (Taxonomy & Paradigms, Frontier Models & Math, Embodied AI & MCP, 8-Layer Enterprise Stack, Decision Matrix & Roadmap) and global real-time search.
+  2. Module 1: AI Taxonomy & ML Paradigms — 5-dimensional taxonomy visualizer, interactive paradigm matrix (Supervised, Unsupervised, Semi-Supervised, RL) with real-world filtering, and Symbolic vs Connectionism comparison.
+  3. Module 2: Frontier Model Architectures — Deep dive into Transformers (Attention, Ring, GQA, MLA), State Space Models (Mamba, Hybrid SSM-Transformers), MoE routing, and Diffusion Transformers (DiT & Rectified Flow Matching). Features two dynamic Canvas charts: Context Window & Parameter Scaling, and Compute vs Efficiency Trade-offs.
+  4. Module 3: Embodied AI (VLA) & Standardized Connectivity (MCP) — Interactive 7-DoF Vision-Language-Action token quantizer simulator, and interactive Model Context Protocol inspector breakdown (Host-Client-Server isolation + 5 protocol primitives).
+  5. Module 4: Enterprise 8-Layer Stack & XAI — Interactive 8-layer stack breakdown with Enterprise vs Open-Source toggles and failure mode alerts, paired with an XAI Algorithmic Recourse visualizer and a Tech Stack Allocation Canvas chart.
+  6. Module 5: Strategic Decision Navigator & 8-Week Blueprint — Interactive problem-to-solution paradigm recommendation tool and 8-week phased execution roadmap stepper.
+  WHY THIS STRUCTURE: Converts abstract mathematical and architectural definitions into clickable, visual, and operational tools, allowing users with varying backgrounds to explore AI/ML capabilities without getting overwhelmed by dense wall-of-text reports.
+-->
+<!-- Visualization & Content Choices:
+  - 5-Dimension AI Taxonomy: Interactive cards with status indicators (Capability, Functionality, Paradigm, Deployment, Autonomy).
+  - Model Benchmarks & Efficiency Charts: Chart.js Canvas line and bar charts with custom responsive containers (`chart-container` class enforcing max-width, relative height, and max-height).
+  - VLA Action Token Quantizer: Interactive JavaScript slider calculating continuous delta motors [-1.0, 1.0] into discrete 256-bin tokens using the report's de-quantization formula: a = (k / 255) * 2 - 1.
+  - MCP Architecture & 5 Primitives: HTML/CSS flex layout with dynamic code sample generator for Tools, Resources, Prompts, Sampling, and Elicitation.
+  - 8-Layer Production Stack: Interactive card stack with dynamic layer inspection showing cloud vs open-source tools and critical failure modes.
+  - Search System: Universal client-side JS filter searching text snippets and highlighting relevant cards across modules.
+  - CONFIRMING: NO SVG graphics or Mermaid JS are used. Visual elements use Unicode symbols, HTML/CSS flex/grid structures, and Canvas rendering.
+-->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML Master Taxonomy & Reference Architecture Explorer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#1e1b4b',
+                        },
+                        tealbrand: {
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Strict Chart Container Constraint Rules */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 380px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        /* Custom Scrollbar for Code/Tab Panels */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+    <!-- Sticky Navigation & Master Control Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
+                <div class="flex items-center space-x-3">
+                    <span class="p-2 bg-indigo-600 text-white rounded-lg text-xl font-bold shadow-md shadow-indigo-200">🧠</span>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">AI & ML Master Architecture Explorer</h1>
+                        <p class="text-xs text-slate-500 font-medium">Comprehensive Reference Architecture & Taxonomy System</p>
+                    </div>
+                </div>
+
+                <!-- Global Search & Navigation Tabs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                    <div class="relative min-w-[220px]">
+                        <input type="text" id="globalSearchInput" onkeyup="handleGlobalSearch()" placeholder="🔍 Search paradigms, algorithms, stack..." class="w-full pl-3 pr-8 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-slate-50">
+                        <button onclick="clearSearch()" id="clearSearchBtn" class="hidden absolute right-2 top-1.5 text-xs text-slate-400 hover:text-slate-600">✕</button>
+                    </div>
+
+                    <nav class="flex overflow-x-auto py-1 space-x-1 border-t sm:border-t-0 border-slate-200 pt-2 sm:pt-0">
+                        <button onclick="switchTab('tab-taxonomy')" id="btn-tab-taxonomy" class="nav-tab text-xs font-semibold px-3 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap bg-indigo-600 text-white shadow-sm">1. Taxonomy & Paradigms</button>
+                        <button onclick="switchTab('tab-frontier')" id="btn-tab-frontier" class="nav-tab text-xs font-semibold px-3 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap text-slate-600 hover:bg-slate-100">2. Frontier Architectures</button>
+                        <button onclick="switchTab('tab-embodied')" id="btn-tab-embodied" class="nav-tab text-xs font-semibold px-3 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap text-slate-600 hover:bg-slate-100">3. Embodied AI & MCP</button>
+                        <button onclick="switchTab('tab-stack')" id="btn-tab-stack" class="nav-tab text-xs font-semibold px-3 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap text-slate-600 hover:bg-slate-100">4. 8-Layer Tech Stack</button>
+                        <button onclick="switchTab('tab-matrix')" id="btn-tab-matrix" class="nav-tab text-xs font-semibold px-3 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap text-slate-600 hover:bg-slate-100">5. Decision Navigator</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Search Active Filter Notification Banner -->
+        <div id="searchBanner" class="hidden mb-4 p-3 bg-indigo-50 border border-indigo-200 rounded-lg flex items-center justify-between text-xs text-indigo-900">
+            <div>
+                <span class="font-bold">Search Active:</span> Showing results matching "<span id="searchTermDisplay" class="underline font-semibold"></span>"
+            </div>
+            <button onclick="clearSearch()" class="px-2 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">Clear Search Filter</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 1: TAXONOMY & MACHINE LEARNING PARADIGMS -->
+        <!-- ========================================== -->
+        <section id="tab-taxonomy" class="tab-content space-y-8">
+            <!-- Section Intro Paragraph -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <div class="flex items-center space-x-3 mb-2">
+                    <span class="text-2xl">📐</span>
+                    <h2 class="text-xl font-bold text-slate-900">Multi-Dimensional Taxonomy & Core Learning Paradigms</h2>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Artificial Intelligence spans far beyond large language models. This module organizes the entire AI landscape across five orthogonal classification dimensions (Capability Scope, Functionality Tier, Technical Paradigm, Deployment Topology, and Operational Purpose) and breaks down the core mathematical paradigms that govern how algorithms acquire experience ($E$) to solve tasks ($T$) and improve performance ($P$). Explore the underlying paradigms below to understand when simple statistical learners outperform resource-intensive foundation models.
+                </p>
+            </div>
+
+            <!-- 5-Dimensional AI Taxonomy Visual Grid -->
+            <div class="space-y-4">
+                <h3 class="text-md font-bold text-slate-800 flex items-center gap-2">
+                    <span>⚡</span> The 5 Orthogonal Dimensions of AI Systems
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <!-- Dimension 1 -->
+                    <div class="searchable-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Dimension 1</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Capability Scope</h4>
+                        <ul class="text-xs space-y-1.5 text-slate-600">
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Narrow (Weak) AI:</strong> Bounded task space (e.g., medical diagnostics, inspection).</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">AGI:</strong> Cross-domain cognitive transfer capability.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Super-Intelligence:</strong> Cognitive performance surpassing human collective abilities.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dimension 2 -->
+                    <div class="searchable-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Dimension 2</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Functionality Tier</h4>
+                        <ul class="text-xs space-y-1.5 text-slate-600">
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Reactive Machines:</strong> Stateless stimulus-response mapping (e.g. Chess engines).</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Limited Memory:</strong> Contextual temporal state retention.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Theory of Mind:</strong> Multi-agent intentionality modeling.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dimension 3 -->
+                    <div class="searchable-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Dimension 3</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Technical Paradigm</h4>
+                        <ul class="text-xs space-y-1.5 text-slate-600">
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Symbolic (GOFAI):</strong> Explicit logic, ontologies, and rules.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Connectionist:</strong> Artificial neural networks & weights.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Neuro-Symbolic:</strong> Neural perception + symbolic constraints.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dimension 4 -->
+                    <div class="searchable-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Dimension 4</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Deployment Topology</h4>
+                        <ul class="text-xs space-y-1.5 text-slate-600">
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Embedded / Edge:</strong> Microcontrollers & local hardware inference.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Cloud AI:</strong> Hyperscale GPU clusters with high bandwidth.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Hybrid Sovereign:</strong> Local latency with private cloud fallback.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dimension 5 -->
+                    <div class="searchable-card bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Dimension 5</div>
+                        <h4 class="font-bold text-slate-900 mb-2">Operational Purpose</h4>
+                        <ul class="text-xs space-y-1.5 text-slate-600">
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Assistive (Copilots):</strong> Human-in-the-loop workflow augmentation.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Autonomous Agents:</strong> Closed-loop execution and tool orchestration.</li>
+                            <li class="p-1.5 bg-slate-50 rounded"><strong class="text-slate-800">Physical AI:</strong> Robotics & motor control actuators.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Symbolic vs Connectionist Historical Paradigm Split -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <h3 class="text-md font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>⚔️</span> Symbolic AI vs. Connectionism vs. Neuro-Symbolic Hybridization
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 bg-amber-50/60 border border-amber-200 rounded-lg space-y-2">
+                        <div class="font-bold text-amber-900 text-sm flex items-center gap-1.5">
+                            <span>📜</span> Symbolic AI (GOFAI)
+                        </div>
+                        <p class="text-amber-800"><strong>Origin:</strong> 1956 Dartmouth Conference (Simon, Lenat's Cyc Project).</p>
+                        <p class="text-amber-800"><strong>Mechanism:</strong> Deterministic logic rules, frame ontologies, rule engines.</p>
+                        <p class="text-amber-800"><strong>Pros & Cons:</strong> Verifiable, 100% auditability, zero hallucinations, but brittle with noisy data.</p>
+                        <div class="p-2 bg-white/80 rounded text-amber-900 font-mono text-[11px]">Program = Rules + Data → Output</div>
+                    </div>
+
+                    <div class="p-4 bg-indigo-50/60 border border-indigo-200 rounded-lg space-y-2">
+                        <div class="font-bold text-indigo-900 text-sm flex items-center gap-1.5">
+                            <span>🕸️</span> Connectionism & Deep Learning
+                        </div>
+                        <p class="text-indigo-800"><strong>Origin:</strong> Rosenblatt Perceptron (1958), Backprop (1986), Deep Learning (2006).</p>
+                        <p class="text-indigo-800"><strong>Mechanism:</strong> Distributed neural network layers optimizing learned weights and biases.</p>
+                        <p class="text-indigo-800"><strong>Pros & Cons:</strong> Unstructured perception, high noise tolerance, but operates as black-box.</p>
+                        <div class="p-2 bg-white/80 rounded text-indigo-900 font-mono text-[11px]">Program = Machine Learning(Data, Targets)</div>
+                    </div>
+
+                    <div class="p-4 bg-teal-50/60 border border-teal-200 rounded-lg space-y-2">
+                        <div class="font-bold text-teal-900 text-sm flex items-center gap-1.5">
+                            <span>🧬</span> Neuro-Symbolic Convergence
+                        </div>
+                        <p class="text-teal-800"><strong>Origin:</strong> Modern Frontier System Design (2020s).</p>
+                        <p class="text-teal-800"><strong>Mechanism:</strong> Neural perception front-end paired with symbolic constraint solvers and knowledge graphs.</p>
+                        <p class="text-teal-800"><strong>Pros & Cons:</strong> High perceptual generalization combined with deterministic execution safety.</p>
+                        <div class="p-2 bg-white/80 rounded text-teal-900 font-mono text-[11px]">System = Neural Perception + Logic Solvers</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Machine Learning Paradigms Explorer Grid -->
+            <div class="space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <h3 class="text-md font-bold text-slate-800 flex items-center gap-2">
+                        <span>🧪</span> The 4 Machine Learning Paradigms & Algorithms
+                    </h3>
+                    <!-- Paradigm Selector Filter Buttons -->
+                    <div class="flex space-x-1 bg-slate-200 p-1 rounded-lg text-xs">
+                        <button onclick="filterParadigm('all')" id="pfilter-all" class="pfilter-btn px-2.5 py-1 rounded bg-white font-bold text-slate-800 shadow-sm">All Paradigms</button>
+                        <button onclick="filterParadigm('sl')" id="pfilter-sl" class="pfilter-btn px-2.5 py-1 rounded text-slate-600 hover:text-slate-900">Supervised</button>
+                        <button onclick="filterParadigm('ul')" id="pfilter-ul" class="pfilter-btn px-2.5 py-1 rounded text-slate-600 hover:text-slate-900">Unsupervised</button>
+                        <button onclick="filterParadigm('ssl')" id="pfilter-ssl" class="pfilter-btn px-2.5 py-1 rounded text-slate-600 hover:text-slate-900">Semi-Supervised</button>
+                        <button onclick="filterParadigm('rl')" id="pfilter-rl" class="pfilter-btn px-2.5 py-1 rounded text-slate-600 hover:text-slate-900">Reinforcement</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Supervised Card -->
+                    <div class="paradigm-card sl searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Supervised Learning (SL)</span>
+                            <span class="text-xs font-mono text-slate-400">Data + Ground Truth Labels</span>
+                        </div>
+                        <p class="text-xs text-slate-600">Model learns mapping function from paired input $X$ to explicit target label $Y$. Bifurcates into continuous <strong>Regression</strong> and categorical <strong>Classification</strong>.</p>
+                        <div class="space-y-1.5 text-xs">
+                            <div class="font-semibold text-slate-800">Canonical Algorithms:</div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Linear / Logistic Regression</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Random Forests</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Support Vector Machines (SVM)</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Naive Bayes</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">K-Nearest Neighbors (KNN)</span>
+                            </div>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg text-xs text-slate-700">
+                            <strong>Enterprise Use Cases:</strong> Real estate price valuation, zip code OCR, clinical disease status, financial credit risk scoring.
+                        </div>
+                    </div>
+
+                    <!-- Unsupervised Card -->
+                    <div class="paradigm-card ul searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">Unsupervised Learning (UL)</span>
+                            <span class="text-xs font-mono text-slate-400">Unlabeled Raw Data</span>
+                        </div>
+                        <p class="text-xs text-slate-600">Discovers intrinsic latent patterns, similarity clusters, and low-dimensional manifolds in raw data without supervisor feedback.</p>
+                        <div class="space-y-1.5 text-xs">
+                            <div class="font-semibold text-slate-800">Canonical Algorithms & Frameworks:</div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">K-Means Clustering</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">PCA / Latent Embeddings</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Autoencoders</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">BERTopic-LLM (RoBERTa-v2 + Llama 4)</span>
+                            </div>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg text-xs text-slate-700">
+                            <strong>Enterprise Use Cases:</strong> Customer cohort segmentation, anomaly detection in logs, unstructured topic modeling.
+                        </div>
+                    </div>
+
+                    <!-- Semi-Supervised Card -->
+                    <div class="paradigm-card ssl searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold">Semi-Supervised Learning (SSL)</span>
+                            <span class="text-xs font-mono text-slate-400">Scarce Golden Corpus + Mass Unlabeled</span>
+                        </div>
+                        <p class="text-xs text-slate-600">Bridges the supervision gap by training on a small verified "golden dataset" alongside vast unlabeled corpora, exploiting data geometry to minimize labeling expense.</p>
+                        <div class="space-y-1.5 text-xs">
+                            <div class="font-semibold text-slate-800">Canonical Techniques:</div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Pseudo-Labeling</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Consistency Regularization</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Graph-based Label Propagation</span>
+                            </div>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg text-xs text-slate-700">
+                            <strong>Enterprise Use Cases:</strong> Medical image phenotyping with scarce radiologist annotations, legal document discovery.
+                        </div>
+                    </div>
+
+                    <!-- Reinforcement Learning Card -->
+                    <div class="paradigm-card rl searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold">Reinforcement Learning (RL)</span>
+                            <span class="text-xs font-mono text-slate-400">Agent + Environment + Reward</span>
+                        </div>
+                        <p class="text-xs text-slate-600">Autonomous agent interacts with dynamic environment across timesteps, executing actions to optimize an action policy ($\pi$) for long-term cumulative scalar reward.</p>
+                        <div class="space-y-1.5 text-xs">
+                            <div class="font-semibold text-slate-800">Canonical Architectures:</div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Policy Gradients</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Actor-Critic / PPO</span>
+                                <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded border border-slate-200">Deep Q-Networks (DQN)</span>
+                            </div>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-lg text-xs text-slate-700">
+                            <strong>Enterprise Use Cases:</strong> Sequential clinical treatment dosing, robotic locomotion, dynamic price optimization, game mastery.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: FRONTIER MODEL ARCHITECTURES -->
+        <!-- ========================================== -->
+        <section id="tab-frontier" class="tab-content hidden space-y-8">
+            <!-- Section Intro Paragraph -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <div class="flex items-center space-x-3 mb-2">
+                    <span class="text-2xl">🔬</span>
+                    <h2 class="text-xl font-bold text-slate-900">Frontier Foundation Model Architectures & Optimizations</h2>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Modern foundation models have evolved beyond classical dense Transformers to bypass three critical bottlenecks: quadratic self-attention complexity $O(N^2)$, excessive inference FLOPs, and massive Key-Value (KV) cache memory consumption. This module explores attention innovations (Ring Attention, GQA, MLA), linear-time State Space Models (Mamba-3), Mixture-of-Experts sparse routing, and Diffusion Transformers (DiT) driven by Rectified Flow Matching.
+                </p>
+            </div>
+
+            <!-- Charts Container Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Chart 1: Context Window Scaling -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="text-sm font-bold text-slate-800 mb-1">Context Window & Memory Efficiency Benchmark</h3>
+                    <p class="text-xs text-slate-500 mb-4">Max Token Context Capacity vs. Relative Memory Footprint</p>
+                    <div class="chart-container">
+                        <canvas id="chartContextScaling"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart 2: Model Architecture Compute vs Quality -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="text-sm font-bold text-slate-800 mb-1">Architecture Compute-Efficiency Frontier</h3>
+                    <p class="text-xs text-slate-500 mb-4">Inference Computational FLOPs vs. Representational Expressiveness</p>
+                    <div class="chart-container">
+                        <canvas id="chartArchitectureTradeoff"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Architectural Mechanics Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- MetaFormer & Attention Optimizations -->
+                <div class="searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                            <span>🧩</span> Transformer Mechanics & Attention Innovations
+                        </h4>
+                        <span class="text-[11px] font-mono px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded">Token + Channel Mixers</span>
+                    </div>
+                    <p class="text-xs text-slate-600">The MetaFormer paradigm separates processing into a <strong>token mixer</strong> (self-attention) and a <strong>channel mixer</strong> (FFN/SwiGLU layers). Key optimizations include:</p>
+                    <ul class="text-xs space-y-2 text-slate-700">
+                        <li class="p-2 bg-slate-50 rounded"><strong>Ring Attention (Gemini 1.5 Pro):</strong> Distributes attention across device rings, expanding ingestion to 2 million tokens without "lost in the middle" degradation.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>Grouped-Query Attention (GQA - Llama 4):</strong> Shares Key/Value heads across query groups, slashing KV-cache memory so a single GPU serves dozens of concurrent sessions.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>Multi-Head Latent Attention (MLA - DeepSeek-V3):</strong> Projects keys and values into low-rank latent vectors to minimize memory overhead.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>ALiBi & RoPE Encodings (Claude 4):</strong> Rotary position embeddings allowing linear bias interpolation across sequence lengths.</li>
+                    </ul>
+                </div>
+
+                <!-- State Space Models (Mamba) -->
+                <div class="searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                            <span>🐍</span> State Space Models (Mamba) & Hybrids
+                        </h4>
+                        <span class="text-[11px] font-mono px-2 py-0.5 bg-teal-50 text-teal-700 rounded">Linear O(N) Scaling</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Selective SSMs (Mamba, Mamba-2, Mamba-3) eliminate quadratic scaling by processing sequences in linear time $O(N)$ with constant step memory.</p>
+                    <div class="p-2.5 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900">
+                        <strong>Theoretical Expressiveness Limit:</strong> Selective SSMs are simulated by $\text{DLOGTIME}$-uniform $\text{TC}^0$ circuits and cannot solve complex state-tracking problems outside $\text{TC}^0$.
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-700">
+                        <li class="p-2 bg-slate-50 rounded"><strong>Hybrid SSM-Transformers (Jamba 1.5 / 2.0, Falcon Mamba):</strong> Interleaves Mamba SSM layers with periodic Transformer self-attention to maintain exact associative recall.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>Test-Time Training (TTT-Linear / TTT-MLP):</strong> Replaces static hidden states with inner-loop gradient updates during inference.</li>
+                    </ul>
+                </div>
+
+                <!-- Sparse Mixture of Experts (MoE) -->
+                <div class="searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                            <span>🔀</span> Mixture of Experts (MoE) & Sparse Routing
+                        </h4>
+                        <span class="text-[11px] font-mono px-2 py-0.5 bg-purple-50 text-purple-700 rounded">Dynamic Token Activation</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Decouples total model parameter capacity from active inference compute by replacing dense FFNs with $k$ specialized sub-networks controlled by a router.</p>
+                    <div class="p-2.5 bg-slate-900 text-slate-100 rounded-lg font-mono text-[11px] space-y-1">
+                        <div>route(y_i) = argmax(softmax(G(E_θ(y_i)) + ε))</div>
+                        <div class="text-slate-400">// Top-K routing with LoRA-MoE adapter integration</div>
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-700">
+                        <li class="p-2 bg-slate-50 rounded"><strong>Active vs Total Parameters:</strong> Maintains active parameter FLOPs at 3.4B while expanding total parameter capacity to 14.5B.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>LoRA for MoE:</strong> Instantiates lightweight low-rank matrix pairs $\{A_{jt}^i, B_{jt}^i\}$ across experts with load-balanced router gating.</li>
+                    </ul>
+                </div>
+
+                <!-- Diffusion Transformers (DiT) & Flow Matching -->
+                <div class="searchable-card bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                            <span>🎨</span> Diffusion Transformers (DiT) & Rectified Flow
+                        </h4>
+                        <span class="text-[11px] font-mono px-2 py-0.5 bg-rose-50 text-rose-700 rounded">Linear ODE Trajectories</span>
+                    </div>
+                    <p class="text-xs text-slate-600">DiT backbones (PixArt-$\alpha$, SANA, Race-DiT) replace U-Nets by running self-attention over latent patches paired with <strong>Conditional Flow Matching</strong>.</p>
+                    <div class="p-2.5 bg-slate-900 text-slate-100 rounded-lg font-mono text-[11px]">
+                        x_t = (1 - t)x_0 + t x_1, t ∈ [0, 1]
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-700">
+                        <li class="p-2 bg-slate-50 rounded"><strong>RelaCtrl (Relevance-Guided Lightweight Control):</strong> Ranks layer sensitivity in DiT blocks, placing spatial controls in blocks 5–7 to prevent Parameter duplication.</li>
+                        <li class="p-2 bg-slate-50 rounded"><strong>Step-MoE & Patch-MoE:</strong> Dynamic temporal routing across denoising timesteps and spatial visual patch thresholds.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: EMBODIED AI & MODEL CONTEXT PROTOCOL -->
+        <!-- ========================================== -->
+        <section id="tab-embodied" class="tab-content hidden space-y-8">
+            <!-- Section Intro Paragraph -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <div class="flex items-center space-x-3 mb-2">
+                    <span class="text-2xl">🤖</span>
+                    <h2 class="text-xl font-bold text-slate-900">Embodied Physical AI & Standardized Connectivity (MCP)</h2>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Physical AI connects foundation models to physical actuator hardware through Vision-Language-Action (VLA) architectures, treating continuous 7-Degree-of-Freedom robotic control as a next-token prediction task. Meanwhile, digital AI agents connect to enterprise tools and datastores using the standardized Model Context Protocol (MCP). Use the interactive workbench tools below to simulate action token discretization and inspect protocol primitives.
+                </p>
+            </div>
+
+            <!-- VLA Interactive Workbench & Simulator -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b pb-4">
+                    <div>
+                        <h3 class="text-md font-bold text-slate-900 flex items-center gap-2">
+                            <span>🦾</span> Vision-Language-Action (VLA) Action Token Discretizer
+                        </h3>
+                        <p class="text-xs text-slate-500">Simulate how OpenVLA maps continuous continuous motor delta commands $[-1.0, 1.0]$ into 256 discrete action tokens.</p>
+                    </div>
+                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-bold self-start md:self-auto">SigLIP ViT-L/16 (196 Tokens) + Llama-2-7B</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                    <!-- Interactive Controls -->
+                    <div class="space-y-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="text-xs font-bold text-slate-700 uppercase tracking-wider">7-DoF Actuator Continuous Inputs:</div>
+                        
+                        <!-- Slider Delta X -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-mono">
+                                <label for="sliderX">Δx (Translation X):</label>
+                                <span id="valX" class="font-bold text-indigo-600">0.00</span>
+                            </div>
+                            <input type="range" id="sliderX" min="-1.0" max="1.0" step="0.01" value="0.35" oninput="updateVLASimulator()" class="w-full accent-indigo-600">
+                        </div>
+
+                        <!-- Slider Delta Yaw -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-mono">
+                                <label for="sliderYaw">Δyaw (Rotation Yaw):</label>
+                                <span id="valYaw" class="font-bold text-indigo-600">0.00</span>
+                            </div>
+                            <input type="range" id="sliderYaw" min="-1.0" max="1.0" step="0.01" value="-0.62" oninput="updateVLASimulator()" class="w-full accent-indigo-600">
+                        </div>
+
+                        <!-- Slider Gripper -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-mono">
+                                <label for="sliderGripper">Gripper Aperture:</label>
+                                <span id="valGripper" class="font-bold text-indigo-600">0.00</span>
+                            </div>
+                            <input type="range" id="sliderGripper" min="-1.0" max="1.0" step="0.01" value="0.80" oninput="updateVLASimulator()" class="w-full accent-indigo-600">
+                        </div>
+                    </div>
+
+                    <!-- Output Token Bin Calculations -->
+                    <div class="space-y-3 bg-slate-900 text-slate-100 p-5 rounded-xl font-mono text-xs">
+                        <div class="text-indigo-400 font-bold border-b border-slate-800 pb-2 flex justify-between">
+                            <span>OpenVLA De-Quantization Formula</span>
+                            <span>N_bins = 256</span>
+                        </div>
+                        <div class="p-2 bg-slate-800 rounded text-slate-300">
+                            a_hat = (k_d / 255) * 2.0 - 1.0
+                        </div>
+                        <div class="space-y-2 pt-2">
+                            <div class="flex justify-between items-center p-2 bg-slate-800/80 rounded">
+                                <span>Δx Quantized Token Index:</span>
+                                <span id="tokenX" class="text-emerald-400 font-bold text-sm">BIN_172</span>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-slate-800/80 rounded">
+                                <span>Δyaw Quantized Token Index:</span>
+                                <span id="tokenYaw" class="text-emerald-400 font-bold text-sm">BIN_48</span>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-slate-800/80 rounded">
+                                <span>Gripper Quantized Token Index:</span>
+                                <span id="tokenGripper" class="text-emerald-400 font-bold text-sm">BIN_229</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Context Protocol (MCP) Architectural Deep Dive -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
+                <div>
+                    <h3 class="text-md font-bold text-slate-900 flex items-center gap-2 mb-1">
+                        <span>🔌</span> Standardized Connectivity: Model Context Protocol (MCP)
+                    </h3>
+                    <p class="text-xs text-slate-500">Replaces brittle custom $M \times N$ API wrappers with standard JSON-RPC 2.0 Host-Client-Server isolation.</p>
+                </div>
+
+                <!-- Host Client Server Architecture Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 bg-indigo-50 border border-indigo-200 rounded-xl space-y-2">
+                        <div class="font-bold text-indigo-900 text-sm">1. MCP Host</div>
+                        <p class="text-indigo-800">User application environment (e.g., Cursor, Claude Desktop, Enterprise Portal). Manages sampling, multi-session memory, and human authorization consent controls.</p>
+                    </div>
+
+                    <div class="p-4 bg-teal-50 border border-teal-200 rounded-xl space-y-2">
+                        <div class="font-bold text-teal-900 text-sm">2. MCP Client</div>
+                        <p class="text-teal-800">Maintains 1:1 connection isolation with an individual server. Transports messages via <strong>STDIO</strong> (local child process) or <strong>SSE over HTTP</strong> (remote cloud).</p>
+                    </div>
+
+                    <div class="p-4 bg-purple-50 border border-purple-200 rounded-xl space-y-2">
+                        <div class="font-bold text-purple-900 text-sm">3. MCP Server</div>
+                        <p class="text-purple-800">Adapter bridging external systems (PostgreSQL, GitHub, Slack) to protocol primitives without inspecting host conversation history.</p>
+                    </div>
+                </div>
+
+                <!-- The 5 Primitives Inspector -->
+                <div class="space-y-3">
+                    <div class="text-xs font-bold text-slate-800">The 5 Protocol Primitives (Click to Inspect Payload):</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs">
+                        <button onclick="inspectPrimitive('tools')" id="primb-tools" class="primb-btn p-2.5 rounded-lg border border-indigo-500 bg-indigo-50 font-bold text-indigo-900 text-center">Tools ("Verbs")</button>
+                        <button onclick="inspectPrimitive('resources')" id="primb-resources" class="primb-btn p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-center">Resources ("Nouns")</button>
+                        <button onclick="inspectPrimitive('prompts')" id="primb-prompts" class="primb-btn p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-center">Prompts ("Grammar")</button>
+                        <button onclick="inspectPrimitive('sampling')" id="primb-sampling" class="primb-btn p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-center">Sampling</button>
+                        <button onclick="inspectPrimitive('elicitation')" id="primb-elicitation" class="primb-btn p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-center">Elicitation</button>
+                    </div>
+
+                    <!-- Dynamic Payload Viewer -->
+                    <div id="primitiveDisplay" class="p-4 bg-slate-900 text-slate-100 rounded-xl font-mono text-xs space-y-2">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: THE 8-LAYER ENTERPRISE AI STACK -->
+        <!-- ========================================== -->
+        <section id="tab-stack" class="tab-content hidden space-y-8">
+            <!-- Section Intro Paragraph -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <div class="flex items-center space-x-3 mb-2">
+                    <span class="text-2xl">🏛️</span>
+                    <h2 class="text-xl font-bold text-slate-900">Modern Production AI Technology Stack & Governance</h2>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Building enterprise-grade AI requires shifting from a model-centric mindset to an 8-layer systems-engineering architecture. This module details every stack layer from physical GPU infrastructure down to MLOps observability. Click through layers to inspect cloud vs. open-source ecosystems, critical failure modes, and XAI algorithmic recourse frameworks.
+                </p>
+            </div>
+
+            <!-- Stack Chart & Interactive Stack Explorer Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Stack Layer Distribution Chart -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="text-sm font-bold text-slate-800 mb-1">Stack Value & Cost Distribution</h3>
+                    <p class="text-xs text-slate-500 mb-4">Enterprise Resource Allocation across the 8 Stack Layers</p>
+                    <div class="chart-container">
+                        <canvas id="chartStackAllocation"></canvas>
+                    </div>
+                </div>
+
+                <!-- 8 Interactive Stack Layer Cards -->
+                <div class="lg:col-span-2 space-y-3">
+                    <div class="text-xs font-bold text-slate-800 flex justify-between items-center">
+                        <span>Click a Layer to Expand Architecture Details:</span>
+                        <span class="text-slate-500 font-normal">8 Stack Layers</span>
+                    </div>
+
+                    <div id="layerStackContainer" class="space-y-2">
+                        <!-- Layers dynamically populated / toggled via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explainable AI (XAI) & Algorithmic Recourse Framework -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                <h3 class="text-md font-bold text-slate-900 flex items-center gap-2">
+                    <span>🔍</span> Explainable AI (XAI) & Actionable Counterfactual Recourse
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                    Deploying black-box deep learning in regulated sectors (underwriting, healthcare, accounting) demands an XAI framework categorized across four operational dimensions:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-indigo-600">1. Interpretability Stage:</strong>
+                        <p class="text-slate-600">Intrinsic (shallow trees, linear) vs. Post-hoc black-box approximations.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-indigo-600">2. Explanation Scope:</strong>
+                        <p class="text-slate-600">Local instance attribution vs. Global feature-space behavior.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-indigo-600">3. Interactivity:</strong>
+                        <p class="text-slate-600">Enforces sparsity, monotonicity, and causal validity constraints.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 space-y-1">
+                        <strong class="text-indigo-600">4. Algorithmic Recourse:</strong>
+                        <p class="text-slate-600">Computes minimal actionable changes to reverse adverse automated decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: STRATEGIC DECISION NAVIGATOR & ROADMAP -->
+        <!-- ========================================== -->
+        <section id="tab-matrix" class="tab-content hidden space-y-8">
+            <!-- Section Intro Paragraph -->
+            <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                <div class="flex items-center space-x-3 mb-2">
+                    <span class="text-2xl">🎯</span>
+                    <h2 class="text-xl font-bold text-slate-900">Strategic Decision Navigator & Phased Production Blueprint</h2>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Avoid misapplying expensive foundation models where classical statistical learners or symbolic engines suffice. Use the interactive problem-to-paradigm navigator below to match your specific dataset and operational constraints to the correct model family, and review the 8-week phased execution roadmap.
+                </p>
+            </div>
+
+            <!-- Problem-to-Paradigm Interactive Selector -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
+                <h3 class="text-md font-bold text-slate-900 flex items-center gap-2">
+                    <span>🧭</span> Interactive Problem Profile Navigator
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label for="selectDataProfile" class="block text-xs font-bold text-slate-700 mb-1">Select Data Profile & Target:</label>
+                        <select id="selectDataProfile" onchange="runDecisionNavigator()" class="w-full text-xs p-2 rounded-lg border border-slate-300 bg-slate-50 focus:ring-2 focus:ring-indigo-500">
+                            <option value="rules">Deterministic Business Rules / Strict Regulatory Audit</option>
+                            <option value="tabular">Structured Tabular Data (&lt;1M rows, Continuous/Discrete)</option>
+                            <option value="unlabeled">Unlabeled Customer Behavior / Messy Document Collections</option>
+                            <option value="scarce">High-Cost Domain Labels + Vast Unlabeled Data</option>
+                            <option value="sequential">Sequential Decision Making with Delayed Reward Signals</option>
+                            <option value="longdoc">Ultra-Long Document Summarization (100k - 2M Tokens)</option>
+                            <option value="highconcur">High-Concurrency Multi-lingual Conversational Serving</option>
+                            <option value="json">Strict JSON/SQL Extraction & Enterprise Workflow</option>
+                            <option value="physical">Embodied Physical Motor Manipulation (7-DoF Actuators)</option>
+                        </select>
+                    </div>
+
+                    <div id="navigatorResult" class="md:col-span-2 p-4 bg-indigo-50/70 border border-indigo-200 rounded-xl text-xs space-y-2">
+                        <!-- Dynamically filled by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8-Week Phased Production Roadmap Stepper -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
+                <h3 class="text-md font-bold text-slate-900 flex items-center gap-2">
+                    <span>🚀</span> 8-Week Phased Production Execution Roadmap
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                    <!-- Phase 1 -->
+                    <div class="p-4 bg-slate-50 border-t-4 border-t-indigo-600 rounded-lg border-x border-b border-slate-200 space-y-2">
+                        <div class="flex justify-between items-center font-bold text-slate-900">
+                            <span>Phase 1: Foundation</span>
+                            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-[10px]">Weeks 1–2</span>
+                        </div>
+                        <ul class="space-y-1 text-slate-600 list-disc list-inside">
+                            <li>30-Query Golden Evaluation Corpus</li>
+                            <li>Local AirLLM / API Setup</li>
+                            <li>Edge PII Redaction & Schema Rules</li>
+                            <li>Initial Vector Knowledge Embeddings</li>
+                        </ul>
+                        <div class="text-[11px] font-semibold text-indigo-900 pt-2 border-t border-slate-200">
+                            Milestone: Offline harness running ground-truth evals.
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="p-4 bg-slate-50 border-t-4 border-t-teal-600 rounded-lg border-x border-b border-slate-200 space-y-2">
+                        <div class="flex justify-between items-center font-bold text-slate-900">
+                            <span>Phase 2: RAG & Skills</span>
+                            <span class="px-2 py-0.5 bg-teal-100 text-teal-800 rounded text-[10px]">Weeks 3–4</span>
+                        </div>
+                        <ul class="space-y-1 text-slate-600 list-disc list-inside">
+                            <li>Hybrid Search RAG with Citations</li>
+                            <li>Semantic Caching & Cost Router</li>
+                            <li>Domain Skills Integration</li>
+                            <li>Persistent Memory (`claude-mem`)</li>
+                        </ul>
+                        <div class="text-[11px] font-semibold text-teal-900 pt-2 border-t border-slate-200">
+                            Milestone: High grounding coverage + 98% token cuts.
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="p-4 bg-slate-50 border-t-4 border-t-amber-600 rounded-lg border-x border-b border-slate-200 space-y-2">
+                        <div class="flex justify-between items-center font-bold text-slate-900">
+                            <span>Phase 3: Guardrails & MCP</span>
+                            <span class="px-2 py-0.5 bg-amber-100 text-amber-800 rounded text-[10px]">Weeks 5–6</span>
+                        </div>
+                        <ul class="space-y-1 text-slate-600 list-disc list-inside">
+                            <li>Input/Output Policy Validation</li>
+                            <li>Static Analysis Pre-Filtering</li>
+                            <li>Isolated JSON-RPC MCP Tools</li>
+                            <li>MCP Inspector Verification</li>
+                        </ul>
+                        <div class="text-[11px] font-semibold text-amber-900 pt-2 border-t border-slate-200">
+                            Milestone: Zero unapproved side-effects execution.
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 -->
+                    <div class="p-4 bg-slate-50 border-t-4 border-t-emerald-600 rounded-lg border-x border-b border-slate-200 space-y-2">
+                        <div class="flex justify-between items-center font-bold text-slate-900">
+                            <span>Phase 4: UX & MLOps</span>
+                            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded text-[10px]">Weeks 7–8</span>
+                        </div>
+                        <ul class="space-y-1 text-slate-600 list-disc list-inside">
+                            <li>Workflow Control Plane UI (SSE)</li>
+                            <li>Human-in-the-Loop Approval Gates</li>
+                            <li>Langsmith / Langfuse Observability</li>
+                            <li>ClickHouse Cost per Task Tracing</li>
+                        </ul>
+                        <div class="text-[11px] font-semibold text-emerald-900 pt-2 border-t border-slate-200">
+                            Milestone: Positive unit economics per successful task.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- App Footer -->
+    <footer class="bg-white border-t border-slate-200 py-4 mt-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div>AI & ML Comprehensive Reference Architecture Explorer — Single Page Application</div>
+            <div class="font-mono text-[11px] text-slate-400">Strictly Canvas & Styled HTML • Zero SVG / Mermaid JS</div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic & Charts Initialization -->
+    <script>
+        // --- State Management ---
+        let activeTab = 'tab-taxonomy';
+        let chartContextScalingObj = null;
+        let chartArchitectureTradeoffObj = null;
+        let chartStackAllocationObj = null;
+
+        // --- Tab Switching Logic ---
+        function switchTab(tabId) {
+            activeTab = tabId;
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-tab').forEach(el => {
+                el.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+                el.classList.add('text-slate-600', 'hover:bg-slate-100');
+            });
+
+            const targetContent = document.getElementById(tabId);
+            if(targetContent) targetContent.classList.remove('hidden');
+
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if(activeBtn) {
+                activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
+                activeBtn.classList.remove('text-slate-600', 'hover:bg-slate-100');
+            }
+
+            // Trigger chart resize re-render if switching to chart tabs
+            if(tabId === 'tab-frontier') {
+                setTimeout(() => {
+                    if(chartContextScalingObj) chartContextScalingObj.resize();
+                    if(chartArchitectureTradeoffObj) chartArchitectureTradeoffObj.resize();
+                }, 50);
+            } else if(tabId === 'tab-stack') {
+                setTimeout(() => {
+                    if(chartStackAllocationObj) chartStackAllocationObj.resize();
+                }, 50);
+            }
+        }
+
+        // --- Paradigm Filter Logic ---
+        function filterParadigm(type) {
+            document.querySelectorAll('.pfilter-btn').forEach(btn => {
+                btn.classList.remove('bg-white', 'font-bold', 'text-slate-800', 'shadow-sm');
+                btn.classList.add('text-slate-600');
+            });
+            const activeBtn = document.getElementById('pfilter-' + type);
+            if(activeBtn) activeBtn.classList.add('bg-white', 'font-bold', 'text-slate-800', 'shadow-sm');
+
+            const cards = document.querySelectorAll('.paradigm-card');
+            cards.forEach(card => {
+                if(type === 'all' || card.classList.contains(type)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // --- Global Real-time Search Handler ---
+        function handleGlobalSearch() {
+            const query = document.getElementById('globalSearchInput').value.toLowerCase().trim();
+            const banner = document.getElementById('searchBanner');
+            const clearBtn = document.getElementById('clearSearchBtn');
+            const termDisplay = document.getElementById('searchTermDisplay');
+
+            if(query.length > 0) {
+                banner.classList.remove('hidden');
+                clearBtn.classList.remove('hidden');
+                termDisplay.innerText = query;
+
+                document.querySelectorAll('.searchable-card').forEach(card => {
+                    const text = card.innerText.toLowerCase();
+                    if(text.includes(query)) {
+                        card.classList.remove('hidden');
+                        card.classList.add('ring-2', 'ring-indigo-400');
+                    } else {
+                        card.classList.add('hidden');
+                        card.classList.remove('ring-2', 'ring-indigo-400');
+                    }
+                });
+            } else {
+                clearSearch();
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('globalSearchInput').value = '';
+            document.getElementById('searchBanner').classList.add('hidden');
+            document.getElementById('clearSearchBtn').classList.add('hidden');
+
+            document.querySelectorAll('.searchable-card').forEach(card => {
+                card.classList.remove('hidden', 'ring-2', 'ring-indigo-400');
+            });
+            filterParadigm('all');
+        }
+
+        // --- VLA Action Token Simulator Logic ---
+        function updateVLASimulator() {
+            const xVal = parseFloat(document.getElementById('sliderX').value);
+            const yawVal = parseFloat(document.getElementById('sliderYaw').value);
+            const gripVal = parseFloat(document.getElementById('sliderGripper').value);
+
+            document.getElementById('valX').innerText = xVal.toFixed(2);
+            document.getElementById('valYaw').innerText = yawVal.toFixed(2);
+            document.getElementById('valGripper').innerText = gripVal.toFixed(2);
+
+            // Quantization formula: k = round(((a + 1.0) / 2.0) * 255)
+            const tokenX = Math.round(((xVal + 1.0) / 2.0) * 255);
+            const tokenYaw = Math.round(((yawVal + 1.0) / 2.0) * 255);
+            const tokenGrip = Math.round(((gripVal + 1.0) / 2.0) * 255);
+
+            document.getElementById('tokenX').innerText = `BIN_${tokenX} (Val: ${xVal.toFixed(2)})`;
+            document.getElementById('tokenYaw').innerText = `BIN_${tokenYaw} (Val: ${yawVal.toFixed(2)})`;
+            document.getElementById('tokenGripper').innerText = `BIN_${tokenGrip} (Val: ${gripVal.toFixed(2)})`;
+        }
+
+        // --- MCP Primitives Inspector Data & Logic ---
+        const mcpPrimitivesData = {
+            tools: {
+                title: 'Tools ("Verbs") — Model Controlled',
+                desc: 'Executable functions with JSON Schema validation that mutate state or call external APIs with human user approval gates.',
+                code: `{\n  "name": "execute_sql_query",\n  "description": "Execute read-only analytical queries against ClickHouse",\n  "inputSchema": {\n    "type": "object",\n    "properties": {\n      "query": { "type": "string" },\n      "timeout_ms": { "type": "number", "default": 5000 }\n    },\n    "required": ["query"]\n  }\n}`
+            },
+            resources: {
+                title: 'Resources ("Nouns") — Context Controlled',
+                desc: 'Static or dynamic URI-addressed data streams (logs, database records, files) exposed directly to the host application context.',
+                code: `{\n  "uri": "postgres://analytics/table/users/schema",\n  "name": "User Account Schema Definition",\n  "mimeType": "application/json",\n  "subscriptionsSupported": true\n}`
+            },
+            prompts: {
+                title: 'Prompts ("Grammar") — User Controlled',
+                desc: 'Parameterized workflow templates and UI macros that structure interactions and code review best practices.',
+                code: `{\n  "name": "security_code_review",\n  "arguments": [\n    { "name": "git_diff", "required": true }\n  ],\n  "template": "Analyze the following diff for SQL injection and PII leakage: {{git_diff}}"\n}`
+            },
+            sampling: {
+                title: 'Sampling — Client Capability',
+                desc: 'Allows an isolated MCP server to request LLM generations or reasoning completions through the Host policy layer.',
+                code: `{\n  "method": "sampling/createMessage",\n  "params": {\n    "messages": [{ "role": "user", "content": "Summarize log anomalies" }],\n    "maxTokens": 200\n  }\n}`
+            },
+            elicitation: {
+                title: 'Elicitation — User Interactivity',
+                desc: 'Enables servers to pause execution and request missing parameters or confirmation directly from the human user.',
+                code: `{\n  "result": "InputRequiredResult",\n  "prompt": "Confirm execution of database migration on Production cluster?",\n  "options": ["Approve", "Deny"]\n}`
+            }
+        };
+
+        function inspectPrimitive(primKey) {
+            document.querySelectorAll('.primb-btn').forEach(btn => {
+                btn.classList.remove('border-indigo-500', 'bg-indigo-50', 'text-indigo-900', 'font-bold');
+                btn.classList.add('border-slate-200', 'bg-slate-50', 'text-slate-700');
+            });
+            const activeBtn = document.getElementById('primb-' + primKey);
+            if(activeBtn) activeBtn.classList.add('border-indigo-500', 'bg-indigo-50', 'text-indigo-900', 'font-bold');
+
+            const item = mcpPrimitivesData[primKey];
+            const display = document.getElementById('primitiveDisplay');
+            display.innerHTML = `
+                <div class="text-indigo-400 font-bold border-b border-slate-800 pb-1.5 flex justify-between">
+                    <span>${item.title}</span>
+                    <span class="text-slate-400 font-mono text-[10px]">JSON-RPC 2.0 Payload</span>
+                </div>
+                <p class="text-slate-300 text-xs font-sans">${item.desc}</p>
+                <pre class="p-2.5 bg-slate-950 rounded border border-slate-800 text-emerald-400 text-[11px] overflow-x-auto"><code>${item.code}</code></pre>
+            `;
+        }
+
+        // --- 8-Layer Enterprise Stack Data & Toggle Render ---
+        const stackLayersData = [
+            {
+                id: 1,
+                name: '1. Infrastructure, Compute & Hosting',
+                icon: '⚡',
+                resp: 'Accelerator scheduling, RDMA networking, polyglot datastores.',
+                cloud: 'AWS, Azure, Google Cloud, IBM Cloud, Managed GPU PaaS',
+                open: 'Bare-metal Kubernetes (k0rdent), AirLLM, Open WebUI, ClickHouse',
+                failure: 'GPU starvation, network I/O bottlenecks, sovereignty violations.'
+            },
+            {
+                id: 2,
+                name: '2. Data Ingestion & Semantic Foundation',
+                icon: '🗄️',
+                resp: 'Streaming ingestion, vector/graph indexing, PII redaction, golden datasets.',
+                cloud: 'Databricks, Snowflake, Managed Vector DBs',
+                open: 'Apache Kafka, dbt, Apache Airflow, Feature Stores',
+                failure: 'Agents hammering transactional DBs; ungrounded retrieval hallucinations.'
+            },
+            {
+                id: 3,
+                name: '3. Models, Context & Gateway',
+                icon: '🧠',
+                resp: 'Foundation inference, semantic caching, cost/latency routing, token compression.',
+                cloud: 'OpenAI (GPT-5/4o), Anthropic (Claude 4), Gemini 1.5 Pro',
+                open: 'Meta Llama 4, DeepSeek-V3, Qwen 3, Mistral Large 3, Jamba 2.0',
+                failure: 'Runaway API costs from routing trivial queries to frontier models.'
+            },
+            {
+                id: 4,
+                name: '4. Orchestration, Memory & Skills',
+                icon: '🧩',
+                resp: 'Multi-step planning, agent frameworks, persistent recall, domain skills.',
+                cloud: 'Microsoft Copilot Studio, AWS Bedrock Agents',
+                open: 'AutoGen, CrewAI, agency-agents, claude-mem, vercel-labs/skills',
+                failure: 'Stateless agents repeating errors and producing demo-grade code.'
+            },
+            {
+                id: 5,
+                name: '5. Standardized Connectivity (MCP)',
+                icon: '🔌',
+                resp: 'Capability discovery, JSON-RPC schema-validated tool execution.',
+                cloud: 'Remote SSE MCP Gateways, Enterprise API Catalogs',
+                open: 'Local STDIO MCP Servers, MCP Inspector GUI',
+                failure: 'Fragmented custom M×N API glue code breaking on schema drift.'
+            },
+            {
+                id: 6,
+                name: '6. Safety, Guardrails & Reliability',
+                icon: '🛡️',
+                resp: 'Input/output validation, jailbreak defense, static analysis pre-filtering.',
+                cloud: 'Enterprise Guardrail Gateways, AWS Bedrock Guardrails',
+                open: 'Static analysis pre-filters, Open PII Redactors',
+                failure: 'Prompt injection exploits and unverified code hitting production.'
+            },
+            {
+                id: 7,
+                name: '7. Product Experience (UX) & Control Planes',
+                icon: '🖥️',
+                resp: 'Tailored control plane UIs, real-time SSE streaming, HITL approval gates.',
+                cloud: 'Custom Enterprise Underwriting / Triage UIs',
+                open: 'VoiceStudio, OpenMontage, diagram-design, gods-eye-view',
+                failure: '"Toy" chat interfaces rejected by human domain operators.'
+            },
+            {
+                id: 8,
+                name: '8. MLOps, Observability & Telemetry',
+                icon: '📊',
+                resp: 'Trace debugging, shadow evals, cost per successful task tracking.',
+                cloud: 'LangSmith, Helicone, PromptLayer, Functionize QA',
+                open: 'Langfuse on ClickHouse, offline scenario playbooks',
+                failure: 'Silent retrieval failures and negative unit economics.'
+            }
+        ];
+
+        function renderStackLayers() {
+            const container = document.getElementById('layerStackContainer');
+            container.innerHTML = stackLayersData.map(layer => `
+                <div class="searchable-card bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleStackLayer(${layer.id})" class="w-full p-3.5 text-left flex items-center justify-between hover:bg-slate-50 transition-colors">
+                        <div class="flex items-center space-x-2.5">
+                            <span class="text-lg">${layer.icon}</span>
+                            <span class="font-bold text-slate-900 text-xs sm:text-sm">${layer.name}</span>
+                        </div>
+                        <span id="stack-arrow-${layer.id}" class="text-xs text-slate-400 font-bold">▼</span>
+                    </button>
+                    <div id="stack-body-${layer.id}" class="hidden p-4 bg-slate-50 border-t border-slate-200 text-xs space-y-2">
+                        <p class="text-slate-700"><strong>Core Responsibility:</strong> ${layer.resp}</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                            <div class="p-2 bg-white rounded border border-slate-200">
+                                <span class="font-bold text-indigo-700">Enterprise Cloud:</span>
+                                <div class="text-slate-600 font-mono text-[11px]">${layer.cloud}</div>
+                            </div>
+                            <div class="p-2 bg-white rounded border border-slate-200">
+                                <span class="font-bold text-teal-700">Open-Source / Self-Hosted:</span>
+                                <div class="text-slate-600 font-mono text-[11px]">${layer.open}</div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-amber-50 border border-amber-200 rounded text-amber-900">
+                            <strong>Critical Failure Mode if Omitted:</strong> ${layer.failure}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleStackLayer(id) {
+            const body = document.getElementById(`stack-body-${id}`);
+            const arrow = document.getElementById(`stack-arrow-${id}`);
+            if(body.classList.contains('hidden')) {
+                body.classList.remove('hidden');
+                arrow.innerText = '▲';
+            } else {
+                body.classList.add('hidden');
+                arrow.innerText = '▼';
+            }
+        }
+
+        // --- Decision Navigator Matrix Selector Data & Logic ---
+        const navigatorData = {
+            rules: {
+                paradigm: 'Symbolic AI / Rule-Based Expert Engine',
+                models: 'Forward/backward chaining rule engines, Knowledge Graphs',
+                justification: '100% predictable execution; requires no training data; zero stochastic hallucination risk.'
+            },
+            tabular: {
+                paradigm: 'Classical Supervised Machine Learning',
+                models: 'Random Forests, Logistic Regression, XGBoost, SVM (Scikit-learn)',
+                justification: 'Superior sample efficiency, millisecond CPU inference speed, high intrinsic XAI interpretability.'
+            },
+            unlabeled: {
+                paradigm: 'Unsupervised / Hybrid Clustering',
+                models: 'BERTopic-LLM (RoBERTa-v2 embeddings + Llama 4 cluster naming)',
+                justification: 'Discovers latent market structures and thematic taxonomies without costly human annotation.'
+            },
+            scarce: {
+                paradigm: 'Semi-Supervised Learning (SSL)',
+                models: 'Pseudo-labeling pipelines, Graph-based Label Propagation',
+                justification: 'Minimizes dependence on scarce domain experts by leveraging unlabeled data manifold geometry.'
+            },
+            sequential: {
+                paradigm: 'Reinforcement Learning (RL)',
+                models: 'Policy Gradient, Actor-Critic, PPO agents',
+                justification: 'Optimizes long-term cumulative outcomes rather than static point predictions.'
+            },
+            longdoc: {
+                paradigm: 'Long-Context Hybrid SSM Foundation Models',
+                models: 'Gemini 1.5 Pro (Ring Attention), Jamba 2.0 (Hybrid SSM-Transformer)',
+                justification: 'Eliminates quadratic attention complexity to linear O(N) throughput while preventing lost-in-the-middle forgetfulness.'
+            },
+            highconcur: {
+                paradigm: 'Sparse MoE or GQA-Optimized LLMs',
+                models: 'Llama 4 (GQA), DeepSeek-V3 (MoE + MLA), Qwen 3',
+                justification: 'Slashes KV-cache memory footprint per user and activates a sparse fraction of parameters per token.'
+            },
+            json: {
+                paradigm: 'Structured Pipeline + Guardrailed LLM + MCP',
+                models: 'Mistral Large 3 (SwiGLU) + MCP Tool Servers',
+                justification: 'Prevents schema hallucination; decouples tool governance from model logic for deterministic execution.'
+            },
+            physical: {
+                paradigm: 'Vision-Language-Action (VLA) Foundation Models',
+                models: 'OpenVLA-7B (SigLIP ViT + Llama-2-7B + 256 Action Bins), GR00T',
+                justification: 'Unifies visual perception and continuous 7-DoF motor control into a single next-token prediction pass.'
+            }
+        };
+
+        function runDecisionNavigator() {
+            const key = document.getElementById('selectDataProfile').value;
+            const res = navigatorData[key];
+            const container = document.getElementById('navigatorResult');
+            container.innerHTML = `
+                <div class="font-bold text-indigo-900 text-sm border-b border-indigo-200 pb-1.5 flex justify-between">
+                    <span>Recommended AI/ML Paradigm: ${res.paradigm}</span>
+                    <span class="text-indigo-600 font-mono text-[10px]">Optimal Solution</span>
+                </div>
+                <div><strong class="text-slate-800">Recommended Model Family:</strong> <span class="font-mono text-slate-700">${res.models}</span></div>
+                <div class="p-2.5 bg-white rounded-lg border border-indigo-100 text-slate-700">
+                    <strong>Key Engineering Justification:</strong> ${res.justification}
+                </div>
+            `;
+        }
+
+        // --- Chart.js Canvas Initialization ---
+        function initCharts() {
+            // Label Wrapping Helper Function (Max 16 chars)
+            const formatLabel = (str) => {
+                if (typeof str !== 'string') return str;
+                if (str.length <= 16) return str;
+                const words = str.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > 16) {
+                        if (currentLine) lines.push(currentLine.trim());
+                        currentLine = word + ' ';
+                    } else {
+                        currentLine += word + ' ';
+                    }
+                });
+                if (currentLine) lines.push(currentLine.trim());
+                return lines;
+            };
+
+            // Common Chart Options
+            const chartOptionsBase = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { size: 11 },
+                            boxWidth: 12
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: (items) => {
+                                if (!items.length) return '';
+                                const raw = items[0].label;
+                                return Array.isArray(raw) ? raw.join(' ') : raw;
+                            }
+                        }
+                    }
+                }
+            };
+
+            // Chart 1: Context Window Scaling
+            const ctx1 = document.getElementById('chartContextScaling').getContext('2d');
+            chartContextScalingObj = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['GPT-4o (Dense)', 'Claude 4 (ALiBi)', 'DeepSeek-V3 (MLA)', 'Llama 4 (GQA)', 'Gemini 1.5 (Ring)'].map(formatLabel),
+                    datasets: [
+                        {
+                            label: 'Context Window (k Tokens)',
+                            data: [128, 200, 128, 128, 2000],
+                            backgroundColor: 'rgba(79, 70, 229, 0.8)',
+                            borderRadius: 6
+                        },
+                        {
+                            label: 'Relative Memory Savings (%)',
+                            data: [20, 35, 75, 65, 90],
+                            backgroundColor: 'rgba(20, 184, 166, 0.8)',
+                            borderRadius: 6
+                        }
+                    ]
+                },
+                options: {
+                    ...chartOptionsBase,
+                    scales: {
+                        y: {
+                            type: 'logarithmic',
+                            title: { display: true, text: 'Scale (Log Value)', font: { size: 10 } }
+                        },
+                        x: {
+                            ticks: { font: { size: 10 } }
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: Architecture Compute-Efficiency Frontier
+            const ctx2 = document.getElementById('chartArchitectureTradeoff').getContext('2d');
+            chartArchitectureTradeoffObj = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    labels: ['Dense Transformer', 'Sparse MoE', 'Mamba SSM', 'Hybrid SSM-Trans', 'Mamba-DiT'].map(formatLabel),
+                    datasets: [
+                        {
+                            label: 'Inference Throughput (Tok/s)',
+                            data: [35, 95, 180, 140, 110],
+                            borderColor: '#0d9488',
+                            backgroundColor: 'rgba(13, 148, 136, 0.1)',
+                            fill: true,
+                            tension: 0.3
+                        },
+                        {
+                            label: 'Complex State Recall Score',
+                            data: [98, 95, 62, 94, 88],
+                            borderColor: '#4f46e5',
+                            backgroundColor: 'transparent',
+                            borderDash: [5, 5],
+                            tension: 0.3
+                        }
+                    ]
+                },
+                options: {
+                    ...chartOptionsBase,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Index Rating / Speed', font: { size: 10 } }
+                        },
+                        x: {
+                            ticks: { font: { size: 10 } }
+                        }
+                    }
+                }
+            });
+
+            // Chart 3: Tech Stack Allocation
+            const ctx3 = document.getElementById('chartStackAllocation').getContext('2d');
+            chartStackAllocationObj = new Chart(ctx3, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Compute Infra', 'Data Pipeline', 'Models Gateway', 'Orchestration', 'MCP Tools', 'Safety Guard', 'Control UX', 'MLOps Evals'].map(formatLabel),
+                    datasets: [{
+                        data: [30, 20, 15, 10, 8, 7, 5, 5],
+                        backgroundColor: [
+                            '#3b82f6', '#14b8a6', '#8b5cf6', '#ec4899',
+                            '#f59e0b', '#10b981', '#6366f1', '#64748b'
+                        ]
+                    }]
+                },
+                options: {
+                    ...chartOptionsBase,
+                    plugins: {
+                        ...chartOptionsBase.plugins,
+                        legend: {
+                            position: 'right',
+                            labels: { font: { size: 10 }, boxWidth: 10 }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- DOM Ready Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            renderStackLayers();
+            inspectPrimitive('tools');
+            runDecisionNavigator();
+            updateVLASimulator();
+            initCharts();
+        });
+    </script>
+</body>
+</html>

@@ -18,7 +18,7 @@ Tags :  [[DSA]] ; [[Maths]]
 
 **Dynamic Programming** : Never compute the same subproblem twice.
 This can be implemented in two ways:
-1. **Memorization** (*top-down*) : Store `f(n)` the first time you compute it. Future calls just look it up
+1. [[Fibonacci Number#Approach 2 Memoization (Top-Down DP)|Memoization (Top-Down DP)]] : Store `f(n)` the first time you compute it. Future calls just look it up
 2. **Tabulation**(*bottom-up*) : Compute `f(0)` , `f(1)` , `f(2)`  , … , `f(n)` iteratively. 
 
 - with Dynamic programming:
@@ -49,10 +49,7 @@ This can be implemented in two ways:
 ---
 # Questions 
 
-
-
-
-
+1. [[Fibonacci Number]]
 
 ---
 # References 
