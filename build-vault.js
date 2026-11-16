@@ -55,8 +55,11 @@ function parseHeader(rawContent) {
     }
     for (const line of headerLines) {
       const clean = line.replace(/\*\*/g, '').trim();
-      const m = clean.match(/^([\w\s-]+)\s*:\s*(.*)$/);
-      if (m && m[2].trim()) header[m[1].toLowerCase()] = m[2].trim();
+      const m = clean.match(/^([\w\s-]+?)\s*:\s*(.*)$/);
+      if (m && m[2].trim()) {
+        const key = m[1].trim().toLowerCase();
+        header[key === 'couse' ? 'course' : key] = m[2].trim();
+      }
     }
     return { header, body: lines.slice(bodyStart).join('\n').trim() };
   }
@@ -76,14 +79,17 @@ function parseHeader(rawContent) {
     }
 
     const cleanLine = line.replace(/\*\*/g, '').trim();
-    const isKv = /^([\w\s-]+)\s*:\s*(.*)$/.test(cleanLine);
+    const isKv = /^([\w\s-]+?)\s*:\s*(.*)$/.test(cleanLine);
     const isSignature = /^~.*~$/.test(cleanLine) || cleanLine.startsWith('~');
 
     if (isKv || isSignature) {
       hasTopMeta = true;
       if (isKv) {
-        const m = cleanLine.match(/^([\w\s-]+)\s*:\s*(.*)$/);
-        if (m && m[2].trim()) header[m[1].toLowerCase()] = m[2].trim();
+        const m = cleanLine.match(/^([\w\s-]+?)\s*:\s*(.*)$/);
+        if (m && m[2].trim()) {
+          const key = m[1].trim().toLowerCase();
+          header[key === 'couse' ? 'course' : key] = m[2].trim();
+        }
       }
     } else {
       break;
@@ -91,7 +97,15 @@ function parseHeader(rawContent) {
   }
 
   if (hasTopMeta && metaEndIndex > 0) {
-    return { header, body: lines.slice(metaEndIndex).join('\n').trim() };
+    // Keep the top metadata block in the note body as it appears in the actual .md file,
+    // ensuring each metadata line has 2 trailing spaces so Markdown preserves line breaks.
+    const preservedLines = lines.map((l, idx) => {
+      if (idx < metaEndIndex && l.trim() && !/^---+$|^\*\*\*+$|^___+$/.test(l.trim())) {
+        return l.replace(/\s*$/, '  ');
+      }
+      return l;
+    });
+    return { header, body: preservedLines.join('\n').trim() };
   }
 
   return { header: {}, body: rawContent.trim() };
@@ -99,23 +113,30 @@ function parseHeader(rawContent) {
 
 function extractTags(header) {
   const tags = new Set();
-  if (header.tags) {
-    for (const m of header.tags.matchAll(/\[\[([^\]]+)\]\]/g))
-      tags.add(slugify(m[1]));
-    for (const m of header.tags.matchAll(/#(\w+)/g))
-      tags.add(m[1].toLowerCase());
-  }
-  if (header.type) {
-    for (const m of header.type.matchAll(/#(\w+)/g))
+  const tagFields = ['tags', 'topics', 'pattern', 'type', 'platform', 'difficulty', 'status'];
+  for (const field of tagFields) {
+    const val = header[field];
+    if (!val || val.includes('{{')) continue;
+    // Skip unchosen template slash-options like "#easy / #medium / #hard"
+    if ((field === 'difficulty' || field === 'status') && val.includes('/')) continue;
+    for (const m of val.matchAll(/\[\[([^\]|#]+)(?:\|[^\]]+)?\]\]/g))
+      tags.add(slugify(m[1].trim()));
+    for (const m of val.matchAll(/#([\w-]+)/g))
       tags.add(m[1].toLowerCase());
   }
   return [...tags];
 }
 
 function extractDate(header, stats) {
-  if (header.date) {
-    const m = header.date.match(/(\d{4}-\d{2}-\d{2})/);
-    if (m) return m[1];
+  const rawDate = header.date || header['exam date'];
+  if (rawDate && !rawDate.includes('{{')) {
+    const iso = rawDate.match(/(\d{4})-(\d{2})-(\d{2})/);
+    if (iso) return iso[0];
+    const dmy = rawDate.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+    if (dmy) return `${dmy[3]}-${dmy[2]}-${dmy[1]}`;
+    const parsed = new Date(`${rawDate} UTC`);
+    if (!isNaN(parsed.getTime())) return parsed.toISOString().slice(0, 10);
+    return rawDate;
   }
   return stats.mtime.toISOString().slice(0, 10);
 }
@@ -264,7 +285,7 @@ for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub, ext }
   const tags    = extractTags(header);
   const date    = extractDate(header, stats);
   const outline = extractOutline(body);
-  const wLinks  = extractWikiLinks(body);
+  const wLinks  = extractWikiLinks(raw);
 
   // Resolve wiki links to IDs
   const links = [...new Set(
@@ -279,6 +300,7 @@ for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub, ext }
     folder: folderName,
     path: fullPathArr,
     tags, date, outline, links,
+    meta: header,
     backlinks: [],        // filled in third pass
     wordCount: body.split(/\s+/).filter(Boolean).length,
     content: body,
@@ -417,6 +439,7 @@ function serializeNote(n) {
     folder: ${JSON.stringify(n.folder)},
     path: ${JSON.stringify(n.path)},
     tags: ${JSON.stringify(n.tags)},
+    meta: ${JSON.stringify(n.meta || {})},
     created: ${JSON.stringify(n.date)},
     modified: ${JSON.stringify(n.date)},
     wordCount: ${n.wordCount},

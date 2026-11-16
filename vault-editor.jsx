@@ -118,11 +118,13 @@ function renderDataviewBlock(code) {
 
     if (isTable) {
       const rowsHtml = filteredNotes.map(n => {
-        const status = (n.tags && n.tags.find(t => t.startsWith('status-'))) || '—';
+        const rawStatus = (n.meta && n.meta.status && !n.meta.status.includes('/'))
+          ? n.meta.status.replace(/^#/, '')
+          : ((n.tags && n.tags.find(t => ['solved', 'unsolved', 'revisit', 'complete', 'incomplete', 'draft', 'active'].includes(t) || t.startsWith('status-'))) || '—');
         const folder = n.folder || '03 - Notes';
         return `<tr>
           <td>[[${n.title}]]</td>
-          <td>${status}</td>
+          <td>${rawStatus}</td>
           <td>${folder}</td>
         </tr>`;
       }).join('');
@@ -205,24 +207,65 @@ function ensureMarkedConfigured() {
   };
 
   // ── Blockquotes / Callouts ────────────────────────────────────────────────
+  const CALLOUT_META = {
+    NOTE:       { color: 'var(--accent)',         icon: '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>' },
+    ABSTRACT:   { color: '#9b88c0',               icon: '<rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/>' },
+    SUMMARY:    { color: '#9b88c0',               icon: '<rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/>' },
+    TLDR:       { color: '#9b88c0',               icon: '<rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/>' },
+    INFO:       { color: '#5ba3c9',               icon: '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' },
+    TODO:       { color: '#5ba3c9',               icon: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>' },
+    TIP:        { color: '#7bc9a0',               icon: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>' },
+    HINT:       { color: '#7bc9a0',               icon: '<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>' },
+    IMPORTANT:  { color: '#e87c66',               icon: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>' },
+    SUCCESS:    { color: '#7bc9a0',               icon: '<polyline points="20 6 9 17 4 12"/>' },
+    CHECK:      { color: '#7bc9a0',               icon: '<polyline points="20 6 9 17 4 12"/>' },
+    DONE:       { color: '#7bc9a0',               icon: '<polyline points="20 6 9 17 4 12"/>' },
+    QUESTION:   { color: '#e0a958',               icon: '<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    HELP:       { color: '#e0a958',               icon: '<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    FAQ:        { color: '#e0a958',               icon: '<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    WARNING:    { color: '#e6a84a',               icon: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    CAUTION:    { color: '#d4a96a',               icon: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    ATTENTION:  { color: '#e6a84a',               icon: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>' },
+    FAILURE:    { color: '#e87c66',               icon: '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' },
+    FAIL:       { color: '#e87c66',               icon: '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' },
+    MISSING:    { color: '#e87c66',               icon: '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' },
+    DANGER:     { color: '#e85d5d',               icon: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>' },
+    ERROR:      { color: '#e85d5d',               icon: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>' },
+    BUG:        { color: '#e85d5d',               icon: '<path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>' },
+    EXAMPLE:    { color: '#a882dd',               icon: '<line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>' },
+    HYPOTHESIS: { color: '#c788d9',               icon: '<path d="M6 2v6l-2 4a5 5 0 0 0 10 0l-2-4V2"/><line x1="6" y1="7" x2="18" y2="7"/><line x1="6" y1="2" x2="18" y2="2"/>' },
+    QUOTE:      { color: 'var(--text-secondary)', icon: '<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>' },
+    CITE:       { color: 'var(--text-secondary)', icon: '<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>' },
+  };
+
   renderer.blockquote = function(quote) {
-    // Strip outer <p> tags to reliably detect [!TYPE]
-    const stripped = quote.replace(/^\s*<p>\s*/,'').replace(/\s*<\/p>\s*$/,'');
-    const m = stripped.match(/^\[!(NOTE|TIP|WARNING|INFO|IMPORTANT|CAUTION|ABSTRACT|QUOTE)\]\s*(.*?)(?=\n|$)/i);
-    if (m) {
-      const type  = m[1].toUpperCase();
-      const title = m[2].trim() || (type[0] + type.slice(1).toLowerCase());
-      const body  = stripped.slice(m[0].length).replace(/^\s*<\/p>/, '').trim();
-      const colors = {
-        NOTE:'var(--accent)', TIP:'#7bc9a0', WARNING:'#e6a84a',
-        INFO:'#5ba3c9',    IMPORTANT:'#e87c66', CAUTION:'#d4a96a',
-        ABSTRACT:'#9b88c0', QUOTE:'var(--text-secondary)',
-      };
-      const color = colors[type] || 'var(--accent)';
-      return `<div class="vault-callout" style="--callout-color:${color}">
-        <div class="vault-callout-title">${title}</div>
-        ${body ? `<div class="vault-callout-body">${body}</div>` : ''}
-      </div>`;
+    // Match the first <p>...</p> inside the blockquote to inspect for [!type]
+    const pMatch = quote.match(/^\s*<p>([\s\S]*?)<\/p>([\s\S]*)$/);
+    if (pMatch) {
+      const hm = pMatch[1].match(/^\s*\[!([a-zA-Z0-9_-]+)\]([+-])?[ \t]*([^\r\n]*?)(?:[ \t]*<br\s*\/?>[ \t]*\r?\n?|[ \t]*\r?\n|$)([\s\S]*)$/i);
+      if (hm) {
+        const rawType = hm[1];
+        const type = rawType.toUpperCase();
+        const defaultTitle = rawType.charAt(0).toUpperCase() + rawType.slice(1).toLowerCase().replace(/[-_]+/g, ' ');
+        const title = hm[3].trim() || defaultTitle;
+        const firstPRest = (hm[4] || '').trim().replace(/(?!<br\s*\/?>)\r?\n(?!<)/g, '<br>');
+        const restBlocks = pMatch[2].trim();
+        const body = [
+          firstPRest ? `<p>${firstPRest}</p>` : '',
+          restBlocks,
+        ].filter(Boolean).join('\n');
+
+        const meta = CALLOUT_META[type] || CALLOUT_META.NOTE;
+        const iconSvg = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${meta.icon}</svg>`;
+
+        return `<div class="vault-callout" data-callout="${rawType.toLowerCase()}" style="--callout-color:${meta.color}">
+          <div class="vault-callout-title">
+            <span class="vault-callout-icon">${iconSvg}</span>
+            <span class="vault-callout-title-text">${title}</span>
+          </div>
+          ${body ? `<div class="vault-callout-body">${body}</div>` : ''}
+        </div>`;
+      }
     }
     return `<blockquote>${quote}</blockquote>`;
   };
@@ -339,8 +382,8 @@ function resolveObsidianEmbeds(md) {
   });
 
   shielded = shielded.replace(
-    /!\[\[([^\]|#\n]+?\.(png|jpg|jpeg|gif|svg|webp))(?:\|[^\]]*)?\]\]/gi,
-    (_, filename) => {
+    /(^([ \t]*>[ \t]*)?)?!\[\[([^\]|#\n]+?\.(png|jpg|jpeg|gif|svg|webp))(?:\|[^\]]*)?\]\]/gim,
+    (_, fullPrefix, bqPrefix, filename) => {
       const bare = filename.trim();
       let assetPath = window.VAULT_ASSETS?.[bare]
         ?? window.VAULT_ASSETS?.[bare.split('/').pop()];
@@ -351,9 +394,18 @@ function resolveObsidianEmbeds(md) {
 
       const src = assetPath.split('/').map(encodeURIComponent).join('/');
       const alt = bare.replace(/"/g, '&quot;');
-      return `\n\n<img src="${src}" alt="${alt}" loading="lazy" />\n\n`;
+      const imgTag = `<img src="${src}" alt="${alt}" loading="lazy" />`;
+      if (bqPrefix) {
+        return `${bqPrefix}${imgTag}`;
+      }
+      return fullPrefix !== undefined ? `\n\n${imgTag}\n\n` : imgTag;
     }
   );
+
+  // Preserve tab indentation inside blockquotes/callouts (>	item → >     item)
+  shielded = shielded.replace(/^([ \t]*>+)(\t+)/gm, (_, prefix, tabs) => {
+    return prefix + ' ' + '    '.repeat(tabs.length);
+  });
 
   return shielded.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[Number(idx)]);
 }
@@ -635,8 +687,9 @@ const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, 
     .vault-callout { border-left: 3px solid var(--callout-color, #888);
       background: #fafafa; border-radius: 0 6px 6px 0;
       padding: 12px 16px; margin: 18px 0; }
-    .vault-callout-title { font-weight: 700; margin-bottom: 5px; font-size: 14px; }
-    .vault-callout-body  { font-size: 14px; color: #444; }
+    .vault-callout-title { font-weight: 700; font-size: 14px; display: flex; align-items: flex-start; gap: 8px; color: var(--callout-color, #333); }
+    .vault-callout-icon { display: inline-flex; flex-shrink: 0; margin-top: 2px; }
+    .vault-callout-body  { font-size: 14px; color: #444; margin-top: 6px; }
     .vault-task-list { list-style: none; padding-left: 0; }
     .vault-task-item { display: flex; align-items: flex-start; gap: 7px; margin-bottom: 5px; }
     .vault-cb::before { content: '☐'; font-size: 15px; line-height: 1.4; }
@@ -914,7 +967,11 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       ref={containerRef}
       className="note-content"
       data-print-content="true"
+<<<<<<< HEAD
       style={{ fontSize: (fontSize || 17) + 3, '--reading-max': maxW + 'px' }}
+=======
+      style={{ fontSize: (fontSize || 17) + 6, '--reading-max': maxW + 'px' }}
+>>>>>>> 0374dce (Font Update)
       dangerouslySetInnerHTML={{ __html: rendered }}
     />
   );

@@ -280,25 +280,30 @@ const RelatedSection = ({ note, onNavigate }) => {
 
 // ─── Note Properties ──────────────────────────────────────────────────────────
 const PropertiesSection = ({ note }) => {
-  const [open, setOpen] = useStateRP(false);
+  const [open, setOpen] = useStateRP(true);
   if (!note) return null;
 
+  const metaEntries = Object.entries(note.meta || {}).map(([k, v]) => ({
+    label: k.replace(/\b\w/g, c => c.toUpperCase()),
+    value: v.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, target, alias) => alias || target).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'),
+  }));
+
   const rows = [
-    { label: 'Created', value: note.created },
-    { label: 'Modified', value: note.modified },
+    ...metaEntries,
+    ...(!note.meta?.date ? [{ label: 'Date', value: note.modified }] : []),
     { label: 'Words', value: note.wordCount?.toLocaleString() },
     { label: 'Folder', value: note.folder },
   ];
 
   return (
     <div style={{ borderBottom: '1px solid var(--border)' }}>
-      <SectionHeader title="Properties" icon="type" isOpen={open} onToggle={() => setOpen(o => !o)} />
+      <SectionHeader title="Properties" icon="type" isOpen={open} onToggle={() => setOpen(o => !o)} count={rows.length} />
       {open && (
         <div style={{ padding: '4px 14px 10px' }}>
           {rows.map(({ label, value }) => (
-            <div key={label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '3px 0' }}>
-              <span style={{ fontSize: 11.5, color: 'var(--text-muted)' }}>{label}</span>
-              <span style={{ fontSize: 11.5, color: 'var(--text-secondary)', maxWidth: 130, textAlign: 'right', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{value}</span>
+            <div key={label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 8, padding: '3px 0' }}>
+              <span style={{ fontSize: 11.5, color: 'var(--text-muted)', flexShrink: 0 }}>{label}</span>
+              <span title={value} style={{ fontSize: 11.5, color: 'var(--text-secondary)', maxWidth: 165, textAlign: 'right', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{value}</span>
             </div>
           ))}
         </div>

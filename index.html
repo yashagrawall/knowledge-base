@@ -32,6 +32,7 @@
 /* ── Custom Fonts (Notes Only) ──────────────────────────────────── */
 @font-face {
   font-family: 'Yash-headings';
+<<<<<<< HEAD
   src: url('font/Yash-headings.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
@@ -45,6 +46,21 @@
   font-style: normal;
   font-display: swap;
   size-adjust: 128%;
+=======
+  src: url('font/Yash-headings.ttf?v=34') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 165%;
+}
+@font-face {
+  font-family: 'Yash-text';
+  src: url('font/Yash-text.ttf?v=34') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 155%;
+>>>>>>> 0374dce (Font Update)
 }
 
 /* ── Reset ──────────────────────────────────────────────────────── */
@@ -149,44 +165,48 @@ button { font-family: inherit; }
 /* Headings H1–H6 — Prominent visual hierarchy & exact casing */
 .note-content h1, .note-content h2, .note-content h3,
 .note-content h4, .note-content h5, .note-content h6 {
+<<<<<<< HEAD
   font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
+=======
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif !important;
+>>>>>>> 0374dce (Font Update)
   font-synthesis: weight style;
   text-transform: none !important;
 }
 
 /* H1 — large, bright blue */
 .note-content h1 {
-  font-size: 2.1em; font-weight: 700;
+  font-size: 2.2em; font-weight: 700;
   color: oklch(78% 0.12 230);
   margin: 0 0 0.65em; line-height: 1.25; letter-spacing: -0.022em;
 }
 /* H2 — warm amber (no bottom border line) */
 .note-content h2 {
-  font-size: 1.7em; font-weight: 650;
+  font-size: 1.8em; font-weight: 650;
   color: oklch(74% 0.1 50);
   margin: 1.8em 0 0.5em; border-bottom: none; padding-bottom: 0; letter-spacing: -0.01em;
 }
 /* H3 — soft green */
 .note-content h3 {
-  font-size: 1.45em; font-weight: 650;
+  font-size: 1.55em; font-weight: 650;
   color: oklch(72% 0.1 155);
   margin: 1.5em 0 0.4em;
 }
 /* H4 — soft magenta / purple */
 .note-content h4 {
-  font-size: 1.25em; font-weight: 650;
+  font-size: 1.35em; font-weight: 650;
   color: oklch(75% 0.11 310);
   margin: 1.3em 0 0.35em;
 }
 /* H5 — soft teal / cyan */
 .note-content h5 {
-  font-size: 1.12em; font-weight: 600;
+  font-size: 1.2em; font-weight: 600;
   color: oklch(72% 0.09 200);
   margin: 1.2em 0 0.3em;
 }
 /* H6 — muted warm grey */
 .note-content h6 {
-  font-size: 1.05em; font-weight: 600;
+  font-size: 1.1em; font-weight: 600;
   color: oklch(70% 0.06 0);
   margin: 1.1em 0 0.25em;
 }
@@ -204,6 +224,7 @@ button { font-family: inherit; }
 .note-content li { margin-bottom: 0.28em; }
 .note-content li > ul, .note-content li > ol { margin-top: 0.28em; margin-bottom: 0.28em; }
 
+<<<<<<< HEAD
 /* Bold — warm white / near-heading color */
 .note-content strong, .note-content b {
   font-family: 'Yash-headings', 'Yash-text', sans-serif;
@@ -214,6 +235,27 @@ button { font-family: inherit; }
 /* Italic — slightly tinted, nudged toward accent */
 .note-content em, .note-content i {
   font-family: 'Yash-text', 'Lora', Georgia, serif;
+=======
+/* Bold — inherits Yash-headings inside headings and Yash-text inside body */
+.note-content strong, .note-content b {
+  font-family: inherit;
+  font-weight: 800;
+  font-synthesis: weight style;
+  -webkit-text-stroke: 0.5px currentColor;
+  text-shadow: 0.3px 0 0 currentColor;
+  color: var(--text-heading);
+}
+.note-content h1 strong, .note-content h2 strong, .note-content h3 strong,
+.note-content h4 strong, .note-content h5 strong, .note-content h6 strong,
+.note-content h1 b, .note-content h2 b, .note-content h3 b,
+.note-content h4 b, .note-content h5 b, .note-content h6 b {
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif !important;
+  color: inherit;
+}
+/* Italic — inherits Yash-headings inside headings and Yash-text inside body */
+.note-content em, .note-content i {
+  font-family: inherit;
+>>>>>>> 0374dce (Font Update)
   font-style: italic;
   font-synthesis: weight style;
   color: oklch(72% 0.07 220);   /* light periwinkle */
@@ -225,10 +267,19 @@ button { font-family: inherit; }
 .note-content em strong,
 .note-content b i,
 .note-content i b {
+<<<<<<< HEAD
   font-family: 'Yash-headings', 'Yash-text', sans-serif;
   color: oklch(75% 0.1 55);    /* warm gold */
   font-style: italic; font-weight: 700;
   font-synthesis: weight style;
+=======
+  font-family: inherit;
+  color: oklch(75% 0.1 55);    /* warm gold */
+  font-style: italic; font-weight: 800;
+  font-synthesis: weight style;
+  -webkit-text-stroke: 0.5px currentColor;
+  text-shadow: 0.3px 0 0 currentColor;
+>>>>>>> 0374dce (Font Update)
 }
 [data-theme="light"] .note-content strong em,
 [data-theme="light"] .note-content em strong { color: oklch(45% 0.1 55); }
@@ -345,18 +396,35 @@ button { font-family: inherit; }
 
 /* Callouts */
 .vault-callout {
-  margin: 1em 0 1.2em; padding: 0.65em 1em 0.75em;
+  margin: 1em 0 1.2em; padding: 0.75em 1.05em 0.8em;
   border-left: 3px solid var(--callout-color, var(--accent));
   border-radius: 0 6px 6px 0;
   background: color-mix(in srgb, var(--callout-color, var(--accent)) 9%, transparent);
 }
 .vault-callout-title {
   font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
+<<<<<<< HEAD
   font-size: 0.85em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--callout-color, var(--accent)); margin-bottom: 0.45em;
+=======
+  font-size: 0.96em; font-weight: 650; line-height: 1.45;
+  color: var(--callout-color, var(--accent));
+  display: flex; align-items: flex-start; gap: 8px;
+>>>>>>> 0374dce (Font Update)
 }
-.vault-callout-body { color: var(--text-secondary); font-style: normal; }
-.vault-callout-body p:last-child { margin-bottom: 0; }
+.vault-callout-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 0.16em;
+  color: var(--callout-color, var(--accent));
+}
+.vault-callout-title-text { flex: 1; min-width: 0; }
+.vault-callout-body {
+  margin-top: 0.45em;
+  color: var(--text-primary);
+  font-style: normal;
+}
+.vault-callout-body > :first-child { margin-top: 0; }
+.vault-callout-body > :last-child { margin-bottom: 0; }
 
 /* Dataview blocks */
 .vault-dataview-block {
@@ -572,6 +640,7 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 
 <!-- 1. Data (plain JS) -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="vault-data.js?v=26"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
@@ -594,6 +663,18 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <script type="text/babel" src="vault-rightpanel.jsx?v=28"></script>
 <script type="text/babel" src="vault-app.jsx?v=28"></script>
 >>>>>>> 3a9d0d2 (update notes and vault (16-11-2026 21:41:50.71))
+=======
+<script src="vault-data.js?v=34"></script>
+
+<!-- 2. Components (JSX — load order matters: dependencies first) -->
+<script type="text/babel" src="vault-icons.jsx?v=34"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=34"></script>
+<script type="text/babel" src="vault-graph.jsx?v=34"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=34"></script>
+<script type="text/babel" src="vault-editor.jsx?v=34"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=34"></script>
+<script type="text/babel" src="vault-app.jsx?v=34"></script>
+>>>>>>> 0374dce (Font Update)
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
