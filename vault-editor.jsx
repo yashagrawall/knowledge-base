@@ -907,7 +907,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     return () => el.removeEventListener('click', handler);
   }, [note?.id, onNoteNavigate]);
 
-  const maxW = readingWidth === 'compact' ? 580 : readingWidth === 'wide' ? 880 : 700;
+  const maxW = readingWidth === 'compact' ? 780 : readingWidth === 'wide' ? 1320 : 1080;
 
   return (
     <div
@@ -922,9 +922,9 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
 
 // ─── Animated note wrapper (React-controlled, avoids CSS animation glitch) ──────
 const NoteAnimWrapper = ({ noteId, readingWidth, children }) => {
-  const maxW = readingWidth === 'compact' ? 580 : readingWidth === 'wide' ? 880 : 700;
+  const maxW = readingWidth === 'compact' ? 780 : readingWidth === 'wide' ? 1320 : 1080;
   return (
-    <div style={{ width:'100%', maxWidth: maxW + 'px', padding:'32px 48px 96px' }}>
+    <div style={{ width:'100%', maxWidth: maxW + 'px', padding:'32px 44px 96px' }}>
       {children}
     </div>
   );
