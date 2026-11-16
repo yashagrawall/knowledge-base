@@ -9,7 +9,7 @@ Tags :  [[College]] ; [[DSA]]
 
 **Course Code:** PCCS4306 | **Credits:** 3 (Theory) + 2 (Lab) = **5 Credits**    
 **Target Grade:** **O (10/10)**   
-**Associated Notes:** [[DAA Theory Syllabus]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
+**Associated Notes:** [[DAA Theory Syllabus]] · [[DAA Lab Manual]] · [[DAA Lab & Theory Viva Guide]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
 
 ---
 ## 1. Executive Strategy & The Dual Lens

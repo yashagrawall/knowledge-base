@@ -4,7 +4,8 @@
 
 Date of Submission and Viva : 17/11/2026    
 Total Experiments : 13    
-Tags : [[College]]     
+Tags : [[College]] ; [[DSA]]    
+**Associated Notes:** [[DAA Lab & Theory Viva Guide]] · [[DAA Study Flow & Execution Guide]] · [[DAA Theory Syllabus]]  
 ~***Yash Agrawall***~
 
 ---

@@ -8,7 +8,7 @@ Tags :  [[College]] ; [[computer networking]]
 # Computer Networks (CN) — Study Flow & Execution Guide
 
 **Course Code:** PCCS4307 | **Credits:** 3 (Theory) + 2 (Lab) = **5 Credits**  
-**Target Grade:** **O (10/10)** | **Associated Notes:** [[CN Theory Syllabus]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
+**Target Grade:** **O (10/10)** | **Associated Notes:** [[CN Theory Syllabus]] · [[CN Lab Outputs Guide]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
 
 ---
 

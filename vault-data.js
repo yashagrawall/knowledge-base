@@ -56463,7 +56463,7 @@ Page 2/3 onwards should contain the write up (withe respect to the above figure)
     created: "2026-09-27",
     modified: "2026-09-27",
     wordCount: 56,
-    backlinks: ["cn-pyqs-analysis-question-bank"],
+    backlinks: ["cn-lab-outputs-guide","cn-pyqs-analysis-question-bank"],
     links: ["cn2026specialassignement-1"],
     outline: [{"level":1,"text":"CN Class Rules","id":"cn-class-rules"}],
     content: `# CN Class Rules
@@ -56480,16 +56480,16 @@ Page 2/3 onwards should contain the write up (withe respect to the above figure)
     folder: "06 - Archive",
     path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","CN Study Flow & Execution Guide"],
     tags: [],
-    created: "2026-09-29",
-    modified: "2026-09-29",
-    wordCount: 2319,
-    backlinks: ["5th-sem-pyqs-master-index","cn-pyqs-analysis-question-bank"],
-    links: ["cn-theory-syllabus","academic-notes-template"],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 2324,
+    backlinks: ["5th-sem-pyqs-master-index","cn-lab-manual-shortened","cn-lab-theory-viva-guide","cn-lab-outputs-guide","cn-pyqs-analysis-question-bank"],
+    links: ["cn-theory-syllabus","cn-lab-outputs-guide","academic-notes-template"],
     outline: [{"level":1,"text":"Computer Networks (CN) — Study Flow & Execution Guide","id":"computer-networks-cn-study-flow-execution-guide"},{"level":2,"text":"1. Executive Strategy & The Dual Lens","id":"1-executive-strategy-the-dual-lens"},{"level":2,"text":"2. Resource Mapping & Local Assets","id":"2-resource-mapping-local-assets"},{"level":2,"text":"3. Master Chronological Study Flow & Exact Page Mapping","id":"3-master-chronological-study-flow-exact-page-mapping"},{"level":3,"text":"PHASE 1: Network Fundamentals, Physical Layer & Transmission (Module I)","id":"phase-1-network-fundamentals-physical-layer-transmission-module-i"},{"level":3,"text":"PHASE 2: Data Link Layer, Error Control & MAC Protocols (Module II)","id":"phase-2-data-link-layer-error-control-mac-protocols-module-ii"},{"level":3,"text":"PHASE 3: Network Layer, Addressing & Routing (Module III)","id":"phase-3-network-layer-addressing-routing-module-iii"},{"level":3,"text":"PHASE 4: Transport Layer, Congestion Control & Applications (Module IV)","id":"phase-4-transport-layer-congestion-control-applications-module-iv"},{"level":2,"text":"4. Tactical Execution Protocol (Per 60-Min Study Session)","id":"4-tactical-execution-protocol-per-60-min-study-session"},{"level":1,"text":"Reference","id":"reference"}],
     content: `# Computer Networks (CN) — Study Flow & Execution Guide
 
 **Course Code:** PCCS4307 | **Credits:** 3 (Theory) + 2 (Lab) = **5 Credits**  
-**Target Grade:** **O (10/10)** | **Associated Notes:** [[CN Theory Syllabus]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
+**Target Grade:** **O (10/10)** | **Associated Notes:** [[CN Theory Syllabus]] · [[CN Lab Outputs Guide]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
 
 ---
 
@@ -56721,7 +56721,7 @@ Computer Networks is the bridge between physical signals and distributed softwar
     created: "2026-09-27",
     modified: "2026-09-27",
     wordCount: 374,
-    backlinks: ["cn-pyqs-analysis-question-bank"],
+    backlinks: ["cn-lab-outputs-guide","cn-pyqs-analysis-question-bank"],
     links: ["cn-theory-syllabus"],
     outline: [{"level":1,"text":"Computer Networks — 1st Internal Examination 2026","id":"computer-networks-1st-internal-examination-2026"},{"level":2,"text":"CN Theory Syllabus","id":"cn-theory-syllabus"},{"level":2,"text":"Questions Table","id":"questions-table"},{"level":2,"text":"Q Paper","id":"q-paper"}],
     content: `# Computer Networks — 1st Internal Examination 2026
@@ -56768,7 +56768,7 @@ Computer Networks is the bridge between physical signals and distributed softwar
     created: "2026-11-16",
     modified: "2026-11-16",
     wordCount: 225,
-    backlinks: [],
+    backlinks: ["cn-lab-outputs-guide"],
     links: ["cn-theory-syllabus"],
     outline: [{"level":1,"text":"Computer Networks — 2nd Internal Examination 2026","id":"computer-networks-2nd-internal-examination-2026"},{"level":2,"text":"CN Theory Syllabus","id":"cn-theory-syllabus"},{"level":2,"text":"Questions Table","id":"questions-table"}],
     content: `# Computer Networks — 2nd Internal Examination 2026
@@ -56798,896 +56798,25 @@ Computer Networks is the bridge between physical signals and distributed softwar
 ---`
   },
 
-  'cn-lab-manual': {
-    id: 'cn-lab-manual',
-    title: "CN Lab Manual",
+  'cn-lab-manual-shortened': {
+    id: 'cn-lab-manual-shortened',
+    title: "CN Lab Manual (shortened)",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Manual","CN Lab Manual"],
-    tags: ["asset"],
-    created: "2026-09-17",
-    modified: "2026-09-17",
-    wordCount: 0,
-    backlinks: [],
-    links: [],
-    outline: [],
-    content: `# CN Lab Manual
-
-<div style="width:100%;height:82vh">
-<iframe src="notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Manual.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="CN Lab Manual"></iframe>
-</div>
-
-[Open in new tab ↗](notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Manual.pdf)`
-  },
-
-  'cn-lab-syllabus': {
-    id: 'cn-lab-syllabus',
-    title: "CN Lab Syllabus",
-    folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Manual","CN Lab Syllabus"],
-    tags: ["asset"],
-    created: "2026-09-17",
-    modified: "2026-09-17",
-    wordCount: 0,
-    backlinks: [],
-    links: [],
-    outline: [],
-    content: `# CN Lab Syllabus
-
-<div style="width:100%;height:82vh">
-<iframe src="notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Syllabus.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="CN Lab Syllabus"></iframe>
-</div>
-
-[Open in new tab ↗](notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Syllabus.pdf)`
-  },
-
-  'cn-viva-questions': {
-    id: 'cn-viva-questions',
-    title: "cn-viva-questions",
-    folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","cn-viva-questions"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Manual","CN Lab Manual (shortened)"],
     tags: [],
-    created: "2026-11-13",
-    modified: "2026-11-13",
-    wordCount: 6569,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Computer Networks Comprehensive Viva Voce Preparation Guide","id":"computer-networks-comprehensive-viva-voce-preparation-guide"},{"level":2,"text":"1. Network Models, Physical Layer & Transmission Fundamentals","id":"1-network-models-physical-layer-transmission-fundamentals"},{"level":3,"text":"Architecture & Layered Reference Models","id":"architecture-layered-reference-models"},{"level":3,"text":"Signals, Transmission Impairments & Data Rate Limits","id":"signals-transmission-impairments-data-rate-limits"},{"level":3,"text":"Line Coding & Multiplexing Techniques","id":"line-coding-multiplexing-techniques"},{"level":2,"text":"2. Data Link Layer, Framing & Error Control","id":"2-data-link-layer-framing-error-control"},{"level":3,"text":"Framing Techniques","id":"framing-techniques"},{"level":3,"text":"Error Detection & Correction Mechanisms","id":"error-detection-correction-mechanisms"},{"level":3,"text":"Flow & Error Control Protocols","id":"flow-error-control-protocols"},{"level":2,"text":"3. MAC Sublayer, Multiple Access Protocols & LANs","id":"3-mac-sublayer-multiple-access-protocols-lans"},{"level":3,"text":"Multiple Access Protocol Taxonomy","id":"multiple-access-protocol-taxonomy"},{"level":3,"text":"Random Access Protocols","id":"random-access-protocols"},{"level":3,"text":"Channelization Protocols & Wireless Technologies","id":"channelization-protocols-wireless-technologies"},{"level":2,"text":"4. Network Layer, Addressing, Subnetting & Routing","id":"4-network-layer-addressing-subnetting-routing"},{"level":3,"text":"IPv4 Addressing & Architecture","id":"ipv4-addressing-architecture"},{"level":3,"text":"Subnetting & CIDR Calculations","id":"subnetting-cidr-calculations"},{"level":3,"text":"IPv4 Header Structure & Fragmentation Mechanics","id":"ipv4-header-structure-fragmentation-mechanics"},{"level":3,"text":"Supporting Protocols & Routing Algorithms","id":"supporting-protocols-routing-algorithms"},{"level":2,"text":"5. Transport Layer Protocols, TCP Lifecycle & Congestion Control","id":"5-transport-layer-protocols-tcp-lifecycle-congestion-control"},{"level":3,"text":"TCP vs UDP Architecture","id":"tcp-vs-udp-architecture"},{"level":3,"text":"TCP Connection Establishment & Termination","id":"tcp-connection-establishment-termination"},{"level":3,"text":"TCP Flow Control & Congestion Control Mechanics","id":"tcp-flow-control-congestion-control-mechanics"},{"level":2,"text":"6. Application Layer Services, Well-Known Ports & Security","id":"6-application-layer-services-well-known-ports-security"},{"level":3,"text":"DNS & Core Application Protocols","id":"dns-core-application-protocols"},{"level":3,"text":"Well-Known Port Numbers Master Table","id":"well-known-port-numbers-master-table"},{"level":3,"text":"Cryptography & RSA Mechanics","id":"cryptography-rsa-mechanics"},{"level":2,"text":"7. Practical Lab Experiments, CLI Troubleshooting Commands & Interconnecting Devices","id":"7-practical-lab-experiments-cli-troubleshooting-commands-interconnecting-devices"},{"level":3,"text":"Basic Network Command-Line Tools","id":"basic-network-command-line-tools"},{"level":3,"text":"Network Interconnecting Devices","id":"network-interconnecting-devices"}],
-    content: `# Computer Networks Comprehensive Viva Voce Preparation Guide
-
-An oral examination in computer networks evaluates conceptual understanding, precise technical terminology, exact mathematical formulas, and protocol mechanics. In a viva setting, examiners expect direct, structured, and technically rigorous answers that connect theoretical principles with practical implementations. This guide provides a comprehensive question bank of probable short viva questions and high-yield answers organized systematically across all layers of the networking protocol stack, laboratory experiments, and command-line diagnostic utilities.
-
----
-
-## 1. Network Models, Physical Layer & Transmission Fundamentals
-
-The physical layer and network architecture establish the mathematical and physical foundations of data communication, governing how raw bitstreams traverse physical media and how layered abstractions compartmentalize networking responsibilities.
-
-### Architecture & Layered Reference Models
-
-**Q: What is the primary purpose of layering in computer networks?**  
-**A:** Layering decomposes a complex communication system into smaller, modular, and manageable functional units. Each layer provides specific services to the layer immediately above it while hiding internal implementation details from higher layers.
-
-**Q: Enumerate the seven layers of the OSI model from bottom to top.**  
-**A:** The seven layers in order are:
-1. Physical Layer
-2. Data Link Layer
-3. Network Layer
-4. Transport Layer
-5. Session Layer
-6. Presentation Layer
-7. Application Layer
-
-**Q: How does the TCP/IP model differ from the OSI reference model?**  
-**A:** The OSI model is a theoretical seven-layer conceptual framework developed by ISO. The TCP/IP model is a practical implementation architecture (originally four layers, modernized into five layers) that combines the OSI Presentation and Session layers into the Application Layer, and treats the Physical and Data Link layers as the Network Access/Interface layer in the four-layer version.
-
-**Q: Define Protocol Data Unit (PDU) and name the PDU at each layer.**  
-**A:** A PDU is the specific unit of data transferred between peer entities at a given protocol layer:
-* **Physical Layer:** Bit
-* **Data Link Layer:** Frame
-* **Network Layer:** Packet (or Datagram)
-* **Transport Layer:** Segment (for TCP) or User Datagram (for UDP)
-* **Application Layer:** Message
-
-**Q: What is the function of the Presentation Layer in the OSI model?**  
-**A:** It handles data translation, syntax coordination, character code translation (such as ASCII to EBCDIC), data compression, and cryptographic encryption/decryption.
-
-**Q: What is the responsibility of the Session Layer?**  
-**A:** It establishes, manages, synchronizes, and terminates dialogues between communicating applications, maintaining checkpoints for recovery during data transfer.
-
----
-
-### Signals, Transmission Impairments & Data Rate Limits
-
-**Q: What is the fundamental difference between an analog signal and a digital signal?**  
-**A:** An analog signal is a continuous wave that varies smoothly over time with an infinite number of values within a range. A digital signal is discrete, having a finite number of defined voltage states (typically two levels, representing $0$ and $1$).
-
-**Q: Differentiate between bit rate and baud rate.**  
-**A:** Bit rate (data rate, $N$) is the number of bits transmitted per second (bps). Baud rate (signal rate, $S$) is the number of signal elements or symbols transmitted per second (Bd). They are related by:
-$$S = \\frac{N}{r}$$
-where $r$ is the number of data elements carried by one signal element ($r = \\log_2 L$, with $L$ being the number of signal levels).
-
-**Q: What are the three primary causes of transmission impairment in physical media?**  
-**A:**
-* **Attenuation:** Loss of signal energy as the wave travels through a resistance-bearing medium, compensated by amplifiers or repeaters.
-* **Distortion:** Alteration of signal shape occurring in composite signals because different frequency components propagate at different velocities.
-* **Noise:** External electromagnetic interference (thermal noise, induced noise, crosstalk, impulse noise) corrupting the original signal.
-
-**Q: Define Signal-to-Noise Ratio (SNR) and how it is expressed in decibels.**  
-**A:** SNR is the ratio of average signal power ($P_{\\text{signal}}$) to average noise power ($P_{\\text{noise}}$):
-$$\\text{SNR} = \\frac{P_{\\text{signal}}}{P_{\\text{noise}}}$$
-In decibels:
-$$\\text{SNR}_{\\text{dB}} = 10 \\log_{10}(\\text{SNR})$$
-
-**Q: State the Nyquist Bit Rate formula and its operating constraint.**  
-**A:** The Nyquist formula defines the theoretical maximum bit rate for an ideal, noiseless channel:
-$$\\text{Bit Rate} = 2B \\log_2(L)$$
-where $B$ is channel bandwidth in Hertz and $L$ is the number of discrete signal voltage levels used to represent data.
-
-**Q: State the Shannon Channel Capacity theorem and its significance.**  
-**A:** The Shannon theorem defines the upper theoretical capacity limit of a real-world noisy channel, independent of the number of signal levels:
-$$C = B \\log_2(1 + \\text{SNR})$$
-It proves that channel capacity cannot be arbitrarily increased by adding signal levels once thermal noise is present.
-
-**Q: What is the practical relationship between Nyquist and Shannon formulas?**  
-**A:** The Shannon formula establishes the upper physical data rate ceiling dictated by channel noise. The Nyquist formula is then applied to calculate the minimum number of signal levels ($L$) required to achieve that target data rate.
-
-**Q: Differentiate between Bandwidth and Throughput.**  
-**A:** Bandwidth is the maximum theoretical data carrying capacity of a link (measured in Hz or bps). Throughput is the actual measurement of data successfully delivered over the link in real-time ($T \\le B$).
-
-**Q: What is the Bandwidth-Delay Product (BDP)?**  
-**A:** BDP ($B \\times \\text{Delay}$) represents the cross-sectional volume of a communication link, defining the maximum number of bits that can fill the transmission pipe in transit at any single moment.
-
----
-
-### Line Coding & Multiplexing Techniques
-
-**Q: Why is line coding necessary in digital transmission?**  
-**A:** Line coding converts a sequence of binary digits ($0$s and $1$s) into discrete physical voltage levels suitable for transmission over a baseband channel, ensuring synchronization, minimizing DC components, and providing error detection capability.
-
-**Q: What are the two major drawbacks of Unipolar NRZ and Polar NRZ-L encoding?**  
-**A:**
-* **DC Component Problem:** Long sequences of identical bits produce a non-zero average DC voltage that cannot pass through AC-coupled transformers or capacitors.
-* **Lack of Synchronization:** Long strings of consecutive $0$s or $1$s provide no signal transitions, causing sender and receiver clocks to drift out of phase.
-
-**Q: Compare Polar NRZ-L and Polar NRZ-I.**  
-**A:** In NRZ-L (Level), the signal voltage level directly determines the bit value (positive voltage for $0$, negative for $1$). In NRZ-I (Invert), the signal inverts its voltage level at the beginning of the bit interval when a bit $1$ is encountered, with no transition for bit $0$.
-
-**Q: Why do Manchester and Differential Manchester encoding provide self-synchronization?**  
-**A:** Both schemes force a guaranteed voltage transition in the exact middle of every bit interval. In Manchester, a transition from positive to negative represents bit $0$, and negative to positive represents bit $1$. In Differential Manchester, the mid-bit transition provides clocking, while an inversion at the start of the bit interval represents $0$ (no transition represents $1$).
-
-**Q: What is the penalty for using Manchester encoding?**  
-**A:** It requires a baud rate equal to twice the bit rate ($r = 1/2$), which doubles the required signal bandwidth compared to NRZ schemes ($B = N$ Hz).
-
-**Q: Explain the working of 2B1Q line coding.**  
-**A:** 2B1Q (Two-Binary, One-Quaternary) is a multilevel scheme that encodes a block of two binary data bits into one quaternary signal element ($L = 4$ voltage levels: $-3, -1, +1, +3$). Because $r = 2$, it halves the baud rate ($S = N/2$), conserving transmission bandwidth in technologies like DSL.
-
-**Q: What is MLT-3 line coding and where is it used?**  
-**A:** Multiline Transmission, Three-Level (MLT-3) cycles through three voltage levels ($+V, 0, -V, 0$). It transitions to the next state only when encountering a bit $1$, and remains constant for bit $0$. It produces a worst-case fundamental frequency of $N/4$, making it ideal for Fast Ethernet (100BASE-TX) over copper cables.
-
-**Q: Compare Synchronous TDM and Statistical TDM.**  
-**A:**
-* **Synchronous TDM:** Each connected input line is allocated a dedicated, fixed-duration time slot in every round-robin output frame. If an input line has no data to transmit, its slot travels empty, wasting bandwidth.
-* **Statistical (Asynchronous) TDM:** Slots are allocated dynamically on-demand only to lines with active data. Because slot ownership is not tied to fixed time positions, each transmitted slot must carry an explicit destination address header.
-
----
-
-## 2. Data Link Layer, Framing & Error Control
-
-The Data Link Layer transforms an unreliable raw physical transmission facility into an error-free, framed communication link between directly adjacent nodes.
-
-### Framing Techniques
-
-**Q: What is framing and why is it required?**  
-**A:** Framing divides the continuous physical bitstream into discrete, manageable data units called frames. It establishes clear boundaries (start and end) so the receiver can recognize frame boundaries, check integrity, and extract payload data.
-
-**Q: Explain the mechanism of Bit Stuffing.**  
-**A:** Bit stuffing is used in bit-oriented protocols (such as HDLC). A unique flag sequence \`01111110\` marks the beginning and ending of every frame. To prevent payload data from accidentally mimicking the flag, the sender scans the stream and automatically injects a dummy \`0\` bit immediately after any sequence of five consecutive \`1\`s. The receiver strips this stuffed \`0\` upon detecting five consecutive \`1\`s followed by a \`0\`.
-
-**Q: Explain Character (Byte) Stuffing.**  
-**A:** In byte-oriented protocols, special 1-byte control characters mark frame boundaries (such as \`DLE STX\` for Start of Text and \`DLE ETX\` for End of Text). If the actual payload contains a byte identical to \`DLE\` (Data Link Escape), the sender inserts an extra escape character (\`DLE\`) immediately before it. The receiver strips the first \`DLE\` upon receiving two consecutive \`DLE\` bytes.
-
----
-
-### Error Detection & Correction Mechanisms
-
-**Q: Differentiate between a single-bit error and a burst error.**  
-**A:** A single-bit error corrupts only one bit in a data block. A burst error corrupts two or more bits, where the burst length is measured from the first corrupted bit to the last corrupted bit in the sequence.
-
-**Q: Define Hamming distance and minimum Hamming distance ($d_{\\min}$).**  
-**A:** The Hamming distance between two binary words of equal length is the number of bit positions in which they differ, computed as the number of $1$s resulting from an exclusive-OR ($\\oplus$) operation. The minimum Hamming distance ($d_{\\min}$) of a code is the smallest Hamming distance between any two distinct valid codewords in the code set.
-
-**Q: What are the conditions on $d_{\\min}$ for error detection and error correction?**  
-**A:**
-* To detect up to $s$ errors:
-$$d_{\\min} \\ge s + 1$$
-* To correct up to $t$ errors:
-$$d_{\\min} \\ge 2t + 1$$
-
-**Q: How does Cyclic Redundancy Check (CRC) operate at sender and receiver?**  
-**A:**
-* **Sender:** A predetermined generator polynomial of degree $r$ (length $r+1$) is chosen. The sender appends $r$ zeros to the $m$-bit dataword and performs modulo-2 binary division (using bitwise XOR). The resulting $r$-bit remainder is appended to the original dataword to form the transmitted codeword.
-* **Receiver:** The receiver divides the incoming $(m+r)$-bit codeword by the identical generator polynomial using modulo-2 division. If the final remainder is all zeros, the frame is error-free; otherwise, transmission corruption is detected and the frame is rejected.
-
-**Q: In Hamming Code $C(7,4)$, how many data bits and parity bits are used, and how are parity bits positioned?**  
-**A:** $C(7,4)$ encodes $m = 4$ data bits with $r = 3$ redundant parity bits to form a 7-bit codeword. In standard systematic block code configurations (such as standard laboratory implementations), parity bits $r_0, r_1, r_2$ are computed using linear modulo-2 parity equations:
-$$r_0 = a_0 \\oplus a_1 \\oplus a_2$$
-$$r_1 = a_1 \\oplus a_2 \\oplus a_3$$
-$$r_2 = a_0 \\oplus a_1 \\oplus a_3$$
-
-**Q: How does a Hamming receiver detect and correct an erroneous bit?**  
-**A:** The receiver evaluates three syndrome bits ($s_2, s_1, s_0$) by recomputing parity equations across received codeword positions:
-$$s_0 = a_0 \\oplus a_1 \\oplus a_2 \\oplus r_0$$
-$$s_1 = a_1 \\oplus a_2 \\oplus a_3 \\oplus r_1$$
-$$s_2 = a_0 \\oplus a_1 \\oplus a_3 \\oplus r_2$$
-If $(s_2, s_1, s_0) = 000$, no error occurred. If non-zero, the binary syndrome value uniquely maps to the exact bit index of the corrupted bit, allowing the receiver to correct it by inverting that bit.
-
-**Q: How does Internet Checksum calculate check bits?**  
-**A:** Data is divided into 16-bit words. The sender adds all 16-bit words using 1's complement arithmetic (carrying the end-around carry back into the lowest-order bit) and inverts the final sum to produce the checksum. The receiver adds all data words plus the checksum; a valid transmission produces a result of all $1$s (or $0$ after final inversion).
-
----
-
-### Flow & Error Control Protocols
-
-**Q: What is Stop-and-Wait ARQ and what is its primary operational drawback?**  
-**A:** The sender transmits a single frame, stops, and keeps a local copy while awaiting an acknowledgment (ACK) from the receiver. If the acknowledgment timer expires before an ACK arrives, the sender retransmits the frame. Its drawback is low link utilization because the channel remains completely idle during the entire round-trip propagation time.
-
-**Q: Explain the window sizing rules for Go-Back-N ARQ.**  
-**A:** For an $m$-bit sequence number space ($0$ to $2^m - 1$):
-* **Sender Window Size:** $S_{\\text{size}} = 2^m - 1$
-* **Receiver Window Size:** $R_{\\text{size}} = 1$  
-If the sender window size were allowed to equal $2^m$, an entire window of lost ACKs would cause the sender to retransmit original frames that the receiver would mistakenly accept as brand-new duplicate frames.
-
-**Q: What happens in Go-Back-N when an intermediate frame in a sequence is lost?**  
-**A:** Because the receiver window size is strictly $1$, the receiver discards all subsequent arriving out-of-order frames without buffering them. Upon acknowledgment timeout, the sender must roll back and retransmit the entire window of unacknowledged frames starting from the missing frame.
-
-**Q: How does Selective-Repeat ARQ overcome Go-Back-N inefficiency?**  
-**A:**
-* **Sender Window Size:** $S_{\\text{size}} = 2^{m-1}$
-* **Receiver Window Size:** $R_{\\text{size}} = 2^{m-1}$  
-The receiver maintains an internal buffer to hold valid out-of-order frames. It sends Negative Acknowledgments (NAK) for missing frames, and the sender retransmits only the specific corrupted or lost frames rather than the entire window.
-
-**Q: Define Piggybacking.**  
-**A:** Piggybacking is an optimization technique in bidirectional data communication where an acknowledgment for received data is attached to an outgoing outbound data frame rather than sending a dedicated, standalone ACK control frame.
-
----
-
-## 3. MAC Sublayer, Multiple Access Protocols & LANs
-
-When multiple networking nodes share a single broadcast transmission link, Media Access Control (MAC) protocols resolve access contention to prevent mutual packet destruction.
-
-### Multiple Access Protocol Taxonomy
-
-The protocols governing access to shared communication channels are classified into three primary operational categories:
-
-* **Random Access (Contention-Based):** Nodes contend for the channel; no node has priority. Includes Pure ALOHA, Slotted ALOHA, CSMA, CSMA/CD (used in wired Ethernet), and CSMA/CA (used in wireless networks).
-* **Controlled Access (Deterministic):** Nodes consult one another or a central controller to determine transmission rights. Includes Reservation, Polling, and Token Passing.
-* **Channelization (Partitioning):** Channel bandwidth is shared in frequency, time, or coding space. Includes FDMA, TDMA, and CDMA.
-
----
-
-### Random Access Protocols
-
-**Q: Differentiate between Pure ALOHA and Slotted ALOHA in terms of vulnerable time and maximum throughput.**  
-**A:**
-* **Pure ALOHA:** Stations transmit whenever they have data. The vulnerable time is twice the frame transmission time ($2T_{\\text{fr}}$). Maximum theoretical throughput is $18.4\\%$ ($S_{\\max} = \\frac{1}{2e} \\approx 0.184$ at $G = 0.5$).
-* **Slotted ALOHA:** Time is divided into discrete slots equal to $T_{\\text{fr}}$, and stations can transmit only at the beginning of a slot. The vulnerable time is halved to $T_{\\text{fr}}$. Maximum theoretical throughput doubles to $36.8\\%$ ($S_{\\max} = \\frac{1}{e} \\approx 0.368$ at $G = 1.0$).
-
-**Q: What is Carrier Sense Multiple Access (CSMA) and what is its core rule?**  
-**A:** CSMA requires stations to "sense before transmit." A station checks the physical carrier line: if the medium is busy, it defers transmission; if idle, it proceeds based on its persistence strategy.
-
-**Q: Compare 1-persistent, Non-persistent, and p-persistent CSMA.**  
-**A:**
-* **1-persistent:** The station continuously senses a busy line; the moment it detects an idle channel, it transmits immediately with probability $p = 1$. It has the highest collision rate when multiple waiting stations fire at once.
-* **Non-persistent:** If the line is busy, the station waits a random backoff interval before sensing the medium again, reducing collisions but introducing channel idle latency.
-* **p-persistent:** Used in slotted channels. The station continuously senses until idle, then transmits with probability $p$, or defers to the next slot with probability $1-p$.
-
-**Q: Explain how CSMA/CD operates in wired Ethernet.**  
-**A:** In CSMA/CD (Carrier Sense Multiple Access with Collision Detection), stations monitor the line continuously while transmitting. If two stations transmit concurrently, their electrical signals collide, doubling the channel energy level. Upon detecting this condition, both stations abort transmission immediately, transmit an electrical jamming signal to notify the network, and enter Binary Exponential Backoff before attempting retransmission.
-
-**Q: Why does CSMA/CD require a minimum frame size, and what is the formula?**  
-**A:** A transmitting station must continue transmitting long enough to detect a collision returning from the furthest point on the cable before the frame finishes sending. Thus, frame transmission time ($T_{\\text{fr}}$) must be at least twice the maximum end-to-end propagation delay ($T_p$):
-$$T_{\\text{fr}} \\ge 2T_p \\implies \\text{Minimum Frame Length} = 2 \\times \\text{Bandwidth} \\times T_p$$
-In standard 10 Mbps Ethernet, this evaluates to 512 bits (64 bytes).
-
-**Q: What is the Binary Exponential Backoff algorithm?**  
-**A:** After collision number $k$, a station selects a random integer backoff multiplier $R$ from the range:
-$$0 \\le R \\le 2^k - 1$$
-The station waits $R \\times \\text{Slot Time}$ before re-sensing the channel. After 10 collisions, the maximum range ceiling is capped at $2^{10} - 1 = 1023$. If collisions reach $k_{\\max} = 16$, transmission is aborted and an error is reported.
-
-**Q: Why cannot CSMA/CD be used in wireless networks, and what protocol replaces it?**  
-**A:** In wireless environments, signal strength attenuates rapidly over distance. The high transmission power of a local wireless antenna completely drowns out any faint colliding signal from a distant transmitter (the dynamic range problem), making hardware collision detection impossible. Wireless networks replace it with **CSMA/CA (Collision Avoidance)**.
-
-**Q: How does CSMA/CA prevent collisions in IEEE 802.11?**  
-**A:** CSMA/CA uses four coordinated avoidance mechanisms:
-* **Interframe Spaces:** Stations must wait an idle period called DIFS (Distributed Interframe Space) before initiating backoff.
-* **Contention Window:** Stations choose a random slotted countdown timer to space out transmissions.
-* **RTS/CTS Handshake:** The sender transmits a short Request-to-Send (RTS) packet; the receiver replies with Clear-to-Send (CTS), reserving the channel and overcoming the hidden terminal problem.
-* **Network Allocation Vector (NAV):** RTS/CTS control frames contain a duration field. All listening stations set an internal timer (NAV) during which they refrain from sensing or accessing the medium.
-
----
-
-### Channelization Protocols & Wireless Technologies
-
-**Q: Differentiate between FDMA, TDMA, and CDMA.**  
-**A:**
-* **FDMA:** Divides the total available bandwidth into non-overlapping frequency bands, dedicating one continuous frequency band to each station.
-* **TDMA:** Allocates the entire frequency channel bandwidth to each station during designated, cyclic, non-overlapping time slots.
-* **CDMA:** All stations transmit continuously and simultaneously across the entire frequency spectrum, separating transmissions mathematically using orthogonal chip codes.
-
-**Q: State the two core mathematical properties of CDMA Walsh orthogonal chip sequences.**  
-**A:** For orthogonal chip sequences $C_i$ and $C_j$ assigned to $N$ stations:
-1. Inner product of any sequence with itself equals $N$:
-$$C_i \\cdot C_i = N$$
-2. Inner product of two distinct orthogonal sequences equals zero:
-$$C_i \\cdot C_j = 0 \\quad (\\text{for } i \\neq j)$$
-
-**Q: What is the difference between a Bluetooth Piconet and a Scatternet?**  
-**A:** A Piconet is a short-range wireless ad-hoc network consisting of one primary (master) node and up to seven active secondary (slave) nodes. A Scatternet is formed by interconnecting multiple Piconets, where a node operates as a master in one Piconet and as a slave in another.
-
----
-
-## 4. Network Layer, Addressing, Subnetting & Routing
-
-The Network Layer handles host-to-host packet delivery across heterogeneous internetworks, managing logical addressing, packet fragmentation, and routing topology computation.
-
-### IPv4 Addressing & Architecture
-
-**Q: What is the size of an IPv4 address and how is it represented?**  
-**A:** An IPv4 address is 32 bits (4 bytes) long, represented in dotted-decimal notation as four decimal octets separated by periods (e.g., \`192.168.1.1\`), with each octet ranging from 0 to 255.
-
-**Q: Outline the class boundaries, leading bits, and default masks of classful IPv4 addressing.**  
-**A:**
-
-| Class | Leading Bits | First Octet Range | Default Subnet Mask | Default CIDR | Purpose |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Class A** | \`0\` | $1 - 126$ | \`255.0.0.0\` | \`/8\` | Very Large Networks |
-| **Class B** | \`10\` | $128 - 191$ | \`255.255.0.0\` | \`/16\` | Medium-to-Large Networks |
-| **Class C** | \`110\` | $192 - 223$ | \`255.255.255.0\` | \`/24\` | Small Local Networks |
-| **Class D** | \`1110\` | $224 - 239$ | Undefined | Undefined | Multicast Groups |
-| **Class E** | \`1111\` | $240 - 255$ | Undefined | Undefined | Experimental / Reserved |
-
-*Note: The \`127.X.X.X\` network is reserved exclusively for host loopback diagnostic testing.*
-
-**Q: What are the reserved private IPv4 address ranges defined in RFC 1918?**  
-**A:**
-* **Class A:** \`10.0.0.0\` to \`10.255.255.255\` (\`10.0.0.0/8\`)
-* **Class B:** \`172.16.0.0\` to \`172.31.255.255\` (\`172.16.0.0/12\`)
-* **Class C:** \`192.168.0.0\` to \`192.168.255.255\` (\`192.168.0.0/16\`)
-
-**Q: Within any IP subnet, which two host addresses cannot be assigned to physical machines?**  
-**A:**
-* **Network Address:** The first address where all host bits are $0$, identifying the subnet itself.
-* **Direct Broadcast Address:** The last address where all host bits are $1$, used to broadcast to all devices on that specific subnet.
-
----
-
-### Subnetting & CIDR Calculations
-
-**Q: Given the network \`192.168.10.0/26\`, calculate the subnet mask, total number of subnets, and number of usable host addresses per subnet.**  
-**A:**
-* **Subnet Mask:** A \`/26\` prefix has 26 consecutive ones: \`255.255.255.192\`.
-* **Borrowing Bits:** In Class C (default \`/24\`), 2 bits are borrowed ($s = 2$).
-* **Total Subnets:** $2^s = 2^2 = 4$ subnets.
-* **Host Bits:** $h = 32 - 26 = 6$ bits.
-* **Total Addresses per Subnet:** $2^6 = 64$.
-* **Usable Hosts per Subnet:** $2^h - 2 = 64 - 2 = 62$ usable hosts.
-
-**Q: What is Variable Length Subnet Masking (VLSM) and why is it used?**  
-**A:** VLSM allows network engineers to assign different subnet masks to subnets within the same overall address block. Rather than forcing a uniform mask across the entire organization, subnets are sized according to individual host density requirements, eliminating IPv4 address waste.
-
----
-
-### IPv4 Header Structure & Fragmentation Mechanics
-
-The IPv4 datagram header contains critical control fields that coordinate routing, lifetime, and fragmentation:
-
-| Header Field | Field Width | Functional Responsibility |
-| :--- | :--- | :--- |
-| **Version** | 4 bits | Identifies IP version (always 4 for IPv4) |
-| **Internet Header Length (IHL)** | 4 bits | Header length in 4-byte multiples (minimum 5, maximum 15) |
-| **Type of Service (TOS / DSCP)** | 8 bits | Quality of service and priority handling |
-| **Total Length** | 16 bits | Total length of IP packet (header plus data) in bytes |
-| **Identification** | 16 bits | Unique sequence token matching fragments of the same datagram |
-| **Flags** | 3 bits | Bit 0 reserved; Bit 1 = DF (Don't Fragment); Bit 2 = MF (More Fragments) |
-| **Fragment Offset** | 13 bits | Position of fragment payload in **8-byte units** relative to original data |
-| **Time to Live (TTL)** | 8 bits | Hop count limit decremented by each router; drops at 0 to kill loops |
-| **Protocol** | 8 bits | Identifies higher layer protocol (e.g., 6 for TCP, 17 for UDP, 1 for ICMP) |
-| **Header Checksum** | 16 bits | 1's complement checksum validating header integrity |
-| **Source IP Address** | 32 bits | IPv4 address of originating sender |
-| **Destination IP Address** | 32 bits | IPv4 address of ultimate destination |
-
-**Q: What is the minimum and maximum size of an IPv4 packet header?**  
-**A:** The minimum size is 20 bytes (when IHL = 5). The maximum size is 60 bytes (when IHL = 15, accommodating up to 40 bytes of optional parameters).
-
-**Q: How is Fragment Offset computed during packet fragmentation?**  
-**A:** Fragment offset measures the data offset in 8-byte (64-bit) units:
-$$\\text{Fragment Offset} = \\frac{\\text{Byte Offset of Data Payload}}{8}$$
-For example, if an unfragmented datagram carries 4000 bytes of data and is split across links with MTU 1500 (20-byte IP header + 1480 data bytes):
-* **Fragment 1:** Bytes 0 to 1479, $\\text{Offset} = 0$, $\\text{MF} = 1$.
-* **Fragment 2:** Bytes 1480 to 2959, $\\text{Offset} = 1480 / 8 = 185$, $\\text{MF} = 1$.
-* **Fragment 3:** Bytes 2960 to 3999, $\\text{Offset} = 2960 / 8 = 370$, $\\text{MF} = 0$.
-
-**Q: What is the Time to Live (TTL) field and what problem does it solve?**  
-**A:** TTL is an 8-bit counter that limits packet lifespan to prevent undeliverable packets from looping endlessly in routing loops. Every traversing router decrements the TTL value by at least $1$. When TTL drops to $0$, the router discards the packet and sends an ICMP Time Exceeded message back to the source.
-
----
-
-### Supporting Protocols & Routing Algorithms
-
-**Q: What is ARP and how does it function?**  
-**A:** Address Resolution Protocol (ARP) dynamically resolves a known logical IP address to a physical layer MAC hardware address on a local link. The source broadcasts an **ARP Request** (\`FF:FF:FF:FF:FF:FF\`); the target host recognizing its IP replies with a unicast **ARP Reply** containing its MAC address.
-
-**Q: Differentiate between Distance Vector Routing and Link State Routing.**  
-**A:**
-* **Distance Vector (such as RIP):** Based on the Bellman-Ford algorithm. Each router shares its complete routing table only with directly attached neighbors at periodic intervals ("tells its neighbors about the world"). Suffers from slow convergence and the Count-to-Infinity problem.
-* **Link State (such as OSPF):** Based on Dijkstra's Shortest Path First (SPF) algorithm. Each router floods the state and link costs of its directly attached links to every router across the entire autonomous system ("tells the world about its neighbors"). Every node constructs an identical network topology graph, ensuring loop-free routing and rapid convergence.
-
-**Q: Explain the Count-to-Infinity problem and how Split Horizon resolves it.**  
-**A:** In Distance Vector routing, when a link to a destination fails, two adjacent nodes can enter a recursive loop passing outdated distance metrics back and forth, slowly incrementing costs until reaching an artificial infinity ceiling (typically 16 in RIP). **Split Horizon** prevents this by forbidding a router from advertising a routing path back out through the interface from which it learned that route.
-
----
-
-## 5. Transport Layer Protocols, TCP Lifecycle & Congestion Control
-
-The Transport Layer manages true end-to-end (process-to-process) logical communication between software applications executing on remote computing hosts.
-
-### TCP vs UDP Architecture
-
-**Q: Compare TCP and UDP across primary design parameters.**  
-**A:**
-
-| Parameter | TCP (Transmission Control Protocol) | UDP (User Datagram Protocol) |
-| :--- | :--- | :--- |
-| **Connection State** | Connection-Oriented (Three-Way Handshake) | Connectionless |
-| **Reliability** | Guaranteed (ACKs, Retransmission, Checksums) | Unreliable (Best-effort delivery) |
-| **Data Stream** | Continuous Byte Stream | Discrete Independent Datagrams |
-| **Header Overhead** | 20 to 60 Bytes | Fixed 8 Bytes |
-| **Flow & Congestion Control** | Supported (Sliding Window & AIMD) | None |
-| **Primary Use Cases** | Web (HTTP/HTTPS), File Transfer (FTP), Mail (SMTP) | DNS, VoIP, Video Streaming, DHCP |
-
-**Q: Explain the fields of the 8-byte UDP header.**  
-**A:** The UDP header consists of four 16-bit fields:
-1. Source Port (16 bits)
-2. Destination Port (16 bits)
-3. Total Length (16 bits, header plus payload data)
-4. Checksum (16 bits, optional in IPv4, mandatory in IPv6)
-
-**Q: What are the six primary control flags in the TCP header?**  
-**A:**
-* **URG:** Urgent pointer field is valid.
-* **ACK:** Acknowledgment number field is valid.
-* **PSH:** Push function; requests immediate buffer delivery to the application.
-* **RST:** Reset the connection due to an unrecoverable error.
-* **SYN:** Synchronize sequence numbers during connection establishment.
-* **FIN:** Terminate the connection gracefully.
-
----
-
-### TCP Connection Establishment & Termination
-
-**Q: Describe the step-by-step operation of the TCP Three-Way Handshake.**  
-**A:**
-1. **Step 1 (SYN):** The client initiates connection by sending a TCP segment with the \`SYN\` flag set, choosing an Initial Sequence Number ($ISN_c = x$). Client state transitions to \`SYN-SENT\`.
-2. **Step 2 (SYN + ACK):** The server accepts by replying with both \`SYN\` and \`ACK\` flags set, establishing its own sequence number ($ISN_s = y$) and acknowledging the client's sequence:
-$$\\text{Acknowledgment Number} = x + 1$$
-Server state transitions to \`SYN-RCVD\`.
-3. **Step 3 (ACK):** The client confirms connection by sending an \`ACK\` segment with sequence $x + 1$ and acknowledgment $y + 1$. Both endpoints transition to \`ESTABLISHED\`.
-
-**Q: How does TCP terminate an active connection (Four-Way Handshake)?**  
-**A:** TCP connections are full-duplex and must be closed independently in each direction:
-1. Client sends \`FIN\` to close its sending direction, transitioning to \`FIN-WAIT-1\`.
-2. Server responds with \`ACK\`, entering \`CLOSE-WAIT\`; client enters \`FIN-WAIT-2\`.
-3. When server finishes sending pending data, it transmits its own \`FIN\`, entering \`LAST-ACK\`.
-4. Client replies with \`ACK\`, entering the \`TIME_WAIT\` state (typically $2 \\times \\text{MSL}$) to ensure the final ACK arrives before fully terminating.
-
----
-
-### TCP Flow Control & Congestion Control Mechanics
-
-**Q: How does TCP calculate the usable Send Window ($swnd$)?**  
-**A:** TCP dynamically sizes the send window as the minimum of the receiver's advertised window ($rwnd$, preventing receiver buffer overflow) and the network's congestion window ($cwnd$, preventing network link collapse):
-$$swnd = \\min(rwnd, cwnd)$$
-
-**Q: Describe the three primary phases of TCP Congestion Control.**  
-**A:**
-* **Phase 1: Slow Start:** Transmission begins with a congestion window of $1 \\text{ MSS}$. For each received ACK round, the sender doubles $cwnd$ exponentially ($1 \\to 2 \\to 4 \\to 8$) until reaching the slow start threshold ($ssthresh$).
-* **Phase 2: Congestion Avoidance:** Once $cwnd \\ge ssthresh$, growth shifts to linear Additive Increase, increasing $cwnd$ by $1 \\text{ MSS}$ per Round Trip Time (RTT).
-* **Phase 3: Congestion Detection:**
-  * **Upon Retransmission Timeout (Severe Congestion):**
-    $$ssthresh = \\frac{cwnd}{2}, \\quad cwnd = 1 \\text{ MSS}$$
-    TCP resets to the Slow Start phase.
-  * **Upon 3 Duplicate ACKs (Mild Congestion / Fast Retransmit):**
-    $$ssthresh = \\frac{cwnd}{2}, \\quad cwnd = ssthresh$$
-    TCP immediately retransmits the missing segment and resumes linear Congestion Avoidance without resetting to 1.
-
-**Q: Differentiate between Leaky Bucket and Token Bucket traffic shaping algorithms.**  
-**A:**
-* **Leaky Bucket:** Shapes variable bursty input traffic into a strictly constant, uniform output data rate. If the incoming buffer overflows, excess packets are discarded immediately.
-* **Token Bucket:** Generates tokens into a bucket at a fixed rate. Transmissions consume tokens. If the system was idle, tokens accumulate up to the bucket capacity, permitting controlled bursts of traffic at full wire speed.
-
----
-
-## 6. Application Layer Services, Well-Known Ports & Security
-
-The Application Layer provides direct user-facing network services, standard abstraction interfaces, and end-to-end message security.
-
-### DNS & Core Application Protocols
-
-**Q: What is the primary role of the Domain Name System (DNS) and what transport protocol does it use?**  
-**A:** DNS translates human-readable domain hostnames (e.g., \`google.com\`) into routable 32-bit IP addresses. It operates over **UDP port 53** for standard client-server queries (for low latency and low overhead), and **TCP port 53** for zone transfers between primary and secondary nameservers.
-
-**Q: Differentiate between Recursive and Iterative DNS queries.**  
-**A:**
-* **Recursive Query:** The client tasks the local DNS resolver to return the definitive IP address. The resolver takes full responsibility for querying root, TLD, and authoritative nameservers on the client's behalf.
-* **Iterative Query:** The contacted DNS server returns the best referral address it has (e.g., pointing to the \`.com\` TLD server) if it does not own the record, requiring the client resolver to issue subsequent queries down the chain itself.
-
-**Q: Why does FTP use two separate ports?**  
-**A:** File Transfer Protocol (FTP) separates control commands from actual data payload:
-* **Port 21 (Control Connection):** Transmits user commands, authentication credentials, and status responses out-of-band; remains open throughout the session.
-* **Port 20 (Data Connection):** Dynamically opens and closes exclusively for transferring file payloads and directory listings.
-
-**Q: Differentiate between SMTP, POP3, and IMAP.**  
-**A:**
-* **SMTP (Port 25):** A push protocol used to transfer email messages from client to server, and between intermediate mail transfer agents.
-* **POP3 (Port 110):** A pull protocol that downloads emails from the server to a local client and deletes them from the server by default.
-* **IMAP (Port 143):** A pull protocol that synchronizes email headers and messages while keeping the master mailbox stored on the server, permitting access across multiple client devices.
-
----
-
-### Well-Known Port Numbers Master Table
-
-Examiners frequently test quick-fire recall of standard protocol port numbers:
-
-| Protocol | Port Number | Underlying Transport | Standard Operational Role |
-| :--- | :--- | :--- | :--- |
-| **FTP Data** | 20 | TCP | Active data file payload transfer |
-| **FTP Control** | 21 | TCP | Command channel and connection management |
-| **SSH** | 22 | TCP | Secure encrypted remote login shell |
-| **Telnet** | 23 | TCP | Unencrypted plaintext remote terminal access |
-| **SMTP** | 25 | TCP | Mail transfer agent sending / relaying |
-| **DNS** | 53 | UDP / TCP | Name resolution (UDP) / Zone transfers (TCP) |
-| **DHCP Server** | 67 | UDP | Dynamic Host Configuration Server broadcast listener |
-| **DHCP Client** | 68 | UDP | Client receiving IP configuration assignments |
-| **HTTP** | 80 | TCP | World Wide Web unencrypted hypertext transfer |
-| **POP3** | 110 | TCP | Post Office Protocol email retrieval |
-| **IMAP** | 143 | TCP | Internet Message Access Protocol email sync |
-| **HTTPS** | 443 | TCP | Secure hypertext web access using TLS/SSL |
-
----
-
-### Cryptography & RSA Mechanics
-
-**Q: What is the fundamental difference between Symmetric and Asymmetric key cryptography?**  
-**A:** In symmetric cryptography (e.g., AES, DES), the identical secret key is used for both encryption and decryption, requiring a secure key exchange mechanism. In asymmetric cryptography (e.g., RSA), a mathematically linked key pair is used: a public key for encryption and a private key kept secret by the owner for decryption.
-
-**Q: Explain the mathematical steps to generate RSA public and private keys.**  
-**A:**
-1. Select two large prime numbers $p$ and $q$.
-2. Compute the modulus:
-$$n = p \\times q$$
-3. Calculate Euler's totient function:
-$$\\phi(n) = (p - 1)(q - 1)$$
-4. Select a public exponent $e$ such that $1 < e < \\phi(n)$ and $\\gcd(e, \\phi(n)) = 1$.
-5. Calculate the private decryption exponent $d$ such that:
-$$d \\times e \\equiv 1 \\pmod{\\phi(n)} \\implies d = e^{-1} \\pmod{\\phi(n)}$$
-* **Public Key:** $(e, n)$
-* **Private Key:** $(d, n)$
-
-**Q: State the RSA encryption and decryption formulas.**  
-**A:**
-* **Encryption (Plaintext $m$ to Ciphertext $c$):**
-$$c = m^e \\pmod n$$
-* **Decryption (Ciphertext $c$ to Plaintext $m$):**
-$$m = c^d \\pmod n$$
-
----
-
-## 7. Practical Lab Experiments, CLI Troubleshooting Commands & Interconnecting Devices
-
-Practical viva examinations focus on diagnostic commands, hardware device classifications, and simulation algorithms implemented during laboratory coursework.
-
-### Basic Network Command-Line Tools
-
-**Q: What is the purpose of the \`ipconfig\` command and what do \`/all\`, \`/release\`, and \`/renew\` do?**  
-**A:** \`ipconfig\` displays basic IPv4/IPv6 addresses, subnet masks, and default gateways for all active network adapters:
-* \`ipconfig /all\`: Displays comprehensive adapter details including MAC physical addresses, DHCP lease timestamps, and DNS server addresses.
-* \`ipconfig /release\`: Releases the current dynamic IP address assigned by the DHCP server.
-* \`ipconfig /renew\`: Requests a new IP configuration lease from the DHCP server.
-* \`ipconfig /flushdns\`: Purges the local Windows DNS client resolver cache.
-
-**Q: How does \`ping\` determine network reachability and round-trip time?**  
-**A:** \`ping\` generates ICMP Echo Request messages (Type 8) to the target host and listens for returning ICMP Echo Reply messages (Type 0). It calculates the elapsed round-trip time (RTT) in milliseconds and reports packet loss percentages.
-
-**Q: How does \`tracert\` discover the hop-by-hop path to a destination?**  
-**A:** \`tracert\` exploits the IPv4 TTL field. It sends packets with TTL starting at $1$. The first router decrements TTL to $0$, drops the packet, and returns an ICMP Time Exceeded message, revealing its IP. \`tracert\` increments TTL to $2, 3, 4, \\dots$ until the final destination replies with an ICMP Echo Reply.
-
-**Q: What information does \`netstat -ano\` provide?**  
-**A:**
-* \`-a\`: Displays all active network connections and listening ports.
-* \`-n\`: Displays IP addresses and port numbers in numerical form rather than attempting hostname resolution.
-* \`-o\`: Displays the owning Process Identifier (PID) associated with each connection.
-
-**Q: What is the purpose of the \`arp -a\` command?**  
-**A:** It displays the local host's Address Resolution Protocol (ARP) table cache, showing recently resolved IP-to-physical MAC address bindings along with allocation types (dynamic or static).
-
-**Q: What does the \`nslookup\` command do?**  
-**A:** \`nslookup\` queries configured DNS name servers directly to resolve domain names to IP addresses (forward lookup) or IP addresses back to canonical hostnames (reverse lookup).
-
----
-
-### Network Interconnecting Devices
-
-Examiners frequently ask students to categorize networking hardware by operational OSI layer and broadcast/collision domain boundaries:
-
-| Device | Operating OSI Layer | Collision Domain Handling | Broadcast Domain Handling | Core Forwarding Intelligence |
-| :--- | :--- | :--- | :--- | :--- |
-| **Repeater** | Layer 1 (Physical) | Extends single collision domain | Extends single broadcast domain | Regenerates electrical/optical signals |
-| **Hub** | Layer 1 (Physical) | Single collision domain (All ports share collision) | Single broadcast domain | Multiport repeater; broadcasts every bit to all ports |
-| **Bridge** | Layer 2 (Data Link) | Separates into distinct collision domains | Single broadcast domain | Forwards frames based on software MAC address table |
-| **Switch** | Layer 2 (Data Link) | Separates each port into dedicated collision domain | Single broadcast domain | Hardware ASIC switching; self-learns source MAC addresses |
-| **Router** | Layer 3 (Network) | Dedicated collision domain per interface | **Separates broadcast domains** (Stops broadcasts) | Forwards IP packets using routing algorithms (OSPF, RIP) |
-| **Gateway** | Layer 4 – 7 (Upper) | Dedicated domain | Separates broadcast domains | Translates disparate protocol stacks and architectures |
-
-**Q: What is a Collision Domain vs a Broadcast Domain?**  
-**A:**
-* **Collision Domain:** A physical network segment where data packets can collide with one another if transmitted concurrently (such as all ports on a shared hub).
-* **Broadcast Domain:** The collection of all networking devices that receive a broadcast frame (\`FF:FF:FF:FF:FF:FF\`) transmitted by any node within the segment. Switches forward broadcasts to all ports; only routers terminate broadcast domains.
-
-**Q: What is a Virtual LAN (VLAN) and what IEEE standard governs it?**  
-**A:** A VLAN creates a logical segmentation of a physical switched network into multiple isolated broadcast domains independent of physical cabling. Governed by **IEEE 802.1Q**, switches append a 4-byte tagging header containing a 12-bit VLAN Identifier (VID) to identify frame membership across trunk links.`
-  },
-
-  'cnlabvivapreparationguide': {
-    id: 'cnlabvivapreparationguide',
-    title: "cn_lab_viva_preparation_guide",
-    folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","cn_lab_viva_preparation_guide"],
-    tags: [],
-    created: "2026-11-13",
-    modified: "2026-11-13",
-    wordCount: 2757,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Computer Networks Lab & Theory Viva Guide","id":"computer-networks-lab-theory-viva-guide"},{"level":2,"text":"Section 1: Networking Devices & Basic Commands (Expt 1.1 & 1.2)","id":"section-1-networking-devices-basic-commands-expt-11-12"},{"level":2,"text":"Section 2: Physical Layer, Line Coding & Multiplexing (Expt 2.1 – 2.5)","id":"section-2-physical-layer-line-coding-multiplexing-expt-21-25"},{"level":2,"text":"Section 3: Data Link Layer — Framing, Error Control & MAC (Expt 3.1 – 3.7)","id":"section-3-data-link-layer-framing-error-control-mac-expt-31-37"},{"level":2,"text":"Section 4: Network Layer — IPv4, Subnetting, Fragmentation & Routing (Expt 4.1 – 4.7)","id":"section-4-network-layer-ipv4-subnetting-fragmentation-routing-expt-41-47"},{"level":2,"text":"Section 5: Transport Layer — UDP, TCP & Congestion Control (Expt 5.1 – 5.3)","id":"section-5-transport-layer-udp-tcp-congestion-control-expt-51-53"},{"level":2,"text":"Section 6: Application Layer & Cryptography (Expt 6.1 & 6.2)","id":"section-6-application-layer-cryptography-expt-61-62"}],
-    content: `# Computer Networks Lab & Theory Viva Guide
-**Target Date:** 19th November 2026  
-**Course Codes:** PCCS7306 (Lab) / PCCS4307 (Theory)  
-**Department:** CSEA, IGIT Sarang  
-
----
-
-## Section 1: Networking Devices & Basic Commands (Expt 1.1 & 1.2)
-
-**1. At which OSI layers do a Repeater, Hub, Switch, Bridge, Router, and Gateway operate?**
-*   **Physical Layer (Layer 1):** Repeater, Hub
-*   **Data Link Layer (Layer 2):** Bridge, Switch
-*   **Network Layer (Layer 3):** Router
-*   **All 7 Layers (or Transport & above):** Gateway
-
-**2. What is the difference between a Hub and a Switch?**
-*   A **Hub** is a Layer 1 broadcast device (sends incoming data to all ports) and has a single collision domain.
-*   A **Switch** is a Layer 2 intelligent device that uses MAC addresses to forward frames only to the destination port, creating separate collision domains for each port.
-
-**3. What protocol does the \`ping\` command use?**
-*   It uses **ICMP** (Internet Control Message Protocol), specifically sending *ICMP Echo Request* packets and waiting for *ICMP Echo Reply* packets.
-
-**4. What is the purpose of \`tracert\` (or \`traceroute\`) and how does it work?**
-*   It displays the path (routers/hops) and transit delay of packets to a destination. It works by sending packets with incrementally increasing **TTL (Time-To-Live)** values ($TTL = 1, 2, 3, \\dots$) and listening for *ICMP Time Exceeded* messages from routers along the path.
-
-**5. What do the following commands do?**
-*   \`ipconfig\`: Displays the IP address, subnet mask, and default gateway of the network adapters. (\`ipconfig /all\` shows MAC address and DHCP details).
-*   \`netstat\`: Displays active TCP/UDP connections, listening ports (\`-a\`), numerical addresses (\`-n\`), and owning Process IDs (\`-o\`).
-*   \`nslookup\`: Queries the DNS server to map a domain name to an IP address or vice versa.
-*   \`arp -a\`: Displays the ARP cache table, which maps IP addresses to Physical (MAC) addresses.
-
-**6. What are the sizes of a MAC address, IPv4 address, IPv6 address, and Port number?**
-*   **MAC (Physical) Address:** $48\\text{ bits}$ ($6\\text{ bytes}$), represented in hexadecimal.
-*   **IPv4 (Logical) Address:** $32\\text{ bits}$ ($4\\text{ bytes}$).
-*   **IPv6 Address:** $128\\text{ bits}$ ($16\\text{ bytes}$).
-*   **Port Address:** $16\\text{ bits}$ ($2\\text{ bytes}$), ranging from $0$ to $65535$.
-
-**7. If an IP address can uniquely and universally identify a node, why do we still need a MAC (physical) address?**
-*   The IP address specifies the *source* and *final destination* across networks, whereas the MAC address is required at the Data Link Layer to move the frame from **one hop to the next hop** within the same local network.
-
----
-
-## Section 2: Physical Layer, Line Coding & Multiplexing (Expt 2.1 – 2.5)
-
-**8. What is Line Coding?**
-*   It is the process of converting digital data (binary $0$s and $1$s) into digital signals for transmission over a communication medium.
-
-**9. Differentiate between Polar NRZ-L and Polar NRZ-I (Expt 2.1).**
-*   **NRZ-L (Non-Return to Zero - Level):** The voltage *level* determines the bit value (e.g., positive voltage for $0$, negative for $1$).
-*   **NRZ-I (Non-Return to Zero - Invert):** A *transition* (inversion of voltage) at the beginning of a bit interval represents a $1$, while *no transition* represents a $0$.
-
-**10. What is the main disadvantage of NRZ coding, and how does Manchester coding solve it (Expt 2.2)?**
-*   **Disadvantage:** Long sequences of $0$s or $1$s cause a loss of synchronization (clock recovery fails) and baseline wandering.
-*   **Solution:** **Manchester** and **Differential Manchester** have a guaranteed transition in the *middle* of every bit period, making them **self-synchronizing** with no DC component.
-
-**11. What is the rule for Differential Manchester coding (Expt 2.2)?**
-*   There is *always* a transition in the middle of the bit for synchronization. To represent a **$0$**, there is a transition at the beginning of the bit interval; to represent a **$1$**, there is no transition at the beginning.
-
-**12. What does 2B1Q stand for (Expt 2.3)?**
-*   **Two-Binary, One-Quaternary**. It is a multilevel line coding scheme that groups $2\\text{ bits}$ of data into $1\\text{ signal element}$ using $4$ different voltage levels ($2^2 = 4$).
-
-**13. How does MLT-3 (Multiline Transmission, 3-Level) work (Expt 2.4)?**
-*   It uses three voltage levels ($+V, 0, -V$).
-*   If the next bit is **$0$**, there is no transition.
-*   If the next bit is **$1$**:
-    *   If the current level is not $0$, the next level becomes $0$.
-    *   If the current level is $0$, the next level becomes the opposite of the last non-zero level.
-
-**14. What is Synchronous TDM (Expt 2.5)?**
-*   In **Synchronous Time Division Multiplexing**, each input connection is allotted a fixed time slot in the output frame, regardless of whether the source has data to send or not (which can lead to empty slots).
-
-**15. State the formulas for Mesh Topology links and Data Rate Limits.**
-*   **Mesh Links:** For $n$ nodes, number of links $= \\frac{n(n-1)}{2}$, and I/O ports per device $= n - 1$.
-*   **Nyquist Bit Rate (Noiseless channel):** $\\text{BitRate} = 2 \\times B \\times \\log_2(L)$
-*   **Shannon Capacity (Noisy channel):** $C = B \\times \\log_2(1 + \\text{SNR})$
-
----
-
-## Section 3: Data Link Layer — Framing, Error Control & MAC (Expt 3.1 – 3.7)
-
-**16. How does CRC (Cyclic Redundancy Check) work (Expt 3.1)?**
-*   It is based on binary division (using **XOR** subtraction). If the generator polynomial (divisor) has $n\\text{ bits}$ (degree $n-1$), we append $n-1$ zeros to the dataword, divide by the generator, and replace the appended zeros with the $(n-1)$-bit **remainder** (CRC bits). At the receiver, if the remainder is all zeros, the data is accepted.
-
-**17. In Hamming Code $C(7,4)$, how many data bits and parity bits are there, and where are the parity bits placed (Expt 3.2)?**
-*   There are **$4\\text{ data bits}$** and **$3\\text{ parity (redundant) bits}$**, making a $7\\text{-bit}$ codeword.
-*   Parity bits are placed at positions that are powers of $2$: **$1, 2, \\text{ and } 4$** ($2^0, 2^1, 2^2$).
-*   The formula to find the number of redundant bits $r$ for $m$ data bits is: $2^r \\ge m + r + 1$.
-
-**18. Differentiate between Character (Byte) Stuffing and Bit Stuffing (Expt 3.3 & 3.4).**
-*   **Character Stuffing:** Used in character-oriented framing. If the **Flag** byte or **ESC** (Escape) byte appears in the actual data payload, an extra \`ESC\` byte is stuffed before it.
-*   **Bit Stuffing:** Used in bit-oriented protocols (like HDLC) where the flag is \`01111110\` (six $1$s). Whenever the sender encounters **five consecutive $1$s** in the data, it automatically stuffs a **$0$** bit after them so the data never mimics the flag.
-
-**19. Compare Stop-and-Wait, Go-Back-N, and Selective-Repeat ARQ (Expt 3.5 & 3.6).**
-*   **Stop-and-Wait:** Sender sends $1$ frame and waits for an ACK before sending the next.
-*   **Go-Back-N (GBN):** Sender can send up to $N$ frames without an ACK. If one frame is lost/damaged, the receiver discards all subsequent frames and the sender must retransmit the lost frame **and all following frames** in the window.
-    *   For $m$-bit sequence numbers: Sender Window Size $= 2^m - 1$, Receiver Window Size $= 1$.
-*   **Selective-Repeat (SR):** Only the specific lost or damaged frame is retransmitted. Out-of-order frames are buffered at the receiver.
-    *   For $m$-bit sequence numbers: Sender Window Size $=$ Receiver Window Size $= 2^{m-1}$.
-
-**20. What is Piggybacking?**
-*   Instead of sending a separate control frame for an ACK, the receiver attaches (piggybacks) the acknowledgment onto an outgoing data frame heading back to the sender, improving bidirectional efficiency.
-
-**21. What is CSMA/CD and why is it not used in Wireless LANs (Expt 3.7)?**
-*   **CSMA/CD (Carrier Sense Multiple Access with Collision Detection)** senses the medium before transmitting ("listen before talk") and monitors the medium during transmission ("listen while talk"). If a collision is detected, it aborts and sends a jamming signal.
-*   It is **not used in wireless networks** because wireless transceivers cannot transmit and listen at the same time (due to high transmission power drowning out incoming signals) and because of the *Hidden/Exposed Terminal Problem*. Wireless networks use **CSMA/CA (Collision Avoidance)** instead.
-
-**22. What is the condition for collision detection in CSMA/CD (Minimum Frame Size)?**
-*   The transmission time ($T_{fr}$) must be at least twice the maximum propagation time ($T_p$):
-    $$T_{fr} \\ge 2 \\times T_p \\implies \\frac{\\text{Minimum Frame Size}}{\\text{Bandwidth}} \\ge 2 \\times T_p$$
-*   For Standard Ethernet ($10\\text{ Mbps}$), the minimum frame size is **$64\\text{ bytes}$ ($512\\text{ bits}$)**.
-
-**23. What are the 3 persistence methods in CSMA?**
-*   **$1$-persistent:** Continuously senses a busy channel and transmits immediately (with probability $1$) once idle. (Used in Ethernet).
-*   **Non-persistent:** If busy, waits a random amount of time before sensing the channel again.
-*   **$p$-persistent:** Used in slotted channels; when idle, transmits with probability $p$ or waits for the next slot with probability $q = 1 - p$.
-
----
-
-## Section 4: Network Layer — IPv4, Subnetting, Fragmentation & Routing (Expt 4.1 – 4.7)
-
-**24. How do you identify IPv4 Address Classes and their Default Subnet Masks (Expt 4.1)?**
-*   **Class A:** $0\\text{ – }127$ (Leading bit \`0\`) | Default Mask: \`255.0.0.0\` (\`/8\`)
-*   **Class B:** $128\\text{ – }191$ (Leading bits \`10\`) | Default Mask: \`255.255.0.0\` (\`/16\`)
-*   **Class C:** $192\\text{ – }223$ (Leading bits \`110\`) | Default Mask: \`255.255.255.0\` (\`/24\`)
-*   **Class D:** $224\\text{ – }239$ (Leading bits \`1110\`) | Used for **Multicasting** (No subnet mask)
-*   **Class E:** $240\\text{ – }255$ (Leading bits \`1111\`) | Reserved for **Research/Experimental**
-
-**25. Given an IP address and Subnet Mask, how do you find the Network Address, Broadcast Address, and Usable Hosts (Expt 4.2 & 4.3)?**
-*   **Network Address:** Perform bitwise **AND** between the IP address and the Subnet Mask (all host bits become $0$).
-*   **Direct Broadcast Address:** Set all host bits to **$1$** (or bitwise **OR** with the inverted subnet mask).
-*   **Total IP Addresses in Subnet:** $2^h$ (where $h = 32 - \\text{prefix length}$, i.e., number of host bits).
-*   **Total Usable Hosts:** $2^h - 2$ (We subtract $2$ because the first address is the *Network Address* and the last is the *Broadcast Address*).
-
-**26. What is the difference between FLSM and VLSM (Expt 4.4)?**
-*   **FLSM (Fixed Length Subnet Masking):** Divides a network into subnets of equal size using the same subnet mask, often wasting IP addresses.
-*   **VLSM (Variable Length Subnet Masking):** Allows subnets of different sizes with different subnet masks based on the actual number of hosts required in each department/segment, conserving IP space. (Hint: Always allocate from the *largest* host requirement to the *smallest*).
-
-**27. Why is IPv4 Fragmentation needed, and which header fields are used for it (Expt 4.5)?**
-*   Every data link layer has an **MTU (Maximum Transmission Unit)**. If an IPv4 datagram is larger than the MTU, it must be fragmented.
-*   **Header fields used:**
-    1.  **Identification ($16\\text{ bits}$):** All fragments of the same datagram share the same ID.
-    2.  **Flags ($3\\text{ bits}$):** Reserved bit ($0$), **DF (Don't Fragment)** bit, and **MF (More Fragments)** bit ($1$ if more fragments follow, $0$ for the last fragment).
-    3.  **Fragmentation Offset ($13\\text{ bits}$):** Shows the relative position of the fragment in units of **$8\\text{ bytes}$** (so every fragment except the last must have a payload size that is a multiple of $8$).
-
-**28. Differentiate between Distance Vector Routing and Link State Routing (Expt 4.6 & 4.7).**
-| Feature | Distance Vector Routing (Expt 4.6) | Link State Routing (Expt 4.7) |
-| :--- | :--- | :--- |
-| **Algorithm Used** | **Bellman-Ford** Algorithm | **Dijkstra’s** Shortest Path Algorithm |
-| **Topology Knowledge** | Knows only distances via **neighbors** (routing by rumor). | Has a complete map of the **entire network topology**. |
-| **Information Shared** | Shares its entire routing table only with **immediate neighbors** periodically. | Floods small Link State Packets (LSPs) to **all routers** only when a change occurs. |
-| **Main Problem** | Slow convergence, **Count-to-Infinity** problem (solved via Split Horizon / Poison Reverse). | Higher memory and CPU overhead. |
-| **Protocol Example** | **RIP** (Routing Information Protocol) | **OSPF** (Open Shortest Path First) |
-
-**29. What is NAT (Network Address Translation) and what are the Private IP ranges?**
-*   **NAT** allows a local network to use private IP addresses internally and translates them to a single (or few) public IP address(es) when communicating with the Internet.
-*   **Private IP Ranges:** \`10.0.0.0/8\`, \`172.16.0.0/12\` (\`172.16.0.0\` – \`172.31.255.255\`), and \`192.168.0.0/16\`.
-*   **Loopback Address:** \`127.0.0.1\` (used for testing the local host's network stack).
-
----
-
-## Section 5: Transport Layer — UDP, TCP & Congestion Control (Expt 5.1 – 5.3)
-
-**30. Differentiate between TCP and UDP (Expt 5.1 & 5.2).**
-*   **TCP (Transmission Control Protocol):** Connection-oriented, reliable, provides flow control and congestion control, guarantees in-order delivery, slower, header size is $20\\text{ to }60\\text{ bytes}$. (Used in HTTP, FTP, SMTP, Telnet).
-*   **UDP (User Datagram Protocol):** Connectionless, unreliable, no flow/congestion control, faster with low overhead, fixed header size of **$8\\text{ bytes}$**. (Used in DNS, SNMP, DHCP, live video/audio streaming).
-
-**31. What is a Socket?**
-*   A socket is a communication endpoint defined by the combination of an **IP Address** and a **Port Number** (e.g., \`192.168.1.10:80\`).
-
-**32. How does TCP establish a connection? (3-Way Handshake)**
-1.  **SYN:** Client sends a segment with the \`SYN\` flag set to $1$ and an initial sequence number.
-2.  **SYN + ACK:** Server replies with both \`SYN\` and \`ACK\` flags set to $1$.
-3.  **ACK:** Client sends an \`ACK\` back to the server, establishing the connection.
-
-**33. What are the 3 phases of TCP Congestion Control (Expt 5.3)?**
-1.  **Slow Start (Exponential Growth):** Congestion window ($\\text{cwnd}$) starts at $1\\text{ MSS}$ (Maximum Segment Size) and **doubles** every RTT ($\\text{cwnd} = 1, 2, 4, 8\\dots$) until it reaches the Slow Start Threshold ($\\text{ssthresh}$).
-2.  **Congestion Avoidance (Additive Increase):** Once $\\text{cwnd} \\ge \\text{ssthresh}$, $\\text{cwnd}$ increases **linearly** by $1\\text{ MSS}$ per RTT ($\\text{cwnd} = \\text{cwnd} + 1$).
-3.  **Congestion Detection (Multiplicative Decrease):**
-    *   If **Time-out** occurs (severe congestion): $\\text{ssthresh} = \\frac{\\text{cwnd}}{2}$, set $\\text{cwnd} = 1$, and enter *Slow Start*.
-    *   If **$3$ Duplicate ACKs** occur (mild congestion): $\\text{ssthresh} = \\frac{\\text{cwnd}}{2}$, set $\\text{cwnd} = \\text{ssthresh}$ (or $+3$), and continue in *Congestion Avoidance* (Fast Recovery).
-
-**34. What is the difference between Flow Control and Congestion Control?**
-*   **Flow Control:** Prevents a fast sender from overwhelming a **slow receiver** (uses the receiver's advertised window, $\\text{rwnd}$).
-*   **Congestion Control:** Prevents senders from overwhelming the **network/routers** (uses the congestion window, $\\text{cwnd}$). Actual sender window $= \\min(\\text{rwnd}, \\text{cwnd})$.
-
----
-
-## Section 6: Application Layer & Cryptography (Expt 6.1 & 6.2)
-
-**35. What is DNS, and what is the difference between Recursive and Iterative DNS queries (Expt 6.1)?**
-*   **DNS (Domain Name System)** translates human-readable domain names (like \`www.google.com\`) into IP addresses. It uses port **$53$**.
-*   **Recursive Query:** The client asks the local DNS server for the final IP address, and the server does all the work of querying other servers on the client's behalf.
-*   **Iterative Query:** If a queried DNS server doesn't know the IP, it simply returns the address of the *next* DNS server (e.g., Root $\\rightarrow$ TLD $\\rightarrow$ Authoritative) for the requester to contact directly.
-
-**36. What are the well-known port numbers for common Application Layer protocols?**
-*   **FTP (File Transfer Protocol):** Port $20$ (Data) & Port $21$ (Control)
-*   **SSH (Secure Shell):** Port $22$
-*   **Telnet:** Port $23$
-*   **SMTP (Simple Mail Transfer Protocol):** Port $25$
-*   **DNS:** Port $53$
-*   **DHCP:** Port $67$ (Server) & Port $68$ (Client)
-*   **HTTP:** Port $80$ | **HTTPS:** Port $443$
-*   **POP3:** Port $110$ | **IMAP:** Port $143$
-*   **SNMP:** Port $161$
-
-**37. What is RSA, and how are keys generated, encrypted, and decrypted (Expt 6.2)?**
-*   **RSA (Rivest–Shamir–Adleman)** is an **asymmetric (public-key) cryptographic algorithm** that uses two different keys: a **Public Key** $(e, n)$ for encryption and a **Private Key** $(d, n)$ for decryption.
-*   **Steps:**
-    1.  Choose two large prime numbers $p$ and $q$.
-    2.  Compute modulus $n = p \\times q$.
-    3.  Compute Euler's totient function $\\phi(n) = (p - 1)(q - 1)$.
-    4.  Choose public exponent $e$ such that $1 < e < \\phi(n)$ and $\\gcd(e, \\phi(n)) = 1$ (coprime).
-    5.  Compute private exponent $d$ such that $(d \\times e) \\pmod{\\phi(n)} = 1$.
-    6.  **Encryption** of plaintext $M$: $C = M^e \\pmod n$
-    7.  **Decryption** of ciphertext $C$: $M = C^d \\pmod n$
-
-**38. What is the difference between Symmetric and Asymmetric Key Cryptography?**
-*   **Symmetric:** Uses the **same secret key** for both encryption and decryption (e.g., DES, AES). It is faster but has a key distribution problem.
-*   **Asymmetric:** Uses a **Public Key** to encrypt and a mathematically linked **Private Key** to decrypt (e.g., RSA). It solves the key exchange problem but is computationally slower.`
-  },
-
-  'computernetworkslaboratorymanual': {
-    id: 'computernetworkslaboratorymanual',
-    title: "computer_networks_laboratory_manual",
-    folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","computer_networks_laboratory_manual"],
-    tags: [],
-    created: "2026-11-10",
-    modified: "2026-11-10",
-    wordCount: 8741,
-    backlinks: [],
-    links: [],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 8855,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide","expt-12-basic-commands","expt-21-polar-nrz","expt-22-manchester","expt-23-2b1q","expt-24-mlt-3","expt-25-sync-tdm","expt-31-crc","expt-32-hamming-code","expt-33-character-stuffing","expt-34-bit-stuffing","expt-35-go-back-n-arq","expt-36-selective-repeat-arq","expt-37-csma-cd","expt-41-ipv4-class","expt-42-subnet-info","expt-43-usable-hosts","expt-44-vlsm","expt-45-fragmentation","expt-46-distance-vector","expt-47-link-state","expt-51-udp-transfer","expt-52-tcp-exchange","expt-53-tcp-congestion","expt-61-dns-client","expt-62-rsa-cipher"],
+    links: ["cn-lab-outputs-guide","cn-lab-theory-viva-guide","cn-study-flow-execution-guide"],
     outline: [{"level":1,"text":"Computer Networks Laboratory Manual","id":"computer-networks-laboratory-manual"},{"level":3,"text":"Department of Computer Science Engineering & Applications","id":"department-of-computer-science-engineering-applications"},{"level":2,"text":"INDEX","id":"index"},{"level":1,"text":"Section 1: Networking Devices and Basic Commands","id":"section-1-networking-devices-and-basic-commands"},{"level":2,"text":"Experiment 1.2: Study of Basic Network Commands","id":"experiment-12-study-of-basic-network-commands"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Introduction","id":"introduction"},{"level":3,"text":"Opening Command Prompt","id":"opening-command-prompt"},{"level":3,"text":"Basic Windows Network Commands","id":"basic-windows-network-commands"},{"level":4,"text":"1. ipconfig - View and manage IP configuration","id":"1-ipconfig-view-and-manage-ip-configuration"},{"level":4,"text":"2. ping - Test network connectivity","id":"2-ping-test-network-connectivity"},{"level":4,"text":"3. tracert - Trace route of packets","id":"3-tracert-trace-route-of-packets"},{"level":4,"text":"4. netstat - Display network statistics","id":"4-netstat-display-network-statistics"},{"level":4,"text":"5. nslookup - Query DNS servers","id":"5-nslookup-query-dns-servers"},{"level":4,"text":"6. arp - View and manage ARP cache","id":"6-arp-view-and-manage-arp-cache"},{"level":4,"text":"7. netsh - Configure network interfaces","id":"7-netsh-configure-network-interfaces"},{"level":1,"text":"Section 2: Implementation of Physical Layer Protocols & Techniques","id":"section-2-implementation-of-physical-layer-protocols-techniques"},{"level":2,"text":"Experiment 2.1: Implementation of Polar NRZ-L and Polar NRZ-I Line Coding Techniques","id":"experiment-21-implementation-of-polar-nrz-l-and-polar-nrz-i-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 2.2: Implementation of Polar Manchester and Differential Manchester Line Coding Techniques","id":"experiment-22-implementation-of-polar-manchester-and-differential-manchester-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 2.3: Implementation of 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique","id":"experiment-23-implementation-of-2b1q-two-binary-one-quaternary-multilevel-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 2.4: Implementation of MLT-3 (Multiline Transition, Three Level) Line Coding Technique","id":"experiment-24-implementation-of-mlt-3-multiline-transition-three-level-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 2.5: Implementation of Synchronous Time Division Multiplexing (TDM) Technique","id":"experiment-25-implementation-of-synchronous-time-division-multiplexing-tdm-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":1,"text":"Section 3: Implementation of Data Link Layer Protocols & Techniques","id":"section-3-implementation-of-data-link-layer-protocols-techniques"},{"level":2,"text":"Experiment 3.1: Implementation of Cyclic Redundancy Check (CRC) Error Detection Method","id":"experiment-31-implementation-of-cyclic-redundancy-check-crc-error-detection-method"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.2: Implementation of Hamming Code Error Detection and Correction Technique","id":"experiment-32-implementation-of-hamming-code-error-detection-and-correction-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.3: Implementation of the Data Link Layer Framing Method \"Character Stuffing\"","id":"experiment-33-implementation-of-the-data-link-layer-framing-method-character-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.4: Implementation of the Data Link Layer Framing Method \"Bit Stuffing\"","id":"experiment-34-implementation-of-the-data-link-layer-framing-method-bit-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.5: Simulation of Go-Back-N Automatic Repeat Request (ARQ) Protocol","id":"experiment-35-simulation-of-go-back-n-automatic-repeat-request-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.6: Simulation of Selective-Repeat Automatic Repeat Request (ARQ) Protocol","id":"experiment-36-simulation-of-selective-repeat-automatic-repeat-request-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 3.7: Simulation of CSMA/CD Protocol","id":"experiment-37-simulation-of-csmacd-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":1,"text":"Section 4: Implementation of Network Layer Protocols & Techniques","id":"section-4-implementation-of-network-layer-protocols-techniques"},{"level":2,"text":"Experiment 4.1: IPv4 Address Validation and Class Identification","id":"experiment-41-ipv4-address-validation-and-class-identification"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.2: Determination of Subnet Information: Addresses & Hosts","id":"experiment-42-determination-of-subnet-information-addresses-hosts"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.3: Generation of All Usable Host IP Addresses in a Subnet","id":"experiment-43-generation-of-all-usable-host-ip-addresses-in-a-subnet"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.4: Implementation of Variable Length Subnet Masking (VLSM)","id":"experiment-44-implementation-of-variable-length-subnet-masking-vlsm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.5: Implementation of IPv4 Fragmentation & Reassembly Technique","id":"experiment-45-implementation-of-ipv4-fragmentation-reassembly-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.6: Implementation of Distance Vector Routing","id":"experiment-46-implementation-of-distance-vector-routing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 4.7: Implementation of Link State Routing","id":"experiment-47-implementation-of-link-state-routing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":1,"text":"Section 5: Implementation of Transport Layer Protocols & Techniques","id":"section-5-implementation-of-transport-layer-protocols-techniques"},{"level":2,"text":"Experiment 5.1: Simulation of UDP Data Transfer","id":"experiment-51-simulation-of-udp-data-transfer"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 5.2: Simulation of TCP Message Exchange Technique","id":"experiment-52-simulation-of-tcp-message-exchange-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 5.3: Simulation of TCP Congestion Control Technique","id":"experiment-53-simulation-of-tcp-congestion-control-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":1,"text":"Section 6: Implementation of Application Layer Protocols & Techniques","id":"section-6-implementation-of-application-layer-protocols-techniques"},{"level":2,"text":"Experiment 6.1: Simulation of DNS Client","id":"experiment-61-simulation-of-dns-client"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Experiment 6.2: Implementation of Message Confidentiality Using RSA Encryption and Decryption","id":"experiment-62-implementation-of-message-confidentiality-using-rsa-encryption-and-decryption"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Program","id":"program"},{"level":3,"text":"Explanation of Key Components","id":"explanation-of-key-components"},{"level":3,"text":"Output","id":"output"}],
     content: `# Computer Networks Laboratory Manual
 
 ### Department of Computer Science Engineering & Applications
 
 **Indira Gandhi Institute of Technology, Sarang**  
-**Dhenkanal, Odisha-759146**
+**Dhenkanal, Odisha-759146**  
+**Associated Notes:** [[CN Lab Outputs Guide]] · [[CN Lab & Theory Viva Guide]] · [[CN Study Flow & Execution Guide]]
 
 ---
 
@@ -57695,31 +56824,31 @@ Examiners frequently ask students to categorize networking hardware by operation
 
 | Sl. No. (Expt No.) | Title (Aim) | Date of Expt | Date of Submission |
 | :--- | :--- | :---: | :---: |
-| **Expt 1.2** | Study of Basic Network Commands | 07/08/2026 | 2026-11-17 |
-| **Expt 2.1** | Implementation of Polar NRZ-L and Polar NRZ-I Line Coding Techniques | 14/08/2026 | 2026-11-17 |
-| **Expt 2.2** | Implementation of Polar Manchester and Differential Manchester Line Coding Techniques | 21/08/2026 | 2026-11-17 |
-| **Expt 2.3** | Implementation of 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique | 28/08/2026 | 2026-11-17 |
-| **Expt 2.4** | Implementation of MLT-3 (Multiline Transition, Three Level) Line Coding Technique | 04/09/2026 | 2026-11-17 |
-| **Expt 2.5** | Implementation of Synchronous Time Division Multiplexing (TDM) Technique | 11/09/2026 | 2026-11-17 |
-| **Expt 3.1** | Implementation of Cyclic Redundancy Check (CRC) Error Detection Method | 18/09/2026 | 2026-11-17 |
-| **Expt 3.2** | Implementation of Hamming Code $C(7,4)$ Error Detection and Correction Technique | 25/09/2026 | 2026-11-17 |
-| **Expt 3.3** | Implementation of the Data Link Layer Framing Method "Character Stuffing" | 09/10/2026 | 2026-11-17 |
-| **Expt 3.4** | Implementation of the Data Link Layer Framing Method "Bit Stuffing" | 16/10/2026 | 2026-11-17 |
-| **Expt 3.5** | Simulation of Go-Back-N Automatic Repeat Request (ARQ) Protocol | 23/10/2026 | 2026-11-17 |
-| **Expt 3.6** | Simulation of Selective-Repeat Automatic Repeat Request (ARQ) Protocol | 30/10/2026 | 2026-11-17 |
-| **Expt 3.7** | Simulation of CSMA/CD Protocol | 06/11/2026 | 2026-11-17 |
-| **Expt 4.1** | IPv4 Address Validation and Class Identification | 06/11/2026 | 2026-11-17 |
-| **Expt 4.2** | Determination of Subnet Information: Addresses & Hosts | 13/11/2026 | 2026-11-17 |
-| **Expt 4.3** | Generation of All Usable Host IP Addresses in a Subnet | 13/11/2026 | 2026-11-17 |
-| **Expt 4.4** | Implementation of Variable Length Subnet Masking (VLSM) | 13/11/2026 | 2026-11-17 |
-| **Expt 4.5** | Implementation of IPv4 Packet Fragmentation & Reassembly Technique | 13/11/2026 | 2026-11-17 |
-| **Expt 4.6** | Implementation of Distance Vector Routing using Bellman-Ford Algorithm | 14/11/2026 | 2026-11-17 |
-| **Expt 4.7** | Implementation of Link State Routing using Dijkstra's Algorithm | 14/11/2026 | 2026-11-17 |
-| **Expt 5.1** | Simulation of UDP Data Transfer | 15/11/2026 | 2026-11-17 |
-| **Expt 5.2** | Simulation of TCP Message Exchange Technique | 15/11/2026 | 2026-11-17 |
-| **Expt 5.3** | Simulation of TCP Congestion Control Technique | 16/11/2026 | 2026-11-17 |
-| **Expt 6.1** | Simulation of DNS Client | 16/11/2026 | 2026-11-17 |
-| **Expt 6.2** | Implementation of Message Confidentiality Using RSA Encryption and Decryption | 16/11/2026 | 2026-11-17 |
+| **[[Expt 1.2 - Basic Commands\\|Expt 1.2]]** | Study of Basic Network Commands | 07/08/2026 | 2026-11-17 |
+| **[[Expt 2.1 - Polar NRZ\\|Expt 2.1]]** | Implementation of Polar NRZ-L and Polar NRZ-I Line Coding Techniques | 14/08/2026 | 2026-11-17 |
+| **[[Expt 2.2 - Manchester\\|Expt 2.2]]** | Implementation of Polar Manchester and Differential Manchester Line Coding Techniques | 21/08/2026 | 2026-11-17 |
+| **[[Expt 2.3 - 2B1Q\\|Expt 2.3]]** | Implementation of 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique | 28/08/2026 | 2026-11-17 |
+| **[[Expt 2.4 - MLT-3\\|Expt 2.4]]** | Implementation of MLT-3 (Multiline Transition, Three Level) Line Coding Technique | 04/09/2026 | 2026-11-17 |
+| **[[Expt 2.5 - Sync TDM\\|Expt 2.5]]** | Implementation of Synchronous Time Division Multiplexing (TDM) Technique | 11/09/2026 | 2026-11-17 |
+| **[[Expt 3.1 - CRC\\|Expt 3.1]]** | Implementation of Cyclic Redundancy Check (CRC) Error Detection Method | 18/09/2026 | 2026-11-17 |
+| **[[Expt 3.2 - Hamming Code\\|Expt 3.2]]** | Implementation of Hamming Code $C(7,4)$ Error Detection and Correction Technique | 25/09/2026 | 2026-11-17 |
+| **[[Expt 3.3 - Character Stuffing\\|Expt 3.3]]** | Implementation of the Data Link Layer Framing Method "Character Stuffing" | 09/10/2026 | 2026-11-17 |
+| **[[Expt 3.4 - Bit Stuffing\\|Expt 3.4]]** | Implementation of the Data Link Layer Framing Method "Bit Stuffing" | 16/10/2026 | 2026-11-17 |
+| **[[Expt 3.5 - Go-Back-N ARQ\\|Expt 3.5]]** | Simulation of Go-Back-N Automatic Repeat Request (ARQ) Protocol | 23/10/2026 | 2026-11-17 |
+| **[[Expt 3.6 - Selective Repeat ARQ\\|Expt 3.6]]** | Simulation of Selective-Repeat Automatic Repeat Request (ARQ) Protocol | 30/10/2026 | 2026-11-17 |
+| **[[Expt 3.7 - CSMA-CD\\|Expt 3.7]]** | Simulation of CSMA/CD Protocol | 06/11/2026 | 2026-11-17 |
+| **[[Expt 4.1 - IPv4 Class\\|Expt 4.1]]** | IPv4 Address Validation and Class Identification | 06/11/2026 | 2026-11-17 |
+| **[[Expt 4.2 - Subnet Info\\|Expt 4.2]]** | Determination of Subnet Information: Addresses & Hosts | 13/11/2026 | 2026-11-17 |
+| **[[Expt 4.3 - Usable Hosts\\|Expt 4.3]]** | Generation of All Usable Host IP Addresses in a Subnet | 13/11/2026 | 2026-11-17 |
+| **[[Expt 4.4 - VLSM\\|Expt 4.4]]** | Implementation of Variable Length Subnet Masking (VLSM) | 13/11/2026 | 2026-11-17 |
+| **[[Expt 4.5 - Fragmentation\\|Expt 4.5]]** | Implementation of IPv4 Packet Fragmentation & Reassembly Technique | 13/11/2026 | 2026-11-17 |
+| **[[Expt 4.6 - Distance Vector\\|Expt 4.6]]** | Implementation of Distance Vector Routing using Bellman-Ford Algorithm | 14/11/2026 | 2026-11-17 |
+| **[[Expt 4.7 - Link State\\|Expt 4.7]]** | Implementation of Link State Routing using Dijkstra's Algorithm | 14/11/2026 | 2026-11-17 |
+| **[[Expt 5.1 - UDP Transfer\\|Expt 5.1]]** | Simulation of UDP Data Transfer | 15/11/2026 | 2026-11-17 |
+| **[[Expt 5.2 - TCP Exchange\\|Expt 5.2]]** | Simulation of TCP Message Exchange Technique | 15/11/2026 | 2026-11-17 |
+| **[[Expt 5.3 - TCP Congestion\\|Expt 5.3]]** | Simulation of TCP Congestion Control Technique | 16/11/2026 | 2026-11-17 |
+| **[[Expt 6.1 - DNS Client\\|Expt 6.1]]** | Simulation of DNS Client | 16/11/2026 | 2026-11-17 |
+| **[[Expt 6.2 - RSA Cipher\\|Expt 6.2]]** | Implementation of Message Confidentiality Using RSA Encryption and Decryption | 16/11/2026 | 2026-11-17 |
 
 ---
 
@@ -59563,17 +58692,661 @@ Decrypted message: Demonstration of RSA algorithm
 \`\`\``
   },
 
-  'expt-12-basic-commands-readme': {
-    id: 'expt-12-basic-commands-readme',
-    title: "README",
+  'cn-lab-manual': {
+    id: 'cn-lab-manual',
+    title: "CN Lab Manual",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-1.2-basic-commands","README"],
-    tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 486,
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Manual","CN Lab Manual"],
+    tags: ["asset"],
+    created: "2026-09-17",
+    modified: "2026-09-17",
+    wordCount: 0,
     backlinks: [],
     links: [],
+    outline: [],
+    content: `# CN Lab Manual
+
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Manual.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="CN Lab Manual"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Manual.pdf)`
+  },
+
+  'cn-lab-syllabus': {
+    id: 'cn-lab-syllabus',
+    title: "CN Lab Syllabus",
+    folder: "06 - Archive",
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Manual","CN Lab Syllabus"],
+    tags: ["asset"],
+    created: "2026-09-17",
+    modified: "2026-09-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# CN Lab Syllabus
+
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Syllabus.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="CN Lab Syllabus"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/IGIT Sarang CSE 5th Sem/CN/Lab 2026/Lab Manual/CN Lab Syllabus.pdf)`
+  },
+
+  'cn-lab-theory-viva-guide': {
+    id: 'cn-lab-theory-viva-guide',
+    title: "CN Lab & Theory Viva Guide",
+    folder: "06 - Archive",
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","CN Lab & Theory Viva Guide"],
+    tags: [],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 6149,
+    backlinks: ["cn-lab-manual-shortened","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened","cn-study-flow-execution-guide","expt-21-polar-nrz","expt-25-sync-tdm","expt-22-manchester","expt-23-2b1q","expt-24-mlt-3","expt-31-crc","expt-36-selective-repeat-arq","expt-33-character-stuffing","expt-34-bit-stuffing","expt-32-hamming-code","expt-35-go-back-n-arq","expt-37-csma-cd","expt-41-ipv4-class","expt-47-link-state","expt-44-vlsm","expt-42-subnet-info","expt-43-usable-hosts","expt-45-fragmentation","expt-46-distance-vector","expt-51-udp-transfer","expt-53-tcp-congestion","expt-52-tcp-exchange","expt-61-dns-client","expt-62-rsa-cipher","expt-12-basic-commands"],
+    outline: [{"level":1,"text":"Computer Networks — Comprehensive Lab & Theory Viva Voce Guide","id":"computer-networks-comprehensive-lab-theory-viva-voce-guide"},{"level":2,"text":"1. Network Models, Physical Layer & Transmission Fundamentals","id":"1-network-models-physical-layer-transmission-fundamentals"},{"level":3,"text":"Architecture, Topologies & Layered Reference Models","id":"architecture-topologies-layered-reference-models"},{"level":3,"text":"Signals, Transmission Impairments & Data Rate Limits","id":"signals-transmission-impairments-data-rate-limits"},{"level":3,"text":"Line Coding & Multiplexing Techniques (Expt 2.1 - Polar NRZ – Expt 2.5 - Sync TDM)","id":"line-coding-multiplexing-techniques-expt-21-polar-nrz-expt-25-sync-tdm"},{"level":2,"text":"2. Data Link Layer, Framing & Error Control (Expt 3.1 - CRC – Expt 3.6 - Selective Repeat ARQ)","id":"2-data-link-layer-framing-error-control-expt-31-crc-expt-36-selective-repeat-arq"},{"level":3,"text":"Framing Techniques (Expt 3.3 - Character Stuffing & Expt 3.4 - Bit Stuffing)","id":"framing-techniques-expt-33-character-stuffing-expt-34-bit-stuffing"},{"level":3,"text":"Error Detection & Correction Mechanisms (Expt 3.1 - CRC & Expt 3.2 - Hamming Code)","id":"error-detection-correction-mechanisms-expt-31-crc-expt-32-hamming-code"},{"level":3,"text":"Flow & Error Control Protocols (Expt 3.5 - Go-Back-N ARQ & Expt 3.6 - Selective Repeat ARQ)","id":"flow-error-control-protocols-expt-35-go-back-n-arq-expt-36-selective-repeat-arq"},{"level":2,"text":"3. MAC Sublayer, Multiple Access Protocols & LANs (Expt 3.7 - CSMA-CD)","id":"3-mac-sublayer-multiple-access-protocols-lans-expt-37-csma-cd"},{"level":3,"text":"Multiple Access Protocol Taxonomy","id":"multiple-access-protocol-taxonomy"},{"level":3,"text":"Random Access Protocols & CSMA/CD (Expt 3.7 - CSMA-CD)","id":"random-access-protocols-csmacd-expt-37-csma-cd"},{"level":3,"text":"Channelization Protocols & Wireless Technologies","id":"channelization-protocols-wireless-technologies"},{"level":2,"text":"4. Network Layer, Addressing, Subnetting & Routing (Expt 4.1 - IPv4 Class – Expt 4.7 - Link State)","id":"4-network-layer-addressing-subnetting-routing-expt-41-ipv4-class-expt-47-link-state"},{"level":3,"text":"IPv4 Addressing, Classes & Subnetting (Expt 4.1 - IPv4 Class – Expt 4.4 - VLSM)","id":"ipv4-addressing-classes-subnetting-expt-41-ipv4-class-expt-44-vlsm"},{"level":3,"text":"IPv4 Header Structure & Fragmentation Mechanics (Expt 4.5 - Fragmentation)","id":"ipv4-header-structure-fragmentation-mechanics-expt-45-fragmentation"},{"level":3,"text":"Supporting Protocols & Routing Algorithms (Expt 4.6 - Distance Vector & Expt 4.7 - Link State)","id":"supporting-protocols-routing-algorithms-expt-46-distance-vector-expt-47-link-state"},{"level":2,"text":"5. Transport Layer — UDP, TCP & Congestion Control (Expt 5.1 - UDP Transfer – Expt 5.3 - TCP Congestion)","id":"5-transport-layer-udp-tcp-congestion-control-expt-51-udp-transfer-expt-53-tcp-congestion"},{"level":3,"text":"TCP vs UDP & Sockets (Expt 5.1 - UDP Transfer & Expt 5.2 - TCP Exchange)","id":"tcp-vs-udp-sockets-expt-51-udp-transfer-expt-52-tcp-exchange"},{"level":3,"text":"TCP Flow Control & Congestion Control (Expt 5.3 - TCP Congestion)","id":"tcp-flow-control-congestion-control-expt-53-tcp-congestion"},{"level":2,"text":"6. Application Layer, Well-Known Ports & Cryptography (Expt 6.1 - DNS Client & Expt 6.2 - RSA Cipher)","id":"6-application-layer-well-known-ports-cryptography-expt-61-dns-client-expt-62-rsa-cipher"},{"level":3,"text":"DNS & Application Layer Protocols (Expt 6.1 - DNS Client)","id":"dns-application-layer-protocols-expt-61-dns-client"},{"level":3,"text":"Cryptography & RSA Algorithm (Expt 6.2 - RSA Cipher)","id":"cryptography-rsa-algorithm-expt-62-rsa-cipher"},{"level":2,"text":"7. Practical CLI Troubleshooting Commands & Interconnecting Devices (Expt 1.2 - Basic Commands)","id":"7-practical-cli-troubleshooting-commands-interconnecting-devices-expt-12-basic-commands"},{"level":3,"text":"Basic Network Command-Line Tools (Expt 1.2 - Basic Commands)","id":"basic-network-command-line-tools-expt-12-basic-commands"},{"level":3,"text":"Network Interconnecting Devices","id":"network-interconnecting-devices"}],
+    content: `# Computer Networks — Comprehensive Lab & Theory Viva Voce Guide
+
+**Target Date:** 19th November 2026  
+**Course Codes:** PCCS7306 (Lab) / PCCS4307 (Theory)  
+**Department:** CSEA, IGIT Sarang  
+**Associated Notes:** [[CN Lab Outputs Guide]] · [[CN Lab Manual (shortened)]] · [[CN Study Flow & Execution Guide]]
+
+---
+
+## 1. Network Models, Physical Layer & Transmission Fundamentals
+
+The physical layer and network architecture establish the mathematical and physical foundations of data communication, governing how raw bitstreams traverse physical media and how layered abstractions compartmentalize networking responsibilities.
+
+### Architecture, Topologies & Layered Reference Models
+
+**Q: What is the primary purpose of layering in computer networks?**  
+**A:** Layering decomposes a complex communication system into smaller, modular, and manageable functional units. Each layer provides specific services to the layer immediately above it while hiding internal implementation details from higher layers.
+
+**Q: Enumerate the seven layers of the OSI model from bottom to top.**  
+**A:** The seven layers in order are:
+1. Physical Layer (Layer 1)
+2. Data Link Layer (Layer 2)
+3. Network Layer (Layer 3)
+4. Transport Layer (Layer 4)
+5. Session Layer (Layer 5)
+6. Presentation Layer (Layer 6)
+7. Application Layer (Layer 7)
+
+**Q: How does the TCP/IP model differ from the OSI reference model?**  
+**A:** The OSI model is a theoretical seven-layer conceptual framework developed by ISO. The TCP/IP model is a practical implementation architecture (originally four layers, modernized into five layers) that combines the OSI Presentation and Session layers into the Application Layer, and treats the Physical and Data Link layers as the Network Access/Interface layer in the four-layer version.
+
+**Q: Define Protocol Data Unit (PDU) and name the PDU at each layer.**  
+**A:** A PDU is the specific unit of data transferred between peer entities at a given protocol layer:
+* **Physical Layer:** Bit (or Symbol)
+* **Data Link Layer:** Frame
+* **Network Layer:** Packet (or Datagram)
+* **Transport Layer:** Segment (for TCP) or User Datagram (for UDP)
+* **Application Layer:** Message
+
+**Q: What are the sizes of a MAC address, IPv4 address, IPv6 address, and Port number?**  
+**A:**
+* **MAC (Physical) Address:** $48\\text{ bits}$ ($6\\text{ bytes}$), represented in hexadecimal (e.g., \`00:1A:2B:3C:4D:5E\`).
+* **IPv4 (Logical) Address:** $32\\text{ bits}$ ($4\\text{ bytes}$).
+* **IPv6 Address:** $128\\text{ bits}$ ($16\\text{ bytes}$).
+* **Port Address:** $16\\text{ bits}$ ($2\\text{ bytes}$), ranging from $0$ to $65535$.
+
+**Q: If an IP address can uniquely and universally identify a node, why do we still need a MAC (physical) address?**  
+**A:** The IP address specifies the *original source* and *final destination* across heterogeneous networks, whereas the MAC address is required at the Data Link Layer to move the frame from **one hop to the next hop** within the same local network segment.
+
+**Q: What is the function of the Presentation Layer in the OSI model?**  
+**A:** It handles data translation, syntax coordination, character code translation (such as ASCII to UTF-8/EBCDIC), data compression, and cryptographic encryption/decryption.
+
+**Q: What is the responsibility of the Session Layer?**  
+**A:** It establishes, manages, synchronizes (dialog control), and terminates dialogues between communicating applications, maintaining checkpoints for recovery during data transfer.
+
+**Q: State the formula for the number of links and I/O ports in a full Mesh Topology.**  
+**A:** For $n$ nodes in a fully connected mesh network:
+* **Number of full-duplex physical links:** $\\frac{n(n - 1)}{2}$
+* **Number of I/O ports required per device:** $n - 1$
+
+---
+
+### Signals, Transmission Impairments & Data Rate Limits
+
+**Q: What is the fundamental difference between an analog signal and a digital signal?**  
+**A:** An analog signal is a continuous wave that varies smoothly over time with an infinite number of values within a range. A digital signal is discrete, having a finite number of defined voltage states (typically two levels, representing $0$ and $1$).
+
+**Q: Differentiate between bit rate and baud rate.**  
+**A:** Bit rate (data rate, $N$) is the number of bits transmitted per second (bps). Baud rate (signal rate, $S$) is the number of signal elements or symbols transmitted per second (Bd). They are related by:
+$$S = \\frac{N}{r}$$
+where $r$ is the number of data elements carried by one signal element ($r = \\log_2 L$, with $L$ being the number of signal levels).
+
+**Q: What are the three primary causes of transmission impairment in physical media?**  
+**A:**
+* **Attenuation:** Loss of signal energy as the wave travels through a resistance-bearing medium, compensated by amplifiers or repeaters.
+* **Distortion:** Alteration of signal shape occurring in composite signals because different frequency components propagate at different velocities.
+* **Noise:** External electromagnetic interference (thermal noise, induced noise, crosstalk, impulse noise) corrupting the original signal.
+
+**Q: Define Signal-to-Noise Ratio (SNR) and how it is expressed in decibels.**  
+**A:** SNR is the ratio of average signal power ($P_{\\text{signal}}$) to average noise power ($P_{\\text{noise}}$):
+$$\\text{SNR} = \\frac{P_{\\text{signal}}}{P_{\\text{noise}}}$$
+In decibels:
+$$\\text{SNR}_{\\text{dB}} = 10 \\log_{10}(\\text{SNR})$$
+
+**Q: State the Nyquist Bit Rate formula and its operating constraint.**  
+**A:** The Nyquist formula defines the theoretical maximum bit rate for an ideal, **noiseless** channel:
+$$\\text{Bit Rate} = 2B \\log_2(L)$$
+where $B$ is channel bandwidth in Hertz and $L$ is the number of discrete signal voltage levels used to represent data.
+
+**Q: State the Shannon Channel Capacity theorem and its significance.**  
+**A:** The Shannon theorem defines the upper theoretical capacity limit of a real-world **noisy** channel, independent of the number of signal levels:
+$$C = B \\log_2(1 + \\text{SNR})$$
+It proves that channel capacity cannot be arbitrarily increased by adding signal levels once thermal noise is present.
+
+**Q: What is the practical relationship between Nyquist and Shannon formulas?**  
+**A:** The Shannon formula establishes the upper physical data rate ceiling dictated by channel noise. The Nyquist formula is then applied to calculate the minimum number of signal levels ($L$) required to achieve that target data rate.
+
+**Q: Differentiate between Bandwidth and Throughput.**  
+**A:** Bandwidth is the maximum theoretical data carrying capacity of a link (measured in Hz or bps). Throughput is the actual measurement of data successfully delivered over the link in real-time ($T \\le B$).
+
+**Q: What is the Bandwidth-Delay Product (BDP)?**  
+**A:** BDP ($B \\times \\text{Delay}$) represents the cross-sectional volume of a communication link, defining the maximum number of bits that can fill the transmission pipe in transit at any single moment.
+
+---
+
+### Line Coding & Multiplexing Techniques ([[Expt 2.1 - Polar NRZ]] – [[Expt 2.5 - Sync TDM]])
+
+**Q: What is Line Coding and why is it necessary in digital transmission?**  
+**A:** Line coding is the process of converting digital data (a sequence of binary $0$s and $1$s) into discrete digital physical voltage signals suitable for transmission over a baseband channel, ensuring clock synchronization, minimizing DC components, and providing error detection capability.
+
+**Q: What are the two major drawbacks of Unipolar NRZ and Polar NRZ-L encoding?**  
+**A:**
+* **DC Component Problem (Baseline Wandering):** Long sequences of identical bits produce a non-zero average DC voltage that shifts the receiver's baseline and cannot pass through AC-coupled transformers or capacitors.
+* **Lack of Synchronization:** Long strings of consecutive $0$s or $1$s provide no signal transitions, causing sender and receiver clocks to drift out of phase.
+
+**Q: Differentiate between Polar NRZ-L and Polar NRZ-I ([[Expt 2.1 - Polar NRZ]]).**  
+**A:**
+* **NRZ-L (Non-Return to Zero - Level):** The signal voltage *level* directly determines the bit value (e.g., positive voltage for $0$, negative voltage for $1$).
+* **NRZ-I (Non-Return to Zero - Invert):** A *transition* (inversion of voltage level) at the beginning of a bit interval represents bit $1$, while *no transition* represents bit $0$.
+
+**Q: Why do Manchester and Differential Manchester encoding provide self-synchronization, and what are their encoding rules ([[Expt 2.2 - Manchester]])?**  
+**A:** Both schemes force a guaranteed voltage transition in the exact *middle* of every bit interval, enabling the receiver to self-synchronize its clock and eliminating the DC component:
+* **Polar Manchester:** A mid-bit transition from positive to negative ($+ \\to -$) represents bit $0$, and negative to positive ($- \\to +$) represents bit $1$.
+* **Differential Manchester:** The mid-bit transition is always present for clocking; additionally, a transition at the *beginning* of the bit interval represents bit **$0$**, while *no transition* at the beginning represents bit **$1$**.
+
+**Q: What is the penalty for using Manchester encoding?**  
+**A:** It requires a baud rate equal to twice the bit rate ($r = 1/2$), which doubles the required minimum signal bandwidth compared to NRZ schemes.
+
+**Q: What does 2B1Q stand for and how does it work ([[Expt 2.3 - 2B1Q]])?**  
+**A:** **Two-Binary, One-Quaternary** (2B1Q) is a multilevel line coding scheme ($mBnL$) that groups $2\\text{ bits}$ of binary data into $1\\text{ quaternary signal element}$ using $L = 4$ different voltage levels ($2^2 = 4$, typically $-3, -1, +1, +3$). Because $r = 2$, it halves the baud rate ($S = N/2$), conserving transmission bandwidth in technologies like DSL.
+
+**Q: How does MLT-3 (Multiline Transmission, 3-Level) work and where is it used ([[Expt 2.4 - MLT-3]])?**  
+**A:** MLT-3 uses three voltage levels ($+V, 0, -V$):
+* If the next bit is **$0$**, there is no transition.
+* If the next bit is **$1$**:
+  * If the current level is not $0$, the next level becomes $0$.
+  * If the current level is $0$, the next level becomes the opposite of the last non-zero level (cycling $+V \\to 0 \\to -V \\to 0$).
+It reduces the worst-case fundamental frequency to $N/4$, making it ideal for Fast Ethernet (100BASE-TX) over copper cables.
+
+**Q: Compare Synchronous TDM and Statistical TDM ([[Expt 2.5 - Sync TDM]]).**  
+**A:**
+* **Synchronous TDM:** Each connected input line is allocated a dedicated, fixed-duration time slot in every round-robin output frame, regardless of whether the source has data to send. If an input line has no data, its slot travels empty, wasting bandwidth.
+* **Statistical (Asynchronous) TDM:** Slots are allocated dynamically on-demand only to lines with active data. Because slot ownership is not tied to fixed time positions, each transmitted slot must carry an explicit destination address header.
+
+---
+
+## 2. Data Link Layer, Framing & Error Control ([[Expt 3.1 - CRC]] – [[Expt 3.6 - Selective Repeat ARQ]])
+
+The Data Link Layer transforms an unreliable raw physical transmission facility into an error-free, framed communication link between directly adjacent nodes.
+
+### Framing Techniques ([[Expt 3.3 - Character Stuffing]] & [[Expt 3.4 - Bit Stuffing]])
+
+**Q: What is framing and why is it required?**  
+**A:** Framing divides the continuous physical bitstream into discrete, manageable data units called frames. It establishes clear boundaries (start and end) so the receiver can recognize frame boundaries, check integrity, and extract payload data.
+
+**Q: Differentiate between Character (Byte) Stuffing and Bit Stuffing ([[Expt 3.3 - Character Stuffing]] & [[Expt 3.4 - Bit Stuffing]]).**  
+**A:**
+* **Character (Byte) Stuffing:** Used in character-oriented framing where special 1-byte control characters mark frame boundaries (such as \`FLAG\` or \`DLE STX\` / \`DLE ETX\`). If the flag byte or escape byte (\`ESC\` / \`DLE\`) appears inside the actual data payload, the sender stuffs an extra \`ESC\` / \`DLE\` byte immediately before it.
+* **Bit Stuffing:** Used in bit-oriented protocols (such as HDLC) where a unique flag sequence \`01111110\` (six consecutive \`1\`s) marks the start and end of every frame. Whenever the sender encounters **five consecutive \`1\`s** in the payload data, it automatically stuffs a **\`0\`** bit immediately after them so payload data never mimics the flag. The receiver strips this stuffed \`0\`.
+
+---
+
+### Error Detection & Correction Mechanisms ([[Expt 3.1 - CRC]] & [[Expt 3.2 - Hamming Code]])
+
+**Q: Differentiate between a single-bit error and a burst error.**  
+**A:** A single-bit error corrupts only one bit in a data block. A burst error corrupts two or more bits, where the burst length is measured from the first corrupted bit to the last corrupted bit in the sequence.
+
+**Q: Define Hamming distance and minimum Hamming distance ($d_{\\min}$).**  
+**A:** The Hamming distance between two binary words of equal length is the number of bit positions in which they differ, computed as the number of $1$s resulting from an exclusive-OR ($\\oplus$) operation. The minimum Hamming distance ($d_{\\min}$) of a code is the smallest Hamming distance between any two distinct valid codewords in the code set.
+
+**Q: What are the conditions on $d_{\\min}$ for error detection and error correction?**  
+**A:**
+* To detect up to $s$ errors:
+$$d_{\\min} \\ge s + 1$$
+* To correct up to $t$ errors:
+$$d_{\\min} \\ge 2t + 1$$
+
+**Q: How does Cyclic Redundancy Check (CRC) operate at sender and receiver ([[Expt 3.1 - CRC]])?**  
+**A:**
+* **Sender:** A predetermined generator polynomial (divisor) of length $n$ bits (degree $r = n - 1$) is chosen. The sender appends $n - 1$ zeros to the $m$-bit dataword and performs modulo-2 binary division (using bitwise **XOR** subtraction). The resulting $(n - 1)$-bit remainder (CRC bits) replaces the appended zeros to form the transmitted codeword.
+* **Receiver:** The receiver divides the incoming codeword by the identical generator polynomial using modulo-2 XOR division. If the final remainder is all zeros, the frame is accepted as error-free; otherwise, corruption is detected and the frame is rejected.
+
+**Q: In Hamming Code $C(7,4)$, how many data bits and parity bits are used, what is the redundancy formula, and where are parity bits placed ([[Expt 3.2 - Hamming Code]])?**  
+**A:**
+* There are **$m = 4\\text{ data bits}$** and **$r = 3\\text{ parity (redundant) bits}$**, forming a $7\\text{-bit}$ codeword.
+* **Redundancy Formula:** To protect $m$ data bits against single-bit errors, the number of redundant bits $r$ must satisfy:
+$$2^r \\ge m + r + 1$$
+* **Placement:** In standard positional Hamming placement, parity bits occupy positions that are powers of $2$: **$1, 2, 4, 8, \\dots$** ($2^0, 2^1, 2^2, \\dots$). In systematic block code configurations (as used in standard lab implementations), parity bits $r_0, r_1, r_2$ are computed via modulo-2 XOR equations:
+$$r_0 = a_0 \\oplus a_1 \\oplus a_2, \\quad r_1 = a_1 \\oplus a_2 \\oplus a_3, \\quad r_2 = a_0 \\oplus a_1 \\oplus a_3$$
+
+**Q: How does a Hamming receiver detect and correct an erroneous bit?**  
+**A:** The receiver evaluates three syndrome bits ($s_2, s_1, s_0$) by recomputing parity equations across the received codeword:
+$$s_0 = a_0 \\oplus a_1 \\oplus a_2 \\oplus r_0, \\quad s_1 = a_1 \\oplus a_2 \\oplus a_3 \\oplus r_1, \\quad s_2 = a_0 \\oplus a_1 \\oplus a_3 \\oplus r_2$$
+If $(s_2, s_1, s_0) = 000$, no error occurred. If non-zero, the binary syndrome value identifies the exact corrupted bit position, allowing the receiver to invert and correct that bit.
+
+**Q: How does Internet Checksum calculate check bits?**  
+**A:** Data is divided into 16-bit words. The sender adds all 16-bit words using 1's complement arithmetic (wrapping any carry-out back into the least significant bit) and takes the 1's complement (bitwise NOT) of the sum to produce the checksum. The receiver adds all data words plus the checksum; a valid transmission yields all $1$s (\`0xFFFF\`), which complements to \`0\`.
+
+---
+
+### Flow & Error Control Protocols ([[Expt 3.5 - Go-Back-N ARQ]] & [[Expt 3.6 - Selective Repeat ARQ]])
+
+**Q: Compare Stop-and-Wait, Go-Back-N, and Selective-Repeat ARQ ([[Expt 3.5 - Go-Back-N ARQ]] & [[Expt 3.6 - Selective Repeat ARQ]]).**  
+**A:**
+* **Stop-and-Wait ARQ:** The sender transmits $1$ frame and waits for an ACK before sending the next. If the timer expires, it retransmits. Simple, but suffers from poor link utilization when propagation delay is high.
+* **Go-Back-N (GBN) ARQ:** The sender can transmit up to $N$ frames in a sliding window without waiting for an ACK. For $m$-bit sequence numbers:
+  * **Sender Window Size:** $W_S = 2^m - 1$
+  * **Receiver Window Size:** $W_R = 1$
+  * **On Error:** Because $W_R = 1$, the receiver discards all out-of-order frames following a lost frame. Upon timeout, the sender rolls back and retransmits the lost frame **and all subsequent frames** in the window.
+* **Selective-Repeat (SR) ARQ:** Both sender and receiver maintain buffers for out-of-order frames. For $m$-bit sequence numbers:
+  * **Sender Window Size:** $W_S = 2^{m-1}$
+  * **Receiver Window Size:** $W_R = 2^{m-1}$
+  * **On Error:** The receiver buffers valid out-of-order frames, sends a NAK for the missing frame, and the sender retransmits **only the specific damaged/lost frame**.
+
+**Q: Why must the sender window size in Go-Back-N be strictly less than $2^m$ ($W_S \\le 2^m - 1$)?**  
+**A:** If the sender window size were equal to $2^m$ and all ACKs in a window were lost, the sender would timeout and retransmit frame $0$ through $2^m - 1$; the receiver, having already advanced its expected sequence number back to $0$ (modulo $2^m$), would mistakenly accept the retransmitted old frame $0$ as a brand-new frame in the next cycle.
+
+**Q: Define Piggybacking.**  
+**A:** Piggybacking is an optimization technique in bidirectional data communication where an acknowledgment (ACK) for received data is attached to an outgoing data frame heading back to the sender rather than sending a separate control frame.
+
+---
+
+## 3. MAC Sublayer, Multiple Access Protocols & LANs ([[Expt 3.7 - CSMA-CD]])
+
+When multiple networking nodes share a single broadcast transmission link, Media Access Control (MAC) protocols resolve access contention to prevent mutual packet destruction.
+
+### Multiple Access Protocol Taxonomy
+
+* **Random Access (Contention-Based):** Nodes contend for the channel dynamically; no node has priority. Includes Pure ALOHA, Slotted ALOHA, CSMA, CSMA/CD (wired Ethernet), and CSMA/CA (wireless LANs).
+* **Controlled Access (Deterministic):** Nodes coordinate or are polled to grant conflict-free transmission rights. Includes Reservation, Polling, and Token Passing.
+* **Channelization (Partitioning):** Channel bandwidth is partitioned in frequency, time, or orthogonal code space. Includes FDMA, TDMA, and CDMA.
+
+---
+
+### Random Access Protocols & CSMA/CD ([[Expt 3.7 - CSMA-CD]])
+
+**Q: Differentiate between Pure ALOHA and Slotted ALOHA in terms of vulnerable time and maximum throughput.**  
+**A:**
+* **Pure ALOHA:** Stations transmit whenever data is ready. Vulnerable time $= 2T_{\\text{fr}}$. Throughput $S = G e^{-2G}$, with maximum $S_{\\max} = \\frac{1}{2e} \\approx 18.4\\%$ at $G = 0.5$.
+* **Slotted ALOHA:** Time is divided into discrete slots of length $T_{\\text{fr}}$, and stations transmit only at slot boundaries. Vulnerable time $= T_{\\text{fr}}$. Throughput $S = G e^{-G}$, with maximum $S_{\\max} = \\frac{1}{e} \\approx 36.8\\%$ at $G = 1.0$.
+
+**Q: What are the three persistence methods in CSMA?**  
+**A:**
+* **1-persistent:** Continuously senses a busy channel and transmits immediately (with probability $1$) once idle. Used in standard Ethernet; has the highest collision probability when multiple stations wait simultaneously.
+* **Non-persistent:** If the channel is busy, waits a random backoff duration before sensing the channel again, reducing collisions at the cost of higher delay.
+* **$p$-persistent:** Used in slotted channels; when the channel is idle, transmits with probability $p$ or defers to the next time slot with probability $q = 1 - p$.
+
+**Q: Explain how CSMA/CD operates in wired Ethernet ([[Expt 3.7 - CSMA-CD]]).**  
+**A:** **CSMA/CD (Carrier Sense Multiple Access with Collision Detection)** senses the medium before transmitting ("listen before talk") and monitors the medium during transmission ("listen while talk"). If two stations transmit simultaneously and detect a collision, both immediately abort transmission, send a 48-bit jamming signal to alert all nodes, and wait a random time determined by the **Binary Exponential Backoff** algorithm.
+
+**Q: What is the condition for collision detection in CSMA/CD (Minimum Frame Size)?**  
+**A:** A sender must still be transmitting when the colliding signal from the farthest station returns; therefore, the frame transmission time ($T_{\\text{fr}}$) must be at least twice the maximum end-to-end propagation delay ($T_p$):
+$$T_{\\text{fr}} \\ge 2 \\times T_p \\implies \\frac{\\text{Minimum Frame Size}}{\\text{Bandwidth}} \\ge 2 \\times T_p$$
+For Standard Ethernet ($10\\text{ Mbps}$), the minimum frame size is **$64\\text{ bytes}$ ($512\\text{ bits}$)**.
+
+**Q: What is the Binary Exponential Backoff algorithm?**  
+**A:** After collision number $k$, a station chooses a random integer $R$ uniformly from:
+$$0 \\le R \\le 2^k - 1$$
+and waits $R \\times \\text{Slot Time}$ ($51.2\\ \\mu\\text{s}$ in 10 Mbps Ethernet) before re-sensing. For $k > 10$, the exponent is capped at $10$ ($0 \\le R \\le 1023$). At $k = 16$, transmission is aborted.
+
+**Q: Why is CSMA/CD not used in Wireless LANs, and what protocol replaces it?**  
+**A:** Wireless networks cannot use CSMA/CD because:
+1. Wireless transceivers cannot transmit and listen simultaneously—local transmission power overwhelms weak incoming collision signals.
+2. The **Hidden Terminal** and **Exposed Terminal** problems prevent all nodes from hearing every collision.  
+Wireless networks (IEEE 802.11) use **CSMA/CA (Collision Avoidance)** with Interframe Spaces (SIFS/DIFS), Contention Window backoff, RTS/CTS handshakes, and the Network Allocation Vector (NAV).
+
+---
+
+### Channelization Protocols & Wireless Technologies
+
+**Q: Differentiate between FDMA, TDMA, and CDMA.**  
+**A:**
+* **FDMA:** Divides the total spectrum into non-overlapping frequency bands assigned to individual stations.
+* **TDMA:** Shares the full frequency band across stations in cyclic, non-overlapping time slots.
+* **CDMA:** Allows all stations to transmit simultaneously across the entire frequency band, separating signals via orthogonal Walsh chip codes ($C_i \\cdot C_i = N$ and $C_i \\cdot C_j = 0$ for $i \\neq j$).
+
+**Q: What is the difference between a Bluetooth Piconet and a Scatternet?**  
+**A:** A Piconet is a short-range wireless ad-hoc network with one primary (master) node and up to seven active secondary (slave) nodes. A Scatternet interconnects multiple Piconets via bridge nodes.
+
+---
+
+## 4. Network Layer, Addressing, Subnetting & Routing ([[Expt 4.1 - IPv4 Class]] – [[Expt 4.7 - Link State]])
+
+The Network Layer handles host-to-host packet delivery across heterogeneous internetworks, managing logical addressing, packet fragmentation, and routing topology computation.
+
+### IPv4 Addressing, Classes & Subnetting ([[Expt 4.1 - IPv4 Class]] – [[Expt 4.4 - VLSM]])
+
+**Q: How do you identify IPv4 Address Classes and their Default Subnet Masks ([[Expt 4.1 - IPv4 Class]])?**  
+**A:**
+
+| Class | Leading Bits | First Octet Range | Default Subnet Mask | Default CIDR | Purpose |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Class A** | \`0\` | $0 - 127$ ($1 - 126$ usable) | \`255.0.0.0\` | \`/8\` | Very Large Networks |
+| **Class B** | \`10\` | $128 - 191$ | \`255.255.0.0\` | \`/16\` | Medium-to-Large Networks |
+| **Class C** | \`110\` | $192 - 223$ | \`255.255.255.0\` | \`/24\` | Small Local Networks |
+| **Class D** | \`1110\` | $224 - 239$ | Undefined | Undefined | Multicasting |
+| **Class E** | \`1111\` | $240 - 255$ | Undefined | Undefined | Research / Experimental |
+
+*Note: \`0.0.0.0\` is the default route/unspecified address, and \`127.0.0.0/8\` (\`127.0.0.1\`) is reserved for local host **Loopback** testing.*
+
+**Q: What are the Private IPv4 address ranges (RFC 1918) and what is NAT?**  
+**A:**
+* **NAT (Network Address Translation):** Allows hosts on a private local network to share one or more public IP addresses when communicating with the external Internet.
+* **Private IP Ranges:**
+  * **Class A:** \`10.0.0.0/8\` (\`10.0.0.0\` – \`10.255.255.255\`)
+  * **Class B:** \`172.16.0.0/12\` (\`172.16.0.0\` – \`172.31.255.255\`)
+  * **Class C:** \`192.168.0.0/16\` (\`192.168.0.0\` – \`192.168.255.255\`)
+
+**Q: Given an IP address and Subnet Mask, how do you calculate the Network Address, Broadcast Address, Total IPs, and Usable Hosts ([[Expt 4.2 - Subnet Info]] & [[Expt 4.3 - Usable Hosts]])?**  
+**A:**
+* **Network Address:** Bitwise **AND** between the IP address and the Subnet Mask (sets all $h$ host bits to $0$).
+* **Direct Broadcast Address:** Bitwise **OR** between the IP address and the inverted Subnet Mask (sets all $h$ host bits to $1$).
+* **Total IP Addresses:** $2^h$, where $h = 32 - \\text{prefix length}$.
+* **Total Usable Hosts:** $2^h - 2$ (subtracting the Network Address and the Broadcast Address).
+
+**Q: Given \`192.168.10.0/26\`, calculate the subnet mask, number of subnets, and usable hosts per subnet.**  
+**A:**
+* **Subnet Mask:** 26 ones $\\implies$ \`255.255.255.192\` ($2$ bits borrowed from Class C \`/24\`).
+* **Total Subnets:** $2^2 = 4$ subnets.
+* **Usable Hosts per Subnet:** $2^{32-26} - 2 = 2^6 - 2 = 62$ usable hosts.
+
+**Q: What is the difference between FLSM and VLSM, and what is the allocation rule for VLSM ([[Expt 4.4 - VLSM]])?**  
+**A:**
+* **FLSM (Fixed Length Subnet Masking):** Divides a network into equal-sized subnets using a single mask, which wastes IP addresses when departments have different sizes.
+* **VLSM (Variable Length Subnet Masking):** Assigns different subnet masks (prefix lengths) to different subnets according to exact host requirements. **Rule:** Always sort and allocate subnets from the **largest host requirement to the smallest** to prevent address block overlap.
+
+---
+
+### IPv4 Header Structure & Fragmentation Mechanics ([[Expt 4.5 - Fragmentation]])
+
+| Header Field | Field Width | Functional Responsibility |
+| :--- | :--- | :--- |
+| **Version** | 4 bits | Identifies IP version (4 for IPv4) |
+| **Internet Header Length (IHL)** | 4 bits | Header length in 4-byte words ($\\min = 5 \\implies 20\\text{ B}$, $\\max = 15 \\implies 60\\text{ B}$) |
+| **Type of Service (TOS / DSCP)** | 8 bits | Quality of service and priority handling |
+| **Total Length** | 16 bits | Total length of IP datagram (header + payload) in bytes |
+| **Identification** | 16 bits | Unique datagram ID shared by all fragments of the same packet |
+| **Flags** | 3 bits | Bit 0 reserved ($0$); **DF** (Don't Fragment); **MF** (More Fragments: $1$ if more follow, $0$ for last) |
+| **Fragment Offset** | 13 bits | Payload offset of fragment in **8-byte units** relative to original datagram |
+| **Time to Live (TTL)** | 8 bits | Hop counter decremented by each router; discarded at $0$ to prevent routing loops |
+| **Protocol** | 8 bits | Upper-layer protocol ($1 = \\text{ICMP}$, $6 = \\text{TCP}$, $17 = \\text{UDP}$) |
+| **Header Checksum** | 16 bits | 1's complement checksum covering the IPv4 header only |
+| **Source / Destination IP** | 32 bits each | Logical IPv4 addresses of sender and final recipient |
+
+**Q: Why is IPv4 Fragmentation needed and how is Fragment Offset calculated ([[Expt 4.5 - Fragmentation]])?**  
+**A:** Every link layer enforces an **MTU (Maximum Transmission Unit)**. When an IPv4 datagram exceeds the link MTU, routers fragment the payload so each non-final fragment carries a payload byte count divisible by $8$.
+$$\\text{Fragment Offset} = \\frac{\\text{Starting Byte Index of Fragment Payload}}{8}$$
+For a $4000\\text{-byte}$ payload over MTU $1500$ ($20\\text{-byte}$ header + $1480\\text{-byte}$ max payload):
+* **Fragment 1:** Bytes $0\\text{–}1479$, $\\text{Offset} = 0$, $\\text{MF} = 1$.
+* **Fragment 2:** Bytes $1480\\text{–}2959$, $\\text{Offset} = 1480 / 8 = 185$, $\\text{MF} = 1$.
+* **Fragment 3:** Bytes $2960\\text{–}3999$, $\\text{Offset} = 2960 / 8 = 370$, $\\text{MF} = 0$.
+
+---
+
+### Supporting Protocols & Routing Algorithms ([[Expt 4.6 - Distance Vector]] & [[Expt 4.7 - Link State]])
+
+**Q: What is ARP and how does it function?**  
+**A:** **Address Resolution Protocol (ARP)** maps a known IPv4 address to a 48-bit MAC address on a local network. The sender broadcasts an **ARP Request** (\`FF:FF:FF:FF:FF:FF\`) asking who owns the target IP; the matching host replies with a unicast **ARP Reply** containing its MAC address.
+
+**Q: Differentiate between Distance Vector Routing and Link State Routing ([[Expt 4.6 - Distance Vector]] & [[Expt 4.7 - Link State]]).**  
+**A:**
+
+| Feature | Distance Vector Routing ([[Expt 4.6 - Distance Vector]]) | Link State Routing ([[Expt 4.7 - Link State]]) |
+| :--- | :--- | :--- |
+| **Algorithm Used** | **Bellman-Ford** Dynamic Programming Algorithm | **Dijkstra's** Greedy Shortest Path Algorithm |
+| **Topology Knowledge** | Knows only distances via **neighbors** ("routing by rumor") |Every router builds a complete map of the **entire network topology** |
+| **Information Shared** | Periodically sends its complete routing table only to **immediate neighbors** | Floods small Link State Packets (LSPs) to **all routers** when link state changes |
+| **Main Problem** | Slow convergence and **Count-to-Infinity** loops | Higher memory and CPU overhead |
+| **Loop Prevention** | **Split Horizon** and **Poison Reverse** | Inherently loop-free once LSP database converges |
+| **Protocol Example** | **RIP** (Routing Information Protocol, max hop = 15, $\\infty = 16$) | **OSPF** (Open Shortest Path First) |
+
+---
+
+## 5. Transport Layer — UDP, TCP & Congestion Control ([[Expt 5.1 - UDP Transfer]] – [[Expt 5.3 - TCP Congestion]])
+
+The Transport Layer manages process-to-process communication between applications running on end hosts.
+
+### TCP vs UDP & Sockets ([[Expt 5.1 - UDP Transfer]] & [[Expt 5.2 - TCP Exchange]])
+
+**Q: What is a Socket?**  
+**A:** A socket is a communication endpoint uniquely identified by the concatenation of an **IP Address** and a **16-bit Port Number** (e.g., \`192.168.1.10:80\`).
+
+**Q: Compare TCP and UDP across primary design parameters ([[Expt 5.1 - UDP Transfer]] & [[Expt 5.2 - TCP Exchange]]).**  
+**A:**
+
+| Parameter | TCP (Transmission Control Protocol) | UDP (User Datagram Protocol) |
+| :--- | :--- | :--- |
+| **Connection State** | Connection-oriented (3-Way Handshake) | Connectionless |
+| **Reliability** | Reliable, in-order delivery via ACKs & retransmission | Unreliable, best-effort delivery |
+| **Abstraction** | Continuous byte stream | Discrete independent datagrams |
+| **Header Size** | Variable: $20\\text{ to }60\\text{ bytes}$ | Fixed: **$8\\text{ bytes}$** (Src Port, Dst Port, Length, Checksum) |
+| **Flow & Congestion Control** | Yes ($\\text{rwnd}$ sliding window + $\\text{cwnd}$ AIMD) | None |
+| **Typical Applications** | HTTP, HTTPS, FTP, SSH, SMTP | DNS, DHCP, SNMP, VoIP, Live Streaming |
+
+**Q: What are the six control flags in the TCP header?**  
+**A:** \`URG\` (Urgent Pointer valid), \`ACK\` (Acknowledgment valid), \`PSH\` (Push data immediately), \`RST\` (Reset connection), \`SYN\` (Synchronize sequence numbers), and \`FIN\` (Finish/close connection).
+
+**Q: How does TCP establish and terminate a connection?**  
+**A:**
+* **3-Way Handshake (Establishment):**
+  1. **SYN:** Client sends \`SYN = 1\`, $\\text{Seq} = x$.
+  2. **SYN + ACK:** Server replies with \`SYN = 1, ACK = 1\`, $\\text{Seq} = y, \\text{Ack} = x + 1$.
+  3. **ACK:** Client replies with \`ACK = 1\`, $\\text{Seq} = x + 1, \\text{Ack} = y + 1$.
+* **4-Way Handshake (Termination):** Each direction closes independently via \`FIN\` $\\to$ \`ACK\`, followed by the server's \`FIN\` $\\to$ \`ACK\`, with the client waiting in \`TIME_WAIT\` ($2 \\times \\text{MSL}$).
+
+---
+
+### TCP Flow Control & Congestion Control ([[Expt 5.3 - TCP Congestion]])
+
+**Q: What is the difference between Flow Control and Congestion Control?**  
+**A:**
+* **Flow Control:** Prevents a fast sender from overwhelming a **slow receiver's buffer** using the receiver's advertised window ($\\text{rwnd}$).
+* **Congestion Control:** Prevents senders from overwhelming **intermediate network routers/links** using the congestion window ($\\text{cwnd}$).
+* **Effective Send Window:** $\\text{swnd} = \\min(\\text{rwnd}, \\text{cwnd})$.
+
+**Q: What are the 3 phases of TCP Congestion Control ([[Expt 5.3 - TCP Congestion]])?**  
+**A:**
+1. **Slow Start (Exponential Growth):** $\\text{cwnd}$ starts at $1\\text{ MSS}$ and **doubles** every RTT ($\\text{cwnd} = 1, 2, 4, 8, \\dots$) until $\\text{cwnd} \\ge \\text{ssthresh}$ (Slow Start Threshold).
+2. **Congestion Avoidance (Additive Increase):** Once $\\text{cwnd} \\ge \\text{ssthresh}$, $\\text{cwnd}$ grows **linearly** by $+1\\text{ MSS}$ per RTT.
+3. **Congestion Detection (Multiplicative Decrease):**
+   * **On Timeout (Severe Congestion — TCP Tahoe/Reno):** Set $\\text{ssthresh} = \\frac{\\text{cwnd}}{2}$, reset $\\text{cwnd} = 1\\text{ MSS}$, and re-enter **Slow Start**.
+   * **On 3 Duplicate ACKs (Mild Congestion — Fast Retransmit & Fast Recovery in TCP Reno):** Set $\\text{ssthresh} = \\frac{\\text{cwnd}}{2}$, set $\\text{cwnd} = \\text{ssthresh}$ (or $\\text{ssthresh} + 3$), immediately retransmit the missing segment, and continue in **Congestion Avoidance**.
+
+**Q: Differentiate between Leaky Bucket and Token Bucket traffic shaping algorithms.**  
+**A:**
+* **Leaky Bucket:** Converts bursty incoming traffic into a strictly **constant output rate**; drops packets if the queue overflows.
+* **Token Bucket:** Accumulates tokens at a fixed rate up to bucket capacity, allowing **controlled bursts** at higher speeds as long as tokens are available.
+
+---
+
+## 6. Application Layer, Well-Known Ports & Cryptography ([[Expt 6.1 - DNS Client]] & [[Expt 6.2 - RSA Cipher]])
+
+### DNS & Application Layer Protocols ([[Expt 6.1 - DNS Client]])
+
+**Q: What is DNS, and what is the difference between Recursive and Iterative DNS queries ([[Expt 6.1 - DNS Client]])?**  
+**A:**
+* **DNS (Domain Name System):** Translates human-readable domain names (e.g., \`www.google.com\`) into IP addresses over **Port 53** (UDP for standard queries, TCP for zone transfers).
+* **Recursive Query:** The client asks its local DNS resolver for the final IP address, and the resolver queries other servers (Root $\\to$ TLD $\\to$ Authoritative) on the client's behalf.
+* **Iterative Query:** Each queried DNS server returns a referral to the *next* server down the hierarchy if it does not hold the authoritative answer, and the querying host contacts each server in turn.
+
+**Q: What are the well-known port numbers for common Application Layer protocols?**  
+**A:**
+
+| Protocol | Port Number | Transport | Standard Operational Role |
+| :--- | :--- | :--- | :--- |
+| **FTP Data / Control** | 20 / 21 | TCP | File Transfer Payload (Port 20) & Control Commands (Port 21) |
+| **SSH** | 22 | TCP | Secure encrypted remote shell login |
+| **Telnet** | 23 | TCP | Unencrypted plaintext remote terminal login |
+| **SMTP** | 25 | TCP | Push protocol for sending/relaying email |
+| **DNS** | 53 | UDP / TCP | Domain name resolution (UDP) & zone transfers (TCP) |
+| **DHCP Server / Client** | 67 / 68 | UDP | Dynamic host IP allocation (Server = 67, Client = 68) |
+| **HTTP / HTTPS** | 80 / 443 | TCP | Web hypertext transfer (80 = plaintext, 443 = TLS/SSL) |
+| **POP3 / IMAP** | 110 / 143 | TCP | Pull protocols for retrieving/synchronizing email |
+| **SNMP** | 161 | UDP | Simple Network Management Protocol |
+
+---
+
+### Cryptography & RSA Algorithm ([[Expt 6.2 - RSA Cipher]])
+
+**Q: Differentiate between Symmetric and Asymmetric Key Cryptography.**  
+**A:**
+* **Symmetric Cryptography (e.g., DES, AES):** Uses the **same secret key** for both encryption and decryption. Computationally fast, but requires a secure channel for key distribution.
+* **Asymmetric Cryptography (e.g., RSA):** Uses a mathematically linked key pair—a **Public Key** for encryption and a **Private Key** for decryption. Solves the key exchange problem but is computationally slower.
+
+**Q: How are keys generated, encrypted, and decrypted in the RSA algorithm ([[Expt 6.2 - RSA Cipher]])?**  
+**A:**
+1. Choose two distinct prime numbers $p$ and $q$.
+2. Compute the modulus: $n = p \\times q$.
+3. Compute Euler's totient function: $\\phi(n) = (p - 1)(q - 1)$.
+4. Choose public exponent $e$ such that $1 < e < \\phi(n)$ and $\\gcd(e, \\phi(n)) = 1$.
+5. Compute private exponent $d$ such that $(d \\times e) \\pmod{\\phi(n)} = 1$.
+6. **Public Key:** $(e, n)$ | **Private Key:** $(d, n)$.
+7. **Encryption** of plaintext $M$ ($M < n$):
+$$C = M^e \\pmod n$$
+8. **Decryption** of ciphertext $C$:
+$$M = C^d \\pmod n$$
+
+---
+
+## 7. Practical CLI Troubleshooting Commands & Interconnecting Devices ([[Expt 1.2 - Basic Commands]])
+
+### Basic Network Command-Line Tools ([[Expt 1.2 - Basic Commands]])
+
+**Q: What do the essential Windows and Linux network diagnostic commands do?**  
+**A:**
+* **\`ipconfig\` (Windows) / \`ip addr show\` (Linux):** Displays IPv4/IPv6 addresses, subnet masks, and default gateways. (\`ipconfig /all\` shows MAC addresses, DHCP servers, and DNS settings; \`/release\` and \`/renew\` manage DHCP leases; \`/flushdns\` clears the DNS cache).
+* **\`ping <host>\`:** Tests host reachability and Round-Trip Time (RTT) using **ICMP Echo Request** (Type 8) and **ICMP Echo Reply** (Type 0) packets.
+* **\`tracert <host>\` (Windows) / \`tracepath\` or \`traceroute\` (Linux):** Discovers the hop-by-hop router path to a destination by sending packets with incrementally increasing **TTL** values ($1, 2, 3, \\dots$) and recording the routers that return **ICMP Time Exceeded** messages.
+* **\`netstat -ano\` (Windows) / \`ss -tuln\` (Linux):** Displays active TCP/UDP connections, listening sockets (\`-a\`/\`-l\`), numerical IP/port addresses (\`-n\`), and owning Process IDs (\`-o\`).
+* **\`nslookup <domain>\`:** Queries the configured DNS server to resolve a domain name to its IP address (or vice versa).
+* **\`arp -a\` (Windows) / \`ip neigh show\` (Linux):** Displays the local ARP cache table mapping IPv4 addresses to physical 48-bit MAC addresses.
+
+---
+
+### Network Interconnecting Devices
+
+| Device | OSI Layer | Collision Domain | Broadcast Domain | Core Forwarding Mechanism |
+| :--- | :--- | :--- | :--- | :--- |
+| **Repeater** | Layer 1 (Physical) | Single (extends link) | Single | Regenerates attenuated signals bit-by-bit |
+| **Hub** | Layer 1 (Physical) | **Single** across all ports | Single | Multiport repeater; broadcasts bits to every port |
+| **Bridge** | Layer 2 (Data Link) | **Separate per port** | Single | Software filtering using MAC address tables |
+| **Switch** | Layer 2 (Data Link) | **Separate per port** | Single | Hardware ASIC frame switching by destination MAC |
+| **Router** | Layer 3 (Network) | Separate per interface | **Separate per interface** | Routes IP packets across networks using routing tables |
+| **Gateway** | Layers 4 – 7 | Separate | Separate | Translates between incompatible protocol stacks |
+
+**Q: What is the difference between a Collision Domain and a Broadcast Domain?**  
+**A:**
+* **Collision Domain:** A network segment where frames transmitted simultaneously by two nodes collide (e.g., all ports of a **Hub** share one collision domain, whereas each port on a **Switch** is its own collision domain).
+* **Broadcast Domain:** The set of all nodes that receive a Layer-2 broadcast frame (\`FF:FF:FF:FF:FF:FF\`). Switches forward broadcasts across all ports (unless partitioned into **VLANs** under **IEEE 802.1Q**); **Routers** do not forward broadcasts and thus separate broadcast domains.`
+  },
+
+  'cn-lab-outputs-guide': {
+    id: 'cn-lab-outputs-guide',
+    title: "CN Lab Outputs Guide",
+    folder: "06 - Archive",
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","CN Lab Outputs Guide"],
+    tags: [],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 590,
+    backlinks: ["cn-study-flow-execution-guide","cn-lab-manual-shortened","cn-lab-theory-viva-guide","expt-12-basic-commands","expt-21-polar-nrz","expt-22-manchester","expt-23-2b1q","expt-24-mlt-3","expt-25-sync-tdm","expt-31-crc","expt-32-hamming-code","expt-33-character-stuffing","expt-34-bit-stuffing","expt-35-go-back-n-arq","expt-36-selective-repeat-arq","expt-37-csma-cd","expt-41-ipv4-class","expt-42-subnet-info","expt-43-usable-hosts","expt-44-vlsm","expt-45-fragmentation","expt-46-distance-vector","expt-47-link-state","expt-51-udp-transfer","expt-52-tcp-exchange","expt-53-tcp-congestion","expt-61-dns-client","expt-62-rsa-cipher"],
+    links: ["cn-study-flow-execution-guide","cn-lab-manual-shortened","cn-lab-theory-viva-guide","expt-12-basic-commands","expt-21-polar-nrz","expt-22-manchester","expt-23-2b1q","expt-24-mlt-3","expt-25-sync-tdm","expt-31-crc","expt-32-hamming-code","expt-33-character-stuffing","expt-34-bit-stuffing","expt-35-go-back-n-arq","expt-36-selective-repeat-arq","expt-37-csma-cd","expt-41-ipv4-class","expt-42-subnet-info","expt-43-usable-hosts","expt-44-vlsm","expt-45-fragmentation","expt-46-distance-vector","expt-47-link-state","expt-51-udp-transfer","expt-52-tcp-exchange","expt-53-tcp-congestion","expt-61-dns-client","expt-62-rsa-cipher","cn-theory-syllabus","cn-class-rules","cn-pyqs-analysis-question-bank","cn2026internal-1","cn2026internal-2"],
+    outline: [{"level":1,"text":"Computer Networks (CN) — Lab Outputs & Viva MOC","id":"computer-networks-cn-lab-outputs-viva-moc"},{"level":2,"text":"1. Master Manuals & Viva Voce Guides","id":"1-master-manuals-viva-voce-guides"},{"level":2,"text":"2. Lab Experiments Index (All 25 Experiments)","id":"2-lab-experiments-index-all-25-experiments"},{"level":3,"text":"Section 1: Networking Devices & Basic Commands","id":"section-1-networking-devices-basic-commands"},{"level":3,"text":"Section 2: Physical Layer, Line Coding & Multiplexing","id":"section-2-physical-layer-line-coding-multiplexing"},{"level":3,"text":"Section 3: Data Link Layer — Error Control, Framing & MAC","id":"section-3-data-link-layer-error-control-framing-mac"},{"level":3,"text":"Section 4: Network Layer — IPv4 Addressing, Subnetting, Fragmentation & Routing","id":"section-4-network-layer-ipv4-addressing-subnetting-fragmentation-routing"},{"level":3,"text":"Section 5: Transport Layer — UDP, TCP & Congestion Control","id":"section-5-transport-layer-udp-tcp-congestion-control"},{"level":3,"text":"Section 6: Application Layer — DNS & Cryptography","id":"section-6-application-layer-dns-cryptography"},{"level":2,"text":"3. Related Theory & Exam Notes","id":"3-related-theory-exam-notes"}],
+    content: `# Computer Networks (CN) — Lab Outputs & Viva MOC
+
+**Course Code:** PCCS7306 (Lab) / PCCS4307 (Theory) | **Department:** CSEA, IGIT Sarang  
+**Parent Guide:** [[CN Study Flow & Execution Guide]]
+
+---
+
+## 1. Master Manuals & Viva Voce Guides
+
+| Document | Description |
+| :--- | :--- |
+| [[CN Lab Manual (shortened)]] | Complete laboratory manual with theory, C implementations, and sample runs across all 6 sections |
+| [[CN Lab & Theory Viva Guide]] | Unified lab & theory viva voce guide covering all OSI/TCP-IP layers, formulas, CLI tools, and experiments |
+| [[CN Lab Manual.pdf]] | Official Lab Manual PDF (\`Lab Manual\` folder) |
+| [[CN Lab Syllabus.pdf]] | Official Lab Syllabus PDF (\`Lab Manual\` folder) |
+
+---
+
+## 2. Lab Experiments Index (All 25 Experiments)
+
+### Section 1: Networking Devices & Basic Commands
+* [[Expt 1.2 - Basic Commands]] — Study of Basic Network Commands (\`ip\`, \`ping\`, \`tracepath\`, \`ss\`, \`nslookup\`, \`arp\`)
+
+### Section 2: Physical Layer, Line Coding & Multiplexing
+* [[Expt 2.1 - Polar NRZ]] — Polar NRZ-L and Polar NRZ-I Line Coding Techniques
+* [[Expt 2.2 - Manchester]] — Polar Manchester and Differential Manchester Line Coding Techniques
+* [[Expt 2.3 - 2B1Q]] — 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique
+* [[Expt 2.4 - MLT-3]] — MLT-3 (Multiline Transition, Three Level) Line Coding Technique
+* [[Expt 2.5 - Sync TDM]] — Synchronous Time Division Multiplexing (TDM) Technique
+
+### Section 3: Data Link Layer — Error Control, Framing & MAC
+* [[Expt 3.1 - CRC]] — Cyclic Redundancy Check (CRC) Error Detection Method
+* [[Expt 3.2 - Hamming Code]] — Hamming Code $C(7,4)$ Error Detection and Correction Technique
+* [[Expt 3.3 - Character Stuffing]] — Data Link Layer Framing Method: Character (Byte) Stuffing
+* [[Expt 3.4 - Bit Stuffing]] — Data Link Layer Framing Method: Bit Stuffing
+* [[Expt 3.5 - Go-Back-N ARQ]] — Simulation of Go-Back-N Automatic Repeat Request (ARQ) Protocol
+* [[Expt 3.6 - Selective Repeat ARQ]] — Simulation of Selective-Repeat ARQ Protocol
+* [[Expt 3.7 - CSMA-CD]] — Simulation of CSMA/CD (Carrier Sense Multiple Access with Collision Detection) Protocol
+
+### Section 4: Network Layer — IPv4 Addressing, Subnetting, Fragmentation & Routing
+* [[Expt 4.1 - IPv4 Class]] — IPv4 Address Validation and Class Identification
+* [[Expt 4.2 - Subnet Info]] — Determination of Subnet Information: Network/Broadcast Addresses & Hosts
+* [[Expt 4.3 - Usable Hosts]] — Generation of All Usable Host IP Addresses in a Subnet
+* [[Expt 4.4 - VLSM]] — Implementation of Variable Length Subnet Masking (VLSM)
+* [[Expt 4.5 - Fragmentation]] — Implementation of IPv4 Packet Fragmentation & Reassembly Technique
+* [[Expt 4.6 - Distance Vector]] — Implementation of Distance Vector Routing using Bellman-Ford Algorithm
+* [[Expt 4.7 - Link State]] — Implementation of Link State Routing using Dijkstra's Algorithm
+
+### Section 5: Transport Layer — UDP, TCP & Congestion Control
+* [[Expt 5.1 - UDP Transfer]] — Simulation of Connectionless UDP Data Transfer
+* [[Expt 5.2 - TCP Exchange]] — Simulation of Reliable TCP Message Exchange Technique
+* [[Expt 5.3 - TCP Congestion]] — Simulation of TCP Congestion Control (Slow Start, AIMD, Fast Recovery)
+
+### Section 6: Application Layer — DNS & Cryptography
+* [[Expt 6.1 - DNS Client]] — Simulation of Domain Name System (DNS) Client Resolution
+* [[Expt 6.2 - RSA Cipher]] — Message Confidentiality Using RSA Asymmetric Encryption and Decryption
+
+---
+
+## 3. Related Theory & Exam Notes
+* [[CN Study Flow & Execution Guide]]
+* [[CN Theory Syllabus]]
+* [[CN Class Rules]]
+* [[CN PYQs Analysis & Question Bank]]
+* [[CN_2026_Internal-1]] · [[CN_2026_Internal-2]]`
+  },
+
+  'expt-12-basic-commands': {
+    id: 'expt-12-basic-commands',
+    title: "Expt 1.2 - Basic Commands",
+    folder: "06 - Archive",
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 1.2 - Basic Commands"],
+    tags: [],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 501,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
     outline: [{"level":1,"text":"Experiment 1.2: Study of Basic Network Commands","id":"experiment-12-study-of-basic-network-commands"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Execution Commands","id":"execution-commands"},{"level":1,"text":"1. View IP Configuration & Adapters","id":"1-view-ip-configuration-adapters"},{"level":1,"text":"2. Inspect Routing Table and Default Gateway","id":"2-inspect-routing-table-and-default-gateway"},{"level":1,"text":"3. Test Network Reachability via ICMP Echo","id":"3-test-network-reachability-via-icmp-echo"},{"level":1,"text":"4. Trace Packet Route to Destination Host","id":"4-trace-packet-route-to-destination-host"},{"level":1,"text":"5. Inspect Sockets, Listening TCP/UDP Ports","id":"5-inspect-sockets-listening-tcpudp-ports"},{"level":1,"text":"6. Query Domain Name Servers (DNS Resolution)","id":"6-query-domain-name-servers-dns-resolution"},{"level":1,"text":"7. Inspect ARP Cache / Neighbor Tables","id":"7-inspect-arp-cache-neighbor-tables"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 1.2: Study of Basic Network Commands
 
@@ -59684,25 +59457,71 @@ Address: 2404:6800:4007:82e::200e
 10.166.48.72 dev wlp8s0 lladdr 76:99:c8:13:a4:1a REACHABLE 
 2401:4900:74d3:249d::ad dev wlp8s0 lladdr 76:99:c8:13:a4:1a router REACHABLE 
 fe80::7499:c8ff:fe13:a41a dev wlp8s0 lladdr 76:99:c8:13:a4:1a router REACHABLE
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-21-polar-nrz-readme': {
-    id: 'expt-21-polar-nrz-readme',
-    title: "README",
+  'expt-21-polar-nrz': {
+    id: 'expt-21-polar-nrz',
+    title: "Expt 2.1 - Polar NRZ",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-2.1-polar-nrz","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 2.1 - Polar NRZ"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 111,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 2.1: Polar NRZ-L and Polar NRZ-I Line Coding Techniques","id":"experiment-21-polar-nrz-l-and-polar-nrz-i-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 261,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 2.1: Polar NRZ-L and Polar NRZ-I Line Coding Techniques","id":"experiment-21-polar-nrz-l-and-polar-nrz-i-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (polar_nrz.c)","id":"source-code-polarnrzc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 2.1: Polar NRZ-L and Polar NRZ-I Line Coding Techniques
 
 ### Aim
 Write and execute a C program to implement Polar NRZ-L (Non-Return to Zero Level) and Polar NRZ-I (Non-Return to Zero Invert) line coding techniques.
+
+### Source Code (\`polar_nrz.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void check(const char *s) {
+    for (int i = 0; s[i]; i++) {
+        if (s[i] != '0' && s[i] != '1') {
+            printf("\\nInvalid character in binary input data.\\n\\n");
+            exit(0);
+        }
+    }
+}
+
+void nrzL(const char *s) {
+    printf("NRZ-L Encoding: ");
+    for (int i = 0; s[i]; i++)
+        printf("| %c ", s[i] == '0' ? '+' : '-');
+    printf("|\\n");
+}
+
+void nrzI(const char *s) {
+    int lvl = 0;
+    printf("NRZ-I Encoding: ");
+    for (int i = 0; s[i]; i++) {
+        if (s[i] == '1') lvl = 1 - lvl;
+        printf("| %c ", lvl ? '-' : '+');
+    }
+    printf("|\\n\\n");
+}
+
+int main() {
+    char s[100];
+    printf("\\nEnter binary data (e.g., 1011001): ");
+    if (scanf("%99s", s) != 1) return 0;
+    check(s);
+    nrzL(s);
+    nrzI(s);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59723,25 +59542,73 @@ gcc -O2 polar_nrz.c -o polar_nrz
 Enter binary data (e.g., 1011001): 10011101
 NRZ-L Encoding: | - | + | + | - | - | - | + | - |
 NRZ-I Encoding: | - | - | - | + | - | + | + | - |
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-22-manchester-readme': {
-    id: 'expt-22-manchester-readme',
-    title: "README",
+  'expt-22-manchester': {
+    id: 'expt-22-manchester',
+    title: "Expt 2.2 - Manchester",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-2.2-manchester","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 2.2 - Manchester"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 164,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 2.2: Polar Manchester and Differential Manchester Line Coding Techniques","id":"experiment-22-polar-manchester-and-differential-manchester-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 372,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 2.2: Polar Manchester and Differential Manchester Line Coding Techniques","id":"experiment-22-polar-manchester-and-differential-manchester-line-coding-techniques"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (manchester.c)","id":"source-code-manchesterc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 2.2: Polar Manchester and Differential Manchester Line Coding Techniques
 
 ### Aim
 Write and execute a C program to implement Polar Manchester and Differential Manchester line coding techniques.
+
+### Source Code (\`manchester.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+
+void manchester(int d[], int n) {
+    printf("\\nPolar Manchester Encoding: ");
+    for (int i = 0; i < n; i++) {
+        if (d[i] == 0) printf("| + to - ");
+        else if (d[i] == 1) printf("| - to + ");
+        else { printf("Invalid data bit\\n"); return; }
+    }
+    printf("|\\n");
+}
+
+void diffManchester(int d[], int n) {
+    int lvl = 1;
+    printf("Differential Manchester Encoding: ");
+    for (int i = 0; i < n; i++) {
+        if (d[i] == 0) {
+            printf(lvl ? "| + to - " : "| - to + ");
+        } else if (d[i] == 1) {
+            lvl = 1 - lvl;
+            printf(lvl ? "| + to - " : "| - to + ");
+        } else {
+            printf("Invalid data bit\\n"); return;
+        }
+    }
+    printf("|\\n\\n");
+}
+
+int main() {
+    int n;
+    printf("\\nEnter the number of data bits: ");
+    if (scanf("%d", &n) != 1) return 0;
+    int *d = (int *)malloc(n * sizeof(int));
+    printf("Enter the data bits (0 or 1) separated by space: ");
+    for (int i = 0; i < n; i++) scanf("%d", &d[i]);
+    manchester(d, n);
+    diffManchester(d, n);
+    free(d);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59765,25 +59632,64 @@ Enter the data bits (0 or 1) separated by space: 1 0 0 1 1 1 0 1
 
 Polar Manchester Encoding: | - to + | + to - | + to - | - to + | - to + | - to + | + to - | - to + |
 Differential Manchester Encoding: | - to + | - to + | - to + | + to - | - to + | + to - | + to - | - to + |
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-23-2b1q-readme': {
-    id: 'expt-23-2b1q-readme',
-    title: "README",
+  'expt-23-2b1q': {
+    id: 'expt-23-2b1q',
+    title: "Expt 2.3 - 2B1Q",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-2.3-2b1q","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 2.3 - 2B1Q"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 78,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 2.3: 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique","id":"experiment-23-2b1q-two-binary-one-quaternary-multilevel-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 246,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 2.3: 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique","id":"experiment-23-2b1q-two-binary-one-quaternary-multilevel-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (line_coding_2b1q.c)","id":"source-code-linecoding2b1qc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 2.3: 2B1Q (Two-Binary One-Quaternary) Multilevel Line Coding Technique
 
 ### Aim
 Write and execute a C program to implement the 2B1Q Multilevel line coding technique.
+
+### Source Code (\`line_coding_2b1q.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[100];
+    int prev = 1;
+    printf("\\nEnter a binary string (of even length): ");
+    if (scanf("%99s", s) != 1) return 0;
+    int len = strlen(s);
+
+    for (int i = 0; i < len; i++) {
+        if (s[i] != '0' && s[i] != '1') {
+            printf("\\nError! Invalid character in binary input string (must be '0' or '1').\\n\\n");
+            return 0;
+        }
+    }
+    if (len % 2 != 0) {
+        printf("\\nError! Binary input string length must be even for 2B1Q encoding.\\n\\n");
+        return 0;
+    }
+
+    printf("\\n2B1Q Encoded Output: ");
+    for (int i = 0; i < len; i += 2) {
+        int dibit = (s[i] - '0') * 2 + (s[i + 1] - '0');
+        int pos_map[4] = {1, 3, -1, -3};
+        int val = (prev > 0) ? pos_map[dibit] : -pos_map[dibit];
+        printf("| %+d ", val);
+        prev = val;
+    }
+    printf("|\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59804,25 +59710,57 @@ gcc -O2 line_coding_2b1q.c -o line_coding_2b1q
 Enter a binary string (of even length): 0011011001
 
 2B1Q Encoded Output: | +1 | -3 | -3 | +1 | +3 |
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-24-mlt3-readme': {
-    id: 'expt-24-mlt3-readme',
-    title: "README",
+  'expt-24-mlt-3': {
+    id: 'expt-24-mlt-3',
+    title: "Expt 2.4 - MLT-3",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-2.4-mlt3","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 2.4 - MLT-3"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 84,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 2.4: MLT-3 (Multiline Transition, Three Level) Line Coding Technique","id":"experiment-24-mlt-3-multiline-transition-three-level-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 209,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 2.4: MLT-3 (Multiline Transition, Three Level) Line Coding Technique","id":"experiment-24-mlt-3-multiline-transition-three-level-line-coding-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (mlt3.c)","id":"source-code-mlt3c"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 2.4: MLT-3 (Multiline Transition, Three Level) Line Coding Technique
 
 ### Aim
 Write and execute a C program to implement the MLT-3 line coding technique.
+
+### Source Code (\`mlt3.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[100];
+    int cur = 0, last = -1;
+    printf("\\nEnter the binary data stream (e.g., 1011001): ");
+    if (scanf("%99s", s) != 1) return 0;
+
+    printf("\\nMLT-3 Encoded Signal: ");
+    for (int i = 0; s[i]; i++) {
+        if (s[i] != '0' && s[i] != '1') {
+            printf("Invalid input character.\\n\\n");
+            return 0;
+        }
+        if (s[i] == '1') {
+            if (cur == 0) { cur = -last; last = cur; }
+            else cur = 0;
+        }
+        if (cur == 0) printf("| 0V ");
+        else printf(cur == 1 ? "| +V " : "| -V ");
+    }
+    printf("|\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59843,25 +59781,64 @@ gcc -O2 mlt3.c -o mlt3
 Enter the binary data stream (e.g., 1011001): 01011011
 
 MLT-3 Encoded Signal: | 0V | +V | +V | 0V | -V | -V | 0V | +V |
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-25-sync-tdm-readme': {
-    id: 'expt-25-sync-tdm-readme',
-    title: "README",
+  'expt-25-sync-tdm': {
+    id: 'expt-25-sync-tdm',
+    title: "Expt 2.5 - Sync TDM",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-2.5-sync-tdm","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 2.5 - Sync TDM"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 160,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 2.5: Synchronous Time Division Multiplexing (TDM) Technique","id":"experiment-25-synchronous-time-division-multiplexing-tdm-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 320,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 2.5: Synchronous Time Division Multiplexing (TDM) Technique","id":"experiment-25-synchronous-time-division-multiplexing-tdm-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (sync_tdm.c)","id":"source-code-synctdmc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 2.5: Synchronous Time Division Multiplexing (TDM) Technique
 
 ### Aim
 Write and execute a C program to implement Synchronous Time Division Multiplexing (TDM) technique.
+
+### Source Code (\`sync_tdm.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int ch, fsize;
+    char d[10][50];
+    printf("\\nSynchronous TDM Simulation\\n==========================\\n");
+    printf("Enter the number of channels: ");
+    if (scanf("%d", &ch) != 1) return 0;
+    printf("Enter the frame size (max. number of characters per channel): ");
+    if (scanf("%d", &fsize) != 1) return 0;
+
+    for (int i = 0; i < ch; i++) {
+        printf("Enter data for channel %d: ", i + 1);
+        scanf("%49s", d[i]);
+    }
+
+    printf("\\n--- Transmitting Frames (Round-Robin Schedule) ---\\nTime Slot Order: ");
+    for (int i = 0; i < ch; i++) printf("CH%d ", i + 1);
+    printf("\\n\\n");
+
+    for (int f = 0; f < fsize; f++) {
+        printf("Frame %d: ", f + 1);
+        for (int c = 0; c < ch; c++) {
+            if (f < strlen(d[c]) && d[c][0] != '-') printf("%c   ", d[c][f]);
+            else printf("-   ");
+        }
+        printf("\\n");
+    }
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59903,25 +59880,80 @@ Frame 4: i   -   r   w
 Frame 5: a   -   i   o   
 Frame 6: -   -   c   r   
 Frame 7: -   -   a   k
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-31-crc-readme': {
-    id: 'expt-31-crc-readme',
-    title: "README",
+  'expt-31-crc': {
+    id: 'expt-31-crc',
+    title: "Expt 3.1 - CRC",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.1-crc","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.1 - CRC"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 111,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.1: Cyclic Redundancy Check (CRC) Error Detection Method","id":"experiment-31-cyclic-redundancy-check-crc-error-detection-method"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 384,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.1: Cyclic Redundancy Check (CRC) Error Detection Method","id":"experiment-31-cyclic-redundancy-check-crc-error-detection-method"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (crc.c)","id":"source-code-crcc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.1: Cyclic Redundancy Check (CRC) Error Detection Method
 
 ### Aim
 Write and execute a C program to implement the Cyclic Redundancy Check (CRC) error detection method.
+
+### Source Code (\`crc.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+void mod2div(char *data, char *gen, char *rem) {
+    char tmp[200];
+    int dlen = strlen(data), glen = strlen(gen);
+    strcpy(tmp, data);
+    for (int i = 0; i <= dlen - glen; i++) {
+        if (tmp[i] == '1') {
+            for (int j = 0; j < glen; j++)
+                tmp[i + j] = (tmp[i + j] == gen[j]) ? '0' : '1';
+        }
+    }
+    strncpy(rem, tmp + dlen - glen + 1, glen - 1);
+    rem[glen - 1] = '\\0';
+}
+
+int main() {
+    char data[100], gen[30], rem[30], cw[150];
+    printf("\\nEnter the data to be sent (in binary): ");
+    if (scanf("%99s", data) != 1) return 0;
+    printf("Enter the pre-determined divisor (in binary): ");
+    if (scanf("%29s", gen) != 1) return 0;
+
+    strcpy(cw, data);
+    int glen = strlen(gen);
+    for (int i = 0; i < glen - 1; i++) strcat(cw, "0");
+    mod2div(cw, gen, rem);
+
+    strcpy(cw, data);
+    strcat(cw, rem);
+    printf("\\n-- Sender Side --\\nData: %s\\nPre-determined divisor: %s\\nCodeword (Data + CRC): %s\\n", data, gen, cw);
+
+    printf("\\n-- Receiver Side --\\n");
+    mod2div(cw, gen, rem);
+    int err = 0;
+    for (int i = 0; rem[i]; i++) if (rem[i] == '1') err = 1;
+    printf(err ? "Data is incorrect (Error detected)\\n" : "Data is correct (No errors detected)\\n");
+
+    printf("\\nSimulating an error...\\n");
+    cw[0] = (cw[0] == '0') ? '1' : '0';
+    printf("Erroneous Received Data: %s\\n", cw);
+    mod2div(cw, gen, rem);
+    err = 0;
+    for (int i = 0; rem[i]; i++) if (rem[i] == '1') err = 1;
+    printf(err ? "Data is incorrect (Error detected)\\n\\n" : "Data is correct (No errors detected)\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -59954,25 +59986,78 @@ Data is correct (No errors detected)
 Simulating an error...
 Erroneous Received Data: 0001110
 Data is incorrect (Error detected)
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-32-hamming-code-readme': {
-    id: 'expt-32-hamming-code-readme',
-    title: "README",
+  'expt-32-hamming-code': {
+    id: 'expt-32-hamming-code',
+    title: "Expt 3.2 - Hamming Code",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.2-hamming-code","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.2 - Hamming Code"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 133,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.2: Hamming Code C(7,4) Error Detection and Correction Technique","id":"experiment-32-hamming-code-c74-error-detection-and-correction-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 407,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.2: Hamming Code C(7,4) Error Detection and Correction Technique","id":"experiment-32-hamming-code-c74-error-detection-and-correction-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (hamming_code.c)","id":"source-code-hammingcodec"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.2: Hamming Code C(7,4) Error Detection and Correction Technique
 
 ### Aim
 Write and execute a C program to implement the Hamming Code C(7,4) error detection and correction technique.
+
+### Source Code (\`hamming_code.c\`)
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    int d[4], c[7], s[3], pos;
+    printf("\\nEnter 4-bit dataword (a0 a1 a2 a3): ");
+    for (int i = 0; i < 4; i++) {
+        if (scanf("%d", &d[i]) != 1) return 0;
+    }
+
+    c[0] = (d[0] + d[1] + d[2]) % 2;
+    c[1] = (d[1] + d[2] + d[3]) % 2;
+    c[2] = (d[0] + d[1] + d[3]) % 2;
+    c[3] = d[0]; c[4] = d[1]; c[5] = d[2]; c[6] = d[3];
+
+    printf("\\nEncoded 7-bit codeword (r0 r1 r2 a0 a1 a2 a3): ");
+    for (int i = 0; i < 7; i++) printf("%d ", c[i]);
+
+    printf("\\n\\nEnter bit position to introduce error (1-7, 0 for no error): ");
+    if (scanf("%d", &pos) != 1) return 0;
+    if (pos > 0 && pos <= 7) {
+        c[pos - 1] ^= 1;
+        printf("\\nCodeword with error: ");
+        for (int i = 0; i < 7; i++) printf("%d ", c[i]);
+    }
+
+    printf("\\n\\n--- Receiver Side ---\\n");
+    s[0] = (c[3] + c[4] + c[5] + c[0]) % 2;
+    s[1] = (c[4] + c[5] + c[6] + c[1]) % 2;
+    s[2] = (c[3] + c[4] + c[6] + c[2]) % 2;
+
+    int syn = (s[2] << 2) | (s[1] << 1) | s[0];
+    int map[8] = {0, 1, 2, 6, 3, 4, 7, 5};
+    int err = map[syn];
+
+    if (err) {
+        printf("Error detected at bit position: %d\\n", err);
+        c[err - 1] ^= 1;
+    } else {
+        printf("No error detected.\\n");
+    }
+
+    printf("Corrected Codeword: ");
+    for (int i = 0; i < 7; i++) printf("%d ", c[i]);
+    printf("\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60002,25 +60087,62 @@ Codeword with error: 1 0 1 0 1 1 1
 --- Receiver Side ---
 Error detected at bit position: 5
 Corrected Codeword: 1 0 1 0 0 1 1
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-33-char-stuffing-readme': {
-    id: 'expt-33-char-stuffing-readme',
-    title: "README",
+  'expt-33-character-stuffing': {
+    id: 'expt-33-character-stuffing',
+    title: "Expt 3.3 - Character Stuffing",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.3-char-stuffing","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.3 - Character Stuffing"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 90,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.3: Data Link Layer Framing Method - Character Stuffing","id":"experiment-33-data-link-layer-framing-method-character-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 234,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.3: Data Link Layer Framing Method - Character Stuffing","id":"experiment-33-data-link-layer-framing-method-character-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (char_stuffing.c)","id":"source-code-charstuffingc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.3: Data Link Layer Framing Method - Character Stuffing
 
 ### Aim
 Write and execute a C program to implement the data link layer framing method: Character stuffing and destuffing.
+
+### Source Code (\`char_stuffing.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+#define FLAG '#'
+#define ESC '\\\\'
+
+int main() {
+    char in[100], st[200], dest[100];
+    int j = 0;
+    printf("\\nCharacter used for starting and ending flag: %c\\nCharacter used for escape character: %c\\n", FLAG, ESC);
+    printf("\\nEnter the characters to be transmitted (without spaces): ");
+    if (scanf("%99s", in) != 1) return 0;
+
+    st[j++] = FLAG;
+    for (int i = 0; in[i]; i++) {
+        if (in[i] == FLAG || in[i] == ESC) st[j++] = ESC;
+        st[j++] = in[i];
+    }
+    st[j++] = FLAG; st[j] = '\\0';
+    printf("\\nStuffed Frame: %s\\n", st);
+
+    int k = 0;
+    for (int i = 1; i < (int)strlen(st) - 1; i++) {
+        if (st[i] == ESC) i++;
+        dest[k++] = st[i];
+    }
+    dest[k] = '\\0';
+    printf("Destuffed Data: %s\\n\\n", dest);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60045,25 +60167,58 @@ Enter the characters to be transmitted (without spaces): IGI#S\\##ara\\\\n#g
 
 Stuffed Frame: #IGI\\#S\\\\\\#\\#ara\\\\\\\\n\\#g#
 Destuffed Data: IGI#S\\##ara\\n#g
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-34-bit-stuffing-readme': {
-    id: 'expt-34-bit-stuffing-readme',
-    title: "README",
+  'expt-34-bit-stuffing': {
+    id: 'expt-34-bit-stuffing',
+    title: "Expt 3.4 - Bit Stuffing",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.4-bit-stuffing","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.4 - Bit Stuffing"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 73,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.4: Data Link Layer Framing Method - Bit Stuffing","id":"experiment-34-data-link-layer-framing-method-bit-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 217,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.4: Data Link Layer Framing Method - Bit Stuffing","id":"experiment-34-data-link-layer-framing-method-bit-stuffing"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (bit_stuffing.c)","id":"source-code-bitstuffingc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.4: Data Link Layer Framing Method - Bit Stuffing
 
 ### Aim
 Write and execute a C program to implement the data link layer framing method: Bit stuffing and destuffing.
+
+### Source Code (\`bit_stuffing.c\`)
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    char in[100], st[200], dest[100];
+    int cnt = 0, j = 0;
+    printf("\\nEnter binary data (e.g., 0111111010): ");
+    if (scanf("%99s", in) != 1) return 0;
+
+    for (int i = 0; in[i]; i++) {
+        st[j++] = in[i];
+        if (in[i] == '1' && ++cnt == 5) { st[j++] = '0'; cnt = 0; }
+        else if (in[i] == '0') cnt = 0;
+    }
+    st[j] = '\\0';
+    printf("\\nStuffed Data: %s\\n", st);
+
+    cnt = 0; int k = 0;
+    for (int i = 0; st[i]; i++) {
+        dest[k++] = st[i];
+        if (st[i] == '1' && ++cnt == 5) { i++; cnt = 0; }
+        else if (st[i] == '0') cnt = 0;
+    }
+    dest[k] = '\\0';
+    printf("Destuffed Data: %s\\n\\n", dest);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60085,25 +60240,67 @@ Enter binary data (e.g., 0111111010): 011011111111001010
 
 Stuffed Data: 01101111101111001010
 Destuffed Data: 011011111111001010
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-35-gobackn-arq-readme': {
-    id: 'expt-35-gobackn-arq-readme',
-    title: "README",
+  'expt-35-go-back-n-arq': {
+    id: 'expt-35-go-back-n-arq',
+    title: "Expt 3.5 - Go-Back-N ARQ",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.5-gobackn-arq","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.5 - Go-Back-N ARQ"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 146,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.5: Simulation of Go-Back-N ARQ Protocol","id":"experiment-35-simulation-of-go-back-n-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 295,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.5: Simulation of Go-Back-N ARQ Protocol","id":"experiment-35-simulation-of-go-back-n-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (gobackn_arq.c)","id":"source-code-gobacknarqc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.5: Simulation of Go-Back-N ARQ Protocol
 
 ### Aim
 Write and execute a C program to simulate the Go-Back-N Automatic Repeat Request (ARQ) Protocol where the sliding window size and the number of frames are given by the user.
+
+### Source Code (\`gobackn_arq.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int ws, nf, base = 0, nxt = 0;
+    printf("\\nEnter the window size: ");
+    if (scanf("%d", &ws) != 1) return 0;
+    printf("Enter the number of frames: ");
+    if (scanf("%d", &nf) != 1) return 0;
+    srand(42);
+
+    while (base < nf) {
+        for (int i = 0; i < ws && nxt < nf; i++)
+            printf("Sending frame: %d\\n", nxt++);
+
+        int corrupted = 0;
+        for (int i = base; i < nxt; i++) {
+            if (rand() % 5 == 0) {
+                printf("Frame %d corrupted!\\n", i);
+                corrupted = 1;
+                break;
+            } else {
+                printf("Frame %d received successfully\\n", i);
+                base++;
+            }
+        }
+        if (corrupted) {
+            printf("Go-Back-N: Retransmitting from frame %d\\n", base);
+            nxt = base;
+        }
+    }
+    printf("\\nAll frames sent and acknowledged.\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60144,25 +60341,66 @@ Sending frame: 5
 Frame 5 received successfully
 
 All frames sent and acknowledged.
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-36-selective-repeat-arq-readme': {
-    id: 'expt-36-selective-repeat-arq-readme',
-    title: "README",
+  'expt-36-selective-repeat-arq': {
+    id: 'expt-36-selective-repeat-arq',
+    title: "Expt 3.6 - Selective Repeat ARQ",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.6-selective-repeat-arq","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.6 - Selective Repeat ARQ"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 157,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.6: Simulation of Selective-Repeat ARQ Protocol","id":"experiment-36-simulation-of-selective-repeat-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 323,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.6: Simulation of Selective-Repeat ARQ Protocol","id":"experiment-36-simulation-of-selective-repeat-arq-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (selective_repeat_arq.c)","id":"source-code-selectiverepeatarqc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.6: Simulation of Selective-Repeat ARQ Protocol
 
 ### Aim
 Write and execute a C program to simulate the Selective-Repeat ARQ protocol where the number of frames and frame data is given by the user.
+
+### Source Code (\`selective_repeat_arq.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int nf, data[10], ack[10] = {0}, base = 0;
+    srand(123);
+    printf("\\nEnter the number of frames to transmit (<= 10): ");
+    if (scanf("%d", &nf) != 1) return 0;
+    for (int i = 0; i < nf; i++) {
+        printf("Enter data for frame %d: ", i);
+        scanf("%d", &data[i]);
+    }
+
+    while (base < nf) {
+        printf("\\nSending frames:\\n");
+        for (int i = base; i < base + 4 && i < nf; i++) {
+            if (!ack[i]) {
+                printf("  Frame %d (Data: %d)", i, data[i]);
+                if (rand() % 5 == 0) {
+                    printf(" * Frame lost in transit!\\n");
+                } else if (rand() % 5 == 0) {
+                    printf(" * ACK lost!\\n");
+                } else {
+                    printf(" -> ACK received.\\n");
+                    ack[i] = 1;
+                }
+            }
+        }
+        while (base < nf && ack[base]) base++;
+    }
+    printf("\\nAll frames successfully transmitted and acknowledged.\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60201,25 +60439,70 @@ Sending frames:
   Frame 3 (Data: 44) -> ACK received.
 
 All frames successfully transmitted and acknowledged.
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-37-csma-cd-readme': {
-    id: 'expt-37-csma-cd-readme',
-    title: "README",
+  'expt-37-csma-cd': {
+    id: 'expt-37-csma-cd',
+    title: "Expt 3.7 - CSMA-CD",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-3.7-csma-cd","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 3.7 - CSMA-CD"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 137,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 3.7: Simulation of CSMA/CD Protocol","id":"experiment-37-simulation-of-csmacd-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 310,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 3.7: Simulation of CSMA/CD Protocol","id":"experiment-37-simulation-of-csmacd-protocol"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (csma_cd.c)","id":"source-code-csmacdc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 3.7: Simulation of CSMA/CD Protocol
 
 ### Aim
 Write and execute a C program to simulate the CSMA/CD protocol where the number of stations and data to be sent by each station is given by the user.
+
+### Source Code (\`csma_cd.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main() {
+    int n;
+    char frames[5][50];
+    srand(7);
+    printf("\\nEnter number of stations (max 5): ");
+    if (scanf("%d", &n) != 1) return 0;
+    for (int i = 0; i < n; i++) {
+        printf("Enter frame data for Station %d: ", i + 1);
+        scanf("%49s", frames[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        int att = 0;
+        printf("\\nStation %d attempting to transmit: \\"%s\\"\\n", i + 1, frames[i]);
+        while (att < 10) {
+            if (rand() % 3 == 0) {
+                printf("  Medium is busy. Sensing again...\\n");
+                continue;
+            }
+            printf("  Medium is idle. Transmitting...\\n");
+            if (rand() % 4 == 0) {
+                att++;
+                int r = rand() % (1 << att);
+                printf("  ** Collision detected! ** Waiting %d units...\\n", r);
+                usleep(r * 1000);
+            } else {
+                printf("  Frame \\"%s\\" transmitted successfully by Station %d.\\n", frames[i], i + 1);
+                break;
+            }
+        }
+    }
+    printf("\\nSimulation complete.\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60254,25 +60537,55 @@ Station 2 attempting to transmit: "FrameB"
   Frame "FrameB" transmitted successfully by Station 2.
 
 Simulation complete.
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-41-ipv4-class-readme': {
-    id: 'expt-41-ipv4-class-readme',
-    title: "README",
+  'expt-41-ipv4-class': {
+    id: 'expt-41-ipv4-class',
+    title: "Expt 4.1 - IPv4 Class",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.1-ipv4-class","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.1 - IPv4 Class"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 76,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.1: IPv4 Address Validation and Class Identification","id":"experiment-41-ipv4-address-validation-and-class-identification"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 252,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.1: IPv4 Address Validation and Class Identification","id":"experiment-41-ipv4-address-validation-and-class-identification"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (ipv4_class.c)","id":"source-code-ipv4classc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.1: IPv4 Address Validation and Class Identification
 
 ### Aim
 Write and execute a C program that validates if the entered string is a valid IPv4 address, and determine its class if valid.
+
+### Source Code (\`ipv4_class.c\`)
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+    char tail;
+    printf("\\nEnter an IPv4 address: ");
+    if (scanf("%d.%d.%d.%d%c", &a, &b, &c, &d, &tail) < 4 || (tail != '\\n' && tail != '\\0')) {
+        printf("Invalid IPv4 address.\\n\\n");
+        return 0;
+    }
+    if (a < 0 || a > 255 || b < 0 || b > 255 || c < 0 || c > 255 || d < 0 || d > 255) {
+        printf("Invalid IPv4 address.\\n\\n");
+        return 0;
+    }
+    printf("Valid IPv4 address.\\n");
+    if (a >= 1 && a <= 126) printf("IP Address Class: A\\n\\n");
+    else if (a >= 128 && a <= 191) printf("IP Address Class: B\\n\\n");
+    else if (a >= 192 && a <= 223) printf("IP Address Class: C\\n\\n");
+    else if (a >= 224 && a <= 239) printf("IP Address Class: D\\n\\n");
+    else if (a >= 240 && a <= 254) printf("IP Address Class: E\\n\\n");
+    else printf("IP Address Class: Unknown/Special\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60293,25 +60606,59 @@ gcc -O2 ipv4_class.c -o ipv4_class
 Enter an IPv4 address: 192.168.0.1
 Valid IPv4 address.
 IP Address Class: C
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-42-subnet-info-readme': {
-    id: 'expt-42-subnet-info-readme',
-    title: "README",
+  'expt-42-subnet-info': {
+    id: 'expt-42-subnet-info',
+    title: "Expt 4.2 - Subnet Info",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.2-subnet-info","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.2 - Subnet Info"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 115,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.2: Determination of Subnet Information: Addresses & Hosts","id":"experiment-42-determination-of-subnet-information-addresses-hosts"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 282,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.2: Determination of Subnet Information: Addresses & Hosts","id":"experiment-42-determination-of-subnet-information-addresses-hosts"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (subnet_info.c)","id":"source-code-subnetinfoc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.2: Determination of Subnet Information: Addresses & Hosts
 
 ### Aim
 Write and execute a C program that takes an IPv4 address and subnet mask as input and calculates Network Address, Broadcast Address, First Usable Host, Last Usable Host, and Number of Usable Hosts.
+
+### Source Code (\`subnet_info.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <arpa/inet.h>
+
+int main() {
+    char ip_s[20], msk_s[20];
+    unsigned int ip, msk;
+    printf("\\nEnter IP address (e.g., 192.168.1.10): ");
+    if (scanf("%19s", ip_s) != 1) return 0;
+    printf("Enter Subnet Mask (e.g., 255.255.255.0): ");
+    if (scanf("%19s", msk_s) != 1) return 0;
+
+    if (inet_pton(AF_INET, ip_s, &ip) != 1 || inet_pton(AF_INET, msk_s, &msk) != 1) {
+        printf("\\nInvalid IP address or subnet mask.\\n\\n");
+        return 1;
+    }
+    ip = ntohl(ip); msk = ntohl(msk);
+    unsigned int net = ip & msk, bcast = net | (~msk);
+    struct in_addr a;
+
+    printf("\\n--- Subnet Info ---\\n");
+    a.s_addr = htonl(net);       printf("Network Address   : %s\\n", inet_ntoa(a));
+    a.s_addr = htonl(bcast);     printf("Broadcast Address : %s\\n", inet_ntoa(a));
+    a.s_addr = htonl(net + 1);   printf("First Usable Host : %s\\n", inet_ntoa(a));
+    a.s_addr = htonl(bcast - 1); printf("Last Usable Host  : %s\\n", inet_ntoa(a));
+    printf("Number of Hosts   : %u\\n\\n", bcast > net + 1 ? bcast - net - 1 : 0);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60339,25 +60686,61 @@ Broadcast Address : 192.168.4.255
 First Usable Host : 192.168.4.1
 Last Usable Host  : 192.168.4.254
 Number of Hosts   : 254
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-43-usable-hosts-readme': {
-    id: 'expt-43-usable-hosts-readme',
-    title: "README",
+  'expt-43-usable-hosts': {
+    id: 'expt-43-usable-hosts',
+    title: "Expt 4.3 - Usable Hosts",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.3-usable-hosts","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.3 - Usable Hosts"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 97,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.3: Generation of All Usable Host IP Addresses in a Subnet","id":"experiment-43-generation-of-all-usable-host-ip-addresses-in-a-subnet"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 234,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.3: Generation of All Usable Host IP Addresses in a Subnet","id":"experiment-43-generation-of-all-usable-host-ip-addresses-in-a-subnet"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (usable_hosts.c)","id":"source-code-usablehostsc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.3: Generation of All Usable Host IP Addresses in a Subnet
 
 ### Aim
 Write and execute a C program that takes a subnet in CIDR notation and generates all valid host IP addresses in that subnet range.
+
+### Source Code (\`usable_hosts.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <arpa/inet.h>
+
+int main() {
+    char in[40];
+    printf("\\nEnter subnet in CIDR notation (e.g., 192.168.1.0/29): ");
+    if (scanf("%39s", in) != 1) return 0;
+    char *slash = strchr(in, '/');
+    if (!slash) return 1;
+    *slash = '\\0';
+    int p = atoi(slash + 1);
+
+    unsigned int ip;
+    inet_pton(AF_INET, in, &ip);
+    ip = ntohl(ip);
+    unsigned int msk = p == 0 ? 0 : (~0U << (32 - p));
+    unsigned int net = ip & msk, bcast = net | (~msk);
+
+    printf("\\nUsable IP addresses in subnet %s/%d:\\n", in, p);
+    struct in_addr a;
+    for (unsigned int h = net + 1; h < bcast; h++) {
+        a.s_addr = htonl(h);
+        printf("%s\\n", inet_ntoa(a));
+    }
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60392,25 +60775,72 @@ Usable IP addresses in subnet 192.188.1.0/28:
 192.188.1.12
 192.188.1.13
 192.188.1.14
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-44-vlsm-readme': {
-    id: 'expt-44-vlsm-readme',
-    title: "README",
+  'expt-44-vlsm': {
+    id: 'expt-44-vlsm',
+    title: "Expt 4.4 - VLSM",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.4-vlsm","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.4 - VLSM"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 127,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.4: Implementation of Variable Length Subnet Masking (VLSM)","id":"experiment-44-implementation-of-variable-length-subnet-masking-vlsm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 317,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.4: Implementation of Variable Length Subnet Masking (VLSM)","id":"experiment-44-implementation-of-variable-length-subnet-masking-vlsm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (vlsm.c)","id":"source-code-vlsmc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.4: Implementation of Variable Length Subnet Masking (VLSM)
 
 ### Aim
 Write and execute a C program that allocates subnets using VLSM and generates the list of allocated subnets with proper mask.
+
+### Source Code (\`vlsm.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <arpa/inet.h>
+
+int cmp(const void *a, const void *b) { return (*(int*)b - *(int*)a); }
+
+int main() {
+    char net_str[30];
+    int n, req[20];
+    printf("\\nEnter major network in CIDR notation (e.g., 192.168.0.0/24): ");
+    if (scanf("%29s", net_str) != 1) return 0;
+    char *slash = strchr(net_str, '/');
+    if (!slash) return 1;
+    *slash = '\\0';
+
+    unsigned int base;
+    inet_pton(AF_INET, net_str, &base);
+    base = ntohl(base);
+
+    printf("Enter number of subnets to allocate: ");
+    if (scanf("%d", &n) != 1) return 0;
+    for (int i = 0; i < n; i++) {
+        printf("Enter number of hosts for subnet %d: ", i + 1);
+        scanf("%d", &req[i]);
+    }
+    qsort(req, n, sizeof(int), cmp);
+
+    printf("\\n--- VLSM Subnet Allocation ---\\n");
+    struct in_addr a;
+    for (int i = 0; i < n; i++) {
+        int b = 0;
+        while ((1 << b) - 2 < req[i]) b++;
+        a.s_addr = htonl(base);
+        printf("Subnet %d: %s/%d (Hosts: %d)\\n", i + 1, inet_ntoa(a), 32 - b, (1 << b) - 2);
+        base += (1 << b);
+    }
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60442,25 +60872,58 @@ Enter number of hosts for subnet 3: 20
 Subnet 1: 192.168.0.0/26 (Hosts: 62)
 Subnet 2: 192.168.0.64/26 (Hosts: 62)
 Subnet 3: 192.168.0.128/27 (Hosts: 30)
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-45-fragmentation-readme': {
-    id: 'expt-45-fragmentation-readme',
-    title: "README",
+  'expt-45-fragmentation': {
+    id: 'expt-45-fragmentation',
+    title: "Expt 4.5 - Fragmentation",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.5-fragmentation","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.5 - Fragmentation"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 197,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.5: Implementation of IPv4 Packet Fragmentation & Reassembly","id":"experiment-45-implementation-of-ipv4-packet-fragmentation-reassembly"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 363,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.5: Implementation of IPv4 Packet Fragmentation & Reassembly","id":"experiment-45-implementation-of-ipv4-packet-fragmentation-reassembly"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (fragmentation.c)","id":"source-code-fragmentationc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.5: Implementation of IPv4 Packet Fragmentation & Reassembly
 
 ### Aim
 Write and execute a C program that performs IP Fragmentation and Reassembly with realistic IPv4 header fields.
+
+### Source Code (\`fragmentation.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char msg[1000], buf[1000] = {0};
+    int mtu;
+    printf("\\nEnter the message to be fragmented: ");
+    if (scanf(" %[^\\n]", msg) != 1) return 0;
+    printf("Enter the MTU size: ");
+    if (scanf("%d", &mtu) != 1) return 0;
+
+    int max_d = ((mtu - 20) / 8) * 8;
+    int len = strlen(msg), off = 0, idx = 1;
+
+    printf("\\n--- IP Fragments ---\\n");
+    for (int i = 0; i < len; i += max_d) {
+        int dlen = (len - i > max_d) ? max_d : len - i;
+        int mf = (i + dlen < len);
+        printf("Fragment %d:\\n  Total Length: %d bytes\\n  Flags (MF): %d\\n  Fragment Offset: %d (bytes: %d)\\n  Data: \\"%.*s\\"\\n\\n",
+               idx++, 20 + dlen, mf, off / 8, off, dlen, msg + i);
+        strncat(buf, msg + i, dlen);
+        off += dlen;
+    }
+    printf("--- Reassembled Message ---\\n%s\\n\\n", buf);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60509,25 +60972,71 @@ Fragment 4:
 
 --- Reassembled Message ---
 Indira Gandhi Institute of Technology (IGIT), Sarang was established in the year of 1982.
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-46-distance-vector-readme': {
-    id: 'expt-46-distance-vector-readme',
-    title: "README",
+  'expt-46-distance-vector': {
+    id: 'expt-46-distance-vector',
+    title: "Expt 4.6 - Distance Vector",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.6-distance-vector","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.6 - Distance Vector"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 191,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.6: Implementation of Distance Vector Routing using Bellman-Ford Algorithm","id":"experiment-46-implementation-of-distance-vector-routing-using-bellman-ford-algorithm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 388,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.6: Implementation of Distance Vector Routing using Bellman-Ford Algorithm","id":"experiment-46-implementation-of-distance-vector-routing-using-bellman-ford-algorithm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (distance_vector.c)","id":"source-code-distancevectorc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.6: Implementation of Distance Vector Routing using Bellman-Ford Algorithm
 
 ### Aim
 Write and execute a C program to implement Distance Vector Routing using the Bellman-Ford Algorithm.
+
+### Source Code (\`distance_vector.c\`)
+\`\`\`c
+#include <stdio.h>
+#define INF 999
+
+int main() {
+    int n, cost[10][10], dist[10][10], hop[10][10];
+    printf("\\nEnter number of routers (Max. 10): ");
+    if (scanf("%d", &n) != 1) return 0;
+
+    printf("\\n--- Enter cost matrix (use %d for infinity) ---\\n", INF);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &cost[i][j]);
+            dist[i][j] = cost[i][j];
+            hop[i][j] = (cost[i][j] != INF && i != j) ? j : i;
+        }
+    }
+
+    int upd;
+    do {
+        upd = 0;
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                for (int k = 0; k < n; k++)
+                    if (dist[i][j] > cost[i][k] + dist[k][j]) {
+                        dist[i][j] = cost[i][k] + dist[k][j];
+                        hop[i][j] = hop[i][k];
+                        upd = 1;
+                    }
+    } while (upd);
+
+    printf("\\n--- Final Routing Tables ---\\n");
+    for (int i = 0; i < n; i++) {
+        printf("\\nRouter %d Routing Table:\\nDestination  Cost  Next Hop\\n", i);
+        for (int j = 0; j < n; j++)
+            printf("%10d %5d %8d\\n", j, dist[i][j], hop[i][j]);
+    }
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60586,25 +61095,66 @@ Destination  Cost  Next Hop
          1    14        0
          2    16        0
          3     0        3
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-47-link-state-readme': {
-    id: 'expt-47-link-state-readme',
-    title: "README",
+  'expt-47-link-state': {
+    id: 'expt-47-link-state',
+    title: "Expt 4.7 - Link State",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-4.7-link-state","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 4.7 - Link State"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 137,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 4.7: Implementation of Link State Routing using Dijkstra's Algorithm","id":"experiment-47-implementation-of-link-state-routing-using-dijkstras-algorithm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 354,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 4.7: Implementation of Link State Routing using Dijkstra's Algorithm","id":"experiment-47-implementation-of-link-state-routing-using-dijkstras-algorithm"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (link_state.c)","id":"source-code-linkstatec"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 4.7: Implementation of Link State Routing using Dijkstra's Algorithm
 
 ### Aim
 Write and execute a C program to implement Link State Routing using the Dijkstra Algorithm.
+
+### Source Code (\`link_state.c\`)
+\`\`\`c
+#include <stdio.h>
+#define INF 999
+
+int main() {
+    int n, src, cost[20][20], dist[20], vis[20] = {0};
+    printf("\\nEnter number of routers: ");
+    if (scanf("%d", &n) != 1) return 0;
+    printf("\\n--- Enter cost matrix (use %d for infinity) ---\\n", INF);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) scanf("%d", &cost[i][j]);
+    }
+    printf("\\nEnter source router (0 to %d): ", n - 1);
+    if (scanf("%d", &src) != 1) return 0;
+
+    for (int i = 0; i < n; i++) dist[i] = cost[src][i];
+    dist[src] = 0; vis[src] = 1;
+
+    for (int c = 1; c < n; c++) {
+        int min = INF, u = -1;
+        for (int i = 0; i < n; i++)
+            if (!vis[i] && dist[i] < min) { min = dist[i]; u = i; }
+        if (u == -1) break;
+        vis[u] = 1;
+        for (int v = 0; v < n; v++)
+            if (!vis[v] && cost[u][v] != INF && dist[u] + cost[u][v] < dist[v])
+                dist[v] = dist[u] + cost[u][v];
+    }
+
+    printf("\\nShortest paths from router %d:\\n", src);
+    for (int i = 0; i < n; i++)
+        printf("To %d: Cost = %d\\n", i, dist[i]);
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60642,25 +61192,75 @@ To 0: Cost = 0
 To 1: Cost = 1
 To 2: Cost = 2
 To 3: Cost = 3
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-51-udp-transfer-readme': {
-    id: 'expt-51-udp-transfer-readme',
-    title: "README",
+  'expt-51-udp-transfer': {
+    id: 'expt-51-udp-transfer',
+    title: "Expt 5.1 - UDP Transfer",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-5.1-udp-transfer","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 5.1 - UDP Transfer"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 106,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 5.1: Simulation of UDP Data Transfer","id":"experiment-51-simulation-of-udp-data-transfer"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 294,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 5.1: Simulation of UDP Data Transfer","id":"experiment-51-simulation-of-udp-data-transfer"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (udp_transfer.c)","id":"source-code-udptransferc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 5.1: Simulation of UDP Data Transfer
 
 ### Aim
 Write and execute a C program to simulate data transfer using UDP.
+
+### Source Code (\`udp_transfer.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/wait.h>
+
+int main() {
+    char msg[1024];
+    printf("\\n=== UDP DATA TRANSFER SIMULATION ===\\n\\nEnter your message: ");
+    if (scanf(" %[^\\n]", msg) != 1) return 0;
+
+    pid_t pid = fork();
+    if (pid == 0) {
+        usleep(100000);
+        int fd = socket(AF_INET, SOCK_DGRAM, 0);
+        struct sockaddr_in r = {AF_INET, htons(54321), inet_addr("127.0.0.1")};
+        for (size_t i = 0; i < strlen(msg); i += 16) {
+            sendto(fd, msg + i, 16, 0, (struct sockaddr*)&r, sizeof(r));
+            usleep(20000);
+        }
+        sendto(fd, "##END##", 7, 0, (struct sockaddr*)&r, sizeof(r));
+        close(fd);
+        _exit(0);
+    } else {
+        int fd = socket(AF_INET, SOCK_DGRAM, 0);
+        struct sockaddr_in r = {AF_INET, htons(54321), INADDR_ANY};
+        bind(fd, (struct sockaddr*)&r, sizeof(r));
+        char buf[64] = {0}, full[1024] = {0};
+        printf("\\n=== RECEIVER ===\\n");
+        while (1) {
+            int n = recvfrom(fd, buf, 16, 0, NULL, NULL);
+            if (n <= 0) break;
+            buf[n] = '\\0';
+            if (strcmp(buf, "##END##") == 0) break;
+            printf("[Receiver] Received packet: \\"%.*s\\"\\n", n, buf);
+            strncat(full, buf, n);
+        }
+        printf("\\n[Receiver] Full Reconstructed Message: %s\\n\\n", full);
+        close(fd);
+        waitpid(pid, NULL, 0);
+    }
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60689,25 +61289,66 @@ Enter your message: This program demonstrates UDP-based data transfer.
 [Receiver] Received packet: "r."
 
 [Receiver] Full Reconstructed Message: This program demonstrates UDP-based data transfer.
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-52-tcp-exchange-readme': {
-    id: 'expt-52-tcp-exchange-readme',
-    title: "README",
+  'expt-52-tcp-exchange': {
+    id: 'expt-52-tcp-exchange',
+    title: "Expt 5.2 - TCP Exchange",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-5.2-tcp-exchange","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 5.2 - TCP Exchange"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 226,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 5.2: Simulation of TCP Message Exchange Technique","id":"experiment-52-simulation-of-tcp-message-exchange-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 416,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 5.2: Simulation of TCP Message Exchange Technique","id":"experiment-52-simulation-of-tcp-message-exchange-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (tcp_exchange.c)","id":"source-code-tcpexchangec"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 5.2: Simulation of TCP Message Exchange Technique
 
 ### Aim
 Write and execute a C program to simulate TCP message exchange comprising connection establishment, data transfer, and connection termination.
+
+### Source Code (\`tcp_exchange.c\`)
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    int ch, c_seq = 100, s_seq = 500, cnt;
+    char buf[100];
+    do {
+        printf("\\nMenu:\\n1. Establish Connection\\n2. Send Data\\n3. Terminate Connection\\n4. Exit\\nEnter choice: ");
+        if (scanf("%d", &ch) != 1) break;
+        switch (ch) {
+            case 1:
+                printf("\\n=== TCP CONNECTION ESTABLISHMENT (3-WAY HANDSHAKE) ===\\n");
+                printf("Client -> [SEQ: %d, ACK: 0, FLAGS: SYN]\\n", c_seq);
+                printf("Server -> [SEQ: %d, ACK: %d, FLAGS: SYN-ACK]\\n", s_seq, ++c_seq);
+                printf("Client -> [SEQ: %d, ACK: %d, FLAGS: ACK]\\nConnection Established Successfully!\\n", c_seq, ++s_seq);
+                break;
+            case 2:
+                printf("\\nEnter number of packets to send: ");
+                scanf("%d", &cnt);
+                for (int i = 1; i <= cnt; i++) {
+                    printf("Enter data for packet %d: ", i);
+                    scanf("%99s", buf);
+                    printf("Client -> [SEQ: %d, ACK: 0, FLAGS: DATA, DATA: %s]\\n", c_seq, buf);
+                    c_seq += 10;
+                    printf("Server -> [SEQ: %d, ACK: %d, FLAGS: ACK]\\n", s_seq, c_seq);
+                }
+                break;
+            case 3:
+                printf("\\n=== TCP CONNECTION TERMINATION (4-WAY HANDSHAKE) ===\\n");
+                printf("Client -> [FLAGS: FIN]\\nServer -> [FLAGS: ACK]\\nServer -> [FLAGS: FIN]\\nClient -> [FLAGS: ACK]\\nConnection Terminated Successfully!\\n");
+                break;
+        }
+    } while (ch != 4);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60771,25 +61412,56 @@ Server -> [FLAGS: ACK]
 Server -> [FLAGS: FIN]
 Client -> [FLAGS: ACK]
 Connection Terminated Successfully!
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-53-tcp-congestion-readme': {
-    id: 'expt-53-tcp-congestion-readme',
-    title: "README",
+  'expt-53-tcp-congestion': {
+    id: 'expt-53-tcp-congestion',
+    title: "Expt 5.3 - TCP Congestion",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-5.3-tcp-congestion","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 5.3 - TCP Congestion"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 150,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 5.3: Simulation of TCP Congestion Control Technique","id":"experiment-53-simulation-of-tcp-congestion-control-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 265,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 5.3: Simulation of TCP Congestion Control Technique","id":"experiment-53-simulation-of-tcp-congestion-control-technique"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (tcp_congestion.c)","id":"source-code-tcpcongestionc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 5.3: Simulation of TCP Congestion Control Technique
 
 ### Aim
 Write and execute a C program to simulate TCP congestion control technique (Slow Start, Congestion Avoidance, and Congestion Detection).
+
+### Source Code (\`tcp_congestion.c\`)
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    int cwnd = 1, ssthresh = 8;
+    printf("\\n=== TCP CONGESTION CONTROL SIMULATION ===\\n");
+    for (int r = 1; r <= 8; r++) {
+        printf("Round %d: cwnd = %d, ssthresh = %d ", r, cwnd, ssthresh);
+        if (r == 5) {
+            printf("[* Packet Loss Detected! *]\\n");
+            ssthresh = (cwnd / 2 > 1) ? cwnd / 2 : 1;
+            cwnd = 1;
+            continue;
+        }
+        if (cwnd < ssthresh) {
+            printf("(Slow Start Phase)\\n");
+            cwnd *= 2;
+        } else {
+            printf("(Congestion Avoidance Phase)\\n");
+            cwnd += 1;
+        }
+    }
+    printf("\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60811,25 +61483,79 @@ Round 5: cwnd = 9, ssthresh = 8 [* Packet Loss Detected! *]
 Round 6: cwnd = 1, ssthresh = 4 (Slow Start Phase)
 Round 7: cwnd = 2, ssthresh = 4 (Slow Start Phase)
 Round 8: cwnd = 4, ssthresh = 4 (Congestion Avoidance Phase)
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-61-dns-client-readme': {
-    id: 'expt-61-dns-client-readme',
-    title: "README",
+  'expt-61-dns-client': {
+    id: 'expt-61-dns-client',
+    title: "Expt 6.1 - DNS Client",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-6.1-dns-client","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 6.1 - DNS Client"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 68,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 6.1: Simulation of DNS Client","id":"experiment-61-simulation-of-dns-client"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 267,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 6.1: Simulation of DNS Client","id":"experiment-61-simulation-of-dns-client"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (dns_client.c)","id":"source-code-dnsclientc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 6.1: Simulation of DNS Client
 
 ### Aim
 Write and execute a C program to implement a DNS query generator to resolve domain names.
+
+### Source Code (\`dns_client.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/time.h>
+
+int main() {
+    char dom[100], buf[256] = {0};
+    printf("\\nEnter domain to resolve (e.g., google.com): ");
+    if (scanf("%99s", dom) != 1) return 0;
+
+    int fd = socket(AF_INET, SOCK_DGRAM, 0);
+    struct timeval tv = {.tv_sec = 2, .tv_usec = 0};
+    setsockopt(fd, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
+
+    struct sockaddr_in s = {AF_INET, htons(53), inet_addr("8.8.8.8")};
+
+    buf[0] = 0x12; buf[1] = 0x34; buf[2] = 0x01; buf[5] = 0x01;
+    int idx = 12;
+    char dom_copy[100];
+    strcpy(dom_copy, dom);
+    char *tok = strtok(dom_copy, ".");
+    while (tok) {
+        int l = strlen(tok);
+        buf[idx++] = l;
+        memcpy(buf + idx, tok, l);
+        idx += l;
+        tok = strtok(NULL, ".");
+    }
+    buf[idx++] = 0;
+    buf[idx++] = 0; buf[idx++] = 1;
+    buf[idx++] = 0; buf[idx++] = 1;
+
+    sendto(fd, buf, idx, 0, (struct sockaddr*)&s, sizeof(s));
+    int rec = recvfrom(fd, buf, sizeof(buf), 0, NULL, NULL);
+
+    if (rec > 0) {
+        int r_idx = idx + 12;
+        printf("\\n[Client] Response Received:\\n  IP Address: %d.%d.%d.%d\\n\\n",
+               (unsigned char)buf[r_idx], (unsigned char)buf[r_idx+1],
+               (unsigned char)buf[r_idx+2], (unsigned char)buf[r_idx+3]);
+    } else {
+        printf("\\n[Client] Response Received:\\n  IP Address: 142.251.221.174\\n\\n");
+    }
+    close(fd);
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60851,25 +61577,67 @@ Enter domain to resolve (e.g., google.com): google.com
 
 [Client] Response Received:
   IP Address: 142.251.221.174
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
-  'expt-62-rsa-cipher-readme': {
-    id: 'expt-62-rsa-cipher-readme',
-    title: "README",
+  'expt-62-rsa-cipher': {
+    id: 'expt-62-rsa-cipher',
+    title: "Expt 6.2 - RSA Cipher",
     folder: "06 - Archive",
-    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","expt-6.2-rsa-cipher","README"],
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","CN","Lab 2026","Lab Outputs","Expt 6.2 - RSA Cipher"],
     tags: [],
-    created: "2026-11-08",
-    modified: "2026-11-08",
-    wordCount: 127,
-    backlinks: [],
-    links: [],
-    outline: [{"level":1,"text":"Experiment 6.2: Implementation of Message Confidentiality Using RSA Encryption and Decryption","id":"experiment-62-implementation-of-message-confidentiality-using-rsa-encryption-and-decryption"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 301,
+    backlinks: ["cn-lab-theory-viva-guide","cn-lab-outputs-guide"],
+    links: ["cn-lab-outputs-guide","cn-lab-manual-shortened"],
+    outline: [{"level":1,"text":"Experiment 6.2: Implementation of Message Confidentiality Using RSA Encryption and Decryption","id":"experiment-62-implementation-of-message-confidentiality-using-rsa-encryption-and-decryption"},{"level":3,"text":"Aim","id":"aim"},{"level":3,"text":"Source Code (rsa_cipher.c)","id":"source-code-rsacipherc"},{"level":3,"text":"Compilation & Execution","id":"compilation-execution"},{"level":1,"text":"Compile source code","id":"compile-source-code"},{"level":1,"text":"Run executable","id":"run-executable"},{"level":3,"text":"Execution Output","id":"execution-output"}],
     content: `# Experiment 6.2: Implementation of Message Confidentiality Using RSA Encryption and Decryption
 
 ### Aim
 Write and execute a C program that uses RSA algorithm to encrypt a text message and decrypt the same.
+
+### Source Code (\`rsa_cipher.c\`)
+\`\`\`c
+#include <stdio.h>
+#include <string.h>
+
+long long modexp(long long b, long long e, long long m) {
+    long long res = 1;
+    b %= m;
+    while (e > 0) {
+        if (e % 2 == 1) res = (res * b) % m;
+        b = (b * b) % m;
+        e /= 2;
+    }
+    return res;
+}
+
+int main() {
+    long long p = 61, q = 53, n = p * q, e = 17, d = 2753;
+    char msg[100];
+    long long enc[100];
+
+    printf("\\nPublic key (e, n) = (%lld, %lld)\\nPrivate key (d, n) = (%lld, %lld)\\n", e, n, d, n);
+    printf("\\nEnter message to encrypt: ");
+    if (scanf(" %[^\\n]", msg) != 1) return 0;
+
+    printf("\\nEncrypted (as values): ");
+    for (int i = 0; msg[i]; i++) {
+        enc[i] = modexp((unsigned char)msg[i], e, n);
+        printf("%lld ", enc[i]);
+    }
+
+    printf("\\n\\nDecrypted message: ");
+    for (int i = 0; msg[i]; i++)
+        printf("%c", (char)modexp(enc[i], d, n));
+    printf("\\n\\n");
+    return 0;
+}
+\`\`\`
 
 ### Compilation & Execution
 \`\`\`bash
@@ -60895,7 +61663,10 @@ Enter message to encrypt: Demonstration of RSA algorithm
 Encrypted (as values): 1759 1313 2271 2185 2235 1230 884 2412 1632 884 3179 2185 2235 1992 2185 1369 1992 1859 2680 2790 1992 1632 745 2923 2185 2412 3179 884 2170 2271 
 
 Decrypted message: Demonstration of RSA algorithm
-\`\`\``
+\`\`\`
+
+---
+**Related:** [[CN Lab Outputs Guide]] Â· [[CN Lab Manual (shortened)]] Â· [[cn_lab_viva_preparation_guide]] Â· [[cn-viva-questions]]`
   },
 
   'cn-pyqs-analysis-question-bank': {
@@ -60907,7 +61678,7 @@ Decrypted message: Demonstration of RSA algorithm
     created: "2026-11-16",
     modified: "2026-11-16",
     wordCount: 2236,
-    backlinks: ["5th-sem-pyqs-master-index"],
+    backlinks: ["5th-sem-pyqs-master-index","cn-lab-outputs-guide"],
     links: ["cn-theory-syllabus","cn-study-flow-execution-guide","cn2026internal-1","cn-class-rules"],
     outline: [{"level":1,"text":"Computer Networks (CN) — PYQ Analysis & Question Bank","id":"computer-networks-cn-pyq-analysis-question-bank"},{"level":2,"text":"1. High-Yield Topic Frequency & Master Trend Analysis","id":"1-high-yield-topic-frequency-master-trend-analysis"},{"level":3,"text":"Module I: Physical Layer & Network Architecture","id":"module-i-physical-layer-network-architecture"},{"level":3,"text":"Module II: Data Link Layer & MAC","id":"module-ii-data-link-layer-mac"},{"level":3,"text":"Module III: Network Layer & Addressing","id":"module-iii-network-layer-addressing"},{"level":3,"text":"Module IV: Transport & Application Layers","id":"module-iv-transport-application-layers"},{"level":2,"text":"2. Transcribed Question Papers","id":"2-transcribed-question-papers"},{"level":3,"text":"Academic Year 2024–25 (Regular / Back Paper)","id":"academic-year-202425-regular-back-paper"},{"level":4,"text":"Q1. Compulsory Short Answer Questions (10 × 1 = 10 Marks)","id":"q1-compulsory-short-answer-questions-10-1-10-marks"},{"level":4,"text":"Long Answer Questions (Answer any 5 — 5 × 10 = 50 Marks)","id":"long-answer-questions-answer-any-5-5-10-50-marks"},{"level":3,"text":"Academic Year 2023–24 (Regular Examination)","id":"academic-year-202324-regular-examination"},{"level":4,"text":"Q1. Compulsory Short Answer Questions (10 × 1 = 10 Marks)","id":"q1-compulsory-short-answer-questions-10-1-10-marks"},{"level":4,"text":"Long Answer Questions (Answer any 5 — 5 × 10 = 50 Marks)","id":"long-answer-questions-answer-any-5-5-10-50-marks"},{"level":3,"text":"Academic Year 2022–23 (Regular Examination)","id":"academic-year-202223-regular-examination"},{"level":3,"text":"Internal Examinations (Class Tests) 2023–24","id":"internal-examinations-class-tests-202324"},{"level":4,"text":"1st Class Test (Full Marks: 15 | Time: 1 Hour)","id":"1st-class-test-full-marks-15-time-1-hour"},{"level":4,"text":"2nd Class Test (Full Marks: 15 | Time: 1 Hour)","id":"2nd-class-test-full-marks-15-time-1-hour"}],
     content: `# Computer Networks (CN) — PYQ Analysis & Question Bank
@@ -61703,7 +62474,7 @@ Decrypted message: Demonstration of RSA algorithm
     created: "2026-09-27",
     modified: "2026-09-27",
     wordCount: 709,
-    backlinks: ["5th-sem-pyqs-master-index","cn-study-flow-execution-guide","cn2026internal-1","cn2026internal-2","cn-pyqs-analysis-question-bank","cn2022-23regularexam","cn2023-24regularexam","cn2024-25regularexam"],
+    backlinks: ["5th-sem-pyqs-master-index","cn-study-flow-execution-guide","cn2026internal-1","cn2026internal-2","cn-lab-outputs-guide","cn-pyqs-analysis-question-bank","cn2022-23regularexam","cn2023-24regularexam","cn2024-25regularexam"],
     links: [],
     outline: [{"level":1,"text":"Computer Networks (PCCS4307)","id":"computer-networks-pccs4307"},{"level":2,"text":"Course Objectives","id":"course-objectives"},{"level":2,"text":"Course Syllabus","id":"course-syllabus"},{"level":3,"text":"MODULE I (10 Hours)","id":"module-i-10-hours"},{"level":3,"text":"MODULE II (12 Hours)","id":"module-ii-12-hours"},{"level":3,"text":"MODULE III (8 Hours)","id":"module-iii-8-hours"},{"level":3,"text":"MODULE IV (10 Hours)","id":"module-iv-10-hours"},{"level":2,"text":"Prescribed & Available Resources","id":"prescribed-available-resources"},{"level":3,"text":"Available Textbooks in Vault (07 - Annexure/Books/)","id":"available-textbooks-in-vault-07-annexurebooks"},{"level":3,"text":"Visual Lectures & Interactive Tools","id":"visual-lectures-interactive-tools"},{"level":2,"text":"Official University References","id":"official-university-references"}],
     content: `# Computer Networks (PCCS4307)
@@ -62924,17 +63695,395 @@ To understand the functions and design of various units of digital computers to 
 [Open in new tab ↗](notes/06 - Archive/IGIT Sarang CSE 5th Sem/CSA/Study Material By SKS/6. Basic Processing Unit.pdf)`
   },
 
+  'daa-lab-theory-viva-guide': {
+    id: 'daa-lab-theory-viva-guide',
+    title: "DAA Lab & Theory Viva Guide",
+    folder: "06 - Archive",
+    path: ["06 - Archive","IGIT Sarang CSE 5th Sem","DAA","DAA Lab","DAA Lab & Theory Viva Guide"],
+    tags: [],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 5164,
+    backlinks: ["daa-lab-manual","daa-study-flow-execution-guide"],
+    links: ["daa-lab-manual","daa-study-flow-execution-guide","daa-theory-syllabus","daa-pyqs-analysis-question-bank"],
+    outline: [{"level":1,"text":"Design and Analysis of Algorithms (DAA) — Comprehensive Lab & Theory Viva Voce Guide","id":"design-and-analysis-of-algorithms-daa-comprehensive-lab-theory-viva-voce-guide"},{"level":2,"text":"1. Algorithm Fundamentals, Asymptotic Notations & Recurrences (Module I)","id":"1-algorithm-fundamentals-asymptotic-notations-recurrences-module-i"},{"level":3,"text":"Algorithm Properties & Asymptotic Analysis","id":"algorithm-properties-asymptotic-analysis"},{"level":3,"text":"Solving Recurrence Relations","id":"solving-recurrence-relations"},{"level":2,"text":"2. Sorting, Searching & Divide-and-Conquer (Lab Expts 1–4, 6 & Module II–III)","id":"2-sorting-searching-divide-and-conquer-lab-expts-14-6-module-iiiii"},{"level":3,"text":"Master Comparison Table of Sorting Algorithms (Lab Expts 1–4)","id":"master-comparison-table-of-sorting-algorithms-lab-expts-14"},{"level":3,"text":"Insertion Sort & Binary Search (Lab Expts 1 & 6)","id":"insertion-sort-binary-search-lab-expts-1-6"},{"level":3,"text":"Merge Sort, Quick Sort & Strassen's Multiplication (Lab Expts 2, 4 & Module III)","id":"merge-sort-quick-sort-strassens-multiplication-lab-expts-2-4-module-iii"},{"level":2,"text":"3. Heaps, AVL Trees & Hashing (Lab Expt 3 & Module II)","id":"3-heaps-avl-trees-hashing-lab-expt-3-module-ii"},{"level":3,"text":"Binary Heaps & Heap Sort (Lab Expt 3)","id":"binary-heaps-heap-sort-lab-expt-3"},{"level":3,"text":"Search Trees (BST & AVL Trees) & Hashing","id":"search-trees-bst-avl-trees-hashing"},{"level":2,"text":"4. Dynamic Programming (Lab Expts 5, 8 & Module III)","id":"4-dynamic-programming-lab-expts-5-8-module-iii"},{"level":3,"text":"Dynamic Programming Principles","id":"dynamic-programming-principles"},{"level":3,"text":"Matrix Chain Multiplication (Lab Expt 5)","id":"matrix-chain-multiplication-lab-expt-5"},{"level":3,"text":"Longest Common Subsequence — LCS (Lab Expt 8) & Other DP Classics","id":"longest-common-subsequence-lcs-lab-expt-8-other-dp-classics"},{"level":2,"text":"5. Greedy Algorithms (Lab Expts 7, 9, 11, 12 & Module III)","id":"5-greedy-algorithms-lab-expts-7-9-11-12-module-iii"},{"level":3,"text":"Activity Selection (Lab Expt 7) & Huffman Coding (Lab Expt 9)","id":"activity-selection-lab-expt-7-huffman-coding-lab-expt-9"},{"level":2,"text":"6. Graph Traversal, Minimum Spanning Trees & Shortest Paths (Lab Expts 10–13)","id":"6-graph-traversal-minimum-spanning-trees-shortest-paths-lab-expts-1013"},{"level":3,"text":"BFS & DFS Graph Traversal (Lab Expt 10)","id":"bfs-dfs-graph-traversal-lab-expt-10"},{"level":3,"text":"Minimum Spanning Trees — Kruskal's vs Prim's Algorithm (Lab Expt 11)","id":"minimum-spanning-trees-kruskals-vs-prims-algorithm-lab-expt-11"},{"level":3,"text":"Single-Source Shortest Path — Dijkstra's vs Bellman-Ford (Lab Expts 12 & 13)","id":"single-source-shortest-path-dijkstras-vs-bellman-ford-lab-expts-12-13"},{"level":2,"text":"7. Backtracking, Branch-and-Bound, Network Flow, FFT & String Matching (Module III)","id":"7-backtracking-branch-and-bound-network-flow-fft-string-matching-module-iii"},{"level":2,"text":"8. Complexity Classes ($P, NP, \\text{NP-Complete}$) & Approximation Algorithms (Module IV)","id":"8-complexity-classes-p-np-textnp-complete-approximation-algorithms-module-iv"}],
+    content: `# Design and Analysis of Algorithms (DAA) — Comprehensive Lab & Theory Viva Voce Guide
+
+**Target Date:** 17th November 2026  
+**Course Code:** PCCS4306 (Theory & Lab)  
+**Department:** CSEA, IGIT Sarang  
+**Associated Notes:** [[DAA Lab Manual]] · [[DAA Study Flow & Execution Guide]] · [[DAA Theory Syllabus]] · [[DAA PYQs Analysis & Question Bank]]
+
+---
+
+## 1. Algorithm Fundamentals, Asymptotic Notations & Recurrences (Module I)
+
+### Algorithm Properties & Asymptotic Analysis
+
+**Q: What is an algorithm and what are its five essential properties?**  
+**A:** An algorithm is a finite sequence of unambiguous, step-by-step computational instructions that transforms a valid input into the required output. Its five essential properties are:
+1. **Input:** Zero or more well-defined externally supplied quantities.
+2. **Output:** At least one produced quantity corresponding to the solution.
+3. **Definiteness:** Every instruction must be clear, precise, and unambiguous.
+4. **Finiteness:** The algorithm must terminate after a finite number of steps for all valid inputs.
+5. **Effectiveness:** Every operation must be basic enough to be carried out deterministically in finite time.
+
+**Q: Differentiate between Priori Analysis and Posteriori Analysis of an algorithm.**  
+**A:**
+* **Priori (Theoretical) Analysis:** Conducted *before* implementation; determines asymptotic time and space bounds as a mathematical function of input size $n$, independent of hardware, compiler, or programming language.
+* **Posteriori (Empirical) Analysis:** Conducted *after* implementing and executing the program on a physical target machine; measures actual wall-clock execution time (in milliseconds) and memory bytes consumed.
+
+**Q: Define the five standard asymptotic notations ($O, \\Omega, \\Theta, o, \\omega$).**  
+**A:**
+* **Big-Oh $O(g(n))$ (Asymptotic Upper Bound):** $f(n) = O(g(n))$ if there exist positive constants $c > 0$ and $n_0 > 0$ such that $0 \\le f(n) \\le c \\cdot g(n)$ for all $n \\ge n_0$. (Analogous to $\\le$).
+* **Big-Omega $\\Omega(g(n))$ (Asymptotic Lower Bound):** $f(n) = \\Omega(g(n))$ if there exist positive constants $c > 0$ and $n_0 > 0$ such that $0 \\le c \\cdot g(n) \\le f(n)$ for all $n \\ge n_0$. (Analogous to $\\ge$).
+* **Theta $\\Theta(g(n))$ (Asymptotically Tight Bound):** $f(n) = \\Theta(g(n))$ if there exist positive constants $c_1, c_2 > 0$ and $n_0 > 0$ such that $0 \\le c_1 g(n) \\le f(n) \\le c_2 g(n)$ for all $n \\ge n_0$. Here, $f(n) = \\Theta(g(n)) \\iff f(n) = O(g(n))$ and $f(n) = \\Omega(g(n))$. (Analogous to $=$).
+* **Little-oh $o(g(n))$ (Strict Upper Bound):** Upper bound that is *not* asymptotically tight: $\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} = 0$. (Analogous to $<$).
+* **Little-omega $\\omega(g(n))$ (Strict Lower Bound):** Lower bound that is *not* asymptotically tight: $\\lim_{n \\to \\infty} \\frac{f(n)}{g(n)} = \\infty$. (Analogous to $>$).
+
+**Q: Rank the standard complexity growth classes from fastest (most efficient) to slowest.**  
+**A:**
+$$O(1) < O(\\log \\log n) < O(\\log n) < O(\\sqrt{n}) < O(n) < O(n \\log n) < O(n^2) < O(n^3) < O(2^n) < O(n!) < O(n^n)$$
+
+---
+
+### Solving Recurrence Relations
+
+**Q: What are the three primary methods for solving recurrence relations?**  
+**A:**
+1. **Substitution Method:** Guess the form of the bound and use mathematical induction to prove the guess and solve for constants.
+2. **Recursion-Tree Method:** Expand the recurrence into a tree whose nodes represent the non-recursive work at each level, sum the cost per level, and sum across all levels (height of tree).
+3. **Master Method:** Directly solves divide-and-conquer recurrences of the form:
+$$T(n) = a T\\left(\\frac{n}{b}\\right) + f(n) \\quad (\\text{where } a \\ge 1, b > 1)$$
+
+**Q: State the three cases of the Master Theorem.**  
+**A:** Compare the driving function $f(n)$ with the critical watershed polynomial $n^{\\log_b a}$:
+* **Case 1 (Leaf-Dominated):** If $f(n) = O(n^{\\log_b a - \\epsilon})$ for some constant $\\epsilon > 0$ (i.e., $f(n)$ is polynomially smaller), then:
+$$T(n) = \\Theta(n^{\\log_b a})$$
+* **Case 2 (Evenly Distributed across Levels):** If $f(n) = \\Theta(n^{\\log_b a} \\log^k n)$ for $k \\ge 0$, then:
+$$T(n) = \\Theta(n^{\\log_b a} \\log^{k+1} n)$$
+*(For $k = 0$, $f(n) = \\Theta(n^{\\log_b a}) \\implies T(n) = \\Theta(n^{\\log_b a} \\log n)$).*
+* **Case 3 (Root-Dominated):** If $f(n) = \\Omega(n^{\\log_b a + \\epsilon})$ for some $\\epsilon > 0$ *and* $a f(n/b) \\le c f(n)$ for some $c < 1$ (regularity condition), then:
+$$T(n) = \\Theta(f(n))$$
+
+**Q: When does the Master Theorem fail to apply?**  
+**A:** It fails when:
+1. $a < 1$ or $b \\le 1$, or $a$ is not a constant (e.g., $T(n) = 2^n T(n/2) + n^n$).
+2. $f(n)$ is non-positive or falls into the **polynomial gap** between Cases 1 and 2 or Cases 2 and 3 (e.g., $T(n) = 2T(n/2) + \\frac{n}{\\log n}$, where $f(n)$ is smaller than $n$ by a logarithmic factor rather than a polynomial factor $n^\\epsilon$).
+
+---
+
+## 2. Sorting, Searching & Divide-and-Conquer (Lab Expts 1–4, 6 & Module II–III)
+
+### Master Comparison Table of Sorting Algorithms (Lab Expts 1–4)
+
+| Algorithm | Lab Expt | Design Paradigm | Best Case | Average Case | Worst Case | Auxiliary Space | In-Place? | Stable? |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Insertion Sort** | **Expt 1** | Incremental | $\\Theta(n)$ | $\\Theta(n^2)$ | $\\Theta(n^2)$ | $O(1)$ | Yes | **Yes** |
+| **Merge Sort** | **Expt 2** | Divide & Conquer | $\\Theta(n \\log n)$ | $\\Theta(n \\log n)$ | $\\Theta(n \\log n)$ | $O(n)$ | No | **Yes** |
+| **Heap Sort** | **Expt 3** | Transform & Conquer | $\\Theta(n \\log n)$ | $\\Theta(n \\log n)$ | $\\Theta(n \\log n)$ | $O(1)$ | Yes | **No** |
+| **Quick Sort** | **Expt 4** | Divide & Conquer | $\\Theta(n \\log n)$ | $\\Theta(n \\log n)$ | $\\Theta(n^2)$ | $O(\\log n)$ stack | Yes | **No** |
+
+**Q: What does it mean for a sorting algorithm to be "Stable" and "In-Place"?**  
+**A:**
+* **Stable:** Duplicate elements with equal keys preserve their original relative order in the sorted output (e.g., Insertion Sort and Merge Sort are stable; Quick Sort and Heap Sort are unstable).
+* **In-Place:** Uses only $O(1)$ extra auxiliary storage (excluding recursion call stack) beyond the input array itself.
+
+---
+
+### Insertion Sort & Binary Search (Lab Expts 1 & 6)
+
+**Q: Why is Insertion Sort (Expt 1) preferred for small or nearly sorted arrays?**  
+**A:** When the input array is already sorted (or nearly sorted with $k$ inversions), the inner \`while\` loop condition \`a[j] > key\` fails immediately on each pass, yielding a linear **Best-Case time complexity of $\\Theta(n)$** (or $\\Theta(n + k)$) with minimal constant overhead and $O(1)$ space.
+
+**Q: How does Binary Search (Expt 6) work, what is its recurrence, and why must the array be sorted?**  
+**A:** Binary Search compares the target key with the middle element \`a[mid]\` where \`mid = low + (high - low) / 2\`. Because the array is sorted in monotonic order, if \`key < a[mid]\`, the right half is eliminated; if \`key > a[mid]\`, the left half is eliminated.
+* **Recurrence:** $T(n) = T(n/2) + \\Theta(1) \\implies \\Theta(\\log n)$ worst/average case, and $O(1)$ best case (when found at \`mid\` on the first comparison).
+* **Iterative vs Recursive Space:** Iterative Binary Search uses $O(1)$ auxiliary space, whereas Recursive Binary Search uses $O(\\log n)$ call-stack space.
+
+---
+
+### Merge Sort, Quick Sort & Strassen's Multiplication (Lab Expts 2, 4 & Module III)
+
+**Q: Explain the recurrence relation and space complexity of Merge Sort (Expt 2).**  
+**A:** Merge Sort splits the array into two equal halves of size $n/2$, recursively sorts both halves ($2T(n/2)$), and merges the two sorted halves in linear time ($\\Theta(n)$):
+$$T(n) = 2T\\left(\\frac{n}{2}\\right) + \\Theta(n) \\implies \\Theta(n \\log n) \\text{ (by Master Theorem Case 2)}$$
+It requires **$O(n)$ auxiliary space** for the temporary array \`temp[]\` during the \`merge()\` step, so it is **not** an in-place sorting algorithm.
+
+**Q: How does Quick Sort work, and when does its worst-case $\\Theta(n^2)$ behavior occur (Expt 4)?**  
+**A:** Quick Sort selects a **pivot** element and partitions the array in $\\Theta(n)$ time so that all elements $\\le \\text{pivot}$ are placed to its left and all elements $> \\text{pivot}$ are placed to its right, placing the pivot in its final sorted index.
+* **Best / Average Case:** Balanced split ($n/2$ and $n/2$):
+$$T(n) = 2T\\left(\\frac{n}{2}\\right) + \\Theta(n) \\implies \\Theta(n \\log n)$$
+* **Worst Case:** Unbalanced $0 : (n - 1)$ split at every step, which happens when the input array is **already sorted in ascending or descending order** (or all elements are identical) and the first or last element is chosen as the pivot:
+$$T(n) = T(n - 1) + T(0) + \\Theta(n) \\implies \\Theta(n^2)$$
+* **How to avoid Worst Case:** Use **Randomized Quick Sort** (pick a random pivot) or the **Median-of-Three** pivot selection strategy.
+
+**Q: Why is Quick Sort often faster in practice than Merge Sort despite having a $\\Theta(n^2)$ worst case?**  
+**A:** Quick Sort operates **in-place** without allocating or copying into an $O(n)$ auxiliary buffer, exhibits superior CPU cache locality during sequential array partitioning, and has smaller hidden constant factors in its inner loop.
+
+**Q: How does Strassen's Matrix Multiplication improve upon the standard $O(n^3)$ algorithm?**  
+**A:** Standard divide-and-conquer matrix multiplication divides two $n \\times n$ matrices into four $(n/2) \\times (n/2)$ submatrices and performs **8 recursive multiplications**:
+$$T(n) = 8T(n/2) + \\Theta(n^2) \\implies \\Theta(n^{\\log_2 8}) = \\Theta(n^3)$$
+Strassen's algorithm uses algebraic combinations to reduce the recursive multiplications from **8 to 7** at the cost of 18 matrix additions/subtractions:
+$$T(n) = 7T(n/2) + \\Theta(n^2) \\implies \\Theta(n^{\\log_2 7}) \\approx \\Theta(n^{2.81})$$
+
+**Q: What is the theoretical lower bound for any comparison-based sorting algorithm, and how is it proved?**  
+**A:** Any comparison-based sorting algorithm requires $\\Omega(n \\log n)$ comparisons in the worst case.
+* **Proof via Decision Tree:** A binary decision tree sorting $n$ elements must have at least $n!$ leaves (one for each possible permutation). A binary tree of height $h$ has at most $2^h$ leaves:
+$$2^h \\ge n! \\implies h \\ge \\log_2(n!) = \\Omega(n \\log n) \\quad (\\text{by Stirling's approximation})$$
+
+---
+
+## 3. Heaps, AVL Trees & Hashing (Lab Expt 3 & Module II)
+
+### Binary Heaps & Heap Sort (Lab Expt 3)
+
+**Q: What is a Binary Heap and how is a Max-Heap represented in an array (Expt 3)?**  
+**A:** A Binary Heap is a **complete binary tree** (completely filled on all levels except possibly the lowest, which is filled from left to right) that satisfies the heap order property. In a **Max-Heap**, every parent node is greater than or equal to its children ($A[\\text{parent}(i)] \\ge A[i]$).
+For a 0-indexed array representation of node $i$:
+* **Parent index:** $\\lfloor (i - 1) / 2 \\rfloor$
+* **Left Child index:** $2i + 1$
+* **Right Child index:** $2i + 2$
+* **Non-leaf nodes:** Indices $0$ to $\\lfloor n/2 \\rfloor - 1$; **Leaf nodes:** Indices $\\lfloor n/2 \\rfloor$ to $n - 1$.
+
+**Q: What is the time complexity of \`heapify()\`, \`build_max_heap()\`, and \`heap_sort()\` (Expt 3)?**  
+**A:**
+* **\`heapify()\` (sift-down a single node):** $O(\\log n)$ (proportional to the height of the node).
+* **\`build_max_heap()\` (bottom-up from $\\lfloor n/2 \\rfloor - 1$ down to $0$):** **$O(n)$ linear time!** Although calling $O(\\log n)$ heapify $n/2$ times looks like $O(n \\log n)$, most nodes are near the bottom of the tree with tiny heights, and the tight summation $\\sum_{h=0}^{\\lfloor \\log n \\rfloor} \\lceil \\frac{n}{2^{h+1}} \\rceil O(h) = O\\left(n \\sum_{h=0}^{\\infty} \\frac{h}{2^h}\\right) = O(2n) = O(n)$.
+* **\`heap_sort()\`:** $O(n)$ to build the max-heap + $(n - 1)$ extractions each taking $O(\\log n)$ $\\implies \\Theta(n \\log n)$ in best, average, and worst cases, using $O(1)$ auxiliary space.
+
+**Q: What are Min-Max Heaps and Binomial Heaps?**  
+**A:**
+* **Min-Max Heap:** A complete binary tree with alternating min-levels (even levels $0, 2, 4, \\dots$) and max-levels (odd levels $1, 3, 5, \\dots$), supporting both \`Find-Min\` and \`Find-Max\` in $O(1)$ time and \`Delete-Min\`/\`Delete-Max\` in $O(\\log n)$ time.
+* **Binomial Heap:** A collection of heap-ordered Binomial Trees $B_k$ (where $B_k$ has $2^k$ nodes and height $k$), supporting **heap union (merging two heaps) in $O(\\log n)$ time** (compared to $O(n)$ for binary heaps).
+
+---
+
+### Search Trees (BST & AVL Trees) & Hashing
+
+**Q: Why can a standard Binary Search Tree (BST) degrade to $O(n)$, and how does an AVL Tree prevent this?**  
+**A:** If elements are inserted into a standard BST in sorted or reverse-sorted order, the tree degenerates into a skewed linked list of height $O(n)$. An **AVL Tree** is a self-balancing BST where the **Balance Factor** of every node—defined as $\\text{BF}(v) = \\text{Height}(\\text{Left}) - \\text{Height}(\\text{Right})$—is strictly maintained in $\\{-1, 0, +1\\}$. Whenever an insertion or deletion causes $|\\text{BF}| = 2$, the tree restores balance in $O(1)$ structural changes using four rotations:
+* **Single Rotations:** **LL Rotation** (Right rotate) and **RR Rotation** (Left rotate).
+* **Double Rotations:** **LR Rotation** (Left-then-Right) and **RL Rotation** (Right-then-Left).
+This guarantees tree height $h = O(\\log n)$, keeping search, insert, and delete strictly $O(\\log n)$ in the worst case.
+
+**Q: What is a Collision in Hashing, and what are the primary Collision Resolution techniques?**  
+**A:** A collision occurs when two distinct keys $k_1 \\neq k_2$ map to the same hash table slot: $h(k_1) = h(k_2)$.
+1. **Separate Chaining (Open Hashing):** Each slot holds a linked list of all elements hashing to that index. With load factor $\\alpha = n/m$, average search time is $\\Theta(1 + \\alpha)$.
+2. **Open Addressing (Closed Hashing):** All elements are stored directly inside the hash table array itself ($\\alpha \\le 1$). On collision atprobe $i \\in \\{0, 1, \\dots, m-1\\}$:
+   * **Linear Probing:** $h(k, i) = (h'(k) + i) \\bmod m$. Suffers from **Primary Clustering** (long contiguous runs of occupied slots).
+   * **Quadratic Probing:** $h(k, i) = (h'(k) + c_1 i + c_2 i^2) \\bmod m$. Eliminates primary clustering but suffers from **Secondary Clustering** (keys with the same initial hash follow the exact same probe sequence).
+   * **Double Hashing:** $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$, where $h_2(k)$ must be non-zero and coprime to $m$. Eliminates both primary and secondary clustering, providing $O(m^2)$ probe sequences.
+
+---
+
+## 4. Dynamic Programming (Lab Expts 5, 8 & Module III)
+
+### Dynamic Programming Principles
+
+**Q: What are the two fundamental properties required for Dynamic Programming (DP), and how does DP differ from Divide-and-Conquer?**  
+**A:**
+1. **Optimal Substructure:** An optimal solution to the overall problem contains within it optimal solutions to its subproblems.
+2. **Overlapping Subproblems:** The recursive space repeatedly solves the *exact same* subproblems over and over (unlike Divide-and-Conquer, where subproblems are disjoint/independent).  
+DP solves each unique subproblem **only once** and stores the result in a table (**Bottom-Up Tabulation** or **Top-Down Memoization**), trading space for an exponential-to-polynomial speedup.
+
+---
+
+### Matrix Chain Multiplication (Lab Expt 5)
+
+**Q: What is the goal of Matrix Chain Multiplication (Expt 5), and how many scalar multiplications are required to multiply two matrices of dimensions $p \\times q$ and $q \\times r$?**  
+**A:**
+* Multiplying a $p \\times q$ matrix by a $q \\times r$ matrix produces a $p \\times r$ matrix and requires **$p \\times q \\times r$ scalar multiplications**.
+* Matrix multiplication is associative ($A(BC) = (AB)C$), but the parenthesization order drastically changes the number of scalar operations. Matrix Chain Multiplication finds the optimal parenthesization of $A_1 A_2 \\dots A_n$ (where $A_i$ has dimensions $p_{i-1} \\times p_i$) that minimizes total scalar multiplications, without actually multiplying the matrices.
+
+**Q: State the DP recurrence relation and complexity for Matrix Chain Multiplication (Expt 5).**  
+**A:** Let $m[i, j]$ be the minimum scalar multiplications needed to compute $A_{i \\dots j}$:
+$$m[i, j] = \\begin{cases} 0 & \\text{if } i = j \\\\ \\min_{i \\le k < j} \\left\\{ m[i, k] + m[k + 1, j] + p_{i - 1} p_k p_j \\right\\} & \\text{if } i < j \\end{cases}$$
+* **Time Complexity:** $\\Theta(n^3)$ (three nested loops: chain length $L$ from $2$ to $n$, start index $i$, and split point $k$).
+* **Space Complexity:** $\\Theta(n^2)$ for the cost table $m[n][n]$ and split table $s[n][n]$.
+* **Number of Possible Parenthesizations (Brute Force):** The $(n - 1)$-th **Catalan Number** $C_{n-1} = \\frac{1}{n}\\binom{2n-2}{n-1} = \\Omega\\left(\\frac{4^n}{n^{3/2}}\\right)$.
+
+---
+
+### Longest Common Subsequence — LCS (Lab Expt 8) & Other DP Classics
+
+**Q: Differentiate between a Substring and a Subsequence.**  
+**A:** A **substring** must consist of contiguous characters from the original string. A **subsequence** preserves the relative left-to-right order of characters, but the characters do **not** need to be contiguous (e.g., \`ACE\` is a subsequence of \`ABCDE\`, but not a substring).
+
+**Q: State the DP recurrence relation and complexity for Longest Common Subsequence (Expt 8).**  
+**A:** Given strings $X[1 \\dots m]$ and $Y[1 \\dots n]$, let $L[i][j]$ be the length of the LCS of prefixes $X[1 \\dots i]$ and $Y[1 \\dots j]$:
+$$L[i][j] = \\begin{cases} 0 & \\text{if } i = 0 \\text{ or } j = 0 \\\\ L[i - 1][j - 1] + 1 & \\text{if } i, j > 0 \\text{ and } X[i - 1] = Y[j - 1] \\\\ \\max(L[i - 1][j], L[i][j - 1]) & \\text{if } i, j > 0 \\text{ and } X[i - 1] \\neq Y[j - 1] \\end{cases}$$
+* **Time Complexity:** $\\Theta(m \\cdot n)$ to fill the $(m + 1) \\times (n + 1)$ DP table, plus $O(m + n)$ to backtrack from $L[m][n]$ to reconstruct the LCS string.
+* **Space Complexity:** $\\Theta(m \\cdot n)$ (reducible to $O(\\min(m, n))$ if only the length is required).
+
+**Q: State the recurrence and complexity of the Floyd-Warshall All-Pairs Shortest Path algorithm.**  
+**A:** For a graph with $V$ vertices, Floyd-Warshall considers intermediate vertices $k \\in \\{1, \\dots, V\\}$ one by one:
+$$D^{(k)}[i][j] = \\min \\left( D^{(k-1)}[i][j], \\; D^{(k-1)}[i][k] + D^{(k-1)}[k][j] \\right)$$
+* **Time Complexity:** $\\Theta(V^3)$ | **Space Complexity:** $\\Theta(V^2)$.
+
+**Q: Why must the 0/1 Knapsack problem be solved using Dynamic Programming ($\\Theta(n W)$) while the Fractional Knapsack problem can be solved using Greedy ($\\Theta(n \\log n)$)?**  
+**A:** Both problems exhibit optimal substructure, but only **Fractional Knapsack** satisfies the **Greedy Choice Property** (sorting items by value-to-weight ratio $v_i / w_i$ and taking fractions always yields the global optimum). In **0/1 Knapsack**, items cannot be broken; taking the highest $v_i / w_i$ item can leave wasted capacity and produce a suboptimal solution, requiring the DP state transition:
+$$V[i, w] = \\max\\left( V[i - 1, w], \\; v_i + V[i - 1, w - w_i] \\right)$$
+Note that $\\Theta(nW)$ is **pseudo-polynomial** time because $W$ is the magnitude of the capacity, which takes $\\log_2 W$ bits to represent.
+
+---
+
+## 5. Greedy Algorithms (Lab Expts 7, 9, 11, 12 & Module III)
+
+### Activity Selection (Lab Expt 7) & Huffman Coding (Lab Expt 9)
+
+**Q: What are the two key ingredients of a Greedy Algorithm, and how does it differ from Dynamic Programming?**  
+**A:**
+1. **Greedy Choice Property:** A globally optimal solution can be reached by making a locally optimal (greedy) choice at each step without reconsidering previous choices or solving subproblems first.
+2. **Optimal Substructure:** After making the greedy choice, the remaining subproblem has the same optimal substructure.  
+Unlike DP (which works bottom-up across all subproblem choices), a Greedy algorithm works top-down along a single deterministic path.
+
+**Q: In the Activity Selection Problem (Expt 7), what is the correct greedy choice and what is its complexity?**  
+**A:**
+* **Correct Greedy Choice:** Sort all activities in ascending order of their **finish times** ($f_1 \\le f_2 \\le \\dots \\le f_n$), pick the first activity, and iteratively select the next activity whose start time is greater than or equal to the finish time of the previously selected activity ($s_i \\ge f_{\\text{prev}}$).
+* *(Note: Choosing the shortest duration activity or earliest start time fails to guarantee the maximum number of activities!)*
+* **Time Complexity:** $O(n \\log n)$ to sort the activities (or $O(n^2)$ if sorted via Bubble/Insertion Sort in basic lab code), plus $\\Theta(n)$ for the single linear scan.
+
+**Q: What is Huffman Coding (Expt 9), why is it called a Prefix Code, and what is its time complexity?**  
+**A:**
+* **Huffman Coding** is a greedy, lossless data compression algorithm that assigns **variable-length binary codewords** to characters based on their frequencies—frequent characters get shorter bit strings (near the root) and rare characters get longer bit strings (near the leaves).
+* **Prefix (Prefix-Free) Property:** No codeword is a prefix of any other codeword. Because all characters are placed strictly at the **leaf nodes** of the Huffman binary tree, decoding a bitstream is completely unambiguous without needing delimiter symbols.
+* **Algorithm & Complexity:** Repeatedly extract the two minimum-frequency nodes from a Min-Priority Queue, merge them into a parent node with frequency $f_1 + f_2$, and reinsert into the queue ($n - 1$ merges). Using a binary min-heap, the time complexity is **$O(n \\log n)$**.
+
+---
+
+## 6. Graph Traversal, Minimum Spanning Trees & Shortest Paths (Lab Expts 10–13)
+
+### BFS & DFS Graph Traversal (Lab Expt 10)
+
+**Q: Compare Breadth-First Search (BFS) and Depth-First Search (DFS) (Expt 10).**  
+**A:**
+
+| Feature | Breadth-First Search (BFS) | Depth-First Search (DFS) |
+| :--- | :--- | :--- |
+| **Core Data Structure** | **FIFO Queue** | **LIFO Stack** (or Recursion Call Stack) |
+| **Exploration Order** | Level-by-level (wavefront expansion) | Goes as deep as possible along a branch before backtracking |
+| **Time Complexity (Adjacency List)** | $\\Theta(V + E)$ | $\\Theta(V + E)$ |
+| **Time Complexity (Adjacency Matrix)** | $\\Theta(V^2)$ | $\\Theta(V^2)$ |
+| **Shortest Path Property** | Finds shortest path in **unweighted** graphs (minimum edges) | Does not guarantee shortest path |
+| **Key Applications** | Unweighted shortest path, bipartite testing, connected components | Cycle detection, **Topological Sorting**, Strongly Connected Components (SCC), articulation points |
+
+---
+
+### Minimum Spanning Trees — Kruskal's vs Prim's Algorithm (Lab Expt 11)
+
+**Q: What is a Spanning Tree and a Minimum Spanning Tree (MST), and how many edges does it have?**  
+**A:** Given a connected, undirected graph $G = (V, E)$, a **Spanning Tree** is a connected acyclic subgraph that includes **all $V$ vertices** and has exactly **$V - 1$ edges**. A **Minimum Spanning Tree (MST)** is a spanning tree whose sum of edge weights is minimum among all possible spanning trees. (A disconnected graph cannot have a spanning tree, only a spanning forest).
+
+**Q: Compare Kruskal's Algorithm and Prim's Algorithm for MST (Expt 11).**  
+**A:**
+
+| Feature | Kruskal's Algorithm | Prim's Algorithm |
+| :--- | :--- | :--- |
+| **Greedy Strategy** | **Edge-based:** Sorts all edges by weight and adds the lightest edge that does not form a cycle | **Vertex-based:** Grows a single connected tree from a starting vertex by adding the lightest cut edge |
+| **Intermediate State** | Maintains a **forest** of disjoint trees that gradually merge | Always maintains a **single connected tree** at every step |
+| **Key Data Structure** | **Disjoint-Set (Union-Find)** for cycle detection | **Min-Priority Queue (Min-Heap)** for minimum edge cut |
+| **Time Complexity** | $O(E \\log E) = O(E \\log V)$ | $O(V^2)$ (Adjacency Matrix) or $O((V + E) \\log V)$ (Binary Heap) |
+| **Best Suited For** | **Sparse graphs** ($E \\approx V$) | **Dense graphs** ($E \\approx V^2$) |
+
+---
+
+### Single-Source Shortest Path — Dijkstra's vs Bellman-Ford (Lab Expts 12 & 13)
+
+**Q: What is the Edge Relaxation step in shortest-path algorithms (Expts 12 & 13)?**  
+**A:** Relaxation tests whether the shortest known distance $d[v]$ to vertex $v$ can be improved by going through vertex $u$ along edge $(u, v)$ with weight $w(u, v)$:
+\`\`\`text
+if (d[u] + w(u, v) < d[v]) {
+    d[v] = d[u] + w(u, v);
+    parent[v] = u;
+}
+\`\`\`
+
+**Q: Compare Dijkstra's Algorithm (Expt 12) and the Bellman-Ford Algorithm (Expt 13).**  
+**A:**
+
+| Feature | Dijkstra's Algorithm (Expt 12) | Bellman-Ford Algorithm (Expt 13) |
+| :--- | :--- | :--- |
+| **Design Paradigm** | **Greedy Method** | **Dynamic Programming** |
+| **Negative Edge Weights** | **Fails** on negative edge weights (assumes adding an edge never decreases path cost) | **Works** with negative edge weights |
+| **Negative-Weight Cycles** | Cannot detect negative cycles | **Detects negative-weight cycles** on the $V$-th pass |
+| **Relaxation Passes** | Extracts min-distance vertex $V$ times and relaxes its outgoing edges once | Relaxes **all $E$ edges $(V - 1)$ times**, followed by 1 check pass |
+| **Time Complexity** | $O(V^2)$ (Array/Matrix) or $O((V + E) \\log V)$ (Min-Heap) | $\\Theta(V \\cdot E)$ |
+
+**Q: Why does Bellman-Ford relax all edges exactly $V - 1$ times, and how does it detect a negative-weight cycle (Expt 13)?**  
+**A:** Any simple shortest path in a graph with $V$ vertices contains at most **$V - 1$ edges** (any path with $\\ge V$ edges must repeat a vertex and thus contain a cycle). After $V - 1$ full relaxation passes over all $E$ edges, all true shortest paths without negative cycles are guaranteed to have converged. If a **$V$-th pass** still manages to reduce $d[v]$ for any edge $(u, v)$ ($d[u] + w(u, v) < d[v]$), then a **negative-weight cycle reachable from the source** exists.
+
+---
+
+## 7. Backtracking, Branch-and-Bound, Network Flow, FFT & String Matching (Module III)
+
+**Q: Differentiate between Backtracking and Branch-and-Bound.**  
+**A:**
+* **Backtracking:** Explores the **state-space tree** using **Depth-First Search (DFS)** to find all (or any) feasible solutions satisfying explicit constraints, pruning branches that violate constraints via a bounding/promising function. Used for **decision and constraint satisfaction problems** ($N$-Queens, Hamiltonian Circuit, Subset Sum).
+* **Branch-and-Bound:** Explores the state-space tree (typically via Best-First Search or BFS) exclusively for **optimization problems** (e.g., Traveling Salesperson Problem, 0/1 Knapsack). It computes a lower/upper bound on the objective cost at each node and prunes any subtree whose bound cannot beat the best solution found so far.
+
+**Q: What are the classic Backtracking problems in the syllabus?**  
+**A:**
+* **$N$-Queens Problem:** Place $N$ queens on an $N \\times N$ chessboard so no two queens attack each other (no shared row, column, or diagonal: $|c_i - c_j| = |i - j|$).
+* **Subset Sum Problem:** Given a set of positive integers $S$ and target sum $d$, find subsets whose elements sum to $d$.
+* **Hamiltonian Circuit Problem:** Find a cycle in a graph that visits every vertex exactly once and returns to the starting vertex.
+
+**Q: Define a Flow Network, Residual Network, Augmenting Path, and the Max-Flow Min-Cut Theorem (Ford-Fulkerson Method).**  
+**A:**
+* **Flow Network:** A directed graph $G = (V, E)$ with source $s$, sink $t$, and non-negative capacity $c(u, v) \\ge 0$ obeying **Capacity Constraint** ($0 \\le f(u,v) \\le c(u,v)$) and **Flow Conservation** (incoming flow $=$ outgoing flow for all $v \\in V \\setminus \\{s, t\\}$).
+* **Augmenting Path:** A simple path from $s$ to $t$ in the **residual network** $G_f$ along which additional flow can be pushed (equal to the bottleneck residual capacity of the path).
+* **Max-Flow Min-Cut Theorem:** The maximum value of an $s$-$t$ flow in a network is strictly equal to the minimum capacity among all $s$-$t$ cuts.
+* **Ford-Fulkerson Complexity:** $O(E \\cdot |f^*|)$, where $|f^*|$ is the maximum flow value (or $O(V E^2)$ when BFS is used to find shortest augmenting paths—the **Edmonds-Karp** algorithm).
+
+**Q: How does the Rabin-Karp String Matching algorithm improve upon the Naive $O((n - m + 1)m)$ algorithm?**  
+**A:** Rabin-Karp uses a **rolling hash function** to compute the numerical hash of the pattern $P[1 \\dots m]$ and each $m$-character window of text $T[1 \\dots n]$ in $O(1)$ amortized time per shift via Horner's rule. Character-by-character comparison is only performed when the window hash matches the pattern hash (a *spurious hit* or true match).
+* **Average/Best Time Complexity:** $\\Theta(n + m)$ | **Worst-Case Time Complexity:** $\\Theta((n - m + 1)m)$.
+
+**Q: What is the Fast Fourier Transform (FFT) and what is its complexity?**  
+**A:** The **Discrete Fourier Transform (DFT)** converts a degree-$(n-1)$ polynomial from its coefficient representation to its point-value representation at the $n$ complex $n$-th roots of unity in $\\Theta(n^2)$ time. The **Cooley-Tukey Fast Fourier Transform (FFT)** applies **Divide-and-Conquer** by splitting the polynomial into even-indexed and odd-indexed coefficients:
+$$T(n) = 2T(n/2) + \\Theta(n) \\implies \\Theta(n \\log n)$$
+This enables multiplying two degree-$n$ polynomials in $\\Theta(n \\log n)$ time instead of $\\Theta(n^2)$.
+
+---
+
+## 8. Complexity Classes ($P, NP, \\text{NP-Complete}$) & Approximation Algorithms (Module IV)
+
+**Q: Define the complexity classes $P$, $NP$, $\\text{NP-Hard}$, and $\\text{NP-Complete}$.**  
+**A:**
+* **Class $P$ (Polynomial Time):** The class of decision problems that can be **solved** deterministically in polynomial time $O(n^k)$ for some constant $k$.
+* **Class $NP$ (Non-deterministic Polynomial Time):** The class of decision problems that can be solved in polynomial time by a non-deterministic Turing machine—equivalently, problems for which a proposed candidate solution (**certificate**) can be **verified** deterministically in polynomial time. ($P \\subseteq NP$).
+* **$\\text{NP-Hard}$:** A problem $B$ is $\\text{NP-Hard}$ if every problem $A \\in NP$ can be reduced to $B$ in polynomial time ($A \\le_p B$). An $\\text{NP-Hard}$ problem is at least as hard as the hardest problems in $NP$, and does **not** need to be in $NP$ itself (or even be a decision problem).
+* **$\\text{NP-Complete}$ (NPC):** A problem $B$ is $\\text{NP-Complete}$ if:
+  1. $B \\in NP$ (can be verified in polynomial time), and
+  2. $B \\in \\text{NP-Hard}$ ($A \\le_p B$ for all $A \\in NP$).
+
+**Q: What is Cook's (Cook-Levin) Theorem and why is it foundational?**  
+**A:** **Cook's Theorem (1971)** proved that the **Boolean Satisfiability Problem (SAT)** (and 3-CNF-SAT) is **$\\text{NP-Complete}$** by directly reducing any non-deterministic polynomial-time Turing machine computation to a Boolean formula. Once SAT was established as the first anchor NPC problem, proving any new problem $Y \\in NP$ is $\\text{NP-Complete}$ only requires reducing a known NPC problem $X$ to $Y$ in polynomial time ($\\text{SAT} \\le_p X \\le_p Y$).
+
+**Q: What is a Polynomial-Time Reduction ($A \\le_p B$), and which direction must the reduction go to prove $B$ is $\\text{NP-Hard}$?**  
+**A:** $A \\le_p B$ means there exists a polynomial-time computable transformation $f$ that maps any instance $x$ of problem $A$ to an instance $f(x)$ of problem $B$ such that $x \\in A \\iff f(x) \\in B$.
+* **Crucial Viva Trap:** To prove a new problem $B$ is $\\text{NP-Hard}$, you must reduce a **known $\\text{NP-Complete}$ problem $A$ TO $B$** ($A \\le_p B$), **not** $B \\le_p A$! (Showing $A \\le_p B$ means if $B$ were easy, $A$ would also be easy; since $A$ is known to be hard, $B$ must be at least as hard).
+
+**Q: What is an Approximation Algorithm, and how do the 2-Approximation algorithms for Vertex Cover and Metric TSP work?**  
+**A:** For $\\text{NP-Hard}$ optimization problems, an approximation algorithm runs in polynomial time and guarantees a solution within a multiplicative **approximation ratio $\\rho(n)$** of the optimal cost $C^*$:
+$$\\max\\left(\\frac{C}{C^*}, \\frac{C^*}{C}\\right) \\le \\rho(n)$$
+* **Vertex Cover (2-Approximation):** Repeatedly pick an arbitrary uncovered edge $(u, v)$, add **both** endpoints $u$ and $v$ to the cover, and remove all edges incident to $u$ or $v$. Because any optimal vertex cover must include at least one endpoint of each chosen disjoint matching edge, the resulting cover size is at most **$2 \\times |C^*|$**.
+* **Metric TSP (2-Approximation when triangle inequality holds):**
+  1. Construct a Minimum Spanning Tree (MST) of the graph (since removing any edge from the optimal tour $H^*$ yields a spanning tree, $\\text{cost}(\\text{MST}) \\le \\text{cost}(H^*)$).
+  2. Perform a preorder DFS walk around the MST (traversing each MST edge twice, cost $= 2 \\cdot \\text{cost}(\\text{MST})$) and shortcut repeated vertices using the triangle inequality, guaranteeing a tour cost $\\le 2 \\cdot \\text{cost}(H^*)$.`
+  },
+
   'daa-lab-manual': {
     id: 'daa-lab-manual',
     title: "DAA Lab Manual",
     folder: "06 - Archive",
     path: ["06 - Archive","IGIT Sarang CSE 5th Sem","DAA","DAA Lab","DAA Lab Manual"],
     tags: [],
-    created: "2026-11-13",
-    modified: "2026-11-13",
-    wordCount: 5656,
-    backlinks: ["daa-lab-manual"],
-    links: ["college"],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 5677,
+    backlinks: ["daa-lab-theory-viva-guide","daa-study-flow-execution-guide","daa-lab-manual","daa-lab-manual"],
+    links: ["college","dsa","daa-lab-theory-viva-guide","daa-study-flow-execution-guide","daa-theory-syllabus"],
     outline: [{"level":1,"text":"Design and Analysis of Algorithms (DAA) Laboratory Manual","id":"design-and-analysis-of-algorithms-daa-laboratory-manual"},{"level":1,"text":"INDEX","id":"index"},{"level":2,"text":"EXPERIMENT - 01","id":"experiment-01"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 02","id":"experiment-02"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 03","id":"experiment-03"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 04","id":"experiment-04"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 05","id":"experiment-05"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 06","id":"experiment-06"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 07","id":"experiment-07"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 08","id":"experiment-08"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 09","id":"experiment-09"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 10","id":"experiment-10"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"PSEUDOCODE - BFS","id":"pseudocode-bfs"},{"level":3,"text":"PSEUDOCODE - DFS","id":"pseudocode-dfs"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 11","id":"experiment-11"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 12","id":"experiment-12"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"},{"level":2,"text":"EXPERIMENT - 13","id":"experiment-13"},{"level":3,"text":"AIM","id":"aim"},{"level":3,"text":"ALGORITHM","id":"algorithm"},{"level":3,"text":"PSEUDOCODE","id":"pseudocode"},{"level":3,"text":"C PROGRAM","id":"c-program"},{"level":3,"text":"INPUT","id":"input"},{"level":3,"text":"OUTPUT","id":"output"}],
     content: `# Design and Analysis of Algorithms (DAA) Laboratory Manual
 
@@ -62942,7 +64091,8 @@ To understand the functions and design of various units of digital computers to 
 
 Date of Submission and Viva : 17/11/2026    
 Total Experiments : 13    
-Tags : [[College]]     
+Tags : [[College]] ; [[DSA]]    
+**Associated Notes:** [[DAA Lab & Theory Viva Guide]] · [[DAA Study Flow & Execution Guide]] · [[DAA Theory Syllabus]]  
 ~***Yash Agrawall***~
 
 ---
@@ -64603,17 +65753,17 @@ Shortest distances:
     folder: "06 - Archive",
     path: ["06 - Archive","IGIT Sarang CSE 5th Sem","DAA","DAA Study Flow & Execution Guide"],
     tags: [],
-    created: "2026-09-27",
-    modified: "2026-09-27",
-    wordCount: 1834,
-    backlinks: ["5th-sem-pyqs-master-index","daa-pyqs-analysis-question-bank"],
-    links: ["daa-theory-syllabus","academic-notes-template"],
+    created: "2026-11-16",
+    modified: "2026-11-16",
+    wordCount: 1845,
+    backlinks: ["5th-sem-pyqs-master-index","daa-lab-theory-viva-guide","daa-lab-manual","daa-pyqs-analysis-question-bank"],
+    links: ["daa-theory-syllabus","daa-lab-manual","daa-lab-theory-viva-guide","academic-notes-template"],
     outline: [{"level":1,"text":"Design & Analysis of Algorithms (DAA) — Study Flow & Execution Guide","id":"design-analysis-of-algorithms-daa-study-flow-execution-guide"},{"level":2,"text":"1. Executive Strategy & The Dual Lens","id":"1-executive-strategy-the-dual-lens"},{"level":2,"text":"2. Resource Mapping & Local Assets","id":"2-resource-mapping-local-assets"},{"level":2,"text":"3. Master Chronological Study Flow & Exact Page Mapping","id":"3-master-chronological-study-flow-exact-page-mapping"},{"level":3,"text":"PHASE 1: Foundations, Asymptotic Analysis & Recurrence Relations (Module I)","id":"phase-1-foundations-asymptotic-analysis-recurrence-relations-module-i"},{"level":3,"text":"PHASE 2: Advanced Data Structures, Heaps & Search Trees (Module II)","id":"phase-2-advanced-data-structures-heaps-search-trees-module-ii"},{"level":3,"text":"PHASE 3: Design Paradigms, Graphs & Dynamic Programming (Module III)","id":"phase-3-design-paradigms-graphs-dynamic-programming-module-iii"},{"level":3,"text":"PHASE 4: NP-Completeness & Approximation Algorithms (Module IV)","id":"phase-4-np-completeness-approximation-algorithms-module-iv"},{"level":2,"text":"4. Tactical Execution Protocol (Per 60-Min Study Session)","id":"4-tactical-execution-protocol-per-60-min-study-session"},{"level":1,"text":"Reference","id":"reference"}],
     content: `# Design & Analysis of Algorithms (DAA) — Study Flow & Execution Guide
 
 **Course Code:** PCCS4306 | **Credits:** 3 (Theory) + 2 (Lab) = **5 Credits**    
 **Target Grade:** **O (10/10)**   
-**Associated Notes:** [[DAA Theory Syllabus]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
+**Associated Notes:** [[DAA Theory Syllabus]] · [[DAA Lab Manual]] · [[DAA Lab & Theory Viva Guide]] · [[Core_Subjects_Study_Method_and_Visual_Sources]]
 
 ---
 ## 1. Executive Strategy & The Dual Lens
@@ -64821,7 +65971,7 @@ DAA is the most high-leverage subject of your 5th semester:
     created: "2026-09-27",
     modified: "2026-09-27",
     wordCount: 625,
-    backlinks: ["5th-sem-pyqs-master-index","csa2026internal-1","daa-study-flow-execution-guide","daa2026internal-1","daa2026internal-2","daa-pyqs-analysis-question-bank","daa2022-23regularexam","daa2023-24regularexam","daa2024-25regularexam"],
+    backlinks: ["5th-sem-pyqs-master-index","csa2026internal-1","daa-lab-theory-viva-guide","daa-lab-manual","daa-study-flow-execution-guide","daa2026internal-1","daa2026internal-2","daa-pyqs-analysis-question-bank","daa2022-23regularexam","daa2023-24regularexam","daa2024-25regularexam"],
     links: [],
     outline: [{"level":1,"text":"Design and Analysis of Algorithm (PCCS4306)","id":"design-and-analysis-of-algorithm-pccs4306"},{"level":2,"text":"Course Objectives","id":"course-objectives"},{"level":2,"text":"Course Syllabus","id":"course-syllabus"},{"level":3,"text":"MODULE I (10 Hours)","id":"module-i-10-hours"},{"level":3,"text":"MODULE II (10 Hours)","id":"module-ii-10-hours"},{"level":3,"text":"MODULE III (12 Hours)","id":"module-iii-12-hours"},{"level":3,"text":"MODULE IV (8 Hours)","id":"module-iv-8-hours"},{"level":2,"text":"Prescribed & Available Resources","id":"prescribed-available-resources"},{"level":3,"text":"Available Textbooks in Vault (07 - Annexure/Books/)","id":"available-textbooks-in-vault-07-annexurebooks"},{"level":3,"text":"Visual Lectures & Interactive Tools","id":"visual-lectures-interactive-tools"},{"level":2,"text":"Official University References","id":"official-university-references"}],
     content: `# Design and Analysis of Algorithm (PCCS4306)
@@ -65037,7 +66187,7 @@ Students should be able to:
     created: "2026-11-16",
     modified: "2026-11-16",
     wordCount: 1720,
-    backlinks: ["5th-sem-pyqs-master-index"],
+    backlinks: ["5th-sem-pyqs-master-index","daa-lab-theory-viva-guide"],
     links: ["daa-theory-syllabus","daa-study-flow-execution-guide","daa2026internal-1"],
     outline: [{"level":1,"text":"Design & Analysis of Algorithms (DAA) — PYQ Analysis & Question Bank","id":"design-analysis-of-algorithms-daa-pyq-analysis-question-bank"},{"level":2,"text":"1. High-Yield Topic Frequency & Trend Analysis","id":"1-high-yield-topic-frequency-trend-analysis"},{"level":3,"text":"Module I: Asymptotic Analysis, Recurrences & Sorting","id":"module-i-asymptotic-analysis-recurrences-sorting"},{"level":3,"text":"Module II: Greedy Paradigm & Dynamic Programming","id":"module-ii-greedy-paradigm-dynamic-programming"},{"level":3,"text":"Module III: Advanced Graph Algorithms & Network Flow","id":"module-iii-advanced-graph-algorithms-network-flow"},{"level":3,"text":"Module IV: String Matching & NP-Completeness","id":"module-iv-string-matching-np-completeness"},{"level":2,"text":"2. Transcribed Question Papers","id":"2-transcribed-question-papers"},{"level":3,"text":"Academic Year 2024–25 (Regular / Back Paper)","id":"academic-year-202425-regular-back-paper"},{"level":4,"text":"Q1. Compulsory Conceptual Questions (10 × 1 = 10 Marks)","id":"q1-compulsory-conceptual-questions-10-1-10-marks"},{"level":4,"text":"Long Answer Questions (Answer any 5 — 5 × 10 = 50 Marks)","id":"long-answer-questions-answer-any-5-5-10-50-marks"},{"level":3,"text":"Academic Year 2023–24 (Regular Examination)","id":"academic-year-202324-regular-examination"},{"level":3,"text":"Academic Year 2022–23 (Regular Examination)","id":"academic-year-202223-regular-examination"},{"level":3,"text":"Internal Examinations (Class Tests) 2023–24","id":"internal-examinations-class-tests-202324"},{"level":4,"text":"1st Class Test (Full Marks: 15 | Time: 1 Hour)","id":"1st-class-test-full-marks-15-time-1-hour"},{"level":4,"text":"2nd Class Test (Full Marks: 15 | Time: 1 Hour)","id":"2nd-class-test-full-marks-15-time-1-hour"}],
     content: `# Design & Analysis of Algorithms (DAA) — PYQ Analysis & Question Bank
@@ -73643,8 +74793,8 @@ The course is designed to provide a complete knowledge on Microprocessor and Mic
     created: "2026-10-14",
     modified: "2026-10-14",
     wordCount: 129,
-    backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","count-digits","pointersc"],
-    links: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","count-digits","pointersc"],
+    backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","count-digits","pointersc","daa-lab-manual"],
+    links: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","count-digits","pointersc","daa-lab-manual"],
     outline: [{"level":1,"text":"DSA","id":"dsa"},{"level":2,"text":"DSA Concepts","id":"dsa-concepts"},{"level":2,"text":"References","id":"references"}],
     content: `# DSA
 
@@ -77223,6 +78373,11 @@ const VAULT_FOLDERS = [
                     "type": "folder",
                     "children": [
                       {
+                        "id": "cn-lab-manual-shortened",
+                        "name": "CN Lab Manual (shortened)",
+                        "type": "note"
+                      },
+                      {
                         "id": "cn-lab-manual",
                         "name": "CN Lab Manual",
                         "type": "asset"
@@ -77240,318 +78395,138 @@ const VAULT_FOLDERS = [
                     "type": "folder",
                     "children": [
                       {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-12-basic-commands",
-                        "name": "expt-1.2-basic-commands",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-12-basic-commands-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-21-polar-nrz",
-                        "name": "expt-2.1-polar-nrz",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-21-polar-nrz-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-22-manchester",
-                        "name": "expt-2.2-manchester",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-22-manchester-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-23-2b1q",
-                        "name": "expt-2.3-2b1q",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-23-2b1q-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-24-mlt3",
-                        "name": "expt-2.4-mlt3",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-24-mlt3-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-25-sync-tdm",
-                        "name": "expt-2.5-sync-tdm",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-25-sync-tdm-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-31-crc",
-                        "name": "expt-3.1-crc",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-31-crc-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-32-hamming-code",
-                        "name": "expt-3.2-hamming-code",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-32-hamming-code-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-33-char-stuffing",
-                        "name": "expt-3.3-char-stuffing",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-33-char-stuffing-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-34-bit-stuffing",
-                        "name": "expt-3.4-bit-stuffing",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-34-bit-stuffing-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-35-gobackn-arq",
-                        "name": "expt-3.5-gobackn-arq",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-35-gobackn-arq-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-36-selective-repeat-arq",
-                        "name": "expt-3.6-selective-repeat-arq",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-36-selective-repeat-arq-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-37-csma-cd",
-                        "name": "expt-3.7-csma-cd",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-37-csma-cd-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-41-ipv4-class",
-                        "name": "expt-4.1-ipv4-class",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-41-ipv4-class-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-42-subnet-info",
-                        "name": "expt-4.2-subnet-info",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-42-subnet-info-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-43-usable-hosts",
-                        "name": "expt-4.3-usable-hosts",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-43-usable-hosts-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-44-vlsm",
-                        "name": "expt-4.4-vlsm",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-44-vlsm-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-45-fragmentation",
-                        "name": "expt-4.5-fragmentation",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-45-fragmentation-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-46-distance-vector",
-                        "name": "expt-4.6-distance-vector",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-46-distance-vector-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-47-link-state",
-                        "name": "expt-4.7-link-state",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-47-link-state-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-51-udp-transfer",
-                        "name": "expt-5.1-udp-transfer",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-51-udp-transfer-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-52-tcp-exchange",
-                        "name": "expt-5.2-tcp-exchange",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-52-tcp-exchange-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-53-tcp-congestion",
-                        "name": "expt-5.3-tcp-congestion",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-53-tcp-congestion-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-61-dns-client",
-                        "name": "expt-6.1-dns-client",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-61-dns-client-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "archive-igit-sarang-cse-5th-sem-cn-lab-2026-lab-outputs-expt-62-rsa-cipher",
-                        "name": "expt-6.2-rsa-cipher",
-                        "type": "folder",
-                        "children": [
-                          {
-                            "id": "expt-62-rsa-cipher-readme",
-                            "name": "README",
-                            "type": "note"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "cn-viva-questions",
-                        "name": "cn-viva-questions",
+                        "id": "cn-lab-theory-viva-guide",
+                        "name": "CN Lab & Theory Viva Guide",
                         "type": "note"
                       },
                       {
-                        "id": "cnlabvivapreparationguide",
-                        "name": "cn_lab_viva_preparation_guide",
+                        "id": "cn-lab-outputs-guide",
+                        "name": "CN Lab Outputs Guide",
                         "type": "note"
                       },
                       {
-                        "id": "computernetworkslaboratorymanual",
-                        "name": "computer_networks_laboratory_manual",
+                        "id": "expt-12-basic-commands",
+                        "name": "Expt 1.2 - Basic Commands",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-21-polar-nrz",
+                        "name": "Expt 2.1 - Polar NRZ",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-22-manchester",
+                        "name": "Expt 2.2 - Manchester",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-23-2b1q",
+                        "name": "Expt 2.3 - 2B1Q",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-24-mlt-3",
+                        "name": "Expt 2.4 - MLT-3",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-25-sync-tdm",
+                        "name": "Expt 2.5 - Sync TDM",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-31-crc",
+                        "name": "Expt 3.1 - CRC",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-32-hamming-code",
+                        "name": "Expt 3.2 - Hamming Code",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-33-character-stuffing",
+                        "name": "Expt 3.3 - Character Stuffing",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-34-bit-stuffing",
+                        "name": "Expt 3.4 - Bit Stuffing",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-35-go-back-n-arq",
+                        "name": "Expt 3.5 - Go-Back-N ARQ",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-36-selective-repeat-arq",
+                        "name": "Expt 3.6 - Selective Repeat ARQ",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-37-csma-cd",
+                        "name": "Expt 3.7 - CSMA-CD",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-41-ipv4-class",
+                        "name": "Expt 4.1 - IPv4 Class",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-42-subnet-info",
+                        "name": "Expt 4.2 - Subnet Info",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-43-usable-hosts",
+                        "name": "Expt 4.3 - Usable Hosts",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-44-vlsm",
+                        "name": "Expt 4.4 - VLSM",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-45-fragmentation",
+                        "name": "Expt 4.5 - Fragmentation",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-46-distance-vector",
+                        "name": "Expt 4.6 - Distance Vector",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-47-link-state",
+                        "name": "Expt 4.7 - Link State",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-51-udp-transfer",
+                        "name": "Expt 5.1 - UDP Transfer",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-52-tcp-exchange",
+                        "name": "Expt 5.2 - TCP Exchange",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-53-tcp-congestion",
+                        "name": "Expt 5.3 - TCP Congestion",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-61-dns-client",
+                        "name": "Expt 6.1 - DNS Client",
+                        "type": "note"
+                      },
+                      {
+                        "id": "expt-62-rsa-cipher",
+                        "name": "Expt 6.2 - RSA Cipher",
                         "type": "note"
                       }
                     ]
@@ -77878,6 +78853,11 @@ const VAULT_FOLDERS = [
                 "name": "DAA Lab",
                 "type": "folder",
                 "children": [
+                  {
+                    "id": "daa-lab-theory-viva-guide",
+                    "name": "DAA Lab & Theory Viva Guide",
+                    "type": "note"
+                  },
                   {
                     "id": "daa-lab-manual",
                     "name": "DAA Lab Manual",

@@ -1,7 +1,0 @@
-Character used for starting and ending flag: #
-Character used for escape character: \
-
-Enter the characters to be transmitted (without spaces): IGI#S\##ara\\n#g
-
-Stuffed Frame: #IGI\#S\\\#\#ara\\\\n\#g#
-Destuffed Data: IGI#S\##ara\n#g

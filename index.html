@@ -29,6 +29,24 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
 <style>
+/* ── Custom Fonts (Notes Only) ──────────────────────────────────── */
+@font-face {
+  font-family: 'Yash-headings';
+  src: url('font/Yash-headings.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 128%;
+}
+@font-face {
+  font-family: 'Yash-text';
+  src: url('font/Yash-text.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 128%;
+}
+
 /* ── Reset ──────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html, body, #root { height: 100%; }
@@ -121,7 +139,8 @@ button { font-family: inherit; }
 
 /* ─── Markdown Typography ────────────────────────────────────────── */
 .note-content {
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Yash-text', 'Lora', Georgia, serif;
+  font-synthesis: weight style;
   line-height: 1.78;
   color: var(--text-primary);
   text-wrap: pretty;
@@ -130,7 +149,8 @@ button { font-family: inherit; }
 /* Headings H1–H6 — Prominent visual hierarchy & exact casing */
 .note-content h1, .note-content h2, .note-content h3,
 .note-content h4, .note-content h5, .note-content h6 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
+  font-synthesis: weight style;
   text-transform: none !important;
 }
 
@@ -185,22 +205,30 @@ button { font-family: inherit; }
 .note-content li > ul, .note-content li > ol { margin-top: 0.28em; margin-bottom: 0.28em; }
 
 /* Bold — warm white / near-heading color */
-.note-content strong {
+.note-content strong, .note-content b {
+  font-family: 'Yash-headings', 'Yash-text', sans-serif;
   font-weight: 700;
+  font-synthesis: weight style;
   color: var(--text-heading);
 }
 /* Italic — slightly tinted, nudged toward accent */
-.note-content em {
+.note-content em, .note-content i {
+  font-family: 'Yash-text', 'Lora', Georgia, serif;
   font-style: italic;
+  font-synthesis: weight style;
   color: oklch(72% 0.07 220);   /* light periwinkle */
 }
-[data-theme="light"] .note-content em { color: oklch(42% 0.09 220); }
+[data-theme="light"] .note-content em, [data-theme="light"] .note-content i { color: oklch(42% 0.09 220); }
 
 /* Bold+italic */
 .note-content strong em,
-.note-content em strong {
+.note-content em strong,
+.note-content b i,
+.note-content i b {
+  font-family: 'Yash-headings', 'Yash-text', sans-serif;
   color: oklch(75% 0.1 55);    /* warm gold */
   font-style: italic; font-weight: 700;
+  font-synthesis: weight style;
 }
 [data-theme="light"] .note-content strong em,
 [data-theme="light"] .note-content em strong { color: oklch(45% 0.1 55); }
@@ -242,26 +270,28 @@ button { font-family: inherit; }
 
 .note-content hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
 
-/* Inline code */
+/* Inline code — keep monocode font and size unchanged */
 .note-content code {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.85em;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 14.5px;
+  font-weight: 400;
+  font-style: normal;
   background: var(--bg-active);
   color: var(--text-link);
   padding: 1px 5px; border-radius: 4px;
   border: 1px solid var(--tag-border);
 }
 
-/* Code blocks */
+/* Code blocks — keep monocode font and size unchanged */
 .vault-code-block {
   margin: 0.9em 0 1.3em;
   border-radius: 8px; overflow: hidden;
   border: 1px solid var(--border-strong);
   background: var(--code-bg);
-  font-size: 0.875em;
+  font-size: 14.5px;
 }
 .vault-code-block pre,
-.vault-code-block code { color: #abb2bf; } /* always atom-one-dark foreground, regardless of page theme */
+.vault-code-block code { color: #abb2bf; font-family: 'JetBrains Mono', monospace !important; } /* always atom-one-dark foreground, regardless of page theme */
 .vault-code-block code { background: none; border: none; padding: 0; border-radius: 0; font-size: 1em; }
 .vault-code-header {
   display: flex; align-items: center; justify-content: space-between;
@@ -281,7 +311,7 @@ button { font-family: inherit; }
 .vault-copy-btn:hover { color: rgba(255,255,255,0.65); background: rgba(255,255,255,0.07); }
 .vault-code-block pre {
   margin: 0; padding: 14px 16px; overflow-x: auto;
-  font-family: 'JetBrains Mono', monospace; line-height: 1.62;
+  font-family: 'JetBrains Mono', monospace !important; line-height: 1.62;
   background: var(--code-bg) !important;
 }
 .vault-code-block .hljs { background: var(--code-bg) !important; padding: 0; }
@@ -290,12 +320,13 @@ button { font-family: inherit; }
 .note-content table {
   width: 100%; border-collapse: collapse;
   margin: 0.9em 0 1.2em;
-  font-family: 'IBM Plex Sans', sans-serif; font-size: 0.9em;
+  font-family: 'Yash-text', 'IBM Plex Sans', sans-serif; font-size: 0.95em;
   border: 1px solid var(--border); border-radius: 6px; overflow: hidden;
 }
 .note-content th {
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
   text-align: left; padding: 8px 12px;
-  font-weight: 600; font-size: 0.82em; letter-spacing: 0.05em; text-transform: uppercase;
+  font-weight: 600; font-size: 0.88em; letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--text-muted); background: var(--bg-hover);
   border-bottom: 1px solid var(--border-strong);
 }
@@ -320,8 +351,8 @@ button { font-family: inherit; }
   background: color-mix(in srgb, var(--callout-color, var(--accent)) 9%, transparent);
 }
 .vault-callout-title {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.8em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
+  font-size: 0.85em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--callout-color, var(--accent)); margin-bottom: 0.45em;
 }
 .vault-callout-body { color: var(--text-secondary); font-style: normal; }
@@ -336,7 +367,7 @@ button { font-family: inherit; }
   border-radius: 8px;
 }
 .vault-dataview-header {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Yash-headings', 'IBM Plex Sans', sans-serif;
   font-size: 0.75em;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -414,13 +445,13 @@ button { font-family: inherit; }
   transform: rotate(-45deg) translate(0px, -1px);
 }
 
-/* ── KaTeX math ──────────────────────────────────────────────────── */
+/* ── KaTeX math — keep LaTeX font and size unchanged ─────────────── */
 .note-content .katex-display {
   margin: 1.1em 0; overflow-x: auto; overflow-y: hidden;
   padding: 0.5em 0;
 }
 .note-content .katex-display > .katex { text-align: center; }
-.note-content .katex { font-size: 1.05em; color: var(--text-primary); }
+.note-content .katex { font-size: 17.85px; font-weight: 400; font-style: normal; color: var(--text-primary); }
 [data-theme="light"] .note-content .katex { color: var(--text-heading); }
 
 /* ─── Animations ──────────────────────────────────────────────────── */
@@ -540,6 +571,7 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <div id="root"></div>
 
 <!-- 1. Data (plain JS) -->
+<<<<<<< HEAD
 <script src="vault-data.js?v=26"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
@@ -550,6 +582,18 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <script type="text/babel" src="vault-editor.jsx?v=26"></script>
 <script type="text/babel" src="vault-rightpanel.jsx?v=26"></script>
 <script type="text/babel" src="vault-app.jsx?v=26"></script>
+=======
+<script src="vault-data.js?v=28"></script>
+
+<!-- 2. Components (JSX — load order matters: dependencies first) -->
+<script type="text/babel" src="vault-icons.jsx?v=28"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=28"></script>
+<script type="text/babel" src="vault-graph.jsx?v=28"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=28"></script>
+<script type="text/babel" src="vault-editor.jsx?v=28"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=28"></script>
+<script type="text/babel" src="vault-app.jsx?v=28"></script>
+>>>>>>> 3a9d0d2 (update notes and vault (16-11-2026 21:41:50.71))
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">

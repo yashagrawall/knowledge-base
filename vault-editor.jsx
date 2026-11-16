@@ -914,7 +914,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       ref={containerRef}
       className="note-content"
       data-print-content="true"
-      style={{ fontSize: fontSize || 15, '--reading-max': maxW + 'px' }}
+      style={{ fontSize: (fontSize || 17) + 3, '--reading-max': maxW + 'px' }}
       dangerouslySetInnerHTML={{ __html: rendered }}
     />
   );

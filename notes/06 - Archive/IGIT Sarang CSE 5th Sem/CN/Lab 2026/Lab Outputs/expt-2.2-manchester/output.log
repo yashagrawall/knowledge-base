@@ -1,5 +1,0 @@
-Enter the number of data bits: 8
-Enter the data bits (0 or 1) separated by space: 1 0 0 1 1 1 0 1
-
-Polar Manchester Encoding: | - to + | + to - | + to - | - to + | - to + | - to + | + to - | - to + |
-Differential Manchester Encoding: | - to + | - to + | - to + | + to - | - to + | + to - | + to - | - to + |
